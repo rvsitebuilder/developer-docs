@@ -1,4 +1,4 @@
-# My Table of content
+# Table of content
 - [File structure](#file)
 - [config.json](#config)
 
