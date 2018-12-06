@@ -11,6 +11,9 @@
     "frontendroute": "web.blog.index",
     "active": 1,
     "order": 0,
+    "link to documentation": "https://....",
+    "link to issue tracker": "https://....",        
+    "link to license": "https://....",           
     "adminmenu": {
         "icon" : "path/to/icon.png",
         "appmenu" : {
@@ -59,6 +62,7 @@
     "socialprovider":{
         
     }
+
 }
 
 ```
