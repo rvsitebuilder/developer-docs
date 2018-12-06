@@ -29,48 +29,31 @@
  
 ```json
 {
-  "$schema": "http://json.schemastore.org/template",
-  "identity": "Contoso.Console.CSharp",
-  "groupIdentity": "Contoso.Console",
-  "author": "Contoso",
-  "classifications": ["Common", "Console"],
-  "name": "Contoso console template",
-  "shortName": "contcon",
-  "tags": {
-    "language": "C#"
-  },
-  "sourceName": "MyTemplate",
-
-  "primaryOutputs": [
-	{
-		"path": "newproject.csproj"
+	"id": "template_1",
+	"name": "ชื่อ template 1",
+	"category_id": "6",
+	"description": "template เกี่ยวกับอะไร",
+	"version": "1.0",
+	"header": "2",
+	"footer": "1",
+  "menu": "17-main",
+  "topmenu": "1",
+	"banner": [
+		"33",
+        "42"
+	],
+	"pages": {
+		"Home": {
+            "rv-group-panel" : ["19"],
+            "rv-group-list" : ["8"],
+            "rv-group-pricing" : ["7"]
+		},
+		"Order Online": {
+            "rv-group-pricing" : ["4","7"]
+		}
 	},
-	{
-		"path": "newtextfile.txt",
-		"condition": "(OperatingSystemKind == \"Linux\")"
-	}
-  ],
-  "sources": [
-    {
-      "source": "./src/",
-      "target": "./src/",
-      "copyOnly": "**/*.txt",
-      "exclude": "**/*.reg",
-      "include": "**/*",
-      "rename": {
-        "file1": "file2"
-      },
-      "modifiers": [
-        {
-          "condition": "(IndividualAuth)",
-          "exclude": "individual_auth.filelist"
-        }
-      ]
-    },
-    {
-      "source": "./test/",
-      "target": "./test/",
-      "condition": "TestProject"
-    }
-  ],
+	"img": [
+		"img/053-City.jpg"
+	]
+}
 ```
