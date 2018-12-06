@@ -1,9 +1,10 @@
-
+# My Table of content
 - [File structure](#file)
 - [config.json](#config)
 
 
 <div id='file' />
+
 ## File structure
  
  ```
@@ -22,6 +23,7 @@
 ```
 
 <div id='config' />
+
 ## config.json
  
  
