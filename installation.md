@@ -1,5 +1,7 @@
 # Installation
 
+//TODO: How to install for developer
+
 
 ## Geting a developer license
 

@@ -22,7 +22,7 @@ RVsitebuilder app is identical to [Laravel package](https://laravel.com/docs/mas
 
 Before starting to build your app, we would like to suggest you to go to [RVsitebuilder app playgound](//TODO: url). Generate your app online, it provides simple CRUD and file manager allowing you to look at its code, modify and see it in action. 
 
-Then you can follow [getting started] to install RVsitebuilder locally and start to develop your app.  
+Then you can follow [installation](installation.md) to install RVsitebuilder locally and start to develop your app.  
 
  
 ## Getting Support 
