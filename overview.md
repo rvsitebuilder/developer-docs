@@ -7,10 +7,10 @@ Just export and import from admin. No composer or NPM is required on production 
 
 There are 4 groups of users we created RVsitebuilder for: 
 
-- **End-users** - to build a great looking responsive website, you don’t need to have a programing skill. You can find end-user documentation here.
-- **Laravel developers** – to accelerate development with full featured CMS. Focus on business logic of your app and leave all foundation to us. Together with worldwide hosting partners, no more trouble deploying your app. Just a simple click. You can find developer documentation here. 
-- **Service Providers** - to host laravel application with 1-click installer from cPanel, or non-control panel system without to provide SSH shell to end-users and developers. You can find service provider documentation here. 
-- **Template Designers** - from basic to advance templates. You can find template  documentation here. 
+- **End-users** - to build a great looking responsive website, you don’t need to have a programing skill. You can find [end-user documentation](//TODO: url ) here.
+- **Laravel developers** – to accelerate development with full featured CMS. Focus on business logic of your app and leave all foundation to us. Together with worldwide hosting partners, no more trouble deploying your app. Just a simple click. You can find [developer documentation](//TODO: url ) here. 
+- **Service Providers** - to host laravel application with 1-click installer from cPanel, or non-control panel system without to provide SSH shell to end-users and developers. You can find [service provider documentation](//TODO: url ) here. 
+- **Template Designers** - from basic to advance templates. You can find [template  documentation](//TODO: url ) here. 
 
  
 ## RVsitebuilder App
@@ -20,7 +20,7 @@ RVsitebuilder app is identical to [Laravel package](https://laravel.com/docs/mas
  
 ## RVsitebuilder App Playground 
 
-Before starting to build your app, we would like to suggest you to go to [RVsitebuilder app playgound]. Generate your app online, it provides simple CRUD and file manager allowing you to look at its code, modify and see it in action. 
+Before starting to build your app, we would like to suggest you to go to [RVsitebuilder app playgound](//TODO: url). Generate your app online, it provides simple CRUD and file manager allowing you to look at its code, modify and see it in action. 
 
 Then you can follow [getting started] to install RVsitebuilder locally and start to develop your app.  
 
@@ -29,5 +29,5 @@ Then you can follow [getting started] to install RVsitebuilder locally and start
 
 If this documentation does not help, you can find community resources here: 
 
-- Join our [forum]
-- Submit [feature request]
+- Join our [forum](//TODO: url )
+- Submit [feature request](//TODO: url)
