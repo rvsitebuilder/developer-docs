@@ -1,4 +1,4 @@
-- ## Get Started
+- ## Getting started
     - [Overview](/docs/{{version}}/overview)   
     - [Installation](/docs/{{version}}/installation)
     
