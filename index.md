@@ -1,4 +1,3 @@
-# RVsitebuilder Developer Documentation
 - ## Get Started
     - [Overview](/docs/{{version}}/overview)   
     - [Installation](/docs/{{version}}/installation)
