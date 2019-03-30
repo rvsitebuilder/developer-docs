@@ -2,7 +2,7 @@
 
 Use Laravel vendor dependency inside your app with composer. 
  
-## Laravel vendor dependency 
+## Laravel Vendor Dependency 
 
 Besides, the Laravel framework which come with `composer.json`, each RVsitebuilder app can contains its own `composer.json`. So you can specify your own vendor dependency and get export to the server separately.  
 
