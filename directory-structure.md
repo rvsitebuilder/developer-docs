@@ -10,7 +10,7 @@ Beside [Laravel root directory and app directory](https://laravel.com/docs/maste
 ├── config
 ├── database
 ├── lib
-├── <b>/packages/name/app/</b>
+├── <b>/packages/author/app/</b>
 ├── public
 ├── resources
 ├── routes
@@ -25,52 +25,51 @@ Beside [Laravel root directory and app directory](https://laravel.com/docs/maste
 Here is the example of file and directory structure for **/packages/author/app/**. This is where your RVsitebuilder app will be stored. Simply generate your app from [RVsitebuilder app generator]() or create it manually.
 
 ```
-.
-├── config
-│   └── app-name.php
-├── database
-│   └── migrations
-│       └── 2019_03_14_074812_regist_app_to_core_app.php
-├── routes
-│   ├── Admin
-│   │    └── web.php
-│   └── User
-│       └── web.php
-├── public
-├── resources
-│   ├── images
-│   │   └── icon-app.png
-│   ├── js
-│   ├── scss
-│   ├── lang
-│   └── views
-│       ├── admin
-│       │   ├── dashboard
-│       │   │   └── index.blade.php
-│       │   └── layouts
-│       │        └── app.blade.php
-│       └── user
-│           ├── dashboard
-│           │   └── index.blade.php
-│           └── layouts
-│               └── app.blade.php
-│
-├── src
-│   ├── AppServiceProvider.php
-│   ├── Http
-│   │   ├── Controllers
-│   │   │   └── Admin
-│   │   │       └── DashboardController.php
-│   │   └── Requests
-│   │       └── DashboardRequest.php
-│   └── Models
-│       └── Dashboard.php
-├── vendor
-├── app.json
-├── composer.json
-├── package.json
-├── webpack.base.js
-└── webpack.mix.js
+/packages/author/app/
+                    ├── config
+                    ├── database
+                    │   └── migrations
+                    │       └── 2019_03_14_074812_regist_app_to_core_app.php
+                    ├── routes
+                    │   ├── Admin
+                    │   │    └── web.php
+                    │   └── User
+                    │       └── web.php
+                    ├── public
+                    ├── resources
+                    │   ├── images
+                    │   │   └── icon-app.png
+                    │   ├── js
+                    │   ├── scss
+                    │   ├── lang
+                    │   └── views
+                    │       ├── admin
+                    │       │   ├── dashboard
+                    │       │   │   └── index.blade.php
+                    │       │   └── layouts
+                    │       │        └── app.blade.php
+                    │       └── user
+                    │           ├── dashboard
+                    │           │   └── index.blade.php
+                    │           └── layouts
+                    │               └── app.blade.php
+                    │
+                    ├── src
+                    │   ├── AppServiceProvider.php
+                    │   ├── Http
+                    │   │   ├── Controllers
+                    │   │   │   └── Admin
+                    │   │   │       └── DashboardController.php
+                    │   │   └── Requests
+                    │   │   └── Middelware           
+                    │   └── Models
+                    │       └── Dashboard.php
+                    ├── vendor
+                    ├── app.json
+                    ├── composer.json
+                    ├── package.json
+                    ├── webpack.base.js
+                    └── webpack.mix.js
 ```
  
 Develop your application here. **DO NOT** change anything outside your app directory. It will not be exported to the production server. 
