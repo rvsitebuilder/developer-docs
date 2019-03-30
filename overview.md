@@ -15,14 +15,14 @@ There are 4 groups of users we created RVsitebuilder for:
  
 ## RVsitebuilder App
 
-RVsitebuilder app is identical to [Laravel package](https://laravel.com/docs/master/packages). We code it in the same way but keep in a different folder. It does not require composer and npm to install on the production server. But you can and should use it while developing the app. 
+RVsitebuilder app is identical to [Laravel package](https://laravel.com/docs/master/packages). We code it in the same way but keep in a different folder. It does not require composer and npm to install on the production server. But you can and should use them while developing the app. 
 
  
 ## RVsitebuilder App Playground 
 
 Before starting to build your app, we would like to suggest you to go to [RVsitebuilder app playgound](//TODO: url). Generate your app online, it provides simple CRUD and file manager allowing you to look at its code, modify and see it in action. 
 
-Then you can follow [installation](installation.md) to install RVsitebuilder locally and start to develop your app.  
+Then you can follow [installation](installation.md) to install RVsitebuilder locally and start developing your app.  
 
  
 ## Getting Support 

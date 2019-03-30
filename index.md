@@ -1,8 +1,8 @@
 - ## Getting started
-    - [Overview](/docs/{{version}}/overview)   
-    - [Installation](/docs/{{version}}/installation)
-    - [Directory Structure](/docs/{{version}}/directory-structure)    
-
+    - [Overview](overview.md)   
+    - [Installation](installation.md)
+    - [Directory Structure](directory-structure.md)
+    - [Page Type](page-type.md)
 
 //TODO: Table of content
 ---    

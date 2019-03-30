@@ -1,6 +1,6 @@
 # Installation
 
-//TODO: How to install for developer
+//TODO: @amarin How to install for developer
 
 
 ## Geting a developer license
