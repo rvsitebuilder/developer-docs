@@ -1,11 +1,11 @@
 - ## Getting started
     - [Overview](/docs/{{version}}/overview)   
     - [Installation](/docs/{{version}}/installation)
-    
----    
+    - [Directory Structure](/docs/{{version}}/directory-structure)    
 
-    - [Configurations](/docs/{{version}}/configurations)
-    - [Upgrade](/docs/{{version}}/upgrade)
+
+
+---    
 - ## Features
     - [MarkDown Support](/docs/{{version}}/markdown-support)
     - [Vue Components](/docs/{{version}}/vue-components-support)
