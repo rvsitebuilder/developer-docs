@@ -22,7 +22,7 @@ Beside [Laravel root directory and app directory](https://laravel.com/docs/maste
 ## RVsitebuilder App Directory Structure 
 
 
-Here is the example of file and directory structure for **/packages/author/app/**. This is where your RVsitebuilder app will be stored. Simply generate your app from [RVsitebuilder app generator]() or create it manually.
+Here is the example of file and directory structure for **/packages/author/app/**. This is where your RVsitebuilder app will be stored. Simply generate your app from [RVsitebuilder app generator](creating-new-app.md) or create it manually.
 
 ```
 /packages/author/app/
