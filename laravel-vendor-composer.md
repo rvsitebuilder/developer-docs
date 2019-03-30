@@ -1,16 +1,16 @@
-#Vendor and App Dependency
+# Vendor and App Dependency
 
 Use Laravel vendor dependency inside your app with composer. 
  
 ## Laravel vendor dependency 
 
-Besides, the Laravel framework which come with `composer.json`, don’t touch it. Each RVsitebuilder app can contains its own `composer.json`. So you can specify your own vendor dependency and get export to the server separately.  
+Besides, the Laravel framework which come with `composer.json`, each RVsitebuilder app can contains its own `composer.json`. So you can specify your own vendor dependency and get export to the server separately.  
 
-Make sure that you run `composer` command inside your app not the root directory. And add the `autoload-patch` in the `post-autoload-dump` section of your app's `composer.json` file. 
+Make sure that you run `composer` command inside your app not the root directory. And add the `autoload-patch` in the `post-autoload-dump` section of your `app's composer.json` file. 
 
 //Todo - @amarin if no package name enter, if it run all?
 
-Here is an example of scheduler app's `composer.json`:
+Here is an example of scheduler `app's composer.json`:
 ```json
 {
     "name": "rvsitebuilder/scheduler",

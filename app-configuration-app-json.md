@@ -12,9 +12,8 @@ We have a [JSON schema](http://json-schema.org/) that documents all properties a
 
 ### Properties
 
-**name**
-
-The name of the package. It consists of vendor name and project name, separated by /. Examples: 
+name
+:  The name of the package. It consists of vendor name and project name, separated by /. Examples: 
 
 - `netway/instagram` 
 - `armnet/telescope`
@@ -23,7 +22,7 @@ The name must be lowercase alphanumeric characters without spaces.
 
 **alias**
 
-App display name on the end-user website.
+: App display name on the end-user website.
 
 > {info} User can overwrite the value on the app management page. 
 
