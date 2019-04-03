@@ -35,12 +35,12 @@ public function register()
 }
 ```
 
-`MergeConfigFrom` function only merges the first level of the configuration array. If you have a complex configuration, use `$this->app['config']->set` to set it individually. Here is an example:
+`MergeConfigFrom` function only merges the first level of the configuration array. If you have a complex configuration, use `config()` helper to overwrite it individually. Here is an example:
 
 ```php
 public function register()
-    $this->app['config']->set('totem.artisan.whitelist', true);
-    $this->app['config']->set('totem.artisan.command_filter', ['*:cache', 'queue:work', 'medialibrary:*']);
+    config('totem.artisan.whitelist', true);
+    config('totem.artisan.command_filter', ['*:cache', 'queue:work', 'medialibrary:*']);
 }
 ```
 
