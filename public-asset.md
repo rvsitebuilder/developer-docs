@@ -10,7 +10,7 @@ It depends on your frontend development workflow.
 
 ## Define public asset 
 
-Your public asset keep on `app’s /public`. Define your public on `app's service provider` under `boot` method. While installing on the server, we will run `artisan vendor:public --tag=public`. All your public will be copied to `/public/vendor/author/appname/`.  
+Your public asset keep on `app’s /public`. Define your public on `app's service provider` under `boot` method. While installing on the server, we will run `artisan vendor:publish --tag=public`. All your public will be copied to `/public/vendor/author/appname/`.  
 
 ```php
 public function boot() {

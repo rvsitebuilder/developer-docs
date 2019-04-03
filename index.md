@@ -8,7 +8,7 @@
 - ## RVsitebuilder Apps
     - [Creating New App](creating-new-app.md)
     - [App Configuration](app-configuration-app-json.md) 
-    - [Vendor and App Dependency](laravel-vendor-composer.md)
+    - [Composer Vendor and App Dependency](composer-vendor-and-app-dependency.md)
 - ## RVsitebuilder App Development
     - [App Service Provider](app-service-provider.md)
     - [App Configuration](app-configuration.md) 
