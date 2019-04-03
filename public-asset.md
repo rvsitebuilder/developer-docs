@@ -10,7 +10,7 @@ It depends on your frontend development workflow.
 
 ## Define public asset 
 
-Your public asset keep on `app’s /public`. Define your public on `app's service provider` under `boot` method. While installing on the server, we will run `artisan vendor:public --tag=public`. All your public will be copied to `/public/vendor/author/app/`.  
+Your public asset keep on `app’s /public`. Define your public on `app's service provider` under `boot` method. While installing on the server, we will run `artisan vendor:public --tag=public`. All your public will be copied to `/public/vendor/author/appname/`.  
 
 ```php
 public function boot() {
@@ -18,14 +18,14 @@ public function boot() {
 } 
 
 public function definePublic(){
-    $this->publishes([__DIR__.'/../public' => public_path('vendor/author/app')], 'public');
+    $this->publishes([__DIR__.'/../public' => public_path('vendor/author/appname')], 'public');
 }
 ```
 
 On development server, you have 2 choices:
 
-- Create symbolic link between your `app’s public` and `/public/vendor/author/app/`. 
-- Use webpack to copy your `app’s public` to `/public/vendor/author/app/`. If you generate your app from RVsitebuilder app generator, we already configure it for you on `webpack.base.js`. 
+- Create symbolic link between your `app’s public` and `/public/vendor/author/appname/`. 
+- Use webpack to copy your `app’s public` to `/public/vendor/author/appname/`. If you generate your app from RVsitebuilder app generator, we already configure it for you on `webpack.base.js`. 
 
 
 ```js

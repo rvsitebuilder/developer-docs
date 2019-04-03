@@ -11,7 +11,11 @@
     - [Vendor and App Dependency](laravel-vendor-composer.md)
 - ## RVsitebuilder App Development
     - [App Service Provider](app-service-provider.md)
-    - [Configuration](app-configuration.md) 
+    - [App Configuration](app-configuration.md) 
+    - [App DB Migration and Model](app-database-migration-and-model.md)
+    - [App Routing](app-routing.md)
+    - [App Middelware](app-middleware.md)
+    - [App Views](app-views.md) 
 
 - ## Frontend Development
   -  [Public asset](public-asset.md) 

@@ -6,6 +6,10 @@
 ## Config 
 
 Create Laravel config file and keep it in your `app’s /config` folder. 
+```
+/packages/author/appname/
+                    ├── config
+```
 
 ## Register Config on App's Service Provider
 
