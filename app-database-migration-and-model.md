@@ -36,7 +36,6 @@ To avoid as much as possible troubles, you migration should:
 ## Registering App on App table 
 
 This is mandatory.
-// TODO: @pam default master system page?
 
 ```php
 <?php

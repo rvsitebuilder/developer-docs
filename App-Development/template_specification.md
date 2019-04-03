@@ -1,26 +1,8 @@
 # Table of content
-- [File structure](#file)
-- [config.json](#config)
+- [Table of content](#table-of-content)
+	- [config.json](#configjson)
 
 
-<div id='file' />
-
-## File structure
- 
- ```
- test1@test1:~/RVPanel$ tree
-.
-├── scss
-│   └── app.scss
-├── css
-│   └── app.css
-├── js
-│   ├── app.js
-├── img
-│   ├── small_preview.png
-│   ├── large_preview.png
-├── config.json
-```
 
 <div id='config' />
 

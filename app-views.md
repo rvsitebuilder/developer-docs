@@ -89,22 +89,59 @@ public function defineHideFromHyperlinkList (){
 }
 ``` 
 
-## Editable system page 
+## Editable System Page 
 
 Editable system page is the page that be able to edit on WYSIWYG. To make it more dynamic, and configurable. it will be rendered through RVsitebuilder `widget` system. 
  
+
+// @pairote migration example
+
+
 You need to seed your app’s editable system page to `SYSTEM_PAGE` table. You can define which system page ID is your master system page.  
+
 
 Migration example: 
 ```php
-Xxx 
-
-Xxxx 
+Page
+slug
+seo
 ``` 
- 
 
-## Routing for editable system page 
+## Master System Page
+// TODO: @pam default master system page?
+
+
+
+
+## Routing for Editable System Page 
+
+
 
 editmode 
+
+
+
+## Default User Page and Menu 
+
+Installing app will create defined page and menu on the end-user website user area automatically. 
+
+ Migration example: 
+```php
+Page
+slug
+seo
+``` 
+To prevent error appears on the website, disabling or uninstalling app, RVsitebuilder will automatically disable all app’s pages and show 404 error page.  
+
+
+## Default Admin Page and Menu 
+
+Define your admin menu on app.json 
+
+```json
+
+```
+
+keeping in mind that, end-users can change your app’s display name, hide menu on app launcher, or move it to display menu on other’s app. 
 
  
