@@ -40,6 +40,8 @@
     - Laravel tips and tricks
     - Developer Tools 
 - ## Contributing to Documentation
+    - [Contributing](contributing.md)
+    - Contributors 
 
 
 
