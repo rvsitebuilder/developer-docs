@@ -13,11 +13,11 @@ Create Laravel blade file and keep it in your `app’s /src/Events` folder.
 ```
 
 
-## Laravel default events 
+## Laravel Default Events 
 
 artisan event:lists  5.8.9
 
-## RVsitebuilder default Events
+## RVsitebuilder Default Events
 
 SavingPage 
 
