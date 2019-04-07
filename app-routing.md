@@ -16,7 +16,7 @@ You should separate routing file for user and admin for easy grouping and author
                     │       └── web.php
 ```
 
-## Admin route 
+## Admin Route 
 
 Admin route must group using `admin prefix`, and use `admin middleware`. Only admin will be able to access it. 
 
@@ -39,7 +39,7 @@ Route::group([
     });
 });
 ```
- ## User route 
+ ## User Route 
 
 You don't need to have a user route if your app only for admin. 
 
@@ -64,11 +64,11 @@ Route::group([
 });
 ```
 
-## Named route
+## Configurable Named Route
 
 > {info} This feature will be available on v7.2.
 
-If you want to allow end-user to change your app’s named route to a different route, you need to register its name on your service provider. The simple use case is the user.dashboard named route. User will be able to change the route to its own instead of default one on ‘Admin > Config > Route’ click tab ‘Named route‘. 
+If you want to allow end-user to change your app’s named route to a different route, you need to register its name on your service provider. The simple use case is the `user.dashboard` named route. User will be able to change the route to its own instead of default one on ‘Admin > Config > Route’ click tab ‘Named route‘. 
 
 ```php
 public function boot() { 
@@ -76,7 +76,7 @@ public function boot() {
 
 } 
 
-public function defineDynamicNamedRoute (){ 
+public function dynamicNamedRoute (){ 
     
 } 
 ```

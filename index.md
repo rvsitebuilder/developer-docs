@@ -13,12 +13,11 @@
     - [App Service Provider](app-service-provider.md)
     - [App Configuration](app-configuration.md) 
     - [App DB Migration and Model](app-database-migration-and-model.md)
-    - [App Routing](app-routing.md)
     - [App Middelware](app-middleware.md)
+    - [App Routing](app-routing.md)
     - [App Views](app-views.md) 
-    - [RVsitebuilder Widget](rvsitebuilder-widget.md)
     - [App Event and Listener](app-event-listener.md) 
-    - [App Schedule](App-schedule.md) 
+    - [App Schedule](app-schedule.md) 
     - Console
     - Validation
     - Helper
@@ -28,8 +27,10 @@
     - JavaScript Libraries
     - Webpack 
     - [Public asset](public-asset.md) 
-- ## Extending Admin Visual Editor
-    -  Extending Content WYSIWYG
+- ## RVsitebuilder Visual Editor (WYSIWYG)
+    - [Creating Editable System Page](creating-editable-system-page.md)
+    - [RVsitebuilder Widget](rvsitebuilder-widget.md)
+    -  Extending WYSIWYG
     -  Extending Email WYSIWYG
 - ## Internationalization
 - ## Testing

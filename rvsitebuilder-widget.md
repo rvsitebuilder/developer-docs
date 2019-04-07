@@ -1,6 +1,8 @@
 # RVsitebuilder Widget
 
-Widget is a RVsitebuilder special element that make your WYSIWYG more dynamic and configurable. 
+## Widget
+Widget is a RVsitebuilder special element that make your `editable system page` more dynamic and configurable. 
+
 
 ## How it works 
 

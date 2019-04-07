@@ -8,7 +8,7 @@ We use properties information on your `app.json` to display app information and 
 
 We have a [JSON schema](http://json-schema.org/) that documents all properties and their format to use your app.json. You can find it at: https://dev.rvsitebuilder.com/schema.json.
 
-//TODO: @Settavut create the full list of schema.json above and make it accessible. and explain it below similar to https://getcomposer.org/doc/04-schema.md#name
+//TODO: @Settavut create the full list of schema.json above and make it accessible. and explain it below similar to https://getcomposer.org/doc/04-schema.md
 
 ### Properties
 

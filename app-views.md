@@ -21,16 +21,18 @@ Create Laravel blade file and keep it in your `app’s /resources/views` folder.
                     │               └── app.blade.php
 ```
 
-## Master Layout 
+## Master Layouts
 
-There are 4 master layouts available. 
-- `admin.layouts.master` 
-- `admin.layouts.master-blank`
-- `user.layouts.master`
-- `user.layouts.master-blank`
+There are 4 master layouts available on RVsitebuilder. All master layouts load necessary JavaScript and CSS according to the template end-user choosing on the admin area.
+- `admin.layouts.master` - admin pages that include top bar, app launcher, and your app's left menu. 
+- `admin.layouts.master-blank` - admin blank pages. It is useful for creating pop-up or iframe. 
+- `user.layouts.master` - user pages that include header, menu, sidebar, footer, and etc. 
+- `user.layouts.master-blank` - user blank pages. It is useful for creating pop-up or iframe. 
 
-## App Layout 
-To make your app user interface consistency throughout the site. You should extend master layout on your app's layout. 
+To make your app user interface consistency throughout the site. You should extend master layouts on your `app's layouts` folder. 
+
+
+## Admin App Layouts
 
 Here is an example of `views/admin/layouts/app.blade.php`:
 ```php
@@ -51,16 +53,43 @@ Here is an example of `views/admin/layouts/app.blade.php`:
 @endpush
 ```
 
-**Package-script Blade Stack** 
-Insert your JavaScript here.
+**Admin Left Menu**
+
+`leftmenu` section should includes default `admin.includes.leftmenu` and send your correct author and appname `author/appname`. It will dynamically generate menu according to your [app's app.json](app-configuration-app-json.md). 
+
+keeping in mind that, end-users can move your left menu to display on the other app, change your app’s display name, and hide icon on app launcher.
+
 
 **Package-style Blade Stack**
-Insert your CSS script here.
+
+Insert your CSS scripts for admin pages here.
 
 
-## App View
+**Package-script Blade Stack** 
 
-All your view should extend your app's layout. And add your content in `content` blade section.
+Insert your JavaScript for user pages here.
+
+
+## User App Layouts
+
+Here is an example of `views/user/layouts/app.blade.php`.
+```php
+@extends('user.layouts.master')
+
+@push('package-styles')
+<!-- package-styles -->
+
+@endpush
+
+@push('package-scripts')
+<!-- package-scripts -->
+
+@endpush
+```
+
+## App Views
+
+All your views should extend your `app's layouts`. And add your content in `content` blade section.
 
 ```php
 @extends('appname::admin.layouts.app')
@@ -69,15 +98,20 @@ All your view should extend your app's layout. And add your content in `content`
     Your app content here.
 @endsection
 ```
+You can `@push('package-styles')` and `@push('package-scripts')` if you have anything specific only for this view.
 
-## Non-editable system page 
 
-If you have no plan to allow end-user to update your app’s system page, just create standard Laravel route and view. All admin pages are non-editable system page.  
 
-User pages could be editable or non-editable page. End-user still see its route on the system page hyperlink selection list. 
+## Creating Non-Editable System Page
 
-To hide it from the hyperlink selection list, you need to `defineHideFromHyperlinkList` on your app’s service provider. 
-//TODO: @pam defineHideFromHyperlinkList
+Standard Laravel routes and views are [non-editable system pages](page-type.md). This give you a freedom to do whatever you want while perfectly display under the same theme as other pages. Its drawback is the end-user cannot modify the page properties such as SEO options, META tags, and etc.
+
+You may explicitly set web page title on your blade view.
+```php
+@section('title','Your page website title'))
+```
+
+End-user still see all your `app's route` on the system page hyperlink selection list. To hide it from the hyperlink selection list, you need to add `hideFromHyperlinkList` on your `app’s service provider`. 
 
 ```php
 public function boot() { 
@@ -85,63 +119,41 @@ public function boot() {
 } 
 
 public function defineHideFromHyperlinkList (){ 
-    
+//TODO: @pam hideFromHyperlinkList
 }
 ``` 
 
-## Editable System Page 
+## Creating Editable System Page 
 
-Editable system page is the page that be able to edit on WYSIWYG. To make it more dynamic, and configurable. it will be rendered through RVsitebuilder `widget` system. 
- 
+To make your system page editable, you need to do the following:
 
-// @pairote migration example
+1. Migration
+2. Creating route for WYSIWYG editview
+3. Push wysiwyg-section blade stack
 
-
-You need to seed your app’s editable system page to `SYSTEM_PAGE` table. You can define which system page ID is your master system page.  
-
-
-Migration example: 
-```php
-Page
-slug
-seo
-``` 
-
-## Master System Page
-// TODO: @pam default master system page?
-
-
-
-
-## Routing for Editable System Page 
-
-
-
-editmode 
+> {info} Checkout [Creating Editable System Page Documentation](creating-editable-system-page.md) for more detail.
 
 
 
 ## Default User Page and Menu 
 
-Installing app will create defined page and menu on the end-user website user area automatically. 
+In some circumstances, you may want to add new page to the end-user's website to show your app's content. You will need to create migrations.
 
- Migration example: 
+// TODO: @pam default app's user page and menu
+
+Add user page migration example: 
 ```php
 Page
 slug
 seo
 ``` 
-To prevent error appears on the website, disabling or uninstalling app, RVsitebuilder will automatically disable all app’s pages and show 404 error page.  
 
+Add user menu migration example: 
+```php
+menu
+``` 
 
-## Default Admin Page and Menu 
+To prevent error appears on the website, disabling or uninstalling app on the Manage.  RVsitebuilder will automatically hide your app's menu, disable all app’s routes and shows 404 error page.  
 
-Define your admin menu on app.json 
-
-```json
-
-```
-
-keeping in mind that, end-users can change your app’s display name, hide menu on app launcher, or move it to display menu on other’s app. 
 
  

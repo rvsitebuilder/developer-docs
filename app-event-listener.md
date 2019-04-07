@@ -15,7 +15,7 @@ Create Laravel blade file and keep it in your `app’s /src/Events` folder.
 
 ## Laravel default events 
 
-xxxx 
+artisan event:lists  5.8.9
 
 ## RVsitebuilder default Events
 
@@ -32,4 +32,5 @@ UpdatedApps
 
 ## Register Event and Listener on App’s Service Provider 
 
-xxxxxxx 
+Auto discovery
+artisan event:lists  5.8.9
