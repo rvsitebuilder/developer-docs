@@ -34,6 +34,12 @@ If you don’t have any web server locally, follow these steps.
        <workspacke_path>/docker-lamp-php72/public/
    app path:
        <workspacke_path>/docker-lamp-php72/app/
+       
+   db access info:
+      MARIADB_HOST = mariadb
+      MARIADB_DATABASE = dbname
+      MARIADB_USER = dbuser
+      MARIADB_PASSWORD = dbpass
 ``` 
 
 ## Installation 
