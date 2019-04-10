@@ -9,7 +9,7 @@ You can install RVsitebuilder locally on your work station for developing purpos
 
 1. Log in to your RVsitebuilder website as admin, click ‘App launcher’ and go to ‘Manage’ app. 
 1. Go to ‘Developer Token’ on the left menu. 
-1. Enter your email, accept developer agreement and click generate developer license. 
+1. Enter your email, accept developer agreement and click generate developer token. 
 1. It will require to install locally. 
 
 ## Server Requirement 
