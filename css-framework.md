@@ -3,7 +3,7 @@
 RVsitebuilder user and admin interfaces are render independently.
 
 ## User interface
-End-user interface is built on [UIKIT2](https://getuikit.com/v2/) framework. 
+End-user interface is built on [UIKIT2](https://getuikit.com/v2/) framework. It changes dynamically according to the end-user choice of template on the admin area.
 
 Soon, there will be a choice between Bootstrap4, UIKIT2, and UIKIT3.
 
