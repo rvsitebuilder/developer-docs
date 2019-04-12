@@ -10,7 +10,7 @@ Beside [Laravel root directory and app directory](https://laravel.com/docs/maste
 ├── config
 ├── database
 ├── lib
-├── <b>/packages/author/appname/</b>
+├── <b>packages/author/appname/</b>
 ├── public
 ├── resources
 ├── routes
