@@ -16,7 +16,7 @@ xxxxx
  
  Widget blade contains your app's widget design according to the user config. 
  
- End-user may edit raw blade file directly on RVsitebuilder WYSIWYG to suit their needs.
+ End-users may edit raw blade file directly on RVsitebuilder WYSIWYG to suit their needs.
 
 ## View composer 
 
