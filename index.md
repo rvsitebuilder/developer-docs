@@ -32,7 +32,11 @@
     - [Creating Editable System Page](creating-editable-system-page.md)
     - [RVsitebuilder Widget](rvsitebuilder-widget.md)
     - [Extending WYSIWYG](extending-WYSIWYG.md)
-    -  Extending Email WYSIWYG
+    - Extending Menu Components (search box, shop, login/logout)
+    - Extending Section Content
+    - Extending Insert Toolbar
+    - Extending Form WYSIWYG
+    - Extending Email WYSIWYG
 - ## Internationalization
     - language files
 - ## Testing
