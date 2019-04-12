@@ -49,7 +49,7 @@ The following vendors already install by default. No need to install it separate
 
 If you require Laravel package inside your app and also want to custom package's view, you need to set `view.path` config to your app's view directory then call `loadViewsFrom` to tell the package to load it instead of default one inside the package.
 
-// correct syntax and directory
+//TODO: correct syntax and directory
 Your app's custom vendor view directory:
 ```
 --view
