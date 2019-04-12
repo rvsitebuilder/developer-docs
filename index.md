@@ -31,11 +31,13 @@
 - ## RVsitebuilder Visual Editor (WYSIWYG)
     - [Creating Editable System Page](creating-editable-system-page.md)
     - [RVsitebuilder Widget](rvsitebuilder-widget.md)
-    -  Extending WYSIWYG
+    - [Extending WYSIWYG](extending-WYSIWYG.md)
     -  Extending Email WYSIWYG
 - ## Internationalization
+    - language files
 - ## Testing
 - ## Security
+    - vendor route
 - ## Tutorials
 - ## Contributing to Documentation
     - [Contributing](contributing.md)
