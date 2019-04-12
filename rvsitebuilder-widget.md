@@ -12,13 +12,11 @@ xxxxx
 
 -How-To-Register-Widget-config.md  
 
+ ## Widget Blade
  
-
-## Global widget 
-
-Widget that shows the same content on every page. 
-
+ Widget blade contains your app's widget design according to the user config. 
  
+ End-user may edit raw blade file directly on RVsitebuilder WYSIWYG to suit their needs.
 
 ## View composer 
 
@@ -29,3 +27,8 @@ RVsitebuilder use view composer extensively. Especially using together with midd
 ##  middleware and apply button 
 
 
+## Global widget 
+
+Widget that shows the same content on every page. 
+
+ 
