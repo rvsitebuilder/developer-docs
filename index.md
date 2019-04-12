@@ -21,13 +21,13 @@
     - Console
     - Validation
     - Helper
-    - Email
+    - [App Email](app-email.md)
     - Authorization (roles and policy)
 - ## Frontend Development
-    - CSS Framework
-    - JavaScript Libraries
-    - [Webpack](webpack.md)
     - [Public asset](public-asset.md) 
+    - [CSS Framework](css-framework.md)
+    - [JavaScript Libraries](javascript.md)
+    - [Webpack](webpack.md)
 - ## RVsitebuilder Visual Editor (WYSIWYG)
     - [Creating Editable System Page](creating-editable-system-page.md)
     - [RVsitebuilder Widget](rvsitebuilder-widget.md)
@@ -41,7 +41,7 @@
 - ## Tutorials
 - ## Contributing to Documentation
     - [Contributing](contributing.md)
-    - Contributors 
+    - [Contributors](contributors.md)
 
 
 
