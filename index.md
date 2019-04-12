@@ -22,6 +22,7 @@
     - Validation
     - Helper
     - Email
+    - Authorization (roles and policy)
 - ## Frontend Development
     - CSS Framework
     - JavaScript Libraries
