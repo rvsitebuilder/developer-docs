@@ -27,5 +27,5 @@ A lot of RVsitebuilder websites run on shared hosting environment and does not h
 
 RVsitebuilder accomodates this by installing `Queuesharedhost App`, it is a wrapper around [queueworker/sansdaemon](https://github.com/orobogenius/sansdaemon) which run Laravel Queue by schedule task every 5 minutes. That means queues are not execute immediately as expected but run every 5 minutes.
 
-If the end-users are not run on shared hosting environment, and have SSH access to the server to run command line.  End-users are suggested to disable `Queuesharedhost App` on RVsitebuilder `admin's manage` app.
+If the end-users are not run on shared hosting environment, and have SSH access to the server to run command line.  End-users are suggested to disable `Queuesharedhost App` on RVsitebuilder admin's `Manage App`.
 
