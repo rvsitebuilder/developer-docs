@@ -44,6 +44,31 @@ The following vendors already install by default. No need to install it separate
 - Xxxxx (https://github.com/link ) 
 - Xxxxx (https://github.com/link ) 
 
+
+## Custom Vendor View Directory
+
+If you require Laravel package inside your app and also want to custom package's view, you need to set `view.path` config to your app's view directory then call `loadViewsFrom` to tell the package to load it instead of default one inside the package.
+
+// correct syntax and directory
+Your app's custom vendor view directory:
+```
+--view
+-----admin
+-----user
+-----vendor
+```
+
+Your app's service provider:
+```php
+public function boot()
+{
+    config(['view.path' => '../../views']);
+    $this->loadViewsFrom(__DIR__.'/path/to/views', 'courier');
+}
+```
+
+Noted that `view.path` is the directory that contains vendor directory.
+
 ## RVsitebuilder App Dependency
 
 You may want to extend someone app or use it together with your app. It is very easy. All apps dependency will be installed while installing app on the production web site. 
