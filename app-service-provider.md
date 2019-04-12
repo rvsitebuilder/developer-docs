@@ -44,18 +44,9 @@ Vendor that comes with view and route, may not display nicely in RVsitebuilder l
 },
 ```
 
-You may disable package discovery for all packages using the `*` character inside of your application's `dont-discover` directive: 
+If you do this, you may need to copy code from vendor’s service provider to run `loadMigrationsFrom`, `mergeConfigFrom`, `loadViewsFrom`, `loadTranslationsFrom`, and etc. on your `app's service provider` yourself. Be notice that register and boot  on service provider are different. Do not mix it. 
 
-```json
-"extra": {
-    "laravel": {
-        "dont-discover": [
-            "*"
-        ]
-    }
-},
-```
+> {warning} Wildcard `*` character inside of your application's `dont-discover` directive is not supported.
 
-If you do this, you may need to copy code from vendor’s service provider to run `loadMigrationsFrom`, `mergeConfigFrom`, `loadViewsFrom`, `loadTranslationsFrom`, and etc. on your service provider yourself. Be notice that register and boot are different. Do not mix it. 
 
  
