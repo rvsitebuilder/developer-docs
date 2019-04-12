@@ -71,7 +71,7 @@ Noted that `view.path` is the directory that contains vendor directory.
 
 ## RVsitebuilder App Dependency
 
-You may want to extend someone app or use it together with your app. It is very easy. All apps dependency will be installed while installing app on the production web site. 
+You may want to extend other RVsitebuilder app or use it together with your app. It is very easy. All apps dependency will be installed while installing app on the production web site. 
 
 Here is an example of `app.json`:
 
