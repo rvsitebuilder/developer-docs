@@ -4,13 +4,14 @@
 
 Beside [Laravel root directory and app directory](https://laravel.com/docs/master/structure), we introduce **packages** directory under root directory.  
 
-<pre><code>.
+<pre><code>
+.
 ├── app
 ├── bootstrap
 ├── config
 ├── database
 ├── lib
-├── <b>/packages/author/app/</b>
+├── <b>/packages/author/appname/</b>
 ├── public
 ├── resources
 ├── routes
@@ -22,7 +23,7 @@ Beside [Laravel root directory and app directory](https://laravel.com/docs/maste
 ## RVsitebuilder App Directory Structure 
 
 
-Here is the example of file and directory structure for **/packages/author/app/**. This is where your RVsitebuilder app will be stored. Simply generate your app from [RVsitebuilder app generator](creating-new-app.md) or create it manually.
+Here is the example of file and directory structure for **/packages/author/appname/**. This is where your RVsitebuilder app will be stored. Simply generate your app from [RVsitebuilder app generator](creating-new-app.md) or create it manually.
 
 ```
 /packages/author/appname/
@@ -72,4 +73,4 @@ Here is the example of file and directory structure for **/packages/author/app/*
                     └── webpack.mix.js
 ```
  
-Develop your application here. **DO NOT** change anything outside your app directory. It will not be exported to the production server. 
+> {warning} Develop your application here. **DO NOT** change anything outside your app directory. It will not be exported to the production server. 
