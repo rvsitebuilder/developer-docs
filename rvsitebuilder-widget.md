@@ -6,7 +6,7 @@ Widget is a RVsitebuilder special element that make your `editable system page` 
 
 ## How it works 
 
-xxxxx 
+`renderWidget middleware`
 
 ## Widget config 
 
@@ -18,13 +18,17 @@ xxxxx
  
  End-users may edit raw blade file directly on RVsitebuilder WYSIWYG to suit their needs.
 
+
+## Config Panel Elements
+
+### color picker
+### reset button
+### apply button
+
 ## View composer 
 
 RVsitebuilder use view composer extensively. Especially using together with middleware to build the widget dynamically. 
 
- 
-
-##  middleware and apply button 
 
 
 ## Global widget 
