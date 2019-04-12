@@ -4,8 +4,7 @@
 
 Beside [Laravel root directory and app directory](https://laravel.com/docs/master/structure), we introduce **packages** directory under root directory.  
 
-<pre><code>
-.
+<pre><code>.
 ├── app
 ├── bootstrap
 ├── config
