@@ -31,4 +31,4 @@ You can find public apps on [RVsitebuilder App Marketplace](https://apps.rvsiteb
 
 ## Submitting App to Marketplace 
 
-We are building marketplace app to facilitate app publishing activities including the payment system. If you want to submit free public app, please submit [ticket](https://rvglobalsoft.com/tickets/new&deptId=5) here. 
+We are building marketplace app to facilitate app publishing activities including the payment system. If you want to submit free public app, please submit [ticket](https://rvglobalsoft.com/tickets/new&deptId=5) here. For paid apps, please wait for announcement soon.
