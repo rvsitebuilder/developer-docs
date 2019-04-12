@@ -13,7 +13,6 @@ To inject your code to WYSIWYG, your need to define your blade file to inject on
 inject(xxx, xxxx);
 ```
 
-
 ### Toolbar
 
 Adding Insert objects
