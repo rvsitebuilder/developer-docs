@@ -16,7 +16,11 @@ inject(xxx, xxxx);
 
 ### Toolbar
 
+Adding Insert objects
+
 ### Editmode
+
+Adding Section objects
 
 ### Viewmode
 
