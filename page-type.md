@@ -35,3 +35,7 @@ Coming soon
 ## Pop-up
 
 Coming soon 
+
+## Splash Page
+
+Coming soon
