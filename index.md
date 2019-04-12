@@ -9,6 +9,7 @@
     - [Creating New App](creating-new-app.md)
     - [App Configuration](app-configuration-app-json.md) 
     - [Composer Vendor and App Dependency](composer-vendor-and-app-dependency.md)
+    - Additional Helpers and Commands
 - ## RVsitebuilder App Development
     - [App Service Provider](app-service-provider.md)
     - [App Configuration](app-configuration.md) 
@@ -18,9 +19,7 @@
     - [App Views](app-views.md) 
     - [App Event and Listener](app-event-listener.md) 
     - [App Schedule](app-schedule.md) 
-    - Console
-    - Validation
-    - Helper
+    - App Console
     - [App Email](app-email.md)
     - Authorization (roles and policy)
 - ## Frontend Development
