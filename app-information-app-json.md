@@ -1,4 +1,4 @@
-# App configuration
+# App Information
 
 ## App.json
 
