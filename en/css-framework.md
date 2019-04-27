@@ -8,13 +8,18 @@ End-user interface is built on [UIKIT2](https://getuikit.com/v2/) framework. It 
 Soon, there will be a choice between Bootstrap4, UIKIT2, and UIKIT3.
 
 ## Admin interface
-Admin interface is CSS platform agnostic. If you generate app from developer app, admin layout suggest bootstrap4. But you can remove it. If you use webpack to build your asset, simply build your own and remove the default one.
+Admin interface is `CSS platform agnostic`. If you generate app from developer app, admin layout suggest bootstrap4. But you can replace it with anything you want. If you use webpack to build your asset, simply build your own and remove the default one.
 
 app's admin layout with bootstrap4:
 ```php
 
 
-..
+```
+
+app's admin layout with UIKIT2:
+```php
+
+
 ```
 
 ## Package-style Blade Stack

@@ -18,7 +18,7 @@ On your `app's service provider`, load your config under `register` method.
 ```php
 public function register()
 {
-    $this->mergeConfigFrom(__DIR__.'/../config/config.php', 'name'); 
+    $this->mergeConfigFrom(__DIR__.'/../config/config.php', 'app-name'); 
 }
 ```
 > {warning} At this state, Laravel still not bind all services. You cannot access database yet, do not call it on config.php.
@@ -47,9 +47,9 @@ public function register()
 
 ## Config User Interface 
 
-RVsitebuilder comes with the unified config user interface on the admin manage app. Go to `apps launcher` choose manage, and choose `config` on the left menu. To allow end-users change the value of your config online, you need to create a config blade file. And define it on your `app’s service provider`. You can define 1 config interface per app.  
+RVsitebuilder comes with the unified config user interface on the admin manage app. Go to `apps launcher` choose manage, and choose `config` on the left menu. To allow end-users change the value of your config online, you need to create a config blade file. And define it on your `app’s service provider`.
 
-//TODO: @apiruk final config user interface 
+//TODO: @settavut final config user interface 
 
 ```php
 public function boot() { 
@@ -67,21 +67,19 @@ You can have multiple tabs, on your config interface.
 xxxx
 ```
 
+## Saving custom values on database
 
+Saving config on `Config User Interface` will store values to database on `core_setting` table. There is an event/listener to rebuilt custom config to  `/storage/dbconfig.json`. This will allow you continue to load config on the `register` method and safely run `artisan config:cache` if you wish.
 
-## Saving custom values 
+If you modify config on table `core_setting` directly, you need to remove `/storage/dbconfig.json`. It will be re-generated automatcially.
 
-Your custom values will be stored on database on `core_setting` table and then cached on `/boostrap/config.php`. If you modify config on database directly, you need to run `artisan config:cache` to make it effective. 
+## RvsitebuilderService::getConfig
 
-
-
-## Default Values and Custom Values 
-
-If you allow end-user to change the config value from the config user interface, you need to get the custom value, and fallback to app’s default value on your `app's config.php`.
+Use `RvsitebuilderService::getConfig` to get the custom config values from `/storage/dbconfig.json` and fallback to the default value on your `app's config.php`.
 
 ```php
 return [
-    Abc = CoreSetting::DB(‘abc’) ?? $defaultValue, 
+    'config' = RvsitebuilderService::getConfig('app-name.config', 'defaultValue') 
 ]
 ```
 
@@ -91,7 +89,7 @@ return [
 The configuration values may be accessed using "dot" syntax, which includes the name of the file and the option you wish to access. 
 
 ```
-config('app.config');
+config('app-name.config');
 ```
 
 
