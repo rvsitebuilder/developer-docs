@@ -24,8 +24,7 @@
     - Authorization (roles and policy)
 - ## Frontend Development
     - [Public asset](public-asset.md) 
-    - [CSS Framework](css-framework.md)
-    - [JavaScript Libraries](javascript.md)
+    - [JavaScript and CSS Framework](javascript-css-framework.md)
     - [Webpack](webpack.md)
 - ## RVsitebuilder Visual Editor (WYSIWYG)
     - [Creating Editable System Page](creating-editable-system-page.md)
@@ -38,10 +37,9 @@
     - Extending Email WYSIWYG
 - ## Internationalization
     - language files
-- ## Testing
-- ## Security
-    - vendor route
-- ## Tutorials
+<!-- - ## Testing -->
+<!-- - ## Security (vendor route, allow user insert PHP on custom blade) -->
+<!-- - ## Tutorials -->
 - ## Contributing to Documentation
     - [Contributing](contributing.md)
     - [Contributors](contributors.md)

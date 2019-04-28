@@ -16,7 +16,8 @@ Widget is a RVsitebuilder special element that make your `editable system page` 
  
  Widget blade contains your app's widget design according to the user config. 
  
- End-users may edit raw blade file directly on RVsitebuilder WYSIWYG to suit their needs.
+ 
+> {info} End-users may edit raw blade file directly on RVsitebuilder WYSIWYG to suit their needs.
 
 
 ## Config Panel Elements
