@@ -1,2 +1,2 @@
 test
-amarin test 1
+amarin test 1 2
