@@ -49,7 +49,7 @@ public function register()
 
 RVsitebuilder comes with the unified config user interface on the admin manage app. Go to `apps launcher` choose manage, and choose `config` on the left menu. To allow end-users change the value of your config online, you need to create a config blade file. And define it on your `app’s service provider`.
 
-//TODO: @settavut final config user interface 
+<!-- TODO: @settavut final config user interface  -->
 
 ```php
 public function boot() { 

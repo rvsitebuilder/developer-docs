@@ -37,7 +37,7 @@ Here is an example of scheduler `app's composer.json`:
 }
 ```
 
-//Todo - @Settavut list all composer dependency and links here.
+// Todo - @Settavut list all composer dependency and links here.
 The following vendors already install by default. No need to install it separately on your app. 
 
 - Xxxxx (https://github.com/link ) 
@@ -47,33 +47,59 @@ The following vendors already install by default. No need to install it separate
 
 ## Custom Vendor View Directory
 
-If you require Laravel package inside your app and also want to custom package's view, you need to set `view.path` config to your app's view directory then call `loadViewsFrom` to tell the package to load it instead of default one inside the package.
+If you require Laravel vendor inside your app and also want to custom vendor's view, you need to create `vendor` directory and register your app's view directory to `view.path` config.
 
-//TODO: correct syntax and directory
-Your app's custom vendor view directory:
+<!-- TODO: @pam Is it necessary to call loadViewsFrom?
+then call `loadViewsFrom` to tell the package to load it instead of default one inside the package. -->
+
+Your `app's custom vendor directory`:
 ```
---view
------admin
------user
------vendor
+/packages/author/appname/
+                    ├── resources
+                    │   └── views
+                    │       ├── admin
+                    │       ├── user
+                    │       └── vendor
 ```
 
-Your app's service provider:
+Your `app's service provider`:
 ```php
-public function boot()
+public function register()
 {
-    config(['view.path' => '../../views']);
-    $this->loadViewsFrom(__DIR__.'/path/to/views', 'courier');
+    $collection = collect($this->app['config']['view']['paths']);
+    $collection->prepend(__DIR__.'/../resources/views');
+    $this->app['config']->set('view.paths', $collection->toArray());
 }
 ```
 
-Noted that `view.path` is the directory that contains vendor directory.
+Noted that `view.path` is the directory that contains vendor directory. Above example does not have vendor after /resources/views is correct.
+
+
+## Disable Vendor Service Provider Auto Discovery 
+
+Vendor that comes with view and route, may not display nicely in RVsitebuilder layout and may have security risk if you leave it accessible. You can disable Laravel vendor discovery by adding the vendor name in the `dont-discover` section on your `app’s composer.json` file. 
+
+```json
+"extra": {
+    "laravel": {
+        "dont-discover": [
+            "barryvdh/laravel-debugbar"
+        ]
+    }
+},
+```
+
+If you do this, you may need to copy code from vendor’s service provider to run `loadMigrationsFrom`, `mergeConfigFrom`, `loadViewsFrom`, `loadTranslationsFrom`, and etc. on your `app's service provider` yourself. Be notice that register and boot  on service provider are different. Do not mix it. 
+
+> {warning} Wildcard `*` character inside of your app's `dont-discover` directive is not supported.
+
+
 
 ## RVsitebuilder App Dependency
 
 You may want to extend other RVsitebuilder app or use it together with your app. It is very easy. All apps dependency will be installed while installing app on the production web site. 
 
-Here is an example of `app.json`:
+Here is an example of `app’s app.json`:
 
 ```json
 "requires": {

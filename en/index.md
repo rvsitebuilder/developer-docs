@@ -9,7 +9,7 @@
     - [Creating New App](creating-new-app.md)
     - [App Information](app-information-app-json.md) 
     - [Composer Vendor and App Dependency](composer-vendor-and-app-dependency.md)
-    - Additional Helpers and Commands
+    <!-- - Additional Helpers and Commands -->
 - ## RVsitebuilder App Development
     - [App Service Provider](app-service-provider.md)
     - [App Configuration](app-configuration.md) 
@@ -19,9 +19,9 @@
     - [App Views](app-views.md) 
     - [App Event and Listener](app-event-listener.md) 
     - [App Schedule](app-schedule.md) 
-    - App Console
+    <!-- - App Console -->
     - [App Email](app-email.md)
-    - Authorization (roles and policy)
+    <!-- - Authorization (roles and policy) -->
 - ## Frontend Development
     - [Public asset](public-asset.md) 
     - [JavaScript and CSS Framework](javascript-css-framework.md)
@@ -30,13 +30,13 @@
     - [Creating Editable System Page](creating-editable-system-page.md)
     - [RVsitebuilder Widget](rvsitebuilder-widget.md)
     - [Extending WYSIWYG](extending-WYSIWYG.md)
-    - Extending Menu Components (search box, shop, login/logout)
+    <!-- - Extending Menu Components (search box, shop, login/logout)
     - Extending Section Content
     - Extending Insert Toolbar
     - Extending Form WYSIWYG
-    - Extending Email WYSIWYG
+    - Extending Email WYSIWYG -->
 - ## Internationalization
-    - language files
+    - [language files](app-language-files.md)
 <!-- - ## Testing -->
 <!-- - ## Security (vendor route, allow user insert PHP on custom blade) -->
 <!-- - ## Tutorials -->

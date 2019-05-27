@@ -139,7 +139,7 @@ To make your system page editable, you need to do the following:
 
 In some circumstances, you may want to add new page to the end-user's website to show your app's content. You will need to create migrations.
 
-// TODO: @pam default app's user page and menu
+<!-- TODO: @pam default app's user page and menu -->
 
 Add user page migration example: 
 ```php
