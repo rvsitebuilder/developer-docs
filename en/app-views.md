@@ -36,21 +36,21 @@ To make your app user interface consistency throughout the site. You should exte
 
 Here is an example of `views/admin/layouts/app.blade.php`:
 ```php
-@extends('admin.layouts.master')
+@@extends('admin.layouts.master')
 
-@section('leftmenu')
-	@include('admin.includes.leftmenu', ['package_name' => "author/appname"])
-@endsection
+@@section('leftmenu')
+	@@include('admin.includes.leftmenu', ['package_name' => "author/appname"])
+@@endsection
 
-@push('package-styles')
+@@push('package-styles')
 <!-- package-styles -->
 
-@endpush
+@@endpush
 
-@push('package-scripts')
+@@push('package-scripts')
 <!-- package-scripts -->
     
-@endpush
+@@endpush
 ```
 
 **Admin Left Menu**
