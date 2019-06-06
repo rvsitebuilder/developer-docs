@@ -1,12 +1,10 @@
-- [RVsitebuilder developer documentation](#rvsitebuilder-developer-documentation)
+
+# RVsitebuilder developer documentation
   - [Overview](#overview)
   - [RVsitebuilder App](#rvsitebuilder-app)
   - [RVsitebuilder App Playground](#rvsitebuilder-app-playground)
   - [Getting Support](#getting-support)
-
-<a name="rvsitebuilder-developer-documentation"></a>
-# RVsitebuilder developer documentation
-
+  
 <a name="overview"></a>
 ## Overview
 
