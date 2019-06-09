@@ -7,8 +7,8 @@
     - [Login System](login-system.md)
 - ## RVsitebuilder Apps
     - [Creating New App](creating-new-app.md)
-    - [App Information](app-information-app-json.md) 
-    - [Composer Vendor and App Dependency](composer-vendor-and-app-dependency.md)
+    - [App Information](app-json-and-dependency.md) 
+    - [Composer Vendor](composer-vendor.md)
     <!-- - Additional Helpers and Commands -->
 - ## RVsitebuilder App Development
     - [App Service Provider](app-service-provider.md)

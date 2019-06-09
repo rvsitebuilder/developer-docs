@@ -2,15 +2,11 @@
 
 ## App.json
 
-We use properties information on your `app.json` to display app information and default value of the app.  
-
-## JSON Schema 
-
-We have a [JSON schema](http://json-schema.org/) that documents all properties and their format to use your app.json. You can find it at: https://dev.rvsitebuilder.com/schema.json.
+We use properties information on your `app.json` to display app information and default value of the app. We have a JSON schema that documents all properties and their format to use your app.json. You can find it at: https://dev.rvsitebuilder.com/schema.json.
 
 <!-- TODO: @Settavut create the full list of schema.json above and make it accessible. and explain it below similar to https://getcomposer.org/doc/04-schema.md -->
 
-### Properties
+## Properties
 
 name
 :  The name of the package. It consists of vendor name and project name, separated by /. Examples: 
@@ -48,7 +44,6 @@ Example:
     "link": "admin.marketing.mkt.index"
 }]
 ```
- 
 
 **submenulv2**
 In case if you want more one level you can add this object , Its be second level of submenu. If you create submenulv2 object the link of submenu have to null.
@@ -73,3 +68,17 @@ Example:
 }] 
 ```
  
+
+## RVsitebuilder App Dependency
+
+You may want to extend other RVsitebuilder app or use it together with your app. It is very easy. All apps dependency will be installed while installing app on the production web site. 
+
+Here is an example of `app’s app.json`:
+
+```json
+"requires": {
+        "rvsitebuilder\/marketing": "^0.1.0"
+    },
+```
+
+Its version constraint follow the same system as composer version constraint. You can find RVsitebuilder apps at [RVsitebuilder Marketplace](https://apps.rvsitebuilder.com). Enjoys! 
