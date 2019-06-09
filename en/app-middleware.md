@@ -6,7 +6,7 @@
 
 Create Laravel middleware file and keep it in your `app’s /src/Http/Middleware` folder. 
 
-```
+```php
 /packages/author/appname/
                     ├── src
                     │   ├── Http

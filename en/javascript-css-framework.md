@@ -67,7 +67,6 @@ Endpush
 
 ## Wex
 
-## Mex
 
 ## Passing PHP variables to JS through wex and mex
 

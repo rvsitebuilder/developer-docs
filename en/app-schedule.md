@@ -6,7 +6,8 @@
 
 All RVsitebuilder websites have been set up to run cron.
 
-```
+```php
+//TODO: @pam cron command here
 ```
 
 ## Schedule

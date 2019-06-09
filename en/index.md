@@ -28,8 +28,8 @@
     - [Webpack](webpack.md)
 - ## RVsitebuilder Visual Editor (WYSIWYG)
     - [Creating Editable System Page](creating-editable-system-page.md)
+    - [Extending WYSIWYG](extending-WYSIWYG.md)    - 
     - [RVsitebuilder Widget](rvsitebuilder-widget.md)
-    - [Extending WYSIWYG](extending-WYSIWYG.md)
     <!-- - Extending Menu Components (search box, shop, login/logout)
     - Extending Section Content
     - Extending Insert Toolbar

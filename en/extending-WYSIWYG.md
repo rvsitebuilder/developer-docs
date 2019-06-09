@@ -2,12 +2,11 @@
 
 ## Overview
 
-Usually what you do on your app will run under your own route, what if you want to inject your code to other app's route such as RVsitebuilder's WYSIWYG.
-Thanks to Laravel blade's @inject method. This open possibility to inject your code to our app.
+Usually what you do on your app will run under your own route, what if you want to inject your code to other app's route such as RVsitebuilder's WYSIWYG. Thanks to `Laravel blade's @inject` method. This open possibility to inject your code to our app.
 
 ## Inject Services
 
-To inject your code to WYSIWYG, your need to define your blade file to inject on your app's service provider.
+To inject your code to WYSIWYG, your need to define your blade file to inject on your `app's service provider`.
 ```php
 
 inject(xxx, xxxx);
@@ -22,6 +21,13 @@ Adding Insert objects
 Adding Section objects
 
 ### Viewmode
+
+### Section
+
+
+### Insert???
+
+### ??????
 
 
 ## Frontend Event Hooks

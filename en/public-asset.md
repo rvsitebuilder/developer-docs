@@ -7,6 +7,11 @@ It depends on your frontend development workflow.
 - If you use webpack as a build tool for all your frontend development, keep all your asset in `app’s /resources`. 
 - If you do not use webpack, keep your files in `app’s /public`.
 
+```php
+/packages/author/appname/
+                    ├── public
+                    ├── resources
+```
 
 ## Define public asset 
 

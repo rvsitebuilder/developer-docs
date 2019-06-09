@@ -1,5 +1,10 @@
 # Creating New App
 
+## Public App
+
+You can find public apps on [RVsitebuilder App Marketplace](https://apps.rvsitebuilder.com/). Applications to make your website to be more powerful and functional. 
+
+
 ## Private App
 
 We provide Developer app on RVsitebuilder marketplace that help you create a new app. Save you a lot time manually create app scaffolding. 
@@ -12,20 +17,13 @@ We provide Developer app on RVsitebuilder marketplace that help you create a new
 You will get basic scarfolding consist of migration, resources, model, controller, and view to start with. 
 
  
-### Export app 
+## Export app 
 
 //TODO: @amarin export and import app
 
-### Import as private app on production web site 
+## Import as private app on production web site 
 
 Xxx 
-
- 
-
-## Public App
- 
-
-You can find public apps on [RVsitebuilder App Marketplace](https://apps.rvsitebuilder.com/). Applications to make your website to be more powerful and functional. 
 
  
 

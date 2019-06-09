@@ -7,7 +7,8 @@
 Create Laravel route file and keep it in your `app’s /routes` folder. 
 
 You should separate routing file for user and admin for easy grouping and authorization. 
-```
+
+```php
 /packages/author/appname/
                     ├── routes
                     │   ├── Admin

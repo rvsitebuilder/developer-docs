@@ -5,7 +5,8 @@
 ## Creating Event and Listener
 
 Create Laravel blade file and keep it in your `app’s /src/Events` folder. 
-```
+
+```php
 /packages/author/appname/
                     ├── src
                     │   ├── Events

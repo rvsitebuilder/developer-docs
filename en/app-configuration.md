@@ -5,8 +5,9 @@
 
 ## Config 
 
-Create Laravel config file and keep it in your `app’s /config` folder. 
-```
+Create Laravel config file and keep it in your `app’s /config` folder.
+
+```php
 /packages/author/appname/
                     ├── config
 ```
@@ -45,9 +46,9 @@ public function register()
 ```
 
 
-## Config User Interface 
+## Config Admin Interface 
 
-RVsitebuilder comes with the unified config user interface on the admin manage app. Go to `apps launcher` choose manage, and choose `config` on the left menu. To allow end-users change the value of your config online, you need to create a config blade file. And define it on your `app’s service provider`.
+RVsitebuilder comes with the unified config admin interface on the admin manage app. Go to `apps launcher` choose manage, and choose `config` on the left menu. To allow end-users change the value of your config online, you need to create a config blade file. And define it on your `app’s service provider`.
 
 <!-- TODO: @settavut final config user interface  -->
 
@@ -67,9 +68,20 @@ You can have multiple tabs, on your config interface.
 xxxx
 ```
 
+## Config Form Request Validation
+
+Saving config on `Config Admin Interface`  will go to `RVsitebuilder's config controller`. You can validate the input end-user made by creating AppConfigRequest.php.
+
+<!-- TODO: @pam exmple here -->
+```php
+public function boot() { 
+    $this->defineConfigValidation('AppConfigRequest.php');
+}
+```
+
 ## Saving custom values on database
 
-Saving config on `Config User Interface` will store values to database on `core_setting` table. There is an event/listener to rebuilt custom config to  `/storage/dbconfig.json`. This will allow you continue to load config on the `register` method and safely run `artisan config:cache` if you wish.
+Saving config on `Config Admin Interface` will store values to database on `core_setting` table. There is an event/listener to rebuilt custom config to  `/storage/dbconfig.json`. This will allow you continue to load config on the `register` method and safely run `artisan config:cache` if you wish.
 
 If you modify config on table `core_setting` directly, you need to remove `/storage/dbconfig.json`. It will be re-generated automatcially.
 
@@ -82,7 +94,6 @@ return [
     'config' = RvsitebuilderService::getConfig('app-name.config', 'defaultValue') 
 ]
 ```
-
  
 ## Access App's Configuration
 

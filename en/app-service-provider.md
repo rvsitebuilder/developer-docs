@@ -7,7 +7,8 @@ Laravel service providers are the connection points between your app and Laravel
 ## App Service Provider 
 
 Create Laravel service provider file and keep it in your `app’s /src` folder. 
-```
+
+```php
 /packages/author/appname/
                     ├── src
                     │   ├── AppServiceProvider.php

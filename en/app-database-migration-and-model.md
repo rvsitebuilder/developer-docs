@@ -6,7 +6,7 @@
 
 Create Laravel migration file and keep it in your `app’s /database/migrations` folder. 
 
-```
+```php
 /packages/author/appname/
                     ├── database
                     │   └── migrations

@@ -1,7 +1,7 @@
 # Webpack
 
 
-If you generate app from Developer App, we create 3 default webpack files for you. It simplify Laravel Mix configurations and allow you to separate user and admin vendor.js to maximizell website speed.
+If you generate app from Developer App, we create 3 default webpack files for you. It simplify Laravel Mix configurations and allow you to separate user and admin vendor.js to maximize website speed.
 
 
 ## Webpack.mix.js
@@ -25,10 +25,10 @@ All webpack configuration
 
 ## External JavaScript
 
-As mention earlier, several libraries already loaded on the global object. To minimize your app JavaScript file size, you can set external property on webpack configuration.
+As mention earlier, jQuery already loaded on the global object. You need to set external property on webpack configuration.
 
 // TODO: correct webpack config
 ```js
-external: JQuery, jQuery-ui, jstree, uikit 
+external: jQuery
 ```
 

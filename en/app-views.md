@@ -5,7 +5,8 @@
 ## Creating View
 
 Create Laravel blade file and keep it in your `app’s /resources/views` folder. 
-```
+
+```php
 /packages/author/appname/
                     ├── resources
                     │   └── views
