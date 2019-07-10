@@ -1,7 +1,13 @@
 # Composer Vendor and App Dependency
 
+  - [Composer Vendor Dependency](#Composer-Vendor-Dependency) 
+  - [Disable Vendor Service Provider Auto Discovery](#Disable-Vendor-Service-Provider-Auto-Discovery )
+  - [Publishing Vendor Asset](#Publishing-Vendor-Asset)
+  - [Custom Vendor View Directory](#Custom-Vendor-View-Directory) 
+  
 Use Laravel vendor dependency inside your app with composer. 
  
+<a name="Composer-Vendor-Dependency"></a>
 ## Composer Vendor Dependency 
 
 Besides, the Laravel framework which come with `composer.json`, each RVsitebuilder app can contains its own `composer.json`. So you can specify your own vendor dependency and get export to the server separately.  
@@ -44,6 +50,7 @@ The following vendors already install by default. No need to install it separate
 - Xxxxx (https://github.com/link ) 
 - Xxxxx (https://github.com/link ) 
 
+<a name="Disable-Vendor-Service-Provider-Auto-Discovery"></a>
 ## Disable Vendor Service Provider Auto Discovery 
 
 Vendor that comes with view and route, may not display nicely in RVsitebuilder layout and may have security risk if you leave it accessible. You can disable Laravel vendor discovery by adding the vendor name in the `dont-discover` section on your `app’s composer.json` file. 
@@ -62,6 +69,7 @@ If you do this, you may need to copy code from vendor’s service provider to ru
 
 > {warning} Wildcard `*` character inside of your app's `dont-discover` directive is not supported.
 
+<a name="Publishing-Vendor-Asset"></a>
 ## Publishing Vendor Asset
 
 In case you disable `vendor's service provider`, you will need to define vendor asset on your `app's service provider`. 
@@ -69,7 +77,7 @@ In case you disable `vendor's service provider`, you will need to define vendor 
 artisan vendor:publish 
 <!-- TODO: @pam example of define migrate for vendor -->
 
-
+<a name="Custom-Vendor-View-Directory"></a>
 ## Custom Vendor View Directory
 
 If you run Laravel vendor inside your app and also want to custom vendor's view without to override the vendor controller that call view command, you need to create `vendor` directory and register your app's view directory to `view.path` config.
@@ -78,7 +86,7 @@ If you run Laravel vendor inside your app and also want to custom vendor's view 
 then call `loadViewsFrom` to tell the package to load it instead of default one inside the package. -->
 
 Your `app's custom vendor directory`:
-```
+```php
 /packages/author/appname/
                     ├── resources
                     │   └── views

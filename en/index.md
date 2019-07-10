@@ -28,7 +28,7 @@
     - [JavaScript and CSS Framework](javascript-css-framework.md)
     - [Webpack](webpack.md)
 - ## RVsitebuilder Visual Editor (WYSIWYG)
-    - [Creating Editable System Page](creating-editable-system-page.md)
+    - [Editable System Page](creating-editable-system-page.md)
     - [Extending WYSIWYG](extending-WYSIWYG.md)    - 
     - [RVsitebuilder Widget](rvsitebuilder-widget.md)
     <!-- - Extending Menu Components (search box, shop, login/logout)

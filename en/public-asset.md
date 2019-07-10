@@ -1,5 +1,8 @@
 # Public Asset
+  - [Resources vs Public Folder](#Resources-vs-Public-Folder)
+  - [Define public asset ](#Define-public-asset ) 
 
+<a name="Resources-vs-Public-Folder"></a>
 ## Resources vs Public Folder
 
 It depends on your frontend development workflow.
@@ -13,6 +16,7 @@ It depends on your frontend development workflow.
                     ├── resources
 ```
 
+<a name="Define-public-asset"></a>
 ## Define public asset 
 
 Your public asset keep on `app’s /public`. Define your public on `app's service provider` under `boot` method. While installing on the server, we will run `artisan vendor:publish --tag=public`. All your public will be copied to `/public/vendor/author/appname/`.  

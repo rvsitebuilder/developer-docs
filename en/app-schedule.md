@@ -1,16 +1,17 @@
 # Schedule and Queue
+ > {info} If you are not familiar with its concept. Check out the full [Laravel Task Scheduling documentation](https://laravel.com/docs/master/scheduling) and [Laravel Queues documentation](https://laravel.com/docs/master/queues) to get started. 
+
   - [Cron](#cron)
   - [Schedule](#schedule)
   - [Queue](#queue)
   
- > {info} If you are not familiar with its concept. Check out the full [Laravel Task Scheduling documentation](https://laravel.com/docs/master/scheduling) and [Laravel Queues documentation](https://laravel.com/docs/master/queues) to get started. 
 <a name="cron"></a>
 ## Cron
 
 All RVsitebuilder websites have been set up to run cron.
 
 ```php
-//TODO: @pam cron command here
+    rvsitebuildercms$ php artisan schedule:run
 ```
 <a name="schedule"></a>
 ## Schedule

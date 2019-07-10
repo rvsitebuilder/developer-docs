@@ -1,7 +1,17 @@
 # App Views
 
+  - [Creating View](#Creating-View)
+  - [Master Layouts](#Master-Layouts) 
+  - [Admin App Layouts](#Admin-App-Layouts)
+  - [User App Layouts](#User-App-Layouts) 
+  - [App Views](#App-Views)
+  - [Creating Non-Editable System Page](#Creating-Non-Editable-System-Page) 
+  - [Creating Editable System Page](#Creating-Editable-System-Page)
+  - [Default User Page and Menu](#Default-User-Page-and-Menu) 
+
 > {info} If you are not familiar with its concept. Check out the full [Laravel View documentation](https://laravel.com/docs/master/views) to get started. 
 
+<a name="Creating-View"></a>
 ## Creating View
 
 Create Laravel blade file and keep it in your `app’s /resources/views` folder. 
@@ -21,7 +31,7 @@ Create Laravel blade file and keep it in your `app’s /resources/views` folder.
                     │           └── layouts
                     │               └── app.blade.php
 ```
-
+<a name="Master-Layouts"></a>
 ## Master Layouts
 
 There are 4 master layouts available on RVsitebuilder. All master layouts load necessary JavaScript and CSS according to the template end-user choosing on the admin area.
@@ -32,7 +42,7 @@ There are 4 master layouts available on RVsitebuilder. All master layouts load n
 
 To make your app user interface consistency throughout the site. You should extend master layouts on your `app's layouts` folder. 
 
-
+<a name="Admin-App-Layouts"></a>
 ## Admin App Layouts
 
 Here is an example of `views/admin/layouts/app.blade.php`:
@@ -71,6 +81,7 @@ Insert your CSS scripts for admin pages here.
 Insert your JavaScript for user pages here.
 
 
+<a name="User-App-Layouts"></a>
 ## User App Layouts
 
 Here is an example of `views/user/layouts/app.blade.php`.
@@ -87,7 +98,7 @@ Here is an example of `views/user/layouts/app.blade.php`.
 
 @endpush
 ```
-
+<a name="App-Views"></a>
 ## App Views
 
 All your views should extend your `app's layouts`. And add your content in `content` blade section.
@@ -102,7 +113,7 @@ All your views should extend your `app's layouts`. And add your content in `cont
 You can `@push('package-styles')` and `@push('package-scripts')` if you have anything specific only for this view.
 
 
-
+<a name="Creating-Non-Editable-System-Page"></a>
 ## Creating Non-Editable System Page
 
 Standard Laravel routes and views are [non-editable system pages](page-type.md). This give you a freedom to do whatever you want while perfectly display under the same theme as other pages. Its drawback is the end-user cannot modify the page properties such as SEO options, META tags, and etc.
@@ -123,7 +134,7 @@ public function defineHideFromHyperlinkList (){
 //TODO: @pam hideFromHyperlinkList
 }
 ``` 
-
+<a name="Creating-Editable-System-Page"></a>
 ## Creating Editable System Page 
 
 To make your system page editable, you need to do the following:
@@ -135,7 +146,7 @@ To make your system page editable, you need to do the following:
 > {info} Checkout [Creating Editable System Page Documentation](creating-editable-system-page.md) for more detail.
 
 
-
+<a name="Default-User-Page-and-Menu"></a>
 ## Default User Page and Menu 
 
 In some circumstances, you may want to add new page to the end-user's website to show your app's content. You will need to create migrations.

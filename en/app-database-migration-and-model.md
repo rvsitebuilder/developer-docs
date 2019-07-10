@@ -1,7 +1,12 @@
 # App DB Migration and Model
 
+  - [Creating Migration](#Creating-Migration)
+  - [Registering App on App table](#Registering-App-on-App-table) 
+  - [Define Migration on App's Service Provider](#Define-Migration-on-App's-Service-Provider)
+
 > {info} If you are not familiar with its concept. Check out the full [Laravel Migration documentation](https://laravel.com/docs/master/migrations) to get started. 
 
+<a name="Creating-Migration"></a>
 ## Creating Migration
 
 Create Laravel migration file and keep it in your `app’s /database/migrations` folder. 
@@ -32,7 +37,7 @@ To avoid as much as possible troubles, you migration should:
             });
         }
 ```
-
+<a name="Registering-App-on-App-table"></a>
 ## Registering App on App table 
 
 This is mandatory.
@@ -62,7 +67,7 @@ class RegistNewAppToCoreApp extends Migration
     }
 }
 ```
-
+<a name="Define-Migration-on-App's-Service-Provider"></a>
 ## Define Migration on App's Service Provider
 
 When installing your app, we run `artisan migrate` to make a change on the database according to your migration file defined on the service provider.
