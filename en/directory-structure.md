@@ -1,28 +1,31 @@
 # Directory Structure
+  - [Laravel Directory Structure](#Laravel-Directory-Structure)
+  - [RVsitebuilder App Directory Structure](#RVsitebuilder-App-Directory-Structure) 
 
+<a name="Laravel-Directory-Structure"></a>
 ## Laravel Directory Structure
 
 Beside [Laravel root directory and app directory](https://laravel.com/docs/master/structure), we introduce **packages** directory under root directory.  
 
-<pre><code>.
-├── app
-├── bootstrap
-├── config
-├── database
-├── lib
-├── <b>packages/author/appname/</b>
-├── public
-├── resources
-├── routes
-├── storage
-└── tests
-└── vendor</code></pre>
- 
-
+```php
+    ├── app
+    ├── bootstrap
+    ├── config
+    ├── database
+    ├── lib
+    ├── packages/author/appname/
+    ├── public
+    ├── resources
+    ├── routes
+    ├── storage
+    └── tests
+    └── vendor
+```
+<a name="RVsitebuilder-App-Directory-Structure"></a>
 ## RVsitebuilder App Directory Structure 
 
 
-Here is the example of file and directory structure for **/packages/author/appname/**. This is where your RVsitebuilder app will be stored. Simply generate your app from [RVsitebuilder app generator](creating-new-app.md) or create it manually.
+Here is the example of file and directory structure for **/packages/author/appname/**. This is where your RVsitebuilder app will be stored. Simply generate your app from [RVsitebuilder app generator](creating-new-app) or create it manually.
 
 ```php
 /packages/author/appname/

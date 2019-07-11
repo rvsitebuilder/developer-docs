@@ -3,7 +3,7 @@
   - [Overview](#overview)
   - [RVsitebuilder App](#rvsitebuilder-app)
   - [RVsitebuilder App Playground](#rvsitebuilder-app-playground)
-  - [Getting Support](#feature-request)
+  - [Feature Request](#feature-request)
   
 <a name="overview"></a>
 ## Overview
