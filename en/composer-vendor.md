@@ -3,6 +3,7 @@
   - [Composer Vendor Dependency](#Composer-Vendor-Dependency) 
   - [Disable Vendor Service Provider Auto Discovery](#Disable-Vendor-Service-Provider-Auto-Discovery )
   - [Publishing Vendor Asset](#Publishing-Vendor-Asset)
+  - [Define Migrate for Vendor](#Define-Migrate-for-Vendo)
   - [Custom Vendor View Directory](#Custom-Vendor-View-Directory) 
   
 Use Laravel vendor dependency inside your app with composer. 
@@ -74,16 +75,31 @@ If you do this, you may need to copy code from vendor’s service provider to ru
 
 In case you disable `vendor's service provider`, you will need to define vendor asset on your `app's service provider`. 
 
-artisan vendor:publish 
-<!-- TODO: @pam example of define migrate for vendor -->
+```php
+php artisan vendor:publish 
+```
+ 
+ 
+<a name="Define-Migrate-for-Vendo"></a>
+## Define Migrate for Vendor
+ 
+If your package contains database migrations, you may use the `loadMigrationsFrom` method to inform Laravel how to load them. The `loadMigrationsFrom` method accepts the path to your package's migrations as its only argument:
+ 
+```php
+public function boot()
+{
+    $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
+}
+```
+Once your package's migrations have been registered, they will automatically be run when the  php artisan migrate command is executed. You do not need to export them to the application's main `database/migrations` directory.
 
 <a name="Custom-Vendor-View-Directory"></a>
 ## Custom Vendor View Directory
-
+ 
 If you run Laravel vendor inside your app and also want to custom vendor's view without to override the vendor controller that call view command, you need to create `vendor` directory and register your app's view directory to `view.path` config.
 
-<!-- TODO: @pam Is it necessary to call loadViewsFrom?
-then call `loadViewsFrom` to tell the package to load it instead of default one inside the package. -->
+ 
+You need call `loadViewsFrom` when your package have UI. then call `loadViewsFrom` to tell the package to load it instead of default one inside the package. 
 
 Your `app's custom vendor directory`:
 ```php

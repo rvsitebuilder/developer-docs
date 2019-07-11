@@ -17,7 +17,7 @@
 Create Laravel config file and keep it in your `app’s /config` folder.
 
 ```php
-/packages/author/appname/
+/packages/author/packagename/
                     ├── config
 ```
 <a name="Register-Config-on-App's-Service-Provider"></a>
@@ -28,7 +28,7 @@ On your `app's service provider`, load your config under `register` method.
 ```php
 public function register()
 {
-    $this->mergeConfigFrom(__DIR__.'/../config/config.php', 'app-name'); 
+    $this->mergeConfigFrom(__DIR__.'/../config/config.php', 'package-name'); 
 }
 ```
 > {warning} At this state, Laravel still not bind all services. You cannot access database yet, do not call it on config.php.
@@ -49,6 +49,7 @@ public function register()
 
 ```php
 public function register()
+{
     config('totem.artisan.whitelist', true);
     config('totem.artisan.command_filter', ['*:cache', 'queue:work', 'medialibrary:*']);
 }
@@ -58,35 +59,60 @@ public function register()
 ## Config Admin Interface 
 
 RVsitebuilder comes with the unified config admin interface on the admin manage app. Go to `apps launcher` choose manage, and choose `config` on the left menu. To allow end-users change the value of your config online, you need to create a config blade file. And define it on your `app’s service provider`.
-
-<!-- TODO: @settavut final config user interface  -->
-
+ 
 ```php
-public function boot() { 
-    $this->defineConfigInterface('admin.cofig.blade.php');
+public function boot()
+{ 
+    $this->defineConfigInterface();
 }
 ```
 
 Here is an example of config blade file:
-```php
-xxxx
-```
+```html
+<label>Github : </label> 
+    <div class="">
+        <input type="text" name="github" placeholder="https://github.com/rvsitebuilder/developer-docs" value="config('larecipe.github')">
+    </div>    
 
-You can have multiple tabs, on your config interface.
+<label>Forum Services : </label>
+    <div class="">
+        <input type="text" name="forum.services.disqus.site_name" placeholder="rvsitebuilder" value="config('larecipe.forum.services.disqus.site_name')">
+    </div>
+```
+> {info} Attribute name must be the same config key in package.
+
+You can have multiple tabs, on your config interface. 
 ```php
-xxxx
+protected function defineConfigInterface()
+{
+    // app('rvsitebuilderService')->siteConfigInterface('tab-name','package-name::blade-file-path');
+    app('rvsitebuilderService')->siteConfigInterface('config','larecipe::admin.config'); 
+}
 ```
 <a name="Config-Form-Request-Validation"></a>
 ## Config Form Request Validation
 
 Saving config on `Config Admin Interface`  will go to `RVsitebuilder's config controller`. You can validate the input end-user made by creating AppConfigRequest.php.
 
-<!-- TODO: @pam exmple here -->
 ```php
-public function boot() { 
-    $this->defineConfigValidation('AppConfigRequest.php');
+protected function defineConfigInterface()
+{
+    app('rvsitebuilderService')->configRequestValidation('ConfigFormRequest');  
 }
 ```
+
+Here is an example of config form request validation file:
+```php
+public function rules()
+{        
+    return [  
+            'github' => 'required', 
+            'forum.services.disqus.site_name' => 'required'
+    ]
+}
+```
+> {info} Namespace config form request validation file `vendor-name\package-name\Http\Requests\Admin` 
+
 <a name="Saving-custom-values-on-database"></a>
 ## Saving custom values on database
 
@@ -100,8 +126,9 @@ If you modify config on table `core_setting` directly, you need to remove `/stor
 Use `RvsitebuilderService::getConfig` to get the custom config values from `/storage/dbconfig.json` and fallback to the default value on your `app's config.php`.
 
 ```php
-return [
-    'config' = RvsitebuilderService::getConfig('app-name.config', 'defaultValue') 
+return 
+[
+    'config' = RvsitebuilderService::getConfig('package-name.config', 'defaultValue') 
 ]
 ```
 
@@ -111,7 +138,7 @@ return [
 The configuration values may be accessed using "dot" syntax, which includes the name of the file and the option you wish to access. 
 
 ```php
-config('app-name.config');
+config('package-name.config');
 ```
 
 

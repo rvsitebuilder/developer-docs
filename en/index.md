@@ -29,7 +29,7 @@
     - [Webpack](webpack.md)
 - ## RVsitebuilder Visual Editor (WYSIWYG)
     - [Editable System Page](creating-editable-system-page.md)
-    - [Extending WYSIWYG](extending-WYSIWYG.md)    - 
+    - [Extending WYSIWYG](extending-WYSIWYG.md)
     - [RVsitebuilder Widget](rvsitebuilder-widget.md)
     <!-- - Extending Menu Components (search box, shop, login/logout)
     - Extending Section Content

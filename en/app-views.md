@@ -126,14 +126,22 @@ You may explicitly set web page title on your blade view.
 End-user still see all your `app's route` on the system page hyperlink selection list. To hide it from the hyperlink selection list, you need to add `hideFromHyperlinkList` on your `app’s service provider`. 
 
 ```php
-public function boot() { 
+public function boot() 
+{ 
     $this->defineHideFromHyperlinkList()  
 } 
 
-public function defineHideFromHyperlinkList (){ 
-//TODO: @pam hideFromHyperlinkList
+public function defineHideFromHyperlinkList()
+{ 
+    $routes =   [  
+                    'totem/tasks',
+                    'totem/tasks/create'
+                ]; 
+    
+    app('rvsitebuilderService')->hideFromHyperlinkList($routes); 
 }
-``` 
+```
+
 <a name="Creating-Editable-System-Page"></a>
 ## Creating Editable System Page 
 
@@ -150,21 +158,73 @@ To make your system page editable, you need to do the following:
 ## Default User Page and Menu 
 
 In some circumstances, you may want to add new page to the end-user's website to show your app's content. You will need to create migrations.
-
-<!-- TODO: @pam default app's user page and menu -->
+ 
 
 Add user page migration example: 
-```php
-Page
-slug
-seo
-``` 
 
+```php
+CorePage::updateOrCreate(
+        [
+            'page_name' => 'Home'
+        ],[
+            'header_id' => 1,  // id core_header table
+            'sidebar_id' => 1, // id core_sidebar table
+            'footer_id' => 1,  // id core_footer table
+            'content_view' => SavePageLib::replaceContentView($content),  
+            'content_edit' => $content,  
+            'embed_meta' => '',
+            'embed_js' => '',
+            'embed_css' => '',
+            'is_published' => 1,
+            'published_at' => date('Y-m-d H:i:s'),
+            'user_id' => 1,
+            'visibility_id' => 0, // id core_visibility table 
+            'created_at' => date('Y-m-d H:i:s'),
+        ]
+);
+
+CoreSlug::updateOrCreate(
+        [
+            'slug_name' => 'home'
+        ],[
+            'slugble_id' => 1, // id core_page table
+            'slugble_type' => config('core.model.page'), 
+        ]
+);
+
+CoreSeo::updateOrCreate(
+        [
+            'meta_title_auto' => 'home'
+        ],[
+            'seoble_id' => 1, // id core_slug table
+            'seoble_type' => config('core.model.page'),
+            'focus_keywords_auto' => 'This is description home in RVsitebuilder CMS',
+            'meta_des_auto' => 'This is description home in RVsitebuilder CMS',
+            'use_type' => 1,
+        ]
+);
+``` 
+  
 Add user menu migration example: 
 ```php
-menu
-``` 
-
+CoreMenu::updateOrCreate(
+    [
+        'menu_title' => 'Home'
+    ],[
+        'slug_id' => 1, // id from core_slug table
+        'menu_title' => 'Home',
+        'fontawesome' => 'uk-icon-home',
+        'badge_title' => '',
+        'badge_style' => '',
+        'parent_id' => 0,
+        'menu_type' => 1,
+        'external_url' => '',
+        'priority' => 1,
+        'location' => 1,
+        'target' => '_self',
+    ]
+);
+```
 To prevent error appears on the website, disabling or uninstalling app on the Manage.  RVsitebuilder will automatically hide your app's menu, disable all app’s routes and shows 404 error page.  
 
 
