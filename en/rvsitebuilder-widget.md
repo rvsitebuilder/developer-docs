@@ -40,9 +40,9 @@ Widget is a RVsitebuilder special element that make your `editable system page` 
 
 -How-To-Register-Widget-config.md  
 
-    ### Global widget 
+### Global widget 
 
-    Widget that shows the same content on every page. 
+Widget that shows the same content on every page. 
 
 <a name="Widget-Blade-and-Designe"></a>
 ## Widget Blade and Design
