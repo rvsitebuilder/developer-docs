@@ -24,11 +24,12 @@ Create Laravel Controller file and keep it in your `app’s /src/Http/Controller
 
 ```
 
-Although it is not required to separate Admin and User controller, but it is a good practice to separate them for easy management.
+If you set up App route using `Route::group` suggested on [App Routing](app-routing.md), you will need to separate controller accordingly.
 
 
 <a name="Admin-Controller"></a>
 ## Admin Controller
+
 
 
 <a name="User-Controller"></a>

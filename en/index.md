@@ -28,7 +28,7 @@
     <!-- - Authorization (roles and policy) -->
 - ## Frontend Development
     - [Public Asset](public-asset.md) 
-    - [JavaScript and CSS Framework](javascript-css-framework.md)
+    - [JavaScript and CSS](javascript-css-framework.md)
     - [Webpack](webpack.md)
 - ## RVsitebuilder Visual Editor (WYSIWYG)
     - [Editable System Page](creating-editable-system-page.md)
