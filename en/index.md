@@ -1,11 +1,12 @@
 - ## Getting started
     - [Overview](overview.md)   
+    - [Licenses](licenses.md)
     - [Installation](installation.md)
     - [Directory Structure](directory-structure.md)
     - [Page Type](page-type.md)
     - [Database Structure](database-structure.md)
     - [Login System](login-system.md)
-- ## RVsitebuilder Apps
+- ## RVsitebuilder App
     - [Creating New App](creating-new-app.md)
     - [App Information](app-json-and-dependency.md) 
     - [Composer Vendor](composer-vendor.md)
@@ -13,9 +14,11 @@
 - ## RVsitebuilder App Development
     - [App Service Provider](app-service-provider.md)
     - [App Configuration](app-configuration.md) 
-    - [App DB Migration and Model](app-database-migration-and-model.md)
+    - [App DB Migration](app-database-migration.md)
+    - [App Model](app-model.md)
     - [App Middelware](app-middleware.md)
     - [App Routing](app-routing.md)
+    - [App Controller]
     - [App Views](app-views.md) 
     - [App Menu](app-menu.md) 
     - [App Event and Listener](app-event-listener.md) 
@@ -24,7 +27,7 @@
     - [App Email](app-email.md)
     <!-- - Authorization (roles and policy) -->
 - ## Frontend Development
-    - [Public asset](public-asset.md) 
+    - [Public Asset](public-asset.md) 
     - [JavaScript and CSS Framework](javascript-css-framework.md)
     - [Webpack](webpack.md)
 - ## RVsitebuilder Visual Editor (WYSIWYG)
@@ -39,7 +42,6 @@
 - ## Internationalization
     - [language files](app-language-files.md)
 <!-- - ## Testing -->
-<!-- - ## Security (vendor route, allow user insert PHP on custom blade) -->
 <!-- - ## Tutorials -->
 - ## Contributing to Documentation
     - [Contributing](contributing.md)

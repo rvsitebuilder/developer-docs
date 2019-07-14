@@ -15,7 +15,7 @@ Create Laravel middleware file and keep it in your `app’s /src/Http/Middleware
 /packages/author/appname/
                     ├── src
                     │   ├── Http
-                    │   │   └── Middelware           
+                    │   │   └── Middelware
 
 ```
 <a name="Global-middleware"></a>

@@ -1,6 +1,7 @@
-# App DB Migration and Model
+# App DB Migration
 
   - [Creating Migration](#Creating-Migration)
+  - [Seeding](#Seeding)
   - [Registering App on App table](#Registering-App-on-App-table) 
   - [Define Migration on App's Service Provider](#Define-Migration-on-App's-Service-Provider)
 
@@ -37,10 +38,11 @@ To avoid as much as possible troubles, you migration should:
             });
         }
 ```
-<a name="Registering-App-on-App-table"></a>
-## Registering App on App table 
 
-This is mandatory.
+<a name="Seeding"></a>
+## Seeding
+
+If you want to insert some default data when installing your app, put your default data in the same migration file. It is a good idea to wrap it with `Model::unguard()` and `Model::reguard()` while seeding.
 
 ```php
 <?php
@@ -56,6 +58,11 @@ class RegistNewAppToCoreApp extends Migration
      */
     public function up()
     {
+        // Schema
+        
+
+
+        // Seed default data
         Model::unguard();
         $this->seed();
         Model::reguard();
@@ -63,10 +70,26 @@ class RegistNewAppToCoreApp extends Migration
 
     private function seed()
     {
+        
+    }
+}
+```
+
+<a name="Registering-App-on-App-table"></a>
+## Registering App on App table 
+
+This is mandatory. You need to seed `author/appname` on `CoreApps` table.
+
+```php
+    private function seed()
+    {
         CoreApps::firstOrCreate(['app_name' => 'author/appname']);
     }
 }
 ```
+
+Do not forget to change `author/appname` to match your name.
+
 <a name="Define-Migration-on-App's-Service-Provider"></a>
 ## Define Migration on App's Service Provider
 
