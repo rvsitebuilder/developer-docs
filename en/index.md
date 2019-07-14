@@ -18,7 +18,7 @@
     - [App Model](app-model.md)
     - [App Middelware](app-middleware.md)
     - [App Routing](app-routing.md)
-    - [App Controller]
+    - [App Controller](app-controller.md)
     - [App Views](app-views.md) 
     - [App Menu](app-menu.md) 
     - [App Event and Listener](app-event-listener.md) 
