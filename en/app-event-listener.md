@@ -22,27 +22,53 @@ Create Laravel blade file and keep it in your `app’s /src/Events` folder.
 
 <a name="Laravel-Default-Events"></a>
 ## Laravel Default Events 
+
+You can find the full list of events using Artisan command.
 ```php
-php artisan event:list //5.8.9
+php artisan event:list
 ```
 <a name="RVsitebuilder-Default-Events"></a>
 ## RVsitebuilder Default Events
 
-SavingPage 
-
+SavingPage
 SavedPage 
 
-SavingEmail 
-
+SavingEmail
 SavedEmail 
 
-UpdatingApps 
+InstallingApp
+InstalledApp
 
-UpdatedApps 
+UpdatingApp
+UpdatedApp 
+
+SavingPageConfig
+SavedPageConfig
+
+SavingBlogConfig
+SavedBlogConfig
+
+SavingSystemConfig
+SavedSystemConfig
+
+
+On your app can create listener to listen these events and hook your logic to the platform.
 
  
 <a name="Register-Event-and-Listener-on-App-Service-Provider"></a>
 ## Register Event and Listener on App’s Service Provider 
 
-Auto discovery
-php artisan event:list  5.8.9
+<!-- TODO: review อีกครัี้ง -->
+```php
+    public function register()
+    {
+        /**
+             * The event listener mappings for the application.
+        */
+        $this->app['events']->listen(
+            \Rvsitebuilder\Wysiwyg\Events\AfterSave::class, 
+            \Rvsitebuilder\Wysiwyg\Listeners\SaveGlobalPost::class
+        );
+    }
+```
+
