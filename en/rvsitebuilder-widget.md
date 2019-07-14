@@ -5,8 +5,7 @@
   - [Widget Blade and Designe](#Widget-Blade-and-Designe) 
   - [View composer](#View-composer)
   - [Widget Standard Config Panel](#Widget-Standard-Config-Panel) 
-  - [Config Panel Elements](#Config-Panel-Elements)
-  - [Widget Frame Config Panel](#Widget-Frame-Config-Panel)
+  <!-- - [Config Panel Elements](#Config-Panel-Elements) -->
   - [Widget Section Template](#Widget-Section-Template) 
 
 <a name="Widget"></a>
@@ -61,13 +60,13 @@ RVsitebuilder use view composer extensively. Especially using together with midd
 ## Widget Standard Config Panel
 
  
+<!-- 
 <a name="Config-Panel-Elements"></a>
+TODO: @Jatuporn help me please.
+
 ## Config Panel Elements
 ### color picker
-### slider
-
-<a name="Widget-Frame-Config-Panel"></a>
-## Widget Frame Config Panel
+### slider -->
 
 
 
