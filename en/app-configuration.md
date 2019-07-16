@@ -28,7 +28,7 @@ On your `app's service provider`, load your config under `register` method.
 ```php
 public function register()
 {
-    $this->mergeConfigFrom(__DIR__.'/../config/config.php', 'app-name'); 
+    $this->mergeConfigFrom(__DIR__.'/../config/config.php', 'package-name'); 
 }
 ```
 > {warning} At this state, Laravel still not bind all services. You cannot access database yet, do not call it on config.php.
