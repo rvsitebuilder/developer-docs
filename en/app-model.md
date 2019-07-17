@@ -12,7 +12,7 @@
 Create Laravel model file and keep it in your `app’s /src/Models` folder. 
 
 ```php
-/packages/author/appname/
+/packages/vendor-name/package-name/
                     ├── src
                     │   ├── Models
                     │   │   └── MyTable.php
@@ -24,7 +24,7 @@ Create Laravel model file and keep it in your `app’s /src/Models` folder.
 Use your model namespace on your app and execute any Laravel Eloquent ORM syntax as usual.
 
 ```php
-use Author\Appname\Models\MyTable;
+use vendor-name\package-name\Models\MyTable;
 
 ```
 

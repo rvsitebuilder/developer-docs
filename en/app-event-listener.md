@@ -14,7 +14,7 @@
 Create Laravel blade file and keep it in your `app’s /src/Events` folder. 
 
 ```php
-/packages/author/appname/
+/packages/vendor-name/package-name/
                     ├── src
                     │   ├── Events
                     │   │   ├── AfterSave.php

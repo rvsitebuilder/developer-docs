@@ -124,7 +124,7 @@ You need call `loadViewsFrom` when your package have UI. then call `loadViewsFro
 
 Your `app's custom vendor directory`:
 ```php
-/packages/author/appname/
+/packages/vendor-name/package-name/
                     ├── resources
                     │   └── views
                     │       ├── admin

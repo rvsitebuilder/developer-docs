@@ -13,7 +13,7 @@
 Create Laravel Controller file and keep it in your `app’s /src/Http/Controller` folder. 
 
 ```php
-/packages/author/appname/
+/packages/vendor-name/package-name/
                     ├── src
                     │   ├── Http
                     │   │   ├── Controllers

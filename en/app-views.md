@@ -16,7 +16,7 @@
 Create Laravel blade file and keep it in your `app’s /resources/views` folder. 
 
 ```php
-/packages/author/appname/
+/packages/vendor-name/package-name/
                     ├── resources
                     │   └── views
                     │       ├── admin
@@ -49,7 +49,7 @@ Here is an example of `views/admin/layouts/app.blade.php`:
 @extends('admin.layouts.master')
 
 @section('leftmenu')
-	@include('admin.includes.leftmenu', ['package_name' => "author/appname"])
+	@include('admin.includes.leftmenu', ['package-name' => "vendor-name/package-name"])
 @endsection
 
 @push('package-styles')
@@ -65,7 +65,7 @@ Here is an example of `views/admin/layouts/app.blade.php`:
 
 **Admin Left Menu**
 
-`leftmenu` section should includes default `admin.includes.leftmenu` and send your correct author and appname `author/appname`. It will dynamically generate menu according to your [app's app.json](app-configuration-app-json.md). 
+`leftmenu` section should includes default `admin.includes.leftmenu` and send your correct vendor-name and package-name `vendor-name/package-name`. It will dynamically generate menu according to your [app's app.json](app-configuration-app-json.md). 
 
 keeping in mind that, end-users can move your left menu to display on the other app, change your app’s display name, and hide icon on app launcher.
 
@@ -103,7 +103,7 @@ Here is an example of `views/user/layouts/app.blade.php`.
 All your views should extend your `app's layouts`. And add your content in `content` blade section.
 
 ```php
-@extends('appname::admin.layouts.app')
+@extends('package-name::admin.layouts.app')
 
 @section('content')
     Your app content here.

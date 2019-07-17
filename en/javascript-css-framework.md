@@ -24,7 +24,7 @@ Admin interface is `platform agnostic`. If you generate app from developer app, 
 @extends('admin.layouts.master')
 
 @section('leftmenu')
-	@include('admin.includes.leftmenu', ['package_name' => "author/appname"])
+	@include('admin.includes.leftmenu', ['package-name' => "vendor-name/package-name"])
 @endsection
 
 @push('package-styles')
@@ -46,7 +46,7 @@ Admin interface is `platform agnostic`. If you generate app from developer app, 
 @extends('admin.layouts.master')
 
 @section('leftmenu')
-	@include('admin.includes.leftmenu', ['package_name' => "author/appname"])
+	@include('admin.includes.leftmenu', ['package-name' => "vendor-name/package-name"])
 @endsection
 
 @push('package-styles')

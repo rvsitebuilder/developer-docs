@@ -13,7 +13,7 @@
 Create Laravel migration file and keep it in your `app’s /database/migrations` folder. 
 
 ```php
-/packages/author/appname/
+/packages/vendor-name/package-name/
                     ├── database
                     │   └── migrations
                     │       └── 2019_03_14_074812_regist_app_to_core_app.php
@@ -58,9 +58,7 @@ class RegistNewAppToCoreApp extends Migration
      */
     public function up()
     {
-        // Schema
-        
-
+        // Schema 
 
         // Seed default data
         Model::unguard();
@@ -78,17 +76,17 @@ class RegistNewAppToCoreApp extends Migration
 <a name="Registering-App-on-App-table"></a>
 ## Registering App on App table 
 
-This is mandatory. You need to seed `author/appname` on `CoreApps` table.
+This is mandatory. You need to seed `vendor-name/package-name` on `CoreApps` table.
 
 ```php
     private function seed()
     {
-        CoreApps::firstOrCreate(['app_name' => 'author/appname']);
+        CoreApps::firstOrCreate(['package-name' => 'vendor-name/package-name']);
     }
 }
 ```
 
-Do not forget to change `author/appname` to match your name.
+Do not forget to change `vendor-name/package-name` to match your name.
 
 <a name="Define-Migration-on-App's-Service-Provider"></a>
 ## Define Migration on App's Service Provider

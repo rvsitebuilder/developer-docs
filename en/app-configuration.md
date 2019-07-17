@@ -15,7 +15,7 @@
 Create Laravel config.php file and keep it in your `app’s /config` folder.
 
 ```php
-/packages/author/packagename/
+/packages/vendor-name/package-name/
                     ├── config
 ```
 

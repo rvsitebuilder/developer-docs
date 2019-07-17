@@ -13,7 +13,7 @@
 Widget is a RVsitebuilder special element that make your `editable system page` more dynamic and configurable. 
 
 ```php
-/packages/author/appname/
+/packages/vendor-name/package-name/
                     ├── resources
                     │    └── widgets
                     │       ├── allpanels.blade.php

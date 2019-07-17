@@ -37,4 +37,4 @@ To prevent error appears on the website, disabling or uninstalling app on the Ma
 <a name="Admin-menu"></a>
 ## Admin menu
 
- <!-- Todo @jan -->
+ <!-- TODO: @Settavut left menu ที่เรียกจาก appconfig.json-->
