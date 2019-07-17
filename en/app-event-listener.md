@@ -91,8 +91,7 @@ On your app can create listener to listen these events and hook your logic to th
  
 <a name="Register-Event-and-Listener-on-App-Service-Provider"></a>
 ## Register Event and Listener on App’s Service Provider 
-
-<!-- TODO: @pam review อีกครัี้ง -->
+ 
 ```php
     public function register()
     {
