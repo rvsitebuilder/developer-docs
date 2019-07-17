@@ -68,7 +68,7 @@ class RegistNewAppToCoreApp extends Migration
 
     private function seed()
     {
-        
+        //
     }
 }
 ```

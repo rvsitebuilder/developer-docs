@@ -18,13 +18,27 @@ Create Laravel model file and keep it in your `app’s /src/Models` folder.
                     │   │   └── MyTable.php
 ```
 
+```php
+namespace VendorName\PackageName\Models;
+  
+class MyTable extends BaseModel
+{
+    public $timestamps = true;
+    protected $table = 'my_table';
+    protected $primaryKey = 'id';
+    protected $fillable = ['name'];
+
+    
+}
+
+```
 <a name="Accessing-Model"></a>
 ## Accessing Model
 
 Use your model namespace on your app and execute any Laravel Eloquent ORM syntax as usual.
 
 ```php
-use vendor-name\package-name\Models\MyTable;
+use Vendor-name\Package-name\Models\MyTable;
 
 ```
 

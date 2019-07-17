@@ -20,6 +20,33 @@ Create Laravel blade file and keep it in your `app’s /src/Events` folder.
                     │   │   ├── AfterSave.php
 ```
 
+### Generate the AfterSave event class.
+```php
+php artisan make:event AfterSave
+```
+```php
+namespace VendorName\PackageName\Events;
+
+use Illuminate\Queue\SerializesModels;
+
+class AfterSave
+{
+    use SerializesModels;
+
+    public $data = [];
+
+    /**
+     * Create a new event instance.
+     *
+     * @param Array $data
+     */
+    public function __construct(array $data)
+    {
+        $this->data = $data;
+    }
+}
+```
+
 <a name="Laravel-Default-Events"></a>
 ## Laravel Default Events 
 
@@ -30,26 +57,33 @@ php artisan event:list
 <a name="RVsitebuilder-Default-Events"></a>
 ## RVsitebuilder Default Events
 
-SavingPage
-SavedPage 
+`SavingPage`
 
-SavingEmail
-SavedEmail 
+`SavedPage `
 
-InstallingApp
-InstalledApp
+`SavingEmail`
 
-UpdatingApp
-UpdatedApp 
+`SavedEmail`
 
-SavingPageConfig
-SavedPageConfig
+`InstallingApp`
 
-SavingBlogConfig
-SavedBlogConfig
+`InstalledApp`
 
-SavingSystemConfig
-SavedSystemConfig
+`UpdatingApp`
+
+`UpdatedApp` 
+
+`SavingPageConfig`
+
+`SavedPageConfig`
+
+`SavingBlogConfig`
+
+`SavedBlogConfig`
+
+`SavingSystemConfig`
+
+`SavedSystemConfig`
 
 
 On your app can create listener to listen these events and hook your logic to the platform.
@@ -63,12 +97,11 @@ On your app can create listener to listen these events and hook your logic to th
     public function register()
     {
         /**
-             * The event listener mappings for the application.
+            * The event listener mappings for the application.
         */
         $this->app['events']->listen(
-            \Rvsitebuilder\Wysiwyg\Events\AfterSave::class, 
-            \Rvsitebuilder\Wysiwyg\Listeners\SaveGlobalPost::class
+            \Vendor-name\Package-name\Events\AfterSave::class, 
+            \Vendor-name\Package-name\Listeners\SaveGlobalPost::class
         );
     }
 ```
-

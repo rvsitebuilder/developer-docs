@@ -57,9 +57,9 @@ config('package-name.key');
 ## Config Admin Interface 
 
 RVsitebuilder comes with the unified config admin interface on the admin manage app. Go to `apps launcher` choose manage, and choose `config` on the left menu. 
-
-<!-- TODO: @pam แสดงรูป ตัวอย่าง หน้า config จริงด้วย ขนาดรูป อย่าให้มันใหญ่เกินไปนะครับ -->
-
+ 
+![configInterface](images/configInterface.jpg)
+ 
 To allow end-users change the value of your config online, you need to create a config blade file. And define it on your `app’s service provider`.
  
 ```php
@@ -104,20 +104,28 @@ return
     'key' = RvsitebuilderService::getConfig('package-name.key', 'defaultValue') 
 ]
 ```
-
-
+ 
 <a name="Config-Form-Request-Validation"></a>
 ## Config Form Request Validation
 
-Saving config on `Config Admin Interface`  will always go to `RVsitebuilder's config controller`. However, you can validate the input end-user made by creating AppConfigRequest.php.
-<!-- TODO: @pam AppConfigRequest เก็บไว้ที่ไหน -->
-
-
-
-
-
-
-<!-- TODO: @pam ตอน define ใช้ ConfigFormRequest หรือ AppConfigRequest -->
+Saving config on `Config Admin Interface`  will always go to `RVsitebuilder's config controller`. However, you can validate the input end-user made by creating ConfigFormRequest.php. 
+```php
+/packages/vendor-name/package-name/
+                    ├── config
+                    ├── database
+                    ├── routes
+                    ├── public
+                    ├── resources
+                    ├── src
+                    │   ├── AppServiceProvider.php
+                    │   ├── Http
+                    │   │   ├── Controllers
+                    │   │   └── Requests
+                    │   │   │   └── Admin
+                    │   │   │       └── ConfigFormRequest.php
+                    │   │   └── Middelware           
+```
+ 
 And define it on your `app’s service provider`.
 ```php
 protected function defineConfigInterface()
@@ -134,8 +142,5 @@ public function rules()
             'key' => 'required'
     ]
 }
-```
-<!-- TODO: @pam namespace ใส่เป็นตัวอย่าง code ด้านบน และ ไม่ต้องเขียน info ด้านล่างเลยก็ได้ -->
-> {info} Namespace config form request validation file `vendor-name\package-name\Http\Requests\Admin` 
-
+``` 
 
