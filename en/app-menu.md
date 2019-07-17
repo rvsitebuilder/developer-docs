@@ -5,7 +5,7 @@
 <a name="User-menu"></a>
 ## User menu
   
-<!-- ### User menu to non-editable system page -->
+### User menu to non-editable system page
 <!-- TODO: @pairote menu to non-editable ไม่สามารถทำได้ --> 
  
 ### User menu to editable system page
