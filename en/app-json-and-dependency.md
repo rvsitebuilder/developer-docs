@@ -1,14 +1,14 @@
 # App Information
-  - [App.json](#App-json)
+  - [App.json Schema](#App-json-Schema)
   - [Properties](#Properties) 
   - [RVsitebuilder App Dependency](#RVsitebuilder-App-Dependency)
   
-<a name="App-json"></a>
-## App.json
+<a name="App-json-Schema"></a>
+## App.json Schema
 
 We use properties information on your `app.json` to display app information and default value of the app. We have a JSON schema that documents all properties and their format to use your app.json. You can find it at: https://dev.rvsitebuilder.com/schema.json.
 
-<!-- TODO: @Settavut create the full list of schema.json above and make it accessible. and explain it below similar to https://getcomposer.org/doc/04-schema -->
+<!-- TODO: @Settavut create the full list of schema.json above and make above URL accessible. And explain it below similar to https://getcomposer.org/doc/04-schema.md -->
 
 <a name="Properties"></a>
 ## Properties
