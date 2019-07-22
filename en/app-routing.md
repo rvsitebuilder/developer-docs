@@ -15,7 +15,7 @@ Create Laravel route file and keep it in your `app’s /routes` folder.
 You should separate routing file for user and admin for easy grouping and authorization. 
 
 ```php
-/packages/author/appname/
+/packages/vendor-name/package-name/
                     ├── routes
                     │   ├── Admin
                     │   │    └── web.php
@@ -35,12 +35,12 @@ Route::group([
         'middleware' => 'web',
 ], function () {
     Route::group([
-            'prefix' => 'appname',
-            'namespace' => 'Author\Appname\Http\Controllers\Admin',
+            'prefix' => 'package-name',
+            'namespace' => 'vendor-name\package-name\Http\Controllers\Admin',
             'middleware' => 'admin',
     ], function () {
         Route::get('/', [
-                    'as' => 'admin.appname.dashboard.index',
+                    'as' => 'admin.package-name.dashboard.index',
                     'uses' => 'DashboardController@index',
             ]);
     });
@@ -56,16 +56,16 @@ Be acknowledge that there is `FrontendACLRole middleware` to check user's role a
 ```php
 <?php
 Route::group([
-    'prefix' => 'appname',
+    'prefix' => 'package-name',
     'middleware' => 'web',
 ], function () {
     Route::group([
         'prefix' => 'task',
-        'namespace' => 'Author\Appname\Http\Controllers\User',
+        'namespace' => 'vendor-name\package-name\Http\Controllers\User',
     ], function () {
-        // URI: /appname/task
+        // URI: /package-name/task
         Route::get('/', [
-            'as' => 'appname.task',
+            'as' => 'package-name.task',
             'uses' => 'AppController@task',
         ]);
     });

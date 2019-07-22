@@ -17,35 +17,37 @@ You need to seed your app’s editable system page to `core_system_page` databas
 ```php
 CoreSystemPage::updateOrCreate(
         [
-            'page_name' => 'app-master',
+            'page_name' => 'master-page-name',
         ],[
-            'header_id' => 2,
-            'sidebar_id' => 0,
-            'footer_id' => 0,
+            'header_id' => 2, // Id core_header ,2 = non header.
+            'sidebar_id' => 0, // Id core_sidebar , 0 = use sidebar with parent page.
+            'footer_id' => 0, // Id core_footer , 0 = use footer with parent page.
             'content_view' => SystemPageLib::defMasterSystemContentView(),
             'content_edit' => SystemPageLib::defMasterSystemContentEdit(),
             'embed_meta' => '',
             'embed_js' => '',
             'embed_css' => '',
-            'is_published' => 0,
-            'user_id' => '1',
-            'visibility_id' => 1,
-            'page_name' => 'app-master',
-            'role_id' => '1',
-            'app_id' => '2',
+            'is_published' => 0, // 0 = Show in your site , 1 = Your site doesn't show.
+            'user_id' => 1,
+            'visibility_id' => 1, // Id core_visibility  
+            'page_name' => 'master-page-name',
+            'role_id' => 1, 
+            'app_id' => 1,  // Id core_apps
             'published_at' => date('Y-m-d H:i:s'),
         ]
 );
 ```
+>{info} If your master-page-name id = 12 in core_system_page table.
+
 ```php
 CoreSlug::updateOrCreate(
     [
-            'slug_name' => 'app-master'
+            'slug_name' => 'master-page-name'
     ],[
             'slugble_id' => 12, // Id core_system_page 
             'slugble_type' => config('core.model.system'),
-            'slug_prefix' => 'rvsitebuilder/core', // App name
-            'slug_name' => 'app-master',
+            'slug_prefix' => 'rvsitebuilder/core', // Your vendor-name/package-name
+            'slug_name' => 'master-page-name',
     ]
 );
 
@@ -76,7 +78,7 @@ CoreFacebook::updateOrCreate(
             'fb_type' => 'website',
             'featured_image' => config('rvsitebuildercms.cdn').'/templates/rvs_library/imageslibrary_v6/mrv_300x360/    otherimage/L/solidstockart-stock-photo-an-image-of-a-nice-autumn-la-568050.jpg',
             'fb_site_name' => 'Rvglobal soft',
-            'use_type' => '1',
+            'use_type' => 1,
         ]
 );
 ```
@@ -100,7 +102,7 @@ CoreTwitter::updateOrCreate([
 You can define which system page ID is your master system page.  
 
 ```php
-CoreApps::where('app_name', '=', 'rvsitebuilder/core')
+CoreApps::where('app_name', '=', 'rvsitebuilder/core') // vendor-name/package-name
         ->update(['master_systempage_id' => 12 ]); // Id core_system_page 
 ```
 <a name="Push-wysiwyg-section-blade-stack"></a>

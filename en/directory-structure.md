@@ -13,7 +13,7 @@ Beside [Laravel root directory and app directory](https://laravel.com/docs/maste
     ├── config
     ├── database
     ├── lib
-    ├── packages/author/appname/
+    ├── packages/vendor-name/package-name/
     ├── public
     ├── resources
     ├── routes
@@ -25,10 +25,10 @@ Beside [Laravel root directory and app directory](https://laravel.com/docs/maste
 ## RVsitebuilder App Directory Structure 
 
 
-Here is the example of file and directory structure for **/packages/author/appname/**. This is where your RVsitebuilder app will be stored. Simply generate your app from [RVsitebuilder app generator](creating-new-app) or create it manually.
+Here is the example of file and directory structure for **/packages/vendor-name/package-name/**. This is where your RVsitebuilder app will be stored. Simply generate your app from [RVsitebuilder app generator](creating-new-app) or create it manually.
 
 ```php
-/packages/author/appname/
+/packages/vendor-name/package-name/
                     ├── config
                     ├── database
                     │   └── migrations

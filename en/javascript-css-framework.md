@@ -19,12 +19,12 @@ End-user interface is built on [UIKIT2](https://getuikit.com/v2/) framework. It 
 ## Admin interface
 Admin interface is `platform agnostic`. If you generate app from developer app, admin layout suggest bootstrap4. But you can replace it with anything you want. If you use webpack to build your asset, simply build your own and remove the default one.
 
-### `views/admin/layouts/app.blade.php` with bootstrap4:
+#### `views/admin/layouts/app.blade.php` with bootstrap4:
 ```php
 @extends('admin.layouts.master')
 
 @section('leftmenu')
-	@include('admin.includes.leftmenu', ['package_name' => "author/appname"])
+	@include('admin.includes.leftmenu', ['package-name' => "vendor-name/package-name"])
 @endsection
 
 @push('package-styles')
@@ -41,12 +41,12 @@ Admin interface is `platform agnostic`. If you generate app from developer app, 
 @endpush
 ```
 
-### `views/admin/layouts/app.blade.php` with UIKIT2:
+#### `views/admin/layouts/app.blade.php` with UIKIT2:
 ```php
 @extends('admin.layouts.master')
 
 @section('leftmenu')
-	@include('admin.includes.leftmenu', ['package_name' => "author/appname"])
+	@include('admin.includes.leftmenu', ['package-name' => "vendor-name/package-name"])
 @endsection
 
 @push('package-styles')

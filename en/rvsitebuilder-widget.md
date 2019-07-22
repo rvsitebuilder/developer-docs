@@ -5,8 +5,7 @@
   - [Widget Blade and Designe](#Widget-Blade-and-Designe) 
   - [View composer](#View-composer)
   - [Widget Standard Config Panel](#Widget-Standard-Config-Panel) 
-  - [Config Panel Elements](#Config-Panel-Elements)
-  - [Widget Frame Config Panel](#Widget-Frame-Config-Panel)
+  <!-- - [Config Panel Elements](#Config-Panel-Elements) -->
   - [Widget Section Template](#Widget-Section-Template) 
 
 <a name="Widget"></a>
@@ -14,7 +13,7 @@
 Widget is a RVsitebuilder special element that make your `editable system page` more dynamic and configurable. 
 
 ```php
-/packages/author/appname/
+/packages/vendor-name/package-name/
                     ├── resources
                     │    └── widgets
                     │       ├── allpanels.blade.php
@@ -40,9 +39,9 @@ Widget is a RVsitebuilder special element that make your `editable system page` 
 
 -How-To-Register-Widget-config.md  
 
-    ### Global widget 
+### Global widget 
 
-    Widget that shows the same content on every page. 
+Widget that shows the same content on every page. 
 
 <a name="Widget-Blade-and-Designe"></a>
 ## Widget Blade and Design
@@ -61,13 +60,13 @@ RVsitebuilder use view composer extensively. Especially using together with midd
 ## Widget Standard Config Panel
 
  
+<!-- 
 <a name="Config-Panel-Elements"></a>
+TODO: @Jatuporn help me please.
+
 ## Config Panel Elements
 ### color picker
-### slider
-
-<a name="Widget-Frame-Config-Panel"></a>
-## Widget Frame Config Panel
+### slider -->
 
 
 

@@ -1,6 +1,7 @@
-# App DB Migration and Model
+# App DB Migration
 
   - [Creating Migration](#Creating-Migration)
+  - [Seeding](#Seeding)
   - [Registering App on App table](#Registering-App-on-App-table) 
   - [Define Migration on App's Service Provider](#Define-Migration-on-App's-Service-Provider)
 
@@ -12,7 +13,7 @@
 Create Laravel migration file and keep it in your `app’s /database/migrations` folder. 
 
 ```php
-/packages/author/appname/
+/packages/vendor-name/package-name/
                     ├── database
                     │   └── migrations
                     │       └── 2019_03_14_074812_regist_app_to_core_app.php
@@ -37,10 +38,11 @@ To avoid as much as possible troubles, you migration should:
             });
         }
 ```
-<a name="Registering-App-on-App-table"></a>
-## Registering App on App table 
 
-This is mandatory.
+<a name="Seeding"></a>
+## Seeding
+
+If you want to insert some default data when installing your app, put your default data in the same migration file. It is a good idea to wrap it with `Model::unguard()` and `Model::reguard()` while seeding.
 
 ```php
 <?php
@@ -56,6 +58,9 @@ class RegistNewAppToCoreApp extends Migration
      */
     public function up()
     {
+        // Schema 
+
+        // Seed default data
         Model::unguard();
         $this->seed();
         Model::reguard();
@@ -63,10 +68,26 @@ class RegistNewAppToCoreApp extends Migration
 
     private function seed()
     {
-        CoreApps::firstOrCreate(['app_name' => 'author/appname']);
+        //
     }
 }
 ```
+
+<a name="Registering-App-on-App-table"></a>
+## Registering App on App table 
+
+This is mandatory. You need to seed `vendor-name/package-name` on `CoreApps` table.
+
+```php
+    private function seed()
+    {
+        CoreApps::firstOrCreate(['package-name' => 'vendor-name/package-name']);
+    }
+}
+```
+
+Do not forget to change `vendor-name/package-name` to match your name.
+
 <a name="Define-Migration-on-App's-Service-Provider"></a>
 ## Define Migration on App's Service Provider
 

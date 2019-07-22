@@ -7,7 +7,6 @@
   - [App Views](#App-Views)
   - [Creating Non-Editable System Page](#Creating-Non-Editable-System-Page) 
   - [Creating Editable System Page](#Creating-Editable-System-Page)
-  - [Default User Page and Menu](#Default-User-Page-and-Menu) 
 
 > {info} If you are not familiar with its concept. Check out the full [Laravel View documentation](https://laravel.com/docs/master/views) to get started. 
 
@@ -17,7 +16,7 @@
 Create Laravel blade file and keep it in your `app’s /resources/views` folder. 
 
 ```php
-/packages/author/appname/
+/packages/vendor-name/package-name/
                     ├── resources
                     │   └── views
                     │       ├── admin
@@ -50,7 +49,7 @@ Here is an example of `views/admin/layouts/app.blade.php`:
 @extends('admin.layouts.master')
 
 @section('leftmenu')
-	@include('admin.includes.leftmenu', ['package_name' => "author/appname"])
+	@include('admin.includes.leftmenu', ['package-name' => "vendor-name/package-name"])
 @endsection
 
 @push('package-styles')
@@ -66,7 +65,7 @@ Here is an example of `views/admin/layouts/app.blade.php`:
 
 **Admin Left Menu**
 
-`leftmenu` section should includes default `admin.includes.leftmenu` and send your correct author and appname `author/appname`. It will dynamically generate menu according to your [app's app.json](app-configuration-app-json.md). 
+`leftmenu` section should includes default `admin.includes.leftmenu` and send your correct vendor-name and package-name `vendor-name/package-name`. It will dynamically generate menu according to your [app's app.json](app-configuration-app-json.md). 
 
 keeping in mind that, end-users can move your left menu to display on the other app, change your app’s display name, and hide icon on app launcher.
 
@@ -104,7 +103,7 @@ Here is an example of `views/user/layouts/app.blade.php`.
 All your views should extend your `app's layouts`. And add your content in `content` blade section.
 
 ```php
-@extends('appname::admin.layouts.app')
+@extends('package-name::admin.layouts.app')
 
 @section('content')
     Your app content here.
@@ -126,14 +125,22 @@ You may explicitly set web page title on your blade view.
 End-user still see all your `app's route` on the system page hyperlink selection list. To hide it from the hyperlink selection list, you need to add `hideFromHyperlinkList` on your `app’s service provider`. 
 
 ```php
-public function boot() { 
+public function boot() 
+{ 
     $this->defineHideFromHyperlinkList()  
 } 
 
-public function defineHideFromHyperlinkList (){ 
-//TODO: @pam hideFromHyperlinkList
+public function defineHideFromHyperlinkList()
+{ 
+    $routes =   [  
+                    'totem/tasks',
+                    'totem/tasks/create'
+                ]; 
+    
+    app('rvsitebuilderService')->hideFromHyperlinkList($routes); 
 }
-``` 
+```
+
 <a name="Creating-Editable-System-Page"></a>
 ## Creating Editable System Page 
 
@@ -146,26 +153,3 @@ To make your system page editable, you need to do the following:
 > {info} Checkout [Creating Editable System Page Documentation](creating-editable-system-page.md) for more detail.
 
 
-<a name="Default-User-Page-and-Menu"></a>
-## Default User Page and Menu 
-
-In some circumstances, you may want to add new page to the end-user's website to show your app's content. You will need to create migrations.
-
-<!-- TODO: @pam default app's user page and menu -->
-
-Add user page migration example: 
-```php
-Page
-slug
-seo
-``` 
-
-Add user menu migration example: 
-```php
-menu
-``` 
-
-To prevent error appears on the website, disabling or uninstalling app on the Manage.  RVsitebuilder will automatically hide your app's menu, disable all app’s routes and shows 404 error page.  
-
-
- 

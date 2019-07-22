@@ -12,10 +12,10 @@
 Create Laravel middleware file and keep it in your `app’s /src/Http/Middleware` folder. 
 
 ```php
-/packages/author/appname/
+/packages/vendor-name/package-name/
                     ├── src
                     │   ├── Http
-                    │   │   └── Middelware           
+                    │   │   └── Middelware
 
 ```
 <a name="Global-middleware"></a>
