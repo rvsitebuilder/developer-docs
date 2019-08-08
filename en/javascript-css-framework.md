@@ -77,11 +77,18 @@ Loaded as an external script on all pages, both admin and user interface. It has
 
 @endpush
 ```
+
+<!-- TODO: @pairote ขยายความด้วย -->
+
 <a name="Wex"></a>
 ## Wex
 
+<!-- TODO: @june ขยายความด้วย -->
 <a name="wex-and-mex"></a>
 ## Passing PHP variables to JS through wex and mex
 
+<!-- TODO: @june ขยายความด้วย -->
+
 <a name="Vue"></a>
 ## Vue.js
+<!-- TODO: @june ขยายความด้วย -->
