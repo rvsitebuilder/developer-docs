@@ -48,7 +48,7 @@ use Vendor-name\Package-name\Models\MyTable;
 
 Ever want to add more data to `Users` table. Thanks to wonderful [Laravel-Metable](https://github.com/plank/laravel-metable) package to make it possible. You can extend RVsitebuilder default model without needing to adjust the database schema.
 
-<!-- TODO: @pairote ขยายความต่อ -->
+<!-- TODO: @settavut ขยายความต่อ -->
 The following model are `metable`. 
  * Page
  * Post

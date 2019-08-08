@@ -54,36 +54,33 @@ You can find the full list of events using Artisan command.
 ```php
 php artisan event:list
 ```
+
 <a name="RVsitebuilder-Default-Events"></a>
 ## RVsitebuilder Default Events
 
-`SavingPage`
+<!-- TODO: @pam or @settavit ดำเนินการสร้าง event และ เขียน document ให้ถูกด้วยครับ -->
 
-`SavedPage `
+`SavingPage`, `SavedPage `
+`SavingPost`, `SavedPost `
+`SavingSystem`, `SavedgSystem`
 
-`SavingEmail`
+Blog category, New page, New post, New category, admin login, user login
 
-`SavedEmail`
+`SavingEmail`, `SavedEmail`
 
-`InstallingApp`
+---
 
-`InstalledApp`
+`SavingSiteConfig`, `SavedSiteConfig`
+`SavingPageConfig`, `SavedPageConfig`
+`SavingBlogConfig`, `SavedBlogConfig`
+`SavingSystemConfig`, `SavedSystemConfig`
+---
 
-`UpdatingApp`
+`InstallingApp`, `InstalledApp`
+`ActivattingApp`, `ActivatedApp` 
+`ActivattingApp`, `InactivattedApp` 
+`UninstallingApp`, `UninstalledApp` 
 
-`UpdatedApp` 
-
-`SavingPageConfig`
-
-`SavedPageConfig`
-
-`SavingBlogConfig`
-
-`SavedBlogConfig`
-
-`SavingSystemConfig`
-
-`SavedSystemConfig`
 
 
 On your app can create listener to listen these events and hook your logic to the platform.
