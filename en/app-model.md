@@ -50,8 +50,13 @@ Ever want to add more data to `Users` table. Thanks to wonderful [Laravel-Metabl
 
 <!-- TODO: @settavut ขยายความต่อ -->
 The following model are `metable`. 
+ * Users
  * Page
  * Post
- * Users
+ * System page
+ * ....
+
+
+
 
 
