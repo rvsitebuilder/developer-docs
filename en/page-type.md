@@ -31,7 +31,7 @@ System page is the page that created by app developers and **cannot** remove by 
 <a name="Non-editable-system-page"></a>
 ### Non-editable system page
 
-Non-editable system page is the page that render directly from blade engine but **cannot** be edited on WYSIWYG including page properties such as Slug URL, SEO options, META tags, and etc. 
+Non-editable system page is the page that render directly from blade engine and **cannot** be edited on WYSIWYG including page properties such as Slug URL, SEO options, META tags, and etc. 
 
 End-users may link to it on the system page hyperlink's selection list.
 
