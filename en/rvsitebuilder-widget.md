@@ -15,20 +15,30 @@ Widget is a RVsitebuilder special element that make your `editable system page` 
 ```php
 /packages/vendor-name/package-name/
                     ├── resources
-                    │    └── widgets
-                    │       ├── allpanels.blade.php
-                    │       ├── allsections.blade.php
-                    │       ├── widgetName
-                    │       │   ├── designs
-                    │       │   │   └── design1.blade.php
-                    │       │   ├── panel.blade.php
-                    │       │   ├── section.blade.php
-                    │       │   └── widget.blade.php
+                    │    ├── js
+                    │    │  └── admin
+                    │    │      └── widget.js
+                    │    └── views
+                    │       ├── sections
+                    │       │   ├── allsections.blade.php
+                    │       │   ├── sectionicon.blade.php
+                    │       │   ├── widgetName
+                    │       │   │   └── 1-section.blade.php         
+                    │       └── widgets
+                    │           ├── allpanels.blade.php
+                    │           ├── widgetName
+                    │           │   ├── designs
+                    │           │   │   └── design1.blade.php
+                    │           │   ├── panel.blade.php
+                    │           │   └── widget.blade.php
                     ├── src
-                        ├── Http
-                            ├── Composers
-                            │   ├── Widget_ViewComposer.php                        
+                    │   └── Http
+                    │       ├── Composers
+                    │       │   └── Widget_ViewComposer.php                        
 ```
+<a name="Create-new-widget"></a>
+## Create new widget 
+
 <a name="How-it-works"></a>
 ## How it works 
 
