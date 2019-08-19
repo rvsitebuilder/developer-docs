@@ -27,6 +27,7 @@ This table is used to store custom configuration from `Config Admin Interface` b
 
 ## Meta
 Extending default table using meta table. Check [App Model](app-model.md) for more detail.
+<!-- TODO: @pam ยังไม่ครบขาด user, and etc. ต้องรอ เจน แก้ไข app-model.md ก่อน -->
 
 ![meta](images/meta_DB_driagram.jpg)
 

@@ -14,9 +14,8 @@ Use Laravel vendor dependency inside your app with composer.
 
 Besides, the Laravel framework which come with `composer.json`, each RVsitebuilder app can contains its own `composer.json`. So you can specify your own vendor dependency and get export to the server separately.  
 
-<!-- Todo - @amarin change composer to new workflow https://app.clickup.com/t/13nk3j -->
-<!-- 
-Make sure that you run `composer` command inside your app not the root directory. And add the `autoload-patch` in the `post-autoload-dump` section of your `app's composer.json` file. 
+
+Make sure that you run `composer` command on RVsitebuilder root directory, not inside your app. 
 
 Here is an example of scheduler `app's composer.json`:
 ```json
@@ -36,14 +35,9 @@ Here is an example of scheduler `app's composer.json`:
                 "Rvsitebuilder\\Scheduler\\SchedulerServiceProvider"
             ] 
         }
-    },
-    "scripts": {
-        "post-autoload-dump": [
-            "@php ../../../autoload-patch rvsitebuilder/scheduler"            
-        ]
     }
 }
-``` -->
+```
 
 <a name="Disable-Vendor-Service-Provider-Auto-Discovery"></a>
 ## Disable Vendor Service Provider Auto Discovery 
@@ -67,19 +61,17 @@ If you do this, you may need to copy code from vendor’s service provider to ru
 <a name="Publishing-Vendor-Asset"></a>
 ## Publishing Vendor Asset
 
-In case you disable `vendor's service provider`, you will need to `define vendor asset` on your `app's service provider`. 
+In case you disable `vendor's service provider`, you will need to copy `vendor's public resources` to app and `publishes` on your `app's service provider`. 
+
+<!-- TOD: @wi laravel-filemanager ทำอย่างไร -->
 
 
-<!-- TODO: @pairote how to define vendor asset  -->
-```php
-php artisan vendor:publish 
-```
- 
- 
+
+
 <a name="Define-Migrate-for-Vendor"></a>
 ## Define Migrate for Vendor
 
-In case you disable `vendor's service provider`, you will need to call `loadMigrationsFrom` on your `app's service provider`. 
+In case you disable `vendor's service provider`, you will need to copy `vendor's migrations` to your app and call `loadMigrationsFrom` on your `app's service provider`. 
  
 ```php
 public function boot()
@@ -94,7 +86,7 @@ Once your `app's service provider` have been registered, they will automatically
 <a name="Overwrite-Vendor-Configuration"></a>
 ## Overwrite Vendor Configuration
 
-If you rely on other composer packages and want to overwrite its configuration, you can do it on your `app's service provider`. Just copy config file of your vendor to your config folder and run `mergeConfigFrom` from your app's service provider.
+If you rely on other composer packages and want to overwrite its configuration, just copy `vendor's config` to your config folder and run `mergeConfigFrom` from your `app's service provider`.
 
 ```php
 public function register()
@@ -117,10 +109,7 @@ public function register()
 <a name="Custom-Vendor-View-Directory"></a>
 ## Custom Vendor View Directory
  
-If you run Laravel vendor inside your app and also want to custom vendor's view without to override the vendor controller that call view command, you need to create `vendor` directory and register your app's view directory to `view.path` config.
-
- 
-You need call `loadViewsFrom` when your package have UI. then call `loadViewsFrom` to tell the package to load it instead of default one inside the package. 
+If you run Laravel vendor inside your app and also want to custom vendor's view without to override the vendor controller that call view command, you need to create `vendor` directory and register your custom vendor's view directory to `view.path` config.
 
 Your `app's custom vendor directory`:
 ```php
@@ -142,6 +131,5 @@ public function register()
 }
 ```
 
-Noted that `view.path` is the directory that contains vendor directory. Above example does not have vendor after /resources/views is correct.
-
+Noted that `view.path` is the directory that contains vendor directory. Above example is correct. It does not have vendor after /resources/views.
 

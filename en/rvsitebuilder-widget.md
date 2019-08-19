@@ -2,7 +2,7 @@
   - [Widget](#Widget)
   - [How it works](#How-it-works) 
   - [Widget config](#Widget-config)
-  - [Widget Blade and Designe](#Widget-Blade-and-Designe) 
+  - [Widget Blade and Design](#Widget-Blade-and-Design) 
   - [View composer](#View-composer)
   - [Widget Standard Config Panel](#Widget-Standard-Config-Panel) 
   <!-- - [Config Panel Elements](#Config-Panel-Elements) -->
@@ -53,7 +53,7 @@ Widget is a RVsitebuilder special element that make your `editable system page` 
 
 Widget that shows the same content on every page. 
 
-<a name="Widget-Blade-and-Designe"></a>
+<a name="Widget-Blade-and-Design"></a>
 ## Widget Blade and Design
  
  Widget blade contains your `app's widget design` according to the user config. 

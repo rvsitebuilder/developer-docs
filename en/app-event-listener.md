@@ -3,13 +3,16 @@
  > {info} If you are not familiar with its concept. Check out the full [Laravel Events documentation](https://laravel.com/docs/master/events) to get started. 
 
   - [Creating Event and Listener](#Creating-Event-and-Listener) 
-  - [Laravel Default Events](#Laravel-Default-Events)
-  - [RVsitebuilder Default Events](#RVsitebuilder-Default-Events)
-  - [Register Event and Listener on App’s Service Provider](#Register-Event-and-Listener-on-App-Service-Provider) 
+  - [Eloquent Model Events](#Eloquent-Model-Events)
+  - [RVsitebuilder Application Events](#RVsitebuilder-Application-Events)
+  - [Register Event on App’s Service Provider]()
+  - [Register Listener on App’s Service Provider]()
 
 
 <a name="Creating-Event-and-Listener"></a>
 ## Creating Event and Listener
+
+<!-- TODO: @pairote ยังขาด listener, observer, subscriber  -->
 
 Create Laravel blade file and keep it in your `app’s /src/Events` folder. 
 
@@ -20,7 +23,71 @@ Create Laravel blade file and keep it in your `app’s /src/Events` folder.
                     │   │   ├── AfterSave.php
 ```
 
-### Generate the AfterSave event class.
+<a name="Eloquent-Model-Events"></a>
+## Eloquent Model Events
+
+Eloquent models fire several events **automatically**, allowing you to hook into the following points in a model's lifecycle: retrieved, creating, created, updating, updated, saving, saved,  deleting, deleted, restoring, restored.
+
+ > {info} Check out the [Laravel Eloquent Events documentation](https://laravel.com/docs/master/eloquent#events) to get started. 
+
+
+<a name="RVsitebuilder-Application-Events"></a>
+## RVsitebuilder Application Events
+<!-- TODO: @apiruk ตรวจสอบว่าทำไม แสดงผลไม่ครบ ของ framework และ ของ เรา ไม่แสดงผล-->
+You can find the full list of events using Artisan command.
+```php
+php artisan event:list
+```
+
+<!-- TODO: @apiruk ต้องปรับปรุงแก้ไขหัวข้อ manage hook https://app.clickup.com/t/t523b  และ เขียน document ให้ถูกด้วยครับ -->
+```
+`InstallingApp`, `InstalledApp`
+`ActivattingApp`, `ActivatedApp` 
+`ActivattingApp`, `InactivattedApp` 
+`UninstallingApp`, `UninstalledApp` 
+	beforeFrameworkUpdate()
+	afterFrameworkUpdate()
+	beforeWysiwygUpdate()
+	afterWysiwygUpdate()
+    beforeMigrate() ->AppsCleanStruct()
+    afterMigrate()
+    beforeVendorUpdate()
+    afterVendorUpdate()
+    beforeDownload()
+    afterDownload()
+    afterFinish)
+```    
+
+<!-- TODO: @pam or @settavit ดำเนินการสร้าง event และ เขียน document ให้ถูกด้วยครับ -->
+
+```   
+`SavingPage`, `SavedPage `
+`SavingPost`, `SavedPost `
+`SavingPostCategory`, `SavedPostCategory`
+`SavingSystem`, `SavedgSystem`
+`SavingEmail`, `SavedEmail`
+
+New page
+New post category
+New post
+New category
+
+admin login
+admin logout
+user login
+user logout
+
+`SavingSiteConfig`, `SavedSiteConfig`
+`SavingPageConfig`, `SavedPageConfig`
+`SavingBlogConfig`, `SavedBlogConfig`
+`SavingSystemConfig`, `SavedSystemConfig`
+
+```   
+
+<a name="Register-Event-on-App-Service-Provider"></a>
+## Register Event on App’s Service Provider 
+<!-- TODO: @pairote ขยายความ  -->
+
 ```php
 php artisan make:event AfterSave
 ```
@@ -47,51 +114,18 @@ class AfterSave
 }
 ```
 
-<a name="Laravel-Default-Events"></a>
-## Laravel Default Events 
-
-You can find the full list of events using Artisan command.
-```php
-php artisan event:list
-```
-<a name="RVsitebuilder-Default-Events"></a>
-## RVsitebuilder Default Events
-
-`SavingPage`
-
-`SavedPage `
-
-`SavingEmail`
-
-`SavedEmail`
-
-`InstallingApp`
-
-`InstalledApp`
-
-`UpdatingApp`
-
-`UpdatedApp` 
-
-`SavingPageConfig`
-
-`SavedPageConfig`
-
-`SavingBlogConfig`
-
-`SavedBlogConfig`
-
-`SavingSystemConfig`
-
-`SavedSystemConfig`
-
-
-On your app can create listener to listen these events and hook your logic to the platform.
-
  
-<a name="Register-Event-and-Listener-on-App-Service-Provider"></a>
-## Register Event and Listener on App’s Service Provider 
- 
+<a name="Register-Listener-on-App-Service-Provider"></a>
+<!-- TODO: @pairote ขยายความ  -->
+## Register Listener on App’s Service Provider 
+
+Your app can capture the events and hook your logic to the platform using:
+ * Listener: 
+ * Observer: watches for specific things that happen within eloquent such as saving, saved, deleting, deleted, and etc. 
+ * Subscriber: encapsulate all your listeners in the single class.
+
+### Listener
+Create On App’s Service Provider
 ```php
     public function register()
     {
@@ -104,3 +138,4 @@ On your app can create listener to listen these events and hook your logic to th
         );
     }
 ```
+
