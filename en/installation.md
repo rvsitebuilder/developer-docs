@@ -35,7 +35,7 @@ If you don’t have any web server locally, follow these steps.
 <a name="Installation"></a>
 
 - [Install for Windows 10](installation-for-windows10.md)
-- [Install for MacOs](installation-for-macos.md)
+- [Install for MacOS](installation-for-macos.md)
 
 <a name="RVsitebuilder-Wizard-Install"></a>
 ## RVsitebuilder Wizard Install
