@@ -2,8 +2,8 @@
 
   - [Geting a developer license](#Geting-a-developer-license)
   - [Server Requirement](#Server-Requirement )
-  - [RVsitebuilder Docker](#RVsitebuilder-Docker)
-  - [Installation](#Installation)
+  - [RVsitebuilder Docker](#RVsitebuilder-Docker)  
+  - [RVsitebuilder Wizard Install](#RVsitebuilder-Wizard-Install)
   - [.env configuration](#.env-configuration )
   
 //TODO: @amarin How to install for developer
@@ -37,6 +37,8 @@ If you don’t have any web server locally, follow these steps.
 - [Install for Windows 10](installation-for-windows10.md)
 - [Install for MacOs](installation-for-macos.md)
 
+<a name="RVsitebuilder-Wizard-Install"></a>
+## RVsitebuilder Wizard Install
 <a name="Goto Admin"></a>
 
 Please follow these steps: 
