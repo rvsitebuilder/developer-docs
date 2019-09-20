@@ -1,5 +1,10 @@
 # Installation for Windows 10
   
+## Install on Local Web Server
+
+1. Download file https://raw.githubusercontent.com/rvsitebuilder/docker-lamp-php72/master/public/index.php and copy to web document root
+2. Open browser http://<local_ip>:8080
+  
 If you don’t have any web server locally, follow these steps.
 
 ## Install on Docker
