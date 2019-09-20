@@ -44,8 +44,10 @@ If you don’t have any web server locally, follow these steps.
 Please follow these steps: 
 
 1 Open browser http://<local_ip>:8080
+
 2 Waiting installation.
 ![DeveloperDashboard](images/sb7_wizard_install.png)
+
 3 System will redirect to admin page, you can login by following credential:
 ~~~
 admin user: admin@admin.com
