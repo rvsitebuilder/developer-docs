@@ -11,14 +11,13 @@
 <a name="Geting-a-developer-license"></a>
 ## Geting a developer license
 
+You can install RVsitebuilder locally on your work station for developing purpose. Please register to (https://dev.rvsitebuilder.com/) to get the developer license. 
+
+1. Register to https://dev.rvsitebuilder.com/
+2. Log in to https://dev.rvsitebuilder.com/ and goto 
+2. Go to ‘Developer Dashboard’ https://dev.rvsitebuilder.com/devportal
 ![DeveloperDashboard](images/dev.rvsitebuilder.com_developer_dashboard.png)
-
-You can install RVsitebuilder locally on your work station for developing purpose. Please buy hosting service from our [hosting partners](https://rvsitebuilder.com/hosting-partner/) to get the developer license. 
-
-1. Log in to your RVsitebuilder website as admin, click ‘App launcher’ and go to ‘Manage’ app. 
-2. Go to ‘Developer Token’ on the left menu. 
-3. Enter your email, accept developer agreement and click generate developer token. 
-4. It will require to install locally. 
+3. Copy ’My Developer Token Auth’ It will require to install locally. 
 
 
 <a name="Server-Requirement"></a>
