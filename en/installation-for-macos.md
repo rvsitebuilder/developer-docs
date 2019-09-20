@@ -1,11 +1,34 @@
 # Installation for MacOS
   
+## Install on Local Web Server
+### Server Requirement
+Same as Laravel, https://laravel.com/docs/master/installation#server-requirements.
+
+### Install step
+1. Download file https://raw.githubusercontent.com/rvsitebuilder/docker-lamp-php72/master/public/index.php and copy to web document root
+2. Open browser http://<local_ip>:8080
+  
 If you don’t have any web server locally, follow these steps.
 
-1. Goto https://github.com/rvsitebuilder/docker-lamp-php72
-2. Follow step to install RVsitebuilder Docker
-3. After that you will got dev environment like below (local ip coule be like 192.168.x.x) : 
-```php
+## Install on Docker
+
+### Install Docker
+[Install Docker for Mac](https://hub.docker.com/editions/community/docker-ce-desktop-mac)
+
+### Install step
+1. Download and Extract https://github.com/rvsitebuilder/docker-lamp-php72/archive/master.zip
+2. update docker .env file
+~~~
+Optional to change WEBSERVER_PORT,LOCALE,TZ
+~~~
+3. run docker build and up
+```
+cd docker-lamp-php72
+
+./docker_up.sh
+```
+4. After that you will got dev environment like below (local ip coule be like 192.168.x.x) : 
+```
    http://<local_ip>:8080 for document root
    http://<local_ip>:8082 for phpMyAdmin
    
@@ -20,3 +43,8 @@ If you don’t have any web server locally, follow these steps.
       MARIADB_USER = dbuser
       MARIADB_PASSWORD = dbpass
 ``` 
+5. Open browser http://<local_ip>:8080
+```
+admin user: admin@admin.com
+admin pass: 123456
+```
