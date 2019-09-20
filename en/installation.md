@@ -32,41 +32,30 @@ Skip this step, if you want to install on [Laravel Homestead](https://laravel.co
 
 If you don’t have any web server locally, follow these steps. 
 
-1. Goto https://github.com/rvsitebuilder/docker-lamp-php72
-2. Follow step to install RVsitebuilder Docker
-3. After that you will got dev environment like below (local ip coule be like 192.168.x.x) : 
-
-
-```php
-   http://<local_ip>:8080 for document root
-   http://<local_ip>:8082 for phpMyAdmin
-   
-   document root path:
-       <workspacke_path>/docker-lamp-php72/public/
-   app path:
-       <workspacke_path>/docker-lamp-php72/app/
-       
-   db access info:
-      MARIADB_HOST = mariadb
-      MARIADB_DATABASE = dbname
-      MARIADB_USER = dbuser
-      MARIADB_PASSWORD = dbpass
-``` 
-
 <a name="Installation"></a>
 
 - [Install for Windows 10](installation-for-windows10.md)
 - [Install for MacOs](installation-for-macos.md)
 
+<a name="Goto Admin"></a>
+
 Please follow these steps: 
 
-1. Download RVsitebuilder Setup wizard https://files.mirror1.rvsitebuilder.com/download/rvsitebuilderinstaller/setup to your local computer. 
-2. Unzip the setup file 
-3. Upload Folder rvsitebuilder to /public_html/ or /publc/ or /www/ 
-4. Call the setup.php script for your domain name on browser http://mydomainname.com/rvsitebuilder/setup.php 
-5. Follow the setup steps until finish. 
-6. Enter developer license at manage app.
+1 Open browser http://<local_ip>:8080
+2 Waiting installation.
+![DeveloperDashboard](images/sb7_wizard_install.png)
+3 System will redirect to admin page, you can login by following credential:
+~~~
+admin user: admin@admin.com
+admin pass: 123456
+~~~
 
+![DeveloperDashboard](images/sb7_admin_login.png)
+
+4. Enter developer token at manage app.
+
+ 
+ 
  
 <a name=".env-configuration"></a>
 ## .env configuration 
