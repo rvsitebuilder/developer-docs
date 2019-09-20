@@ -12,6 +12,10 @@ If you don’t have any web server locally, follow these steps.
 
 ## Install on Docker
 
+### Install Docker
+[Install Docker for Windows](https://docs.docker.com/v17.09/docker-for-windows/install/)
+
+### Install step
 1. Download and Extract https://github.com/rvsitebuilder/docker-lamp-php72/archive/master.zip
 2. update docker .env file
 ~~~
