@@ -14,7 +14,7 @@
 You can install RVsitebuilder locally on your work station for developing purpose. Please register to (https://dev.rvsitebuilder.com/) to get the developer license. 
 
 1. Register to https://dev.rvsitebuilder.com/
-2. Log in to https://dev.rvsitebuilder.com/ and goto 
+2. Log in to https://dev.rvsitebuilder.com/
 2. Go to ‘Developer Dashboard’ https://dev.rvsitebuilder.com/devportal
 ![DeveloperDashboard](images/dev.rvsitebuilder.com_developer_dashboard.png)
 3. Copy ’My Developer Token Auth’ It will require to install locally. 
