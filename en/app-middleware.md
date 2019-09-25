@@ -35,7 +35,9 @@ In additional to default Laravel middleware, RVsitebuilder added the following g
 You can directly push your app’s middleware to `group middleware` and `global middleware` from your service provider. Here is an example of code:
 
 ```php
-public function boot() { 
+use Illuminate\Routing\Router;
+
+public function register() { 
     $this->registerMiddleware()
 } 
 
