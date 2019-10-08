@@ -6,9 +6,13 @@ Description Notify
 
 <a name="how-to"></a>
 ## How to
-มี option |error|info|success|notice|warning
+เราใช้ PNotify[PNotify](https://sciactive.com/pnotify/) เป็นพื้นฐาน 
+<br>
+มี option |error,info,success,notice,warning ที่เป็นพื้นฐาน
+<br>
+ถ้า option ที่ใช้มีไม่เพียงพอแนะนำให้ เข้าไปดู https://sciactive.com/pnotify/
 Notify pop
-
+ตัวอย่างการใช้งาน
 ```js
 <script>
     console.pop.success({
@@ -26,7 +30,6 @@ Notify inline
         'text': 'Hi error',
     });
 </script>
-
-<!-- TODO: @June How to use Notify -->
+```
 
 
