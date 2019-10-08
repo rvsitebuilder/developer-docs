@@ -12,7 +12,7 @@ Description Notify
 <br>
 ถ้า option ที่ใช้มีไม่เพียงพอแนะนำให้ เข้าไปดู https://sciactive.com/pnotify/
 ตัวอย่างการใช้งาน
-# Notify pop
+## Notify pop
 ```js
 <script>
     console.pop.success({
@@ -20,8 +20,8 @@ Description Notify
         delay: 1500,
     });
 </script>
-# Notify inline
 ```
+## Notify inline
 ```js
 <script>
     console.inline.error({
