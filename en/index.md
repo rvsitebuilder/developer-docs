@@ -32,6 +32,8 @@
     - [Webpack](webpack.md)
     - [Notify](notify.md)
     - [Event save](eventSave.md)
+    - [Event widget ready](eventSave.md)
+    - [Event editor ready](eventSave.md)
 - ## RVsitebuilder Visual Editor (WYSIWYG)
     - [Editable System Page](creating-editable-system-page.md)
     - [Extending WYSIWYG](extending-WYSIWYG.md)
