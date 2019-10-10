@@ -14,12 +14,15 @@ Description Notify
 ## Editor ready
 ```js
 <script>
-	$(document).bind('editorReady',function(){
-        alert('editor ready ')
-        $('body').click(function(){
-
+    $(function() {
+  	    $(document).bind('editorReady',function(){
+            alert('editor ready ')
+            $('body').click(function(){
+                //event action
+            })
         })
-    })
+    });
+
 </script>
 ```
 

@@ -16,11 +16,13 @@ Description Notify
 ## Save 
 ```js
 <script>
-	$(document).bind('editorReady',function(){
-		$('#saveall').click(function(){
-			alert('social ')
+$(function() {
+    $(document).bind('editorReady',function(){
+        $('#saveall').click(function(){
+            alert('social ')
         })
     })
+})
 </script>
 ```
 
