@@ -6,7 +6,7 @@ Description Notify
 
 <a name="how-to"></a>
 ## How to
-เป็น event listener ในรูปแบบ jQuery 
+เป็น event listener ในรูปแบบ [jQuery](https://api.jquery.com/category/events/) 
 
 
 <br>
