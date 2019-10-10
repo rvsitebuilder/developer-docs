@@ -12,7 +12,7 @@ Description Notify
 <br>
 มี option ให้ใช้ error,info,success,notice,warning ที่เป็นพื้นฐาน
 <br>
-ตัวอย่างการใช้งานจะอยู่ภายใต้ event[editorReady](eventSave.md)
+ตัวอย่างการใช้งานจะอยู่ภายใต้ event[editorReady](eventEditorReady.md)
 ## Save 
 ```js
 <script>
