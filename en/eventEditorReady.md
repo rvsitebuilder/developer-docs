@@ -1,5 +1,4 @@
 # Event Editor ready
-  - [How to](#how-to) 
 
 
 ในหน้า wysiwyg จะมี iframe 2 ส่วนและจะมี event  ของใครของมันที่ชื่อว่า editorReady,designReady จะทำงานแยกกันโดยมี iframe มากันการทำงานโดยมีลักษณะเป็น event ของ Editor การทำงานเหมือนกับ [jquery ready](https://api.jquery.com/ready/)การทำงานแตกต่างกันดังนี้
