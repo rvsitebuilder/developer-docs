@@ -40,7 +40,7 @@
     - [Editorready event fontend](eventEditorReady.md)
     - [editable event fontend](eventEditorReady.md)
     - [color picker](eventEditorReady.md)
-    - [model ro dialog](eventEditorReady.md)
+    - [model or dialog](eventEditorReady.md)
     - [panel menu](eventEditorReady.md)
     - [jquery ui](eventEditorReady.md)
     <!-- - Extending Menu Components (search box, shop, login/logout)
