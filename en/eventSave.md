@@ -6,7 +6,8 @@ Description Notify
 
 <a name="how-to"></a>
 ## How to
-เป็น event listener ในรูปแบบ [jQuery](https://api.jquery.com/category/events/) 
+มี 2รูปแบบให้ใช้ ควรจะเลือกให้เหมาะสม
+1. เป็น event listener ในรูปแบบ [jQuery](https://api.jquery.com/category/events/) 
 
 
 <br>
@@ -25,7 +26,29 @@ $(function() {
 })
 </script>
 ```
+2.เป็น event callback ใน function save sync(เป็น Synchronous function จะรอการทำงาน ข้อควรระว่ังต้องแน่ใจว่าfunctionที่สร้างไม่ติด loop หรือ debug ก่อนเสร็จงาน)
+<br>
+มี event ดังนี้ 
+ตัวอย่างการใช้งาน beforeSave,saveComplete,afterSaveSuccess,afterSaveError
 
+```js
+	$(document).bind('beforeSave',function(){
+        console.log('test beforeSave');
+		
+    });
+    $(document).bind('saveComplete',function(){
+        console.log('test saveComplete');
+		
+    });
+    $(document).bind('afterSaveSuccess',function(){
+        console.log('test afterSaveSuccess');
+		
+    });
+    $(document).bind('afterSaveError',function(){
+        console.log('test afterSaveError');
+		
+	});
+```
 
 
 

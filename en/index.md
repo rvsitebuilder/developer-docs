@@ -31,13 +31,14 @@
     - [JavaScript and CSS](javascript-css-framework.md)
     - [Webpack](webpack.md)
     - [Notify](notify.md)
-    - [Event save](eventSave.md)
-    - [Event editor ready](eventEditorReady.md)
-    - [Event widget ready](eventSave.md)
+
 - ## RVsitebuilder Visual Editor (WYSIWYG)
     - [Editable System Page](creating-editable-system-page.md)
     - [Extending WYSIWYG](extending-WYSIWYG.md)
     - [RVsitebuilder Widget](rvsitebuilder-widget.md)
+    - [Save event fontend](eventSave.md)
+    - [Editor ready event fontend](eventEditorReady.md)
+    - [Widget ready event fontend](eventSave.md)
     <!-- - Extending Menu Components (search box, shop, login/logout)
     - Extending Section Content
     - Extending Insert Toolbar
