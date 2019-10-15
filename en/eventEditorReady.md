@@ -4,10 +4,11 @@
 
 Description Notify
 
+ในหน้า wysiwyg จะมี iframe 2 ส่วน ทำงานร่วมกัน
 
 เป็น event ของ Editor การทำงานเหมือนกับ [jquery ready](https://api.jquery.com/ready/)จะมี2แบบ editorReady,widgetReady การทำงานแตกต่างกันดังนี้
 ## Editor ready
-โดยส่วนใหญ่จะเอาไว้เก็บ event ของ toolbar (เป็น toolbar หลักที่ไม่อยากให้ไปปะปนกับ template หลายๆ toolbar จะไว้ที่นี้)เช่น ปุ่ม เปลี่ยน font ปุ่มเปลี่ยนตัวหน้า ตัวเอียง ปุ่ม insert table youtube ปุ่มหลักๆที่อยู่บน topbar และ panel
+โดยส่วนใหญ่จะเอาไว้เก็บ event หลักของ toolbar (เป็น toolbar หลักที่ไม่อยากให้ไปปะปนกับ template หลายๆ toolbar จะไว้ที่นี้)kเช่น ปุ่ม เปลี่ยน font ปุ่มเปลี่ยนตัวหน้า ตัวเอียง ปุ่ม insert table youtube ปุ่มหลักๆที่อยู่บน topbar และ panel
 <br>
 ตัวอย่างการใช้งาน
 ```js
@@ -23,7 +24,8 @@ Description Notify
 
 </script>
 ```
-## Editor ready
+## widget ready
+เป็น event หลักของ toolbar มีจำเป็นต้องอยู่ใน template เช่น drag&drop event 
 ```js
 <script>
     $(function() {
