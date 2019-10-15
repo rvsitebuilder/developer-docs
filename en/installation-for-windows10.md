@@ -19,8 +19,6 @@ If you don’t have any web server locally, follow these steps.
 1. Download and Extract https://github.com/rvsitebuilder/docker-lamp-php72/archive/master.zip
 2. update docker .env file
 ~~~
-Update HOST_NAME to Local IP (192.168.x.x)
-
 Optional to change WEBSERVER_PORT,LOCALE,TZ
 ~~~
 3. run docker build and up
