@@ -32,22 +32,26 @@ $(function() {
 ตัวอย่างการใช้งาน beforeSave,saveComplete,afterSaveSuccess,afterSaveError
 
 ```js
-	$(document).bind('beforeSave',function(){
-        console.log('test beforeSave');
-		
-    });
-    $(document).bind('saveComplete',function(){
-        console.log('test saveComplete');
-		
-    });
-    $(document).bind('afterSaveSuccess',function(){
-        console.log('test afterSaveSuccess');
-		
-    });
-    $(document).bind('afterSaveError',function(){
-        console.log('test afterSaveError');
-		
-	});
+<script>
+$(function() {
+        $(document).bind('beforeSave',function(){
+            console.log('test beforeSave');
+            
+        });
+        $(document).bind('saveComplete',function(){
+            console.log('test saveComplete');
+            
+        });
+        $(document).bind('afterSaveSuccess',function(){
+            console.log('test afterSaveSuccess');
+            
+        });
+        $(document).bind('afterSaveError',function(){
+            console.log('test afterSaveError');
+            
+        });
+    })
+</script>
 ```
 
 
