@@ -36,8 +36,13 @@
     - [Editable System Page](creating-editable-system-page.md)
     - [Extending WYSIWYG](extending-WYSIWYG.md)
     - [RVsitebuilder Widget](rvsitebuilder-widget.md)
-    - [Save event](eventSave.md)
-    - [Editor ready event](eventEditorReady.md)
+    - [Save event fontend](eventSave.md)
+    - [Editorready event fontend](eventEditorReady.md)
+    - [editable event fontend](eventEditorReady.md)
+    - [color picker](eventEditorReady.md)
+    - [model ro dialog](eventEditorReady.md)
+    - [panel menu](eventEditorReady.md)
+    - [jquery ui](eventEditorReady.md)
     <!-- - Extending Menu Components (search box, shop, login/logout)
     - Extending Section Content
     - Extending Insert Toolbar
