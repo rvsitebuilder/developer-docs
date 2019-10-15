@@ -16,7 +16,7 @@ You can install RVsitebuilder locally on your work station for developing purpos
 1. Register to https://dev.rvsitebuilder.com/
 2. Log in to https://dev.rvsitebuilder.com/
 2. Go to ‘Developer Dashboard’ https://dev.rvsitebuilder.com/devportal
-![DeveloperDashboard](/en/images/dev.rvsitebuilder.com_developer_dashboard.png)
+![DeveloperDashboard](images/dev.rvsitebuilder.com_developer_dashboard.png)
 3. Copy ’My Developer Token Auth’ It will require to install locally. 
 
 
@@ -46,7 +46,7 @@ Please follow these steps:
 1 Open browser http://<local_ip>:8080
 
 2 Waiting installation.
-![DeveloperDashboard](/en/images/sb7_wizard_install.png)
+![DeveloperDashboard](images/sb7_wizard_install.png)
 
 3 System will redirect to admin page, you can login by following credential:
 ~~~
@@ -54,7 +54,7 @@ admin user: admin@admin.com
 admin pass: 123456
 ~~~
 
-![DeveloperDashboard](/en/images/sb7_admin_login.png)
+![DeveloperDashboard](images/sb7_admin_login.png)
 
 4. Enter developer token at manage app.
 
