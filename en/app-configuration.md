@@ -58,7 +58,7 @@ config('package-name.key');
 
 RVsitebuilder comes with the unified config admin interface on the admin manage app. Go to `apps launcher` choose manage, and choose `config` on the left menu. 
  
-![configInterface](images/configInterface.jpg)
+![configInterface](/en/images/configInterface.jpg)
  
 To allow end-users change the value of your config online, you need to create a config blade file. And define it on your `app’s service provider`.
  
