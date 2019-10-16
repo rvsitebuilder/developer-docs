@@ -1,19 +1,24 @@
 # App Middelware
 
+  - [Creating Middleware](#Creating-Middleware)
+  - [Global middleware](#Global-middleware) 
+  - [Register App’s Middleware](#Register-App’s-Middleware)
+  
 > {info} If you are not familiar with its concept. Check out the full [Laravel Middleware documentation](https://laravel.com/docs/master/middleware) to get started. 
 
+<a name="Creating-Middleware"></a>
 ## Creating Middleware
 
 Create Laravel middleware file and keep it in your `app’s /src/Http/Middleware` folder. 
 
-```
-/packages/author/appname/
+```php
+/packages/vendor-name/package-name/
                     ├── src
                     │   ├── Http
-                    │   │   └── Middelware           
+                    │   │   └── Middelware
 
 ```
-
+<a name="Global-middleware"></a>
 ## Global middleware 
 
 In additional to default Laravel middleware, RVsitebuilder added the following global middleware. 
@@ -24,13 +29,15 @@ In additional to default Laravel middleware, RVsitebuilder added the following g
 - `\App\Http\Middleware\ReplaceTemplateVariable`: To replace RVsitebuilder template variables.
 - `\App\Http\Middleware\FrontendACLRole`: To control permission, and visibility options.  
  
-
+<a name="Register-App’s-Middleware"></a>
 ## Register App’s Middleware 
 
 You can directly push your app’s middleware to `group middleware` and `global middleware` from your service provider. Here is an example of code:
 
 ```php
-public function boot() { 
+use Illuminate\Routing\Router;
+
+public function register() { 
     $this->registerMiddleware()
 } 
 

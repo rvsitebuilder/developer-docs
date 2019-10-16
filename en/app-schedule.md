@@ -1,14 +1,24 @@
 # Schedule and Queue
 
- > {info} If you are not familiar with its concept. Check out the full [Laravel Task Scheduling documentation](https://laravel.com/docs/master/scheduling) and [Laravel Queues documentation](https://laravel.com/docs/master/queues) to get started. 
+  - [Cron](#cron)
+  - [Schedule](#schedule)
+  - [Queue](#queue)
+  
+  
+> {info} If you are not familiar with its concept. Check out the full [Laravel Task Scheduling documentation](https://laravel.com/docs/master/scheduling) and [Laravel Queues documentation](https://laravel.com/docs/master/queues) to get started. 
 
+<a name="cron"></a>
 ## Cron
 
 All RVsitebuilder websites have been set up to run cron.
 
+```php 
+protected function schedule(Schedule $schedule)
+{ 
+    $schedule->command('rvsitebuilder:gentempaccount-run')->everyMinute();    
+}
 ```
-```
-
+<a name="schedule"></a>
 ## Schedule
 
 To set up schedule task without to touch Laravel app/Console/Kernel.php, RVsitebuilder comes with `Scheduler App` which is a wrapper around [Laravel Totem](https://github.com/codestudiohq/laravel-totem). 
@@ -16,11 +26,10 @@ To set up schedule task without to touch Laravel app/Console/Kernel.php, RVsiteb
 To create schedule task, create migrations
 
 ```php
-// TODO: @pam ใส่ตัวอย่าง job ด้วย
-
+* * * * * cd /var/www && php artisan schedule:run >> /dev/null 2>&1
 ```
 
-
+<a name="queue"></a>
 ## Queue
 
 A lot of RVsitebuilder websites run on shared hosting environment and does not have SSH access to run `Laravel Queue`. 

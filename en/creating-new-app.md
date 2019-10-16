@@ -1,8 +1,20 @@
 # Creating New App
 
-## Private App
+  - [Public App](#Public-App)
+  - [Creating App](#Creating-App) 
+  - [Exporting App](#Exporting-App)
+  - [Importing Private App](#Importing-Private-App) 
+  - [Submitting App to Marketplace ](#Submitting-App-to-Marketplace )
 
-We provide Developer app on RVsitebuilder marketplace that help you create a new app. Save you a lot time manually create app scaffolding. 
+<a name="Public-App"></a>
+## Public App
+
+You can find public apps on [RVsitebuilder App Marketplace](https://apps.rvsitebuilder.com/). Applications to make your website to be more powerful and functional. 
+
+<a name="Creating-App"></a>
+## Creating App
+
+Build your own app no more easier. We provide Developer app on RVsitebuilder marketplace that help you create a new app. Save you a lot of time manually create app scaffolding. 
 
 1. Go to RVsitebuilder App Marketplace, and find [Developer App](https://apps.rvsitebuilder.com/developer). 
 2. Click install and choose your local development website to install. If your local domain does not on the domain list, please login as admin on your local development and try again. 
@@ -11,24 +23,18 @@ We provide Developer app on RVsitebuilder marketplace that help you create a new
 
 You will get basic scarfolding consist of migration, resources, model, controller, and view to start with. 
 
- 
-### Export app 
+<a name="Exporting-App"></a>
+## Exporting App 
 
-//TODO: @amarin export and import app
+//TODO: @amarin export app
 
-### Import as private app on production web site 
+<a name="Importing-Private-App"></a>
+## Importing Private App
 
-Xxx 
-
- 
-
-## Public App
- 
-
-You can find public apps on [RVsitebuilder App Marketplace](https://apps.rvsitebuilder.com/). Applications to make your website to be more powerful and functional. 
+//TODO: @amarin import app
 
  
-
+<a name="Submitting-App-to-Marketplace"></a>
 ## Submitting App to Marketplace 
 
 We are building marketplace app to facilitate app publishing activities including the payment system. If you want to submit free public app, please submit [ticket](https://rvglobalsoft.com/tickets/new&deptId=5) here. For paid apps, please wait for announcement soon.

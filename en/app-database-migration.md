@@ -1,13 +1,19 @@
-# App DB Migration and Model
+# App DB Migration
+
+  - [Creating Migration](#Creating-Migration)
+  - [Seeding](#Seeding)
+  - [Registering App on App table](#Registering-App-on-App-table) 
+  - [Define Migration on App's Service Provider](#Define-Migration-on-App's-Service-Provider)
 
 > {info} If you are not familiar with its concept. Check out the full [Laravel Migration documentation](https://laravel.com/docs/master/migrations) to get started. 
 
+<a name="Creating-Migration"></a>
 ## Creating Migration
 
 Create Laravel migration file and keep it in your `app’s /database/migrations` folder. 
 
-```
-/packages/author/appname/
+```php
+/packages/vendor-name/package-name/
                     ├── database
                     │   └── migrations
                     │       └── 2019_03_14_074812_regist_app_to_core_app.php
@@ -33,9 +39,10 @@ To avoid as much as possible troubles, you migration should:
         }
 ```
 
-## Registering App on App table 
+<a name="Seeding"></a>
+## Seeding
 
-This is mandatory.
+If you want to insert some default data when installing your app, put your default data in the same migration file. It is a good idea to wrap it with `Model::unguard()` and `Model::reguard()` while seeding.
 
 ```php
 <?php
@@ -51,6 +58,9 @@ class RegistNewAppToCoreApp extends Migration
      */
     public function up()
     {
+        // Schema 
+
+        // Seed default data
         Model::unguard();
         $this->seed();
         Model::reguard();
@@ -58,11 +68,27 @@ class RegistNewAppToCoreApp extends Migration
 
     private function seed()
     {
-        CoreApps::firstOrCreate(['app_name' => 'author/appname']);
+        //
     }
 }
 ```
 
+<a name="Registering-App-on-App-table"></a>
+## Registering App on App table 
+
+This is mandatory. You need to seed `vendor-name/package-name` on `CoreApps` table.
+
+```php
+    private function seed()
+    {
+        CoreApps::firstOrCreate(['package-name' => 'vendor-name/package-name']);
+    }
+}
+```
+
+Do not forget to change `vendor-name/package-name` to match your name.
+
+<a name="Define-Migration-on-App's-Service-Provider"></a>
 ## Define Migration on App's Service Provider
 
 When installing your app, we run `artisan migrate` to make a change on the database according to your migration file defined on the service provider.

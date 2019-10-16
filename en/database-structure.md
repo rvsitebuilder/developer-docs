@@ -1,22 +1,40 @@
 # Database Structure
 
-//TODO: @pam database structure
+  
+## CMS features  
 
-**Slug** 
-SEO 
-Page 
-Post 
+Several tables contain Page, Blog, Menu, Header, footer, Slug, SEO, and etc. to build dynamic website.
 
-**Old-slug**
+![main](images/main_DB_driagram.jpg)
 
-Renaming page, post, and category slug will keep the old slug and automatically redirect to the new slug. 
+### Old-slug
 
-**User** 
+Renaming page, post, and category slug will keep the old slug and automatically redirect to the new slug.
 
-xxx 
+## Core-setting
 
-**Meta**
+This table is used to store custom configuration from `Config Admin Interface` before creating config cache. Check [App Configuration](app-configuration.md) for more detail.
 
-Extending user table using meta table 
+![Core_setting](images/core_setting_main_DB_driagram.png)
 
+## User
 
+![user](images/user_DB_driagram.jpg) 
+
+## Role and Permissions
+
+![role_permission](images/role_permission_DB_driagram.jpg)
+
+## Meta
+Extending default table using meta table. Check [App Model](app-model.md) for more detail.
+<!-- TODO: @pam ยังไม่ครบขาด user, and etc. ต้องรอ เจน แก้ไข app-model.md ก่อน -->
+
+![meta](images/meta_DB_driagram.jpg)
+
+## Email
+
+![email](images/email_DB_diagram.png)
+
+## Scheduled tasks
+
+![task](images/task_DB_driagram.jpg)
