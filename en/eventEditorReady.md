@@ -11,7 +11,6 @@
 
 ```js
 <script>
-  $(function(){" "}
   {$(document).bind("editorReady", function() {
     alert("editor ready ");
     $("body").click(function() {
