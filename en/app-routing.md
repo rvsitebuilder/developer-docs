@@ -3,7 +3,6 @@
   - [Creating Route](#Creating-Route)
   - [Admin Route](#Admin-Route) 
   - [User Route](#User-Route)
-  - [Configurable Named Route](#Configurable-Named-Route) 
 
 > {info} If you are not familiar with its concept. Check out the full [Laravel Routing documentation](https://laravel.com/docs/master/routing) to get started. 
 
@@ -70,20 +69,4 @@ Route::group([
         ]);
     });
 });
-```
-<a name="Configurable-Named-Route"></a>
-## Configurable Named Route
-
-> {info} This feature will be available on v7.2.
-
-If you want to allow end-user to change your app’s named route to a different route, you need to register its name on your service provider. The simple use case is the `user.dashboard` named route. User will be able to change the route to its own instead of default one on `Admin > Config > Route` click tab ‘Named route‘. 
-
-```php
-public function boot() { 
-    $this->defineDynamicNamedRoute()  
-} 
-
-public function dynamicNamedRoute (){ 
-    
-} 
 ```
