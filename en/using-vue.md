@@ -1,4 +1,5 @@
 # Using Vue.js
+
 You can use frontend framework Vue.js and React.js etc.
 
 - [Directory Structure](#directory-structure)
@@ -9,11 +10,12 @@ You can use frontend framework Vue.js and React.js etc.
 - [Load Vue](#load-vue)
 - [Vue Devtools](#vue-devtools)
 
-
 ## Directory Structure
+
 Here is the example of file and directory structure for `/packages/vendor-name/package-name/resources`.
 
-Create Laravel blade file and keep it in your `app’s /resources ` folder.
+Create Laravel blade file and keep it in your `app’s /resources` folder.
+
 ```php
 /packages/vendor-name/package-name/
                       ├── resources
@@ -49,13 +51,14 @@ Here is an example of `views/admin/layouts/app.blade.php`
 @endpush
 
 @prepend('package-scripts')
-    {{ script(@mixcdn('js/admin/bootstrap-vue.js','vendor/rvsitebuilder/wysiwyg')) }}
+    {{ script(@mixcdn('js/admin/bootstrap-vue-axios.js','vendor/rvsitebuilder/wysiwyg')) }}
 @endprepend
 
 ```
 
 ## Creating Component
-Includes a simple Vue component intended to acquaint you with the basic steps required to integrate a component into your application. 
+
+Includes a simple Vue component intended to acquaint you with the basic steps required to integrate a component into your application.
 
 We choose **[Bootstrap Vue](https://bootstrap-vue.js.org)** because quickly integrate Bootstrap v4 components with Vue.js.
 
@@ -85,6 +88,7 @@ export default {
 };
 </script>
 ```
+
 There are two main components. The first part is the `html template` and the second part is the section encapsulated by the `<script>` tag defines the component's logic.
 
 This example uses one of Vue's lifecycle hooks (`mounted()`) to write a message to the browser console once the component has been rendered to the page DOM.
@@ -104,12 +108,11 @@ const app = new Vue({
 });
 ```
 
-Loads an example Vue component creatively named `ExampleComponent.vue`. 
+Loads an example Vue component creatively named `ExampleComponent.vue`.
 
 This component is found in the `resources/js/components` directory. We'll return to this file in a moment, but if you're new to Vue just keep in mind that a Vue component allow you to create reusable HTML widgets which are typically enhanced with dynamic, JavaScript-driven behavior. In this chapter we'll create multiple Vue components while exploring different Vue capabilities.
 
 Creates a new Vue instance, and identifies the root element of the Vue application. This root element serves as a cue to Vue that all Vue-related output will be rendered somewhere inside this element. This is often done simply by wrapping everything within your layout `<body>` with a `<div id="app">...</div>` element. As you'll soon see we'll rely on precisely this approach.
-
 
 ## Webpack
 
@@ -121,15 +124,18 @@ Next,config path file to public
 ```js
 mix.js(['resources/js/admin/Example.js'], 'js/admin/Example.js');
 ```
+
 > Done! Now, all of the bullet items above are available to you, and it required exactly one method call.
 
 Open a terminal and execute the following command.
- ```
- $ npm run dev 
- ```
+
+```
+$ npm run dev
+```
+
 At this point, simply create an HTML file, import your `js/admin/Example.js` bundle, and load the browser
 
-## Load Vue 
+## Load Vue
 
 Next, create a new view named `index.blade.php`, placing it in your `resources/views` directory.
 
@@ -149,11 +155,9 @@ Next, create a new view named `index.blade.php`, placing it in your `resources/v
 
 It defines the Vue root element (`#app`). Any referenced Vue components must be placed inside this element. We'll reference the example component inside a view which we'll create in just a moment.
 
->{warning} You should always use compound names when naming components, to prevent conflicts with current and forthcoming **HTML elements**. This is because **HTML elements** cannot be named using a compound word.
+> {warning} You should always use compound names when naming components, to prevent conflicts with current and forthcoming **HTML elements**. This is because **HTML elements** cannot be named using a compound word.
 
 > Components should always be **Pascal-cased** (e.g. `ExampleComponent.vue` as opposed to `exampleComponent.vue` or `examplecomponent.vue`) or **kebab-cased** (e.g. `example-component.vue`). I'll return to other naming convention tips as warranted throughout the chapter It references the generated `Example.js` file
-
-
 
 ## Vue Devtools
 
