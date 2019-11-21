@@ -129,7 +129,7 @@ mix.js(['resources/js/admin/Example.js'], 'js/admin/Example.js');
 
 Open a terminal and execute the following command.
 
-```
+```php
 $ npm run dev
 ```
 
