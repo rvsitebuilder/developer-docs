@@ -47,11 +47,11 @@ Here is an example of `views/admin/layouts/app.blade.php`
 @endsection
 
 @push('package-styles')
-    {{ style(@mixcdn('css/bootstrap.css', 'vendor/rvsitebuilder/wysiwyg')) }}
+    {{ style(mix('css/bootstrap.css', 'vendor/rvsitebuilder/core')) }}
 @endpush
 
 @prepend('package-scripts')
-    {{ script(@mixcdn('js/admin/bootstrap-vue-axios.js','vendor/rvsitebuilder/wysiwyg')) }}
+    {{ script(mix('js/bootstrap-vue-axios.js', 'vendor/rvsitebuilder/core')) }}
 @endprepend
 
 ```
