@@ -33,8 +33,6 @@ Create Laravel blade file and keep it in your `app’s /resources` folder.
 
 ```
 
-<!-- TODO: @june ขยายความด้วย -->
-
 ## How to use
 
 Here is an example of `views/admin/layouts/app.blade.php`

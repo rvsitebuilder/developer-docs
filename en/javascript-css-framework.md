@@ -1,11 +1,10 @@
-# JavaScript and CSS Framework
-
-  - [User interface](#User-interface)
-  - [Admin interface](#Admin-interface) 
-  - [jQuery](#jQuery)
-  - [Package-script Blade Stack](#Package-script-Blade-Stack) 
-  - [Passing PHP variables to JS through wex and mex](#wex-and-mex)
-  - [Vue.js](#Vue) 
+# JavaScript and CSS Framework- [User interface](#user-interface)
+- [User interface](#user-interface)
+- [Admin interface](#admin-interface)
+- [jQuery](#jquery)
+- [Package-script Blade Stack](#package-script-blade-stack)
+- [Wex](#wex)
+- [Passing PHP variables to JS through wex and mex](#passing-php-variables-to-js-through-wex-and-mex)
 
 RVsitebuilder user and admin interfaces are render independently.
 
@@ -64,8 +63,4 @@ Loaded as an external script on all pages, both admin and user interface. It has
 <a name="wex-and-mex"></a>
 ## Passing PHP variables to JS through wex and mex
 
-<!-- TODO: @june ขยายความด้วย -->
-
-<a name="Vue"></a>
-## Vue.js
 <!-- TODO: @june ขยายความด้วย -->
