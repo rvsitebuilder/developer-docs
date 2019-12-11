@@ -1,4 +1,4 @@
-# JavaScript and CSS Framework- [User interface](#user-interface)
+# JavaScript and CSS Framework
 - [User interface](#user-interface)
 - [Admin interface](#admin-interface)
 - [jQuery](#jquery)
@@ -28,7 +28,7 @@ Admin interface is `platform agnostic`. If you generate app from developer app, 
 
 @push('package-styles')
     <!-- package-styles -->
-    {{ style(@mixcdn('css/bootstrap.css', 'vendor/rvsitebuilder/wysiwyg')) }}    
+    {{ style(mix('css/bootstrap.css', 'vendor/rvsitebuilder/core')) }} 
 @endpush
 
 @push('package-scripts')
@@ -58,6 +58,8 @@ Loaded as an external script on all pages, both admin and user interface. It has
 
 <a name="Wex"></a>
 ## Wex
+
+Wex acronyms from wysiwyg export variable from controller to js to be used data in  variable
 
 <!-- TODO: @june ขยายความด้วย -->
 <a name="wex-and-mex"></a>
