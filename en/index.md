@@ -29,8 +29,9 @@
 - ## Frontend Development
 
   - [Public Asset](public-asset.md)
+  - [Extending Admin](extending-admin.md)
   - [JavaScript and CSS](javascript-css-framework.md)
-    - [Using Vue.js](using-vue.md)
+  - [Using Vue.js](using-vue.md)
   - [Webpack](webpack.md)
   - [Notify](notify.md)
 

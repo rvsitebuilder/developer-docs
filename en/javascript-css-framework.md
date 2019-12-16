@@ -1,11 +1,10 @@
 # JavaScript and CSS Framework
-
-  - [User interface](#User-interface)
-  - [Admin interface](#Admin-interface) 
-  - [jQuery](#jQuery)
-  - [Package-script Blade Stack](#Package-script-Blade-Stack) 
-  - [Passing PHP variables to JS through wex and mex](#wex-and-mex)
-  - [Vue.js](#Vue) 
+- [User interface](#user-interface)
+- [Admin interface](#admin-interface)
+- [jQuery](#jquery)
+- [Package-script Blade Stack](#package-script-blade-stack)
+- [Wex](#wex)
+- [Passing PHP variables to JS through wex and mex](#passing-php-variables-to-js-through-wex-and-mex)
 
 RVsitebuilder user and admin interfaces are render independently.
 
@@ -29,7 +28,7 @@ Admin interface is `platform agnostic`. If you generate app from developer app, 
 
 @push('package-styles')
     <!-- package-styles -->
-    {{ style(@mixcdn('css/bootstrap.css', 'vendor/rvsitebuilder/wysiwyg')) }}    
+    {{ style(mix('css/bootstrap.css', 'vendor/rvsitebuilder/core')) }} 
 @endpush
 
 @push('package-scripts')
@@ -60,12 +59,10 @@ Loaded as an external script on all pages, both admin and user interface. It has
 <a name="Wex"></a>
 ## Wex
 
+Wex acronyms from wysiwyg export variable from controller to js to be used data in  variable
+
 <!-- TODO: @june ขยายความด้วย -->
 <a name="wex-and-mex"></a>
 ## Passing PHP variables to JS through wex and mex
 
-<!-- TODO: @june ขยายความด้วย -->
-
-<a name="Vue"></a>
-## Vue.js
 <!-- TODO: @june ขยายความด้วย -->
