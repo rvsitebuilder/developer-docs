@@ -24,15 +24,15 @@ You can inject code to blade file
         app('rvsitebuilderService')->inject('admin_master','vendor-name/package-name::your blade file');
     }
 ```
-Your blade file 
+In your blade file insert your JavaScript and css
 ```php
-    @push('package-styles')
-<!-- package-styles -->
+@push('package-styles')
+
 
 @endpush
 
 @push('package-scripts')
-<!-- package-scripts -->
+
     
 @endpush
 
