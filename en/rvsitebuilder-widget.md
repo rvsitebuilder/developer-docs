@@ -16,8 +16,6 @@
 
 ## Widget
 
-ssssssssssss
-
 Widget is a RVsitebuilder special element that make your `editable system page` more dynamic and configurable.
 
 ```php
