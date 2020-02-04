@@ -145,12 +145,11 @@ Widget blade contains your `app's widget design` according to the user config.
     </div>
     ```
 
-2.  ไฟล์ panel.blade.php คือ Panel Toolbar ที่แสดง Setting Tab และ Design Tab โดยมีรูปแบบดังนี้
+2)  ไฟล์ panel.blade.php คือ Panel Toolbar ที่แสดง Setting Tab และ Design Tab โดยมีรูปแบบดังนี้
 
     2.1 การตั้งค่า Widget Name และ Widget Title
 
     ```php
-    {{--  toolbar Your Widget  --}}
     @extends('rvsitebuilder/wysiwyg::admin.layouts.master_widget',
     [
     'appName' => $appName,
@@ -163,10 +162,10 @@ Widget blade contains your `app's widget design` according to the user config.
     @overwrite
     ```
 
+
     2.2 วางโด้ด Html, PHP, CSS, Java Script เพื่อแสดงใน Setting Tab
 
     ```php
-    {{--  start setting tab  --}}
     @section('widget-setting')
 
     <div class="title">
@@ -176,15 +175,12 @@ Widget blade contains your `app's widget design` according to the user config.
         <div class="clear"></div>
 
     @overwrite
-
-    {{--  end setting tab  --}}
     ```
+
 
     2.3 โค้ดการเรียกใช้พาธรูป Thumbanil เพื่อแสดงใน Design Tab
 
     ```php
-    {{--  start design tab  --}}
-
     @section('widget-design')
 
         <div class="uk-margin-small-bottom">Select design</div>
@@ -198,7 +194,6 @@ Widget blade contains your `app's widget design` according to the user config.
         </div>
 
     @overwrite
-    {{--  end design tab  --}}
     ```
 
 <!-- > {info} End-users may edit raw blade file directly on RVsitebuilder WYSIWYG to suit their needs. -->
