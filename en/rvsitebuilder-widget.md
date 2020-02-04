@@ -191,7 +191,7 @@ Widget blade contains your `app's widget design` according to the user config.
           <div>
               <label for="widget-radio-1">
                   <input type="radio" name="radio" class="wbRadiobox" cmd="setting_design" value="1" id="" style="display:none;">
-                  <img alt="" src="{{ config('rvsitebuilder/wysiwyg.wex.url.WYS_IMG_URL') }}/images/thumbnail-default-widget-design.jpg" width="200" height="36" border="0" />
+                  <img alt="" src="/vendor/$APP_LOWER_NAME$/images/thumbnail-default-widget-design.jpg" width="200" height="36" border="0" />
               </label>
           </div>
       </div>
@@ -248,14 +248,14 @@ TODO: @Jatuporn help me please.
         <div>
             <div class="view"></div>
             <img class="imgwidgetName"  alt=""
-                srcs="{{ config('rvsitebuilder/wysiwyg.wex.url.WYS_IMG_URL') }}/images/thumbnail-widgetname-design1.png"
+                srcs="/vendor/$APP_LOWER_NAME$/images/thumbnail-widgetname-design1.png"
                  data-appname="vendor-name/package-name" widgetname="widget">
         </div>
     </div>
 </icon-widget>
 <design>
     @include('rvsitebuilder/core::layouts.widget_wys_master_header')
-    <img srcs="{{ config('rvsitebuilder/wysiwyg.wex.url.WYS_IMG_URL') }}/images/thumbnail-default-widget-design1.png" title="category_list"  alt="">
+    <img srcs="/vendor/$APP_LOWER_NAME$/images/thumbnail-default-widget-design1.png" title="category_list"  alt="">
     @include('rvsitebuilder/core::layouts.widget_wys_master_footer')
 </design>
 
