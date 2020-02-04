@@ -95,9 +95,9 @@ Config ส่วนนี้จะมี title และ design เป็นค�
 ไฟล์ config >> widget.php
 
 ```php
-   /packages/vendor-name/package-name/
-                    ├── config
-                    │    └── widget.php
+/packages/vendor-name/package-name/
+                ├── config
+                │    └── widget.php
 ```
 
 ```php
@@ -142,7 +142,6 @@ Widget blade contains your `app's widget design` according to the user config.
     <div class="containerWidget">
         @includeWhen($setting['design'] == 1, 'vendor-name/package-name::widgets.widgetName.designs.design1')
         @includeWhen($setting['design'] == 2, 'vendor-name/package-name::widgets.widgetName.designs.design2')
-
     </div>
     ```
 
@@ -183,22 +182,24 @@ Widget blade contains your `app's widget design` according to the user config.
 
     2.3 โค้ดการเรียกใช้พาธรูป Thumbanil เพื่อแสดงใน Design Tab
 
-        {{--  start design tab  --}}
+    ```php
+    {{--  start design tab  --}}
 
-        @section('widget-design')
+    @section('widget-design')
 
-            <div class="uk-margin-small-bottom">Select design</div>
-            <div class="rv-thumb-active toolbar-panel-scrollbar" >
-                <div>
-                    <label for="blog-radio-1">
-                        <input type="radio" name="radio" class="wbRadiobox" cmd="setting_design" value="1" id="" style="display:none;">
-                        <img alt="" src="{{ config('rvsitebuilder/wysiwyg.wex.url.WYS_IMG_URL') }}/images/thumbnail-default-widget-design.jpg" width="200" height="36" border="0" />
-                    </label>
-                </div>
+        <div class="uk-margin-small-bottom">Select design</div>
+        <div class="rv-thumb-active toolbar-panel-scrollbar" >
+            <div>
+                <label for="blog-radio-1">
+                    <input type="radio" name="radio" class="wbRadiobox" cmd="setting_design" value="1" id="" style="display:none;">
+                    <img alt="" src="{{ config('rvsitebuilder/wysiwyg.wex.url.WYS_IMG_URL') }}/images/thumbnail-default-widget-design.jpg" width="200" height="36" border="0" />
+                </label>
             </div>
+        </div>
 
-        @overwrite
-        {{--  end design tab  --}}
+    @overwrite
+    {{--  end design tab  --}}
+    ```
 
 <!-- > {info} End-users may edit raw blade file directly on RVsitebuilder WYSIWYG to suit their needs. -->
 
