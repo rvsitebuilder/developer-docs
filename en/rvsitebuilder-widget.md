@@ -136,65 +136,71 @@ Widget blade contains your `app's widget design` according to the user config.
 
 ในส่วน Widget ที่มีหลายๆ Design นอกจากจะกำหนดค่า config แล้ว ยังต้องเพิ่มโค้ดที่สอดคล้องหรือเชื่อมโยงกันดังนี้
 
-1.  ไฟล์ widget.blade.php คือ กำหนดการเรียกใช้ไฟล์ดีไซต์แบบต่างๆ ตามจำนวนที่ต้องการ
+1. ไฟล์ widget.blade.php คือ กำหนดการเรียกใช้ไฟล์ดีไซต์แบบต่างๆ ตามจำนวนที่ต้องการ
 
-    ```php
-    <div class="containerWidget">
-        @includeWhen($setting['design'] == 1, 'vendor-name/package-name::widgets.widgetName.designs.design1')
-        @includeWhen($setting['design'] == 2, 'vendor-name/package-name::widgets.widgetName.designs.design2')
-    </div>
-    ```
+   ```php
+   <div class="containerWidget">
+       @includeWhen($setting['design'] == 1, 'vendor-name/package-name::widgets.widgetName.designs.design1')
+       @includeWhen($setting['design'] == 2, 'vendor-name/package-name::widgets.widgetName.designs.design2')
+   </div>
+   ```
 
-2)  ไฟล์ panel.blade.php คือ Panel Toolbar ที่แสดง Setting Tab และ Design Tab โดยมีรูปแบบดังนี้
+2. ไฟล์ panel.blade.php คือ Panel Toolbar ที่แสดง Setting Tab และ Design Tab โดยมีรูปแบบดังนี้
 
-    2.1 การตั้งค่า Widget Name และ Widget Title
+   2.1 การตั้งค่า Widget Name และ Widget Title
 
-    ```php
-    @extends('rvsitebuilder/wysiwyg::admin.layouts.master_widget',
-    [
-    'appName' => $appName,
-    'widgetName' => $widgetName,
-    'setting' => $setting
-    ])
+   ```php
+   {{--  toolbar Your Widget  --}}
+   @extends('rvsitebuilder/wysiwyg::admin.layouts.master_widget',
+   [
+   'appName' => $appName,
+   'widgetName' => $widgetName,
+   'setting' => $setting
+   ])
 
-    @section('widget-title')
-    Example Widget
-    @overwrite
-    ```
+   @section('widget-title')
+   Example Widget
+   @overwrite
+   ```
 
+   2.2 วางโด้ด Html, PHP, CSS, Java Script เพื่อแสดงใน Setting Tab
 
-    2.2 วางโด้ด Html, PHP, CSS, Java Script เพื่อแสดงใน Setting Tab
+   ```php
+   {{--  start setting tab  --}}
+   @section('widget-setting')
 
-    ```php
-    @section('widget-setting')
+   <div class="title">
+           <span>@lang('rvsitebuilder/wysiwyg::common.Title') </span>
+           <input type="text" class="wbInputbox" cmd="setting_title" />
+       </div>
+       <div class="clear"></div>
 
-    <div class="title">
-            <span>@lang('rvsitebuilder/wysiwyg::common.Title') </span>
-            <input type="text" class="wbInputbox" cmd="setting_title" />
-        </div>
-        <div class="clear"></div>
+   @overwrite
 
-    @overwrite
-    ```
+   {{--  end setting tab  --}}
+   ```
 
+   2.3 โค้ดการเรียกใช้พาธรูป Thumbanil เพื่อแสดงใน Design Tab
 
-    2.3 โค้ดการเรียกใช้พาธรูป Thumbanil เพื่อแสดงใน Design Tab
+   ```php
+   {{--  start design tab  --}}
 
-    ```php
-    @section('widget-design')
+   @section('widget-design')
 
-        <div class="uk-margin-small-bottom">Select design</div>
-        <div class="rv-thumb-active toolbar-panel-scrollbar" >
-            <div>
-                <label for="blog-radio-1">
-                    <input type="radio" name="radio" class="wbRadiobox" cmd="setting_design" value="1" id="" style="display:none;">
-                    <img alt="" src="{{ config('rvsitebuilder/wysiwyg.wex.url.WYS_IMG_URL') }}/images/thumbnail-default-widget-design.jpg" width="200" height="36" border="0" />
-                </label>
-            </div>
-        </div>
+       <div class="uk-margin-small-bottom">Select design</div>
+       <div class="rv-thumb-active toolbar-panel-scrollbar" >
+           <div>
+               <label for="blog-radio-1">
+                   <input type="radio" name="radio" class="wbRadiobox" cmd="setting_design" value="1" id="" style="display:none;">
+                   <img alt="" src="{{ config('rvsitebuilder/wysiwyg.wex.url.WYS_IMG_URL') }}/images/thumbnail-default-widget-design.jpg" width="200" height="36" border="0" />
+               </label>
+           </div>
+       </div>
 
-    @overwrite
-    ```
+   @overwrite
+   {{--  end design tab  --}}
+
+   ```
 
 <!-- > {info} End-users may edit raw blade file directly on RVsitebuilder WYSIWYG to suit their needs. -->
 
