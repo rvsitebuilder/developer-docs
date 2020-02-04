@@ -58,7 +58,7 @@ Widget is a RVsitebuilder special element that make your `editable system page` 
 6. คลิกปุ่ม treedots คลิก Generate Widget
 7. ระบุชื่อ Widget Name โดยสามารถสร้างได้ไม่จำกัดจำนวน
 
-![DeveloperDashboard](images/apps-dev.jpg)
+   ![DeveloperDashboard](images/apps-dev.jpg)
 
 8. จะได้โครงสร้าง widget ดังนี้
 
