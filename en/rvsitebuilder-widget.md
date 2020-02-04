@@ -54,9 +54,12 @@ Widget is a RVsitebuilder special element that make your `editable system page` 
 2. ในหน้า Developer คลิกปุ่ม Generate App
 3. ระบุ vendor-name และ project-name
 4. คลิกปุ่ม create
-5. ในหน้า Private Apps จะแสดง Apps ใหม่ที่สร้างขึ้นมา
+5. ในหน้า Developer ส่วน Private Apps จะแสดง Apps ใหม่ที่สร้างขึ้นมา
 6. คลิกปุ่ม treedots คลิก Generate Widget
 7. ระบุชื่อ Widget Name โดยสามารถสร้างได้ไม่จำกัดจำนวน
+
+![DeveloperDashboard](images/apps-dev.jpg)
+
 8. จะได้โครงสร้าง widget ดังนี้
 
    ```php
@@ -150,7 +153,7 @@ Widget blade contains your `app's widget design` according to the user config.
    2.1 การตั้งค่า Widget Name และ Widget Title
 
    ```php
-   {{--  toolbar Your Widget  --}}
+
    @extends('rvsitebuilder/wysiwyg::admin.layouts.master_widget',
    [
    'appName' => $appName,
@@ -166,40 +169,34 @@ Widget blade contains your `app's widget design` according to the user config.
    2.2 วางโด้ด Html, PHP, CSS, Java Script เพื่อแสดงใน Setting Tab
 
    ```php
-   {{--  start setting tab  --}}
+
    @section('widget-setting')
 
    <div class="title">
-           <span>@lang('rvsitebuilder/wysiwyg::common.Title') </span>
-           <input type="text" class="wbInputbox" cmd="setting_title" />
-       </div>
-       <div class="clear"></div>
+        <span>@lang('rvsitebuilder/wysiwyg::common.Title') </span>
+        <input type="text" class="wbInputbox" cmd="setting_title" />
+    </div>
+    <div class="clear"></div>
 
    @overwrite
-
-   {{--  end setting tab  --}}
    ```
 
-   2.3 โค้ดการเรียกใช้พาธรูป Thumbanil เพื่อแสดงใน Design Tab
+   2.3 โค้ดการเรียกใช้พาธรูป Thumbanil ของแต่ละดีไซต์ เพื่อแสดงใน Design Tab
 
    ```php
-   {{--  start design tab  --}}
-
    @section('widget-design')
 
-       <div class="uk-margin-small-bottom">Select design</div>
-       <div class="rv-thumb-active toolbar-panel-scrollbar" >
-           <div>
-               <label for="blog-radio-1">
-                   <input type="radio" name="radio" class="wbRadiobox" cmd="setting_design" value="1" id="" style="display:none;">
-                   <img alt="" src="{{ config('rvsitebuilder/wysiwyg.wex.url.WYS_IMG_URL') }}/images/thumbnail-default-widget-design.jpg" width="200" height="36" border="0" />
-               </label>
-           </div>
-       </div>
+      <div class="uk-margin-small-bottom">Select design</div>
+      <div class="rv-thumb-active toolbar-panel-scrollbar">
+          <div>
+              <label for="widget-radio-1">
+                  <input type="radio" name="radio" class="wbRadiobox" cmd="setting_design" value="1" id="" style="display:none;">
+                  <img alt="" src="{{ config('rvsitebuilder/wysiwyg.wex.url.WYS_IMG_URL') }}/images/thumbnail-default-widget-design.jpg" width="200" height="36" border="0" />
+              </label>
+          </div>
+      </div>
 
    @overwrite
-   {{--  end design tab  --}}
-
    ```
 
 <!-- > {info} End-users may edit raw blade file directly on RVsitebuilder WYSIWYG to suit their needs. -->
@@ -226,19 +223,49 @@ TODO: @Jatuporn help me please.
 
 ## Widget Section Template
 
-แสดงการใช้งานที่เมนู Content >> Section >> Your Widget Name
+แสดงการใช้งานในเมนู Content >> Section >> Widget Name
 มีโครงสร้างดังนี้
 
 ```php
-  /packages/vendor-name/package-name/
-                   ├── resources
-                   │    └── views
-                   │       └── sections
-                   │           ├── allsections.blade.php
-                   |           |── sectionicon.blade.php
-                   │           ├── widgetName
-                   │           │   ├── 1-section.blade.php
+/packages/vendor-name/package-name/
+                ├── resources
+                │    └── views
+                │       └── sections
+                │           ├── allsections.blade.php
+                |           |── sectionicon.blade.php
+                │           ├── widgetName
+                │           │   ├── 1-section.blade.php
 
+
+```
+
+โครงสร้างโค้ด Widget Section Template โดยพาธรูป Thumbnail สามารถเปลี่ยนแปลงได้
+
+```php
+<icon-widget>
+    <div class="blockWidget" title="widgetName" widget="vendor-name/package-name"
+        widgetname="widgetName">
+        <div>
+            <div class="view"></div>
+            <img class="imgwidgetName"  alt=""
+                srcs="{{ config('rvsitebuilder/wysiwyg.wex.url.WYS_IMG_URL') }}/images/thumbnail-widgetname-design1.png"
+                 data-appname="vendor-name/package-name" widgetname="widget">
+        </div>
+    </div>
+</icon-widget>
+<design>
+    @include('rvsitebuilder/core::layouts.widget_wys_master_header')
+    <img srcs="{{ config('rvsitebuilder/wysiwyg.wex.url.WYS_IMG_URL') }}/images/thumbnail-default-widget-design1.png" title="category_list"  alt="">
+    @include('rvsitebuilder/core::layouts.widget_wys_master_footer')
+</design>
+
+```
+
+```
+
+```
+
+```
 
 ```
 
