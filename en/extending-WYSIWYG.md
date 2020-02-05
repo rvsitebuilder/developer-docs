@@ -1,8 +1,7 @@
 # Extending WYSIWYG
 
 - [Overview](#overview)
-- [Inject](#inject)
-  - [Inject Services](#inject-services)
+- [Inject Services](#inject-services)
   - [Inject User](#inject-user)
   - [Toolbar](#toolbar)
   - [Editmode](#editmode)
@@ -17,8 +16,7 @@
 - [Backend Event Hooks](#backend-event-hooks)
   - [Saving event](#saving-event)
   - [Saved event](#saved-event)
-
-<a name="Overview"></a>
+    <a name="Overview"></a>
 
 ## Overview
 
@@ -26,9 +24,7 @@ Usually what you do on your app will run under your own route, what if you want 
 
 <a name="Inject-Services"></a>
 
-## Inject
-
-### Inject Services
+## Inject Services
 
 ### Inject User
 
