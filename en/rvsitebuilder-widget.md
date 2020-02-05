@@ -169,7 +169,7 @@ Widget blade contains your `app's widget design` according to the user config.
     </a>
     <ul class="ddListLink rv-bgwidget">
         <li>
-            <a data-panel='.widgetName' data-widget = 'vendor-name/project-name' data-widgetname='widgetName'><i class='icon-padd wys-insert-tool wys-table-icon'></i>Example Widget</a>
+            <a data-panel='.widgetName' data-widget = 'vendor-name/project-name' data-widgetname='widgetName'><i class='icon-padd wys-insert-tool wys-table-icon'></i>WidgetName</a>
         </li>
         <!--WIDGET_GENERATOR-->
     </ul>
@@ -322,7 +322,7 @@ TODO: @Jatuporn help me please.
     @if(isset($appJson->getAppConfig()['vendor-name/project-name']['alias'] ) )
         {{ $appJson->getAppConfig()['vendor-name/project-name']['alias'] }}
     @else
-        Ccc 
+        project-name 
     @endif
 </div>
 ``` 
