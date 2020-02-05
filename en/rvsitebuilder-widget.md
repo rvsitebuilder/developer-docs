@@ -19,7 +19,7 @@
 Widget is a RVsitebuilder special element that make your `editable system page` more dynamic and configurable.
 
 ```php
-/packages/vendor-name/package-name/
+/packages/vendor-name/project-name/
                     ├── resources
                     │    ├── js
                     │    │  └── admin
@@ -63,7 +63,7 @@ Widget is a RVsitebuilder special element that make your `editable system page` 
 8. จะได้โครงสร้าง widget ดังนี้
 
    ```php
-   /packages/vendor-name/package-name/
+   /packages/vendor-name/project-name/
                     ├── resources
                     │    └── views
                     │       ├── sections
@@ -98,7 +98,7 @@ Config ส่วนนี้จะมี title และ design เป็นค�
 ไฟล์ config >> widget.php
 
 ```php
-/packages/vendor-name/package-name/
+/packages/vendor-name/project-name/
                 ├── config
                 │    └── widget.php
 ```
@@ -140,16 +140,44 @@ Widget blade contains your `app's widget design` according to the user config.
 ในส่วน Widget ที่มีหลายๆ Design นอกจากจะกำหนดค่า config แล้ว ยังต้องเพิ่มโค้ดที่สอดคล้องหรือเชื่อมโยงกันดังนี้
 
 ```php
-├── widgetName
-│   ├── designs
-│   │   └── design1.blade.php
-|   |   └── design2.blade.php
-│   ├── panel.blade.php
-│   └── widget.blade.php
+── widgets
+    |── alltoolbars.blade.php
+    ├── widgetName
+    │   ├── designs
+    │   │   └── design1.blade.php
+    |   |   └── design2.blade.php
+    │   ├── panel.blade.php
+    │   └── widget.blade.php
+
+
+```
+1. ไฟล์ alltoolbars.blade.php เป็นไฟล์ที่โปรแกรม Generate เพื่อใช้บน Insert Toolbar
+   
+```php
+@inject('appJson', 'Rvsitebuilder\Manage\Lib\ConfigLib')	
+<li data-insertwidget>
+    <a href="javascript:void(0)">
+        <span class="icon-padd wys-insert-tool wys-hyperlink-icon"></span> 
+        <span> 
+            @if(isset($appJson->getAppConfig()['vendor-name/project-name']['alias']))  
+            {{ $appJson->getAppConfig()['vendor-name/project-name']['alias'] }}
+        @else
+            project-name
+        @endif 
+        </span> 
+        <span class="uk-icon-caret-right pull-right"></span>
+    </a>
+    <ul class="ddListLink rv-bgwidget">
+        <li>
+            <a data-panel='.widgetName' data-widget = 'vendor-name/project-name' data-widgetname='widgetName'><i class='icon-padd wys-insert-tool wys-table-icon'></i>Example Widget</a>
+        </li>
+        <!--WIDGET_GENERATOR-->
+    </ul>
+</li>
 
 ```
 
-1. ไฟล์ design1.blade.php, design2.blade.php คือการสร้างไฟล์ดีไซต์ใหม่ๆ ตามจำนวนที่ต้องการ
+2. ไฟล์ design1.blade.php, design2.blade.php คือการสร้างไฟล์ดีไซต์ใหม่ๆ ตามจำนวนที่ต้องการ
    หากมี Java Script, php, Html, CSS ที่มีความแตกต่างเฉพาะดีไซต์ สามารถวางโค้ดในไฟล์นั้นๆได้
 
 ```php
@@ -166,41 +194,41 @@ Widget blade contains your `app's widget design` according to the user config.
 
 ```
 
-2. ไฟล์ widget.blade.php คือ กำหนดการเรียกใช้ไฟล์ดีไซต์แบบต่างๆ ในโฟล์เดอร์ designs ตามจำนวนไฟล์ที่สร้างขึ้น
+3. ไฟล์ widget.blade.php คือ การเรียกใช้ไฟล์ดีไซต์แบบต่างๆ ตามจำนวนไฟล์ที่สร้างขึ้น จากโฟล์เดอร์ designs
 
-   ```php
-   <div class="containerWidget">
-       @includeWhen($setting['design'] == 1, 'vendor-name/package-name::widgets.widgetName.designs.design1')
-       @includeWhen($setting['design'] == 2, 'vendor-name/package-name::widgets.widgetName.designs.design2')
-   </div>
-   ```
+```php
+<div class="containerWidget">
+    @includeWhen($setting['design'] == 1, 'vendor-name/project-name::widgets.widgetName.designs.design1')
+    @includeWhen($setting['design'] == 2, 'vendor-name/project-name::widgets.widgetName.designs.design2')
+</div>
+```
 
-3. ไฟล์ panel.blade.php คือโครงสร้าง Panel Toolbar ที่แสดง Setting Tab และ Design Tab โดยมีรูปแบบดังนี้
+4. ไฟล์ panel.blade.php คือโครงสร้าง Panel Toolbar ที่แสดง Setting Tab และ Design Tab โดยมีรูปแบบดังนี้
 
-   3.1 การตั้งค่า Widget Name และ Widget Title
+    4.1 การตั้งค่า Widget Name และ Widget Title
 
-   ```php
+    ```php
 
-   @extends('rvsitebuilder/wysiwyg::admin.layouts.master_widget',
-   [
-   'appName' => $appName,
-   'widgetName' => $widgetName,
-   'setting' => $setting
-   ])
+    @extends('rvsitebuilder/wysiwyg::admin.layouts.master_widget',
+    [
+    'appName' => $appName,
+    'widgetName' => $widgetName,
+    'setting' => $setting
+    ])
 
-   @section('widget-title')
-   Example Widget
-   @overwrite
-   ```
+    @section('widget-title')
+    Example Widget
+    @overwrite
+    ```
 
-   3.2 โด้ดการตั้งค่าต่างๆ เพื่อแสดงใน Setting Tab
+   4.2 โค้ดการตั้งค่าต่างๆ เพื่อแสดงใน Setting Tab
 
    ```php
 
    @section('widget-setting')
 
    <div class="title">
-        <span>@lang('rvsitebuilder/wysiwyg::common.Title') </span>
+        <span>Title</span>
         <input type="text" class="wbInputbox" cmd="setting_title" />
     </div>
     <div class="clear"></div>
@@ -208,7 +236,7 @@ Widget blade contains your `app's widget design` according to the user config.
    @overwrite
    ```
 
-   3.3 โค้ดการเรียกใช้พาธรูป Thumbanil ของแต่ละดีไซต์ เพื่อแสดงใน Design Tab
+   4.3 โค้ดการเรียกใช้พาธรูป Thumbanil ของแต่ละดีไซต์ เพื่อแสดงใน Design Tab
 
    ```php
    @section('widget-design')
@@ -216,9 +244,15 @@ Widget blade contains your `app's widget design` according to the user config.
       <div class="uk-margin-small-bottom">Select design</div>
       <div class="rv-thumb-active toolbar-panel-scrollbar">
           <div>
-              <label for="widget-radio-1">
-                  <input type="radio" name="radio" class="wbRadiobox" cmd="setting_design" value="1" id="" style="display:none;">
-                  <img alt="" src="/vendor/$APP_LOWER_NAME$/images/thumbnail-default-widget-design.jpg" width="200" height="36" border="0" />
+              <label for="widgetName-radio-1">
+                  <input type="radio" name="radio" class="widgetName_setting_design wbRadiobox" cmd="setting_design" value="1" id="widgetName-radio-1" style="display:none;">
+                  <img alt="" src="/vendor/vendor-name/project-name/images/thumbnail-default-widget-design1.jpg" width="200" height="36" border="0" />
+              </label>
+          </div>
+          <div>
+              <label for="widgetName-radio-2">
+                  <input type="radio" name="radio" class="widgetName_setting_design wbRadiobox" cmd="setting_design" value="2" id="widgetName-radio-2" style="display:none;">
+                  <img alt="" src="/vendor/vendor-name/project-name/images/thumbnail-default-widget-design2.jpg" width="200" height="36" border="0" />
               </label>
           </div>
       </div>
@@ -254,7 +288,7 @@ TODO: @Jatuporn help me please.
 มีโครงสร้างดังนี้
 
 ```php
-/packages/vendor-name/package-name/
+/packages/vendor-name/project-name/
                 ├── resources
                 │    └── views
                 │       └── sections
@@ -265,28 +299,54 @@ TODO: @Jatuporn help me please.
 
 
 ```
+1. โครงสร้างไฟล์ allsections.blade.php แสดงการเรียกใช้ไฟล์ widget
+   
+```php
+<div class="section-category rv-widget-project-name" style="display: none; margin-top: -12px;">
+    <div id="widget-project-name" class="widgetSection widget-project-name" style="margin:0 auto;">
+        <div id="widget-project-name" class="widgetform">
+            @include('vendor-name/project-name::sections.widgetName-first.1-section')
+            @include('vendor-name/project-name::sections.widgetName-second.1-section')
+        </div>
+    </div>
+</div>
+``` 
+2. โครงสร้างไฟล์ sectionicon.blade.php แสดงการเรียกใช้ไอคอน โดยแก้ไขให้สอดคล้องกับ widget นั้นๆได้
+   
+```php
+@inject('appJson', 'Rvsitebuilder\Manage\Lib\ConfigLib')
 
-โครงสร้างโค้ด Widget Section Template โดยพาธรูป Thumbnail สามารถเปลี่ยนแปลงได้
+<div onclick="content_class('rv-widget-project-name');" class="section-name active-section-name">
+    <span class="uk-icon uk-icon-home rv-icon-size"></span>
+
+    @if(isset($appJson->getAppConfig()['vendor-name/project-name']['alias'] ) )
+        {{ $appJson->getAppConfig()['vendor-name/project-name']['alias'] }}
+    @else
+        Ccc 
+    @endif
+</div>
+``` 
+3. โครงสร้างไฟล์ 1-section.blade.php แสดงการเรียกใช้พาธรูป Thumbanil โดยสามารถเปลี่ยนแปลงแก้ไข ตำแหน่ง,ชื่อรูป ให้สอดคล้องกับ widget นั้นๆได้
 
 ```php
 <icon-widget>
-    <div class="blockWidget" title="widgetName" widget="vendor-name/package-name"
+    <div class="blockWidget" title="widgetName" widget="vendor-name/project-name"
         widgetname="widgetName">
         <div>
             <div class="view"></div>
             <img class="imgwidgetName"  alt=""
-                srcs="/vendor/$APP_LOWER_NAME$/images/thumbnail-widgetname-design1.png"
-                 data-appname="vendor-name/package-name" widgetname="widget">
+                srcs="/vendor/vendor-name/project-name/images/thumbnail-widgetname-design1.png"
+                data-appname="vendor-name/project-name" widgetname="widget">
         </div>
     </div>
 </icon-widget>
 <design>
     @include('rvsitebuilder/core::layouts.widget_wys_master_header')
-    <img srcs="/vendor/$APP_LOWER_NAME$/images/thumbnail-default-widget-design1.png" title="category_list"  alt="">
+    <img srcs="/vendor/vendor-name/project-name/images/thumbnail-default-widget-design1.png" title="category_list"  alt="">
     @include('rvsitebuilder/core::layouts.widget_wys_master_footer')
 </design>
 
-```
+    ```
 
 ```
 
