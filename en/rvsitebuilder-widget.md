@@ -139,7 +139,34 @@ Widget blade contains your `app's widget design` according to the user config.
 
 ในส่วน Widget ที่มีหลายๆ Design นอกจากจะกำหนดค่า config แล้ว ยังต้องเพิ่มโค้ดที่สอดคล้องหรือเชื่อมโยงกันดังนี้
 
-1. ไฟล์ widget.blade.php คือ กำหนดการเรียกใช้ไฟล์ดีไซต์แบบต่างๆ ตามจำนวนที่ต้องการ
+```php
+├── widgetName
+│   ├── designs
+│   │   └── design1.blade.php
+|   |   └── design2.blade.php
+│   ├── panel.blade.php
+│   └── widget.blade.php
+
+```
+
+1. ไฟล์ design1.blade.php, design2.blade.php คือการสร้างไฟล์ดีไซต์ใหม่ๆ ตามจำนวนที่ต้องการ
+   หากมี Java Script, php, Html, CSS ที่มีความแตกต่างเฉพาะดีไซต์ สามารถวางโค้ดในไฟล์นั้นๆได้
+
+```php
+<div class="widgetName-design1">
+    <div class="uk-width-1-1 uk-text-left">
+        <div class="uk-background-primary">
+            <h3 class="uk-h3"> {{$setting['title']}}</h3>
+        </div>
+    </div>
+    <div class="uk-panel">
+        Code Design
+    </div>
+</div>
+
+```
+
+2. ไฟล์ widget.blade.php คือ กำหนดการเรียกใช้ไฟล์ดีไซต์แบบต่างๆ ในโฟล์เดอร์ designs ตามจำนวนไฟล์ที่สร้างขึ้น
 
    ```php
    <div class="containerWidget">
@@ -148,9 +175,9 @@ Widget blade contains your `app's widget design` according to the user config.
    </div>
    ```
 
-2. ไฟล์ panel.blade.php คือ Panel Toolbar ที่แสดง Setting Tab และ Design Tab โดยมีรูปแบบดังนี้
+3. ไฟล์ panel.blade.php คือโครงสร้าง Panel Toolbar ที่แสดง Setting Tab และ Design Tab โดยมีรูปแบบดังนี้
 
-   2.1 การตั้งค่า Widget Name และ Widget Title
+   3.1 การตั้งค่า Widget Name และ Widget Title
 
    ```php
 
@@ -166,7 +193,7 @@ Widget blade contains your `app's widget design` according to the user config.
    @overwrite
    ```
 
-   2.2 วางโด้ด Html, PHP, CSS, Java Script เพื่อแสดงใน Setting Tab
+   3.2 โด้ดการตั้งค่าต่างๆ เพื่อแสดงใน Setting Tab
 
    ```php
 
@@ -181,7 +208,7 @@ Widget blade contains your `app's widget design` according to the user config.
    @overwrite
    ```
 
-   2.3 โค้ดการเรียกใช้พาธรูป Thumbanil ของแต่ละดีไซต์ เพื่อแสดงใน Design Tab
+   3.3 โค้ดการเรียกใช้พาธรูป Thumbanil ของแต่ละดีไซต์ เพื่อแสดงใน Design Tab
 
    ```php
    @section('widget-design')
