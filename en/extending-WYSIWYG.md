@@ -31,34 +31,38 @@ To inject your code to WYSIWYG, your need to define your blade file to inject on
 On your `app's service provider`, load your application events under boot method.
 
 ```php
-    public function boot()
-    {
-        $this->defineinject();
-    }
+public function boot()
+{
+    $this->defineinject();
+}
 ```
 
  Define injections to insert code to display on other apps.
 
 ```php
 public function defineinject()
-    {
-        app('rvsitebuilderService')->inject('inject-name','vendor-name/package-name::view blade file');
-    }
+{
+    app('rvsitebuilderService')->inject('inject-name','vendor-name/package-name::view blade file');
+}
 ```
 
 ### Toolbar
 Toolbar inject to
-
 ```php
-        app('rvsitebuilderService')->inject('toolbar','vendor-name/package-name::view blade file');
+app('rvsitebuilderService')->inject('toolbar','vendor-name/package-name::view blade file');
 
 ```
 Adding Insert objects
 
 ### Editmode
-
 Adding Section objects
 
+```php
+public function defineinject()
+{
+    app('rvsitebuilderService')->inject('inject-name','vendor-name/package-name::view blade file');
+}
+```
 <!-- TODO: @tanawat Backend Event Hooks -->
 
 ### Viewmode
