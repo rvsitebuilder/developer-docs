@@ -1,7 +1,12 @@
 # Extending WYSIWYG
+
 - [Overview](#overview)
 - [Inject Services](#inject-services)
-  - [List inject-name](#list-inject-name)
+  - [Toolbar](#toolbar)
+  - [Editmode](#editmode)
+  - [Viewmode](#viewmode)
+  - [Section](#section)
+  - [Insert???](#insert)
 - [Frontend Event Hooks](#frontend-event-hooks)
   - [beforeSave](#beforesave)
   - [afterSave](#aftersave)
@@ -9,7 +14,7 @@
 - [Backend Event Hooks](#backend-event-hooks)
   - [Saving event](#saving-event)
   - [Saved event](#saved-event)
-
+  
 <a name="Overview"></a>
 
 ## Overview
@@ -31,30 +36,36 @@ On your `app's service provider`, load your application events under boot method
         $this->defineinject();
     }
 ```
+
  Define injections to insert code to display on other apps.
+
 ```php
 public function defineinject()
     {
-        app('rvsitebuilderService')->inject('inject-name','vendor-name/package-name::your blade file');
+        app('rvsitebuilderService')->inject('inject-name','vendor-name/package-name::view blade file');
     }
 ```
 
-### List inject-name
-#### Toolbar
+### Toolbar
+Toolbar inject to
 
+```php
+        app('rvsitebuilderService')->inject('toolbar','vendor-name/package-name::view blade file');
+
+```
 Adding Insert objects
 
-#### Editmode
+### Editmode
 
 Adding Section objects
 
 <!-- TODO: @tanawat Backend Event Hooks -->
 
-#### Viewmode
+### Viewmode
 
-#### Section
+### Section
 
-#### Insert???
+### Insert???
 
 #### ??????
 
