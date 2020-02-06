@@ -58,17 +58,18 @@ Adding Insert objects
 Adding Section objects
 
 ```php
-public function defineinject()
-{
-    app('rvsitebuilderService')->inject('inject-name','vendor-name/package-name::view blade file');
-}
+    app('rvsitebuilderService')->inject('editmode','vendor-name/package-name::view blade file');
 ```
 <!-- TODO: @tanawat Backend Event Hooks -->
 
 ### Viewmode
-
+```php
+    app('rvsitebuilderService')->inject('editmode','vendor-name/package-name::view blade file');
+```
 ### Section
-
+```php
+    app('rvsitebuilderService')->inject('section','vendor-name/package-name::view blade file');
+```
 ### Insert???
 
 #### ??????
