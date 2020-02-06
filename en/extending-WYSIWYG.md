@@ -1,6 +1,7 @@
 # Extending WYSIWYG
 - [Overview](#overview)
 - [Inject Services](#inject-services)
+  - [List inject-name](#list-inject-name)
 - [Frontend Event Hooks](#frontend-event-hooks)
   - [beforeSave](#beforesave)
   - [afterSave](#aftersave)
@@ -38,7 +39,7 @@ public function defineinject()
     }
 ```
 
-###List inject-name
+### List inject-name
 #### Toolbar
 
 Adding Insert objects
