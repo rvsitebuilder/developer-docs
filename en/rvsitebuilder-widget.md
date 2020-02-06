@@ -151,20 +151,21 @@ Widget blade contains your `app's widget design` according to the user config.
 
 
 ```
+
 1. ไฟล์ alltoolbars.blade.php เป็นไฟล์ที่โปรแกรม Generate เพื่อใช้บน Insert Toolbar
-   
+
 ```php
-@inject('appJson', 'Rvsitebuilder\Manage\Lib\ConfigLib')	
+@inject('appJson', 'Rvsitebuilder\Manage\Lib\ConfigLib')
 <li data-insertwidget>
     <a href="javascript:void(0)">
-        <span class="icon-padd wys-insert-tool wys-hyperlink-icon"></span> 
-        <span> 
-            @if(isset($appJson->getAppConfig()['vendor-name/project-name']['alias']))  
+        <span class="icon-padd wys-insert-tool wys-hyperlink-icon"></span>
+        <span>
+            @if(isset($appJson->getAppConfig()['vendor-name/project-name']['alias']))
             {{ $appJson->getAppConfig()['vendor-name/project-name']['alias'] }}
         @else
             project-name
-        @endif 
-        </span> 
+        @endif
+        </span>
         <span class="uk-icon-caret-right pull-right"></span>
     </a>
     <ul class="ddListLink rv-bgwidget">
@@ -177,8 +178,7 @@ Widget blade contains your `app's widget design` according to the user config.
 
 ```
 
-2. ไฟล์ design1.blade.php, design2.blade.php คือการสร้างไฟล์ดีไซต์ใหม่ๆ ตามจำนวนที่ต้องการ
-   หากมี Java Script, php, Html, CSS ที่มีความแตกต่างเฉพาะดีไซต์ สามารถวางโค้ดในไฟล์นั้นๆได้
+2. ไฟล์ design1.blade.php, design2.blade.php คือการสร้างไฟล์ Layout Design ใหม่ๆ ตามจำนวนที่ต้องการ หากมี Java Script, php, Html, CSS ที่มีความแตกต่างเฉพาะดีไซต์ สามารถวางโค้ดในไฟล์นั้นๆได้
 
 ```php
 <div class="widgetName-design1">
@@ -205,21 +205,21 @@ Widget blade contains your `app's widget design` according to the user config.
 
 4. ไฟล์ panel.blade.php คือโครงสร้าง Panel Toolbar ที่แสดง Setting Tab และ Design Tab โดยมีรูปแบบดังนี้
 
-    4.1 การตั้งค่า Widget Name และ Widget Title
+   4.1 การตั้งค่า Widget Name และ Widget Title
 
-    ```php
+   ```php
 
-    @extends('rvsitebuilder/wysiwyg::admin.layouts.master_widget',
-    [
-    'appName' => $appName,
-    'widgetName' => $widgetName,
-    'setting' => $setting
-    ])
+   @extends('rvsitebuilder/wysiwyg::admin.layouts.master_widget',
+   [
+   'appName' => $appName,
+   'widgetName' => $widgetName,
+   'setting' => $setting
+   ])
 
-    @section('widget-title')
-    Example Widget
-    @overwrite
-    ```
+   @section('widget-title')
+   Example Widget
+   @overwrite
+   ```
 
    4.2 โค้ดการตั้งค่าต่างๆ เพื่อแสดงใน Setting Tab
 
@@ -236,7 +236,7 @@ Widget blade contains your `app's widget design` according to the user config.
    @overwrite
    ```
 
-   4.3 โค้ดการเรียกใช้พาธรูป Thumbanil ของแต่ละดีไซต์ เพื่อแสดงใน Design Tab
+   4.3 โค้ดการเรียกใช้พาธรูป Thumbanil ของแต่ละ Layout Design เพื่อแสดงใน Design Tab
 
    ```php
    @section('widget-design')
@@ -299,8 +299,9 @@ TODO: @Jatuporn help me please.
 
 
 ```
+
 1. โครงสร้างไฟล์ allsections.blade.php แสดงการเรียกใช้ไฟล์ widget
-   
+
 ```php
 <div class="section-category rv-widget-project-name" style="display: none; margin-top: -12px;">
     <div id="widget-project-name" class="widgetSection widget-project-name" style="margin:0 auto;">
@@ -310,9 +311,10 @@ TODO: @Jatuporn help me please.
         </div>
     </div>
 </div>
-``` 
-2. โครงสร้างไฟล์ sectionicon.blade.php แสดงการเรียกใช้ไอคอน โดยแก้ไขให้สอดคล้องกับ widget นั้นๆได้
-   
+```
+
+1. โครงสร้างไฟล์ sectionicon.blade.php แสดงการเรียกใช้ Widget Section Icon ของ project-name
+
 ```php
 @inject('appJson', 'Rvsitebuilder\Manage\Lib\ConfigLib')
 
@@ -322,13 +324,14 @@ TODO: @Jatuporn help me please.
     @if(isset($appJson->getAppConfig()['vendor-name/project-name']['alias'] ) )
         {{ $appJson->getAppConfig()['vendor-name/project-name']['alias'] }}
     @else
-        project-name 
+        project-name
     @endif
 </div>
-``` 
-3. โครงสร้างไฟล์ 1-section.blade.php แสดงการเรียกใช้พาธรูป Thumbanil โดยสามารถเปลี่ยนแปลงแก้ไข ตำแหน่ง,ชื่อรูป ให้สอดคล้องกับ widget นั้นๆได้
+```
 
-```php
+1. โครงสร้างไฟล์ 1-section.blade.php แสดงการเรียกใช้พาธรูป Thumbanil ของ widgetName
+
+````php
 <icon-widget>
     <div class="blockWidget" title="widgetName" widget="vendor-name/project-name"
         widgetname="widgetName">
@@ -347,6 +350,8 @@ TODO: @Jatuporn help me please.
 </design>
 
     ```
+
+````
 
 ```
 
