@@ -1,14 +1,6 @@
 # Extending WYSIWYG
-
 - [Overview](#overview)
 - [Inject Services](#inject-services)
-  - [Inject User](#inject-user)
-  - [Toolbar](#toolbar)
-  - [Editmode](#editmode)
-  - [Viewmode](#viewmode)
-  - [Section](#section)
-  - [Insert???](#insert)
-  - [??????](#)
 - [Frontend Event Hooks](#frontend-event-hooks)
   - [beforeSave](#beforesave)
   - [afterSave](#aftersave)
@@ -16,7 +8,8 @@
 - [Backend Event Hooks](#backend-event-hooks)
   - [Saving event](#saving-event)
   - [Saved event](#saved-event)
-    <a name="Overview"></a>
+
+<a name="Overview"></a>
 
 ## Overview
 
@@ -26,32 +19,43 @@ Usually what you do on your app will run under your own route, what if you want 
 
 ## Inject Services
 
-### Inject User
 
 To inject your code to WYSIWYG, your need to define your blade file to inject on your `app's service provider`.
 
-```php
+On your `app's service provider`, load your application events under boot method.
 
-inject(xxx, xxxx);
+```php
+    public function boot()
+    {
+        $this->defineinject();
+    }
+```
+ Define injections to insert code to display on other apps.
+```php
+public function defineinject()
+    {
+        app('rvsitebuilderService')->inject('inject-name','vendor-name/package-name::your blade file');
+    }
 ```
 
-### Toolbar
+###List inject-name
+#### Toolbar
 
 Adding Insert objects
 
-### Editmode
+#### Editmode
 
 Adding Section objects
 
 <!-- TODO: @tanawat Backend Event Hooks -->
 
-### Viewmode
+#### Viewmode
 
-### Section
+#### Section
 
-### Insert???
+#### Insert???
 
-### ??????
+#### ??????
 
 <a name="Frontend-Event-Hooks"></a>
 
