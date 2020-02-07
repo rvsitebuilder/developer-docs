@@ -55,7 +55,7 @@ Widget is a RVsitebuilder special element that make your `editable system page` 
 3. ระบุ vendor-name และ project-name
 4. คลิกปุ่ม create
 5. ในหน้า Developer ส่วน Private Apps จะแสดง Apps ใหม่ที่สร้างขึ้นมา
-6. คลิกปุ่ม treedots คลิก Generate Widget
+6. คลิกปุ่ม three dots คลิก Generate Widget
 7. ระบุชื่อ Widget Name โดยสามารถสร้างได้ไม่จำกัดจำนวน
 
    ![DeveloperDashboard](images/apps-dev.jpg)
@@ -137,7 +137,7 @@ Widget that shows the same content on every page.
 
 Widget blade contains your `app's widget design` according to the user config.
 
-ในส่วน Widget ที่มีหลายๆ Design นอกจากจะกำหนดค่า config แล้ว ยังต้องเพิ่มโค้ดที่สอดคล้องหรือเชื่อมโยงกันดังนี้
+โครงสร้างในส่วน Widget ที่มีหลายๆ Layout Design โดยนักพัฒนาสามารถเพิ่มเติมไฟล์และ Config ที่เชื่อมโยงกันดังนี้
 
 ```php
 ── widgets
@@ -152,7 +152,7 @@ Widget blade contains your `app's widget design` according to the user config.
 
 ```
 
-1. ไฟล์ alltoolbars.blade.php เป็นไฟล์ที่โปรแกรม Generate เพื่อใช้บน Insert Toolbar
+1. ไฟล์ alltoolbars.blade.php เป็นไฟล์ที่โปรแกรม Generate ให้อัตโนมัติตามจำนวน Widget ที่ User สร้างขึ้นเพื่อแสดงบน Insert Toolbar
 
 ```php
 @inject('appJson', 'Rvsitebuilder\Manage\Lib\ConfigLib')
@@ -178,7 +178,7 @@ Widget blade contains your `app's widget design` according to the user config.
 
 ```
 
-2. ไฟล์ design1.blade.php, design2.blade.php คือการสร้างไฟล์ Layout Design ใหม่ๆ ตามจำนวนที่ต้องการ หากมี Java Script, php, Html, CSS ที่มีความแตกต่างเฉพาะดีไซต์ สามารถวางโค้ดในไฟล์นั้นๆได้
+2. ไฟล์ design1.blade.php, design2.blade.php คือการสร้างไฟล์ Layout Design โดยโปรแกรมสร้างตัวอย่างให้ 2 ไฟล์ นักพัฒนาสามารถแก้ไข,เพิ่มเติมไฟล์ได้ตามต้องการ หากมี JavaScript, PHP, HTML, CSS ที่มีความแตกต่างเฉพาะดีไซต์ สามารถวางโค้ดในไฟล์นั้นๆได้
 
 ```php
 <div class="widgetName-design1">
@@ -194,7 +194,7 @@ Widget blade contains your `app's widget design` according to the user config.
 
 ```
 
-3. ไฟล์ widget.blade.php คือ การเรียกใช้ไฟล์ดีไซต์แบบต่างๆ ตามจำนวนไฟล์ที่สร้างขึ้น จากโฟล์เดอร์ designs
+3. ไฟล์ widget.blade.php คือ การเรียกใช้ไฟล์ดีไซต์แบบต่างๆ ตามจำนวนไฟล์ที่สร้างขึ้น จากโฟล์เดอร์ designs ถ้านักพัฒนาสร้างไฟล์ design3.blade.php ใหม่ๆขึ้นมา จะต้อง @includeWhen.. เพิ่มในส่วนนี้ด้วย
 
 ```php
 <div class="containerWidget">
@@ -236,7 +236,7 @@ Widget blade contains your `app's widget design` according to the user config.
    @overwrite
    ```
 
-   4.3 โค้ดการเรียกใช้พาธรูป Thumbanil ของแต่ละ Layout Design เพื่อแสดงใน Design Tab
+   4.3 โค้ดการเรียกใช้พาธรูป Thumbnail ของแต่ละ Layout Design เพื่อแสดงใน Design Tab ส่วนนี้นักพัฒนาสามารถเพิ่มเติมโค้ดเรียกใช้ Thumbnail ใหม่ๆได้
 
    ```php
    @section('widget-design')
@@ -284,8 +284,7 @@ TODO: @Jatuporn help me please.
 
 ## Widget Section Template
 
-แสดงการใช้งานในเมนู Content >> Section >> Widget Name
-มีโครงสร้างดังนี้
+โครงสร้าง Widget Section ที่ใช้งานในเมนู Content >> Section >> Widget Name
 
 ```php
 /packages/vendor-name/project-name/
@@ -300,7 +299,7 @@ TODO: @Jatuporn help me please.
 
 ```
 
-1. โครงสร้างไฟล์ allsections.blade.php แสดงการเรียกใช้ไฟล์ widget
+1. โครงสร้างไฟล์ allsections.blade.php แสดงการเรียกใช้ไฟล์ widget ซึ่งโปรแกรมสร้างให้อัตโนมัติ
 
 ```php
 <div class="section-category rv-widget-project-name" style="display: none; margin-top: -12px;">
@@ -313,13 +312,16 @@ TODO: @Jatuporn help me please.
 </div>
 ```
 
-1. โครงสร้างไฟล์ sectionicon.blade.php แสดงการเรียกใช้ Widget Section Icon ของ project-name
+2. โครงสร้างไฟล์ sectionicon.blade.php แสดงการเรียกใช้ project-name และ Icon บน Content Sections
 
 ```php
 @inject('appJson', 'Rvsitebuilder\Manage\Lib\ConfigLib')
 
 <div onclick="content_class('rv-widget-project-name');" class="section-name active-section-name">
+
+    <!-- Change Icon Here -->
     <span class="uk-icon uk-icon-home rv-icon-size"></span>
+
 
     @if(isset($appJson->getAppConfig()['vendor-name/project-name']['alias'] ) )
         {{ $appJson->getAppConfig()['vendor-name/project-name']['alias'] }}
@@ -329,7 +331,7 @@ TODO: @Jatuporn help me please.
 </div>
 ```
 
-1. โครงสร้างไฟล์ 1-section.blade.php แสดงการเรียกใช้พาธรูป Thumbanil ของ widgetName
+3. โครงสร้างไฟล์ 1-section.blade.php แสดงการเรียกใช้พาธรูป Thumbnail ของ widgetName
 
 ````php
 <icon-widget>
