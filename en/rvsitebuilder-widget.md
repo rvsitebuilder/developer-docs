@@ -93,7 +93,7 @@ Widget is a RVsitebuilder special element that make your `editable system page` 
 
 -How-To-Register-Widget-config.md
 
-Config ส่วนนี้จะมี title และ design เป็นค่าเริ่มต้นที่ใช้ใน Panel Toolbar ส่วนชื่ออื่นๆขึ้นอยู่กับการกำหนด Setting ต่างๆ ของ Widget
+Config ส่วนนี้จะมี title และ design เป็นค่าเริ่มต้นที่ใช้ใน Panel Toolbar ส่วนชื่ออื่นๆ ขึ้นอยู่กับการกำหนด Setting การแสดงผลของ Widget Section ที่ใช้งานในหน้าเว็บไซต์
 
 ไฟล์ config >> widget.php
 
@@ -152,7 +152,7 @@ Widget blade contains your `app's widget design` according to the user config.
 
 ```
 
-1. ไฟล์ alltoolbars.blade.php เป็นไฟล์ที่โปรแกรม Generate ให้อัตโนมัติตามจำนวน Widget ที่ User สร้างขึ้นเพื่อแสดงบน Insert Toolbar
+1. ไฟล์ alltoolbars.blade.php เป็นไฟล์ที่โปรแกรม Generate Widget ให้อัตโนมัติ เพื่อแสดงบน Insert Toolbar
 
 ```php
 @inject('appJson', 'Rvsitebuilder\Manage\Lib\ConfigLib')
@@ -194,7 +194,7 @@ Widget blade contains your `app's widget design` according to the user config.
 
 ```
 
-3. ไฟล์ widget.blade.php คือ การเรียกใช้ไฟล์ดีไซต์แบบต่างๆ ตามจำนวนไฟล์ที่สร้างขึ้น จากโฟล์เดอร์ designs ถ้านักพัฒนาสร้างไฟล์ design3.blade.php ใหม่ๆขึ้นมา จะต้อง @includeWhen.. เพิ่มในส่วนนี้ด้วย
+1. ไฟล์ widget.blade.php คือ การเรียกใช้ไฟล์ดีไซต์แบบต่างๆ จากโฟล์เดอร์ designs ถ้านักพัฒนาสร้างไฟล์ design3.blade.php ใหม่ๆขึ้นมา จะต้องเพิ่ม @includeWhen.. ในส่วนนี้ด้วย
 
 ```php
 <div class="containerWidget">
@@ -217,7 +217,7 @@ Widget blade contains your `app's widget design` according to the user config.
    ])
 
    @section('widget-title')
-   Example Widget
+   Example Widget  <!-- display panel heading -->
    @overwrite
    ```
 
@@ -236,7 +236,7 @@ Widget blade contains your `app's widget design` according to the user config.
    @overwrite
    ```
 
-   4.3 โค้ดการเรียกใช้พาธรูป Thumbnail ของแต่ละ Layout Design เพื่อแสดงใน Design Tab ส่วนนี้นักพัฒนาสามารถเพิ่มเติมโค้ดเรียกใช้ Thumbnail ใหม่ๆได้
+   4.3 โค้ดการเรียกใช้พาธรูป Thumbnail ของแต่ละ Layout Design เพื่อแสดงใน Design Tab นักพัฒนาสามารถเพิ่มเติมโค้ดเรียกใช้ Thumbnail ใหม่ๆได้
 
    ```php
    @section('widget-design')
