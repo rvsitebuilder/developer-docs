@@ -2,18 +2,8 @@
 
 - [Overview](#overview)
 - [Inject Services](#inject-services)
-  - [Toolbar](#toolbar)
-  - [Editmode](#editmode)
-  - [Viewmode](#viewmode)
-  - [Section](#section)
-  - [Insert???](#insert)
 - [Frontend Event Hooks](#frontend-event-hooks)
-  - [beforeSave](#beforesave)
-  - [afterSave](#aftersave)
-  - [completeSave](#completesave)
 - [Backend Event Hooks](#backend-event-hooks)
-  - [Saving event](#saving-event)
-  - [Saved event](#saved-event)
   
 <a name="Overview"></a>
 
@@ -45,7 +35,12 @@ public function defineinject()
     app('rvsitebuilderService')->inject('inject-name','vendor-name/package-name::view blade file');
 }
 ```
-
+### Viewmode
+You can inject to viewmode will stay before `</body>` ,but inject code display none in viewmode.
+```php
+    app('rvsitebuilderService')->inject('editmode','vendor-name/package-name::view blade file');
+```
+<!-- TODO: @tanawat inject admin-->
 ### Toolbar
 Toolbar inject to
 ```php
@@ -54,25 +49,20 @@ app('rvsitebuilderService')->inject('toolbar','vendor-name/package-name::view bl
 ```
 Adding Insert objects
 
+
 ### Editmode
 Adding Section objects
 
 ```php
     app('rvsitebuilderService')->inject('editmode','vendor-name/package-name::view blade file');
 ```
-<!-- TODO: @tanawat Backend Event Hooks -->
 
-### Viewmode
-```php
-    app('rvsitebuilderService')->inject('editmode','vendor-name/package-name::view blade file');
-```
 ### Section
 ```php
     app('rvsitebuilderService')->inject('section','vendor-name/package-name::view blade file');
 ```
-### Insert???
+### Insert
 
-#### ??????
 
 <a name="Frontend-Event-Hooks"></a>
 
