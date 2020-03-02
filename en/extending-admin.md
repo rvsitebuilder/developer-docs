@@ -16,9 +16,6 @@ To inject your code to admin, your need to define your blade file to inject on y
         $this->defineinject();
     }
 
-```
-You can inject code to blade file
-```php
      public function defineinject()
     {
         app('rvsitebuilderService')->inject('admin_master','vendor-name/package-name::your blade file');
