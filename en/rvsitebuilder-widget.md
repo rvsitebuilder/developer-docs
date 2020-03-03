@@ -194,7 +194,7 @@ Widget blade contains your `app's widget design` according to the user config.
 
 ```
 
-1. ไฟล์ widget.blade.php คือ การเรียกใช้ไฟล์ดีไซต์แบบต่างๆ จากโฟล์เดอร์ designs ถ้านักพัฒนาสร้างไฟล์ design3.blade.php ใหม่ๆขึ้นมา จะต้องเพิ่ม @includeWhen.. ในส่วนนี้ด้วย
+3. ไฟล์ widget.blade.php คือ การเรียกใช้ไฟล์ดีไซต์แบบต่างๆ จากโฟล์เดอร์ designs ถ้านักพัฒนาสร้างไฟล์ design3.blade.php ใหม่ๆขึ้นมา จะต้องเพิ่ม @includeWhen.. ในส่วนนี้ด้วย
 
 ```php
 <div class="containerWidget">
@@ -205,7 +205,7 @@ Widget blade contains your `app's widget design` according to the user config.
 
 4. ไฟล์ panel.blade.php คือโครงสร้าง Panel Toolbar ที่แสดง Setting Tab และ Design Tab โดยมีรูปแบบดังนี้
 
-   4.1 การตั้งค่า Widget Name และ Widget Title
+   4.1 การตั้งค่า Widget Name และ Widget Title Toolbar
 
    ```php
 
@@ -217,7 +217,7 @@ Widget blade contains your `app's widget design` according to the user config.
    ])
 
    @section('widget-title')
-   Example Widget  <!-- display panel heading -->
+   Example Widget  <!-- display widget panel toolbar heading -->
    @overwrite
    ```
 
@@ -335,8 +335,7 @@ TODO: @Jatuporn help me please.
 
 ````php
 <icon-widget>
-    <div class="blockWidget" title="widgetName" widget="vendor-name/project-name"
-        widgetname="widgetName">
+    <div class="blockWidget" title="widgetName" widget="vendor-name/project-name" widgetname="widgetName">
         <div>
             <div class="view"></div>
             <img class="imgwidgetName"  alt=""
