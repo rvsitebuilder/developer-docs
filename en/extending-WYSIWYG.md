@@ -37,9 +37,12 @@ public function defineinject()
 
 ### Viewmode
 
+You can add your code to our viewmode by using `Inject viewmode`.
+
+**Result is below.**
 ![Viewmode or Mysite](images/mysite.png)
 
-You can inject to viewmode will stay in `</body>`.
+**Example code.**
 
 ```php
 app('rvsitebuilderService')->inject('viewmode','vendor-name/package-name::view blade file');
@@ -49,35 +52,42 @@ app('rvsitebuilderService')->inject('viewmode','vendor-name/package-name::view b
 
 ### Toolbar
 
-You can add your widget to our Tools -> Widget in WYSIWYG by using Inject Toolbar.
+You can add your widget to our `Tools -> Widget` in WYSIWYG by using `Inject Toolbar`.
 
-Example code.
+**Example code.**
 
 ```php
 app('rvsitebuilderService')->inject('toolbar','vendor-name/package-name::view blade file');
-
 ```
 
-Result is below
+**Result is below.**
 ![Inject to Toolbar](images/injecttoolbar.png)
 
 ### Editmode
 
-![Inject to Editmode](images/injecteditmode.png)
+You can add your code to our `Manage Apps` by using `Inject Editmode`.
 
-Adding Section objects
+**Example code.**
 
 ```php
 app('rvsitebuilderService')->inject('editmode','vendor-name/package-name::view blade file');
 ```
 
+**Result is below.**
+![Inject to Editmode](images/injecteditmode.png)
+
 ### Section
 
-![Inject Section](images/injectsection.png)
+You can add your widget to our `Content -> Section` in WYSIWYG by using `Inject Section`.
+
+**Example code.**
 
 ```php
 app('rvsitebuilderService')->inject('section','vendor-name/package-name::view blade file');
 ```
+
+**Result is below.**
+![Inject Section](images/injectsection.png)
 
 ### Insert
 
