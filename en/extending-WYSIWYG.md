@@ -4,7 +4,7 @@
 - [Inject Services](#inject-services)
 - [Frontend Event Hooks](#frontend-event-hooks)
 - [Backend Event Hooks](#backend-event-hooks)
-  
+
 <a name="Overview"></a>
 
 ## Overview
@@ -14,7 +14,6 @@ Usually what you do on your app will run under your own route, what if you want 
 <a name="Inject-Services"></a>
 
 ## Inject Services
-
 
 To inject your code to WYSIWYG, your need to define your blade file to inject on your `app's service provider`.
 
@@ -27,7 +26,7 @@ public function boot()
 }
 ```
 
- Define injections to insert code to display on other apps.
+Define injections to insert code to display on other apps.
 
 ```php
 public function defineinject()
@@ -35,34 +34,52 @@ public function defineinject()
     app('rvsitebuilderService')->inject('inject-name','vendor-name/package-name::view blade file');
 }
 ```
+
 ### Viewmode
-You can inject to viewmode will stay before `</body>` ,but inject code display none in viewmode.
+
+![Viewmode or Mysite](images/mysite.png)
+
+You can inject to viewmode will stay in `</body>`.
+
 ```php
-    app('rvsitebuilderService')->inject('editmode','vendor-name/package-name::view blade file');
+app('rvsitebuilderService')->inject('viewmode','vendor-name/package-name::view blade file');
 ```
+
 <!-- TODO: @tanawat inject admin-->
+
 ### Toolbar
-Toolbar inject to
+
+You can add your widget to our Tools -> Widget in WYSIWYG by using Inject Toolbar.
+
+Example code.
+
 ```php
 app('rvsitebuilderService')->inject('toolbar','vendor-name/package-name::view blade file');
 
 ```
-Adding Insert objects
 
+Result is below
+![Inject to Toolbar](images/injecttoolbar.png)
 
 ### Editmode
+
+![Inject to Editmode](images/injecteditmode.png)
+
 Adding Section objects
 
 ```php
-    app('rvsitebuilderService')->inject('editmode','vendor-name/package-name::view blade file');
+app('rvsitebuilderService')->inject('editmode','vendor-name/package-name::view blade file');
 ```
 
 ### Section
-```php
-    app('rvsitebuilderService')->inject('section','vendor-name/package-name::view blade file');
-```
-### Insert
 
+![Inject Section](images/injectsection.png)
+
+```php
+app('rvsitebuilderService')->inject('section','vendor-name/package-name::view blade file');
+```
+
+### Insert
 
 <a name="Frontend-Event-Hooks"></a>
 
