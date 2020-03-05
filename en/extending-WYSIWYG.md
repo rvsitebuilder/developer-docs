@@ -48,13 +48,12 @@ public function defineinject()
 
 ### Inject name
 
-| inject Service User |     | inject Service Admin |
-| ------------------- | --- | -------------------- |
-| Viewmode            |     | Toolbar              |
-|                     |     | Editmode             |
-|                     |     | Section-icon         |
-|                     |     | Section              |
-|                     |     |                      |
+| inject Service User | inject Service Admin |
+| :-----------------: | :------------------: |
+|      Viewmode       |       Toolbar        |
+|                     |       Editmode       |
+|                     |     Section-icon     |
+|                     |       Section        |
 
 ### Viewmode
 
