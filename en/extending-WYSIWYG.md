@@ -2,6 +2,7 @@
 
 - [Overview](#overview)
 - [Inject Services](#inject-services)
+  - [Inject name](#inject-name)
   - [Viewmode](#viewmode)
   - [Toolbar](#toolbar)
   - [Editmode](#editmode)
@@ -45,17 +46,15 @@ public function defineinject()
 }
 ```
 
-- **inject Service User**
+### Inject name
 
-  - Viewmode
-
-- **inject Service Admin**
-  - Toolbar
-  - Editmode
-  - Section-icon
-  - Section
-
-inject-name
+| inject Service User |     | inject Service Admin |
+| ------------------- | --- | -------------------- |
+| Viewmode            |     | Toolbar              |
+|                     |     | Editmode             |
+|                     |     | Section-icon         |
+|                     |     | Section              |
+|                     |     |                      |
 
 ### Viewmode
 
