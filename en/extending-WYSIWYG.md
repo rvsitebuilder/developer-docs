@@ -46,10 +46,14 @@ public function defineinject()
 ```
 
 - **inject Service User**
-  - **Viewmode**
-  -
+
+  - Viewmode
+
 - **inject Service Admin**
-  - **Viewmode**
+  - Toolbar
+  - Editmode
+  - Section-icon
+  - Section
 
 inject-name
 
@@ -120,7 +124,7 @@ app('rvsitebuilderService')->inject('section','vendor-name/package-name::view bl
 Result is below :
 ![Inject Section](images/injectsection.png)
 
-> {info} If you are not familiar with its `app's widget design`. Check out the full [RVsitebuilder Widget](rvsitebuilder-widget.md) to get started.
+> {info} If you are not familiar with its `widget design`. Check out the full [RVsitebuilder Widget](rvsitebuilder-widget.md) to get started.
 
 <a name="Frontend-Event-Hooks"></a>
 
