@@ -2,8 +2,18 @@
 
 - [Overview](#overview)
 - [Inject Services](#inject-services)
+  - [Viewmode](#viewmode)
+  - [Toolbar](#toolbar)
+  - [Editmode](#editmode)
+  - [Section-icon](#section-icon)
+  - [Section](#section)
 - [Frontend Event Hooks](#frontend-event-hooks)
+  - [beforeSave](#beforesave)
+  - [afterSave](#aftersave)
+  - [completeSave](#completesave)
 - [Backend Event Hooks](#backend-event-hooks)
+  - [Saving event](#saving-event)
+  - [Saved event](#saved-event)
 
 <a name="Overview"></a>
 
@@ -34,6 +44,14 @@ public function defineinject()
     app('rvsitebuilderService')->inject('inject-name','vendor-name/package-name::view blade file');
 }
 ```
+
+- **inject Service User**
+  - **Viewmode**
+  -
+- **inject Service Admin**
+  - **Viewmode**
+
+inject-name
 
 ### Viewmode
 
@@ -76,6 +94,19 @@ app('rvsitebuilderService')->inject('editmode','vendor-name/package-name::view b
 Result is below :
 ![Inject to Editmode](images/injecteditmode.png)
 
+### Section-icon
+
+You can add your icon widget to our `Content -> Section` in WYSIWYG by using `Inject Section Icon`.
+
+Example code :
+
+```php
+app('rvsitebuilderService')->inject('section_icon','vendor-name/package-name::view blade file');
+```
+
+Result is below :
+![Inject Section](images/injectsectionicon.png)
+
 ### Section
 
 You can add your widget to our `Content -> Section` in WYSIWYG by using `Inject Section`.
@@ -89,7 +120,7 @@ app('rvsitebuilderService')->inject('section','vendor-name/package-name::view bl
 Result is below :
 ![Inject Section](images/injectsection.png)
 
-### Insert
+> {info} If you are not familiar with its `app's widget design`. Check out the full [RVsitebuilder Widget](rvsitebuilder-widget.md) to get started.
 
 <a name="Frontend-Event-Hooks"></a>
 
