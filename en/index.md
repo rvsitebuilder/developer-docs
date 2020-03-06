@@ -42,7 +42,7 @@
   - [Save event fontend](eventSave.md)
   - [Editorready event fontend](eventEditorReady.md)
   - [editable event fontend](eventEditable.md)
-  - [color picker](eventEditorReady.md)
+  - [color picker](colorpicker.md)
   - [model or dialog](eventEditorReady.md)
   - [panel menu](eventEditorReady.md)
   - [jquery ui](eventEditorReady.md)
