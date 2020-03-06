@@ -1,7 +1,12 @@
 # Color Picker
 
 จะอธิบายตั้งแต่เริ่มสร้าง app
+ไปที่ rightbar on top click Apps แล้วเลือก ![icon developer](images/iconDeveloper.png)
 ![create app](images/createApp1.png)
+เลือก Generate App ![icon genapp](images/icon_genapp.png)
+![create app](images/createApp2.png)
+เราจะทดสอบสร้าง appขึ้นมาแบบ ง่ายๆ โดยใช้ชื่อ App name ว่า "Test Apps" และชื่อ project name ว่า "proj1"
+![appgen](images/appgenerator.png)
 
 ## Editor ready
 
