@@ -1,7 +1,7 @@
 # Color Picker
 
 จะอธิบายตั้งแต่เริ่มสร้าง app
-![create app ](images/createApp.png)
+![create app](images/createApp1.png)
 
 ## Editor ready
 
