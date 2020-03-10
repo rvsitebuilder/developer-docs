@@ -107,10 +107,10 @@ use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvi
     class EventServiceProvider extends ServiceProvider
     {
         protected $listen = [
-        \vendorName\ProjectName\Events\Uninstaling::class => [
+        \Vender\Project\Events\Uninstaling::class => [
         ],
 
-        \vendorName\ProjectName\Events\Uninstalled::class => [
+        \Vender\Project\Events\Uninstalled::class => [
             \Vender\Project\Listeners\Uninstalled\Blog::class,
             \Vender\Project\Listeners\Uninstalled\Page::class,
         ],
