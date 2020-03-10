@@ -13,10 +13,47 @@ Description Notify
 ถ้า option ที่ใช้มีไม่เพียงพอแนะนำให้ เข้าไปดู https://sciactive.com/pnotify/
 ตัวอย่างการใช้งาน
 ## Notify pop
+success
 ```js
 <script>
     console.pop.success({
-        text: 'Done',
+        text: 'Message success',
+        delay: 1500,
+    });
+</script>
+```
+error
+```js
+<script>
+    console.pop.error({
+        text: 'Message error',
+        delay: 1500,
+    });
+</script>
+```
+info
+```js
+<script>
+    console.pop.info({
+        text: 'Message info',
+        delay: 1500,
+    });
+</script>
+```
+notice
+```js
+<script>
+    console.pop.notice({
+        text: 'Message notice',
+        delay: 1500,
+    });
+</script>
+```
+warning
+```js
+<script>
+    console.pop.warning({
+        text: 'Message warning',
         delay: 1500,
     });
 </script>
@@ -25,7 +62,7 @@ Description Notify
 ```js
 <script>
     console.inline.error({
-        'target': $("#msgError") ,
+        'target': $("msgError") ,
         'title':'Error',
         'text': 'Hi error',
     });
