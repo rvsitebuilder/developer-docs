@@ -60,6 +60,9 @@ php artisan make:event Installing
 ```
 
 ```php
+
+namespace Vender\Project\Events;
+
     class Installing
     {
         use SerializesModels;
@@ -88,7 +91,7 @@ php artisan make:event Installing
                     │   ├── Listeners
                     │   │   ├── Uninstaling.php
                     │   │   ├── Uninstalled.php
-                    │   │   |   ├── Post.php
+                    │   │   |   ├── Blog.php
                     │   │   |   ├── page.php
 ```
 
@@ -97,6 +100,10 @@ php artisan make:event Installing
 Set Listeners On App’s EventServiceProvider.php
 
 ```php
+namespace Vender\Project;
+
+use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
+
     class EventServiceProvider extends ServiceProvider
     {
         protected $listen = [
@@ -104,15 +111,16 @@ Set Listeners On App’s EventServiceProvider.php
         ],
 
         \vendorName\ProjectName\Events\Uninstalled::class => [
-            \Rvsitebuilder\Manage\Listeners\Uninstalled\Post::class,
-            \Rvsitebuilder\Manage\Listeners\Uninstalled\Page::class,
+            \Vender\Project\Listeners\Uninstalled\Blog::class,
+            \Vender\Project\Listeners\Uninstalled\Page::class,
         ],
     }
 ```
 
 ```php
+namespace Vender\Project\Listeners\Uninstalled;
 
-class Post
+class Blog
 {
     /*
      * event(new Uninstalled($request));
@@ -130,10 +138,6 @@ class Post
             BlogPost::withTrashed()
                     ->whereIn('id', $data->get('post')->get('id')->toArray())
                     ->forceDelete();
-
-            BlogPostCategory::withTrashed()
-                            ->whereIn('post_id', $data->get('post')->get('id')->toArray())
-                            ->forceDelete();
         }
     }
 
