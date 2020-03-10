@@ -13,6 +13,7 @@
 กดสร้างที่ generator widget
 <br>
 ![getwidget](images/genwidget.png)
+<br>
 ตั้งชื่อ widget ที่จะทดสอบว่า "widget-colorpicker"
 ![getwidget](images/genwidget2.png)
 
