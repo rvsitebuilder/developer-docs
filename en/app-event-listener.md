@@ -9,6 +9,7 @@
   - [Dispatching Events](#dispatching-events)
 - [Register Listener on App’s Event Service Provider](#register-listener-on-apps-event-service-provider)
   - [Listener](#listener)
+  - [Dispatching Listeners](#dispatching-listeners)
 
 <a name="Creating-Event-and-Listener"></a>
 
@@ -82,7 +83,7 @@ namespace Vender\Project\Events;
 
 ### Dispatching Events
 
-To dispatch an event, you may pass an instance of the event to the event helper. you may call it from anywhere in your application
+To dispatch an event, you may pass an instance of the event to the event helper. you may call it from anywhere in your application:
 
 ```php
 namespace Vender\Project\Http\Controllers\Admin;
@@ -139,7 +140,9 @@ use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvi
     }
 ```
 
-Listeners Blog file.
+### Dispatching Listeners
+
+Event listeners receive the event instance in their handle method. you may perform any actions necessary to respond to the event:
 
 ```php
 namespace Vender\Project\Listeners\Uninstalled;
