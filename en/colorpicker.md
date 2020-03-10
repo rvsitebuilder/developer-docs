@@ -11,6 +11,7 @@
 ![appgen](images/appgenerator.png)
 
 กดสร้างที่ generator widget
+<br>
 ![getwidget](images/genwidget.png)
 
 ## Editor ready
