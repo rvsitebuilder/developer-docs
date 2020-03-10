@@ -14,7 +14,8 @@
 <br>
 ![getwidget](images/genwidget.png)
 ตั้งชื่อ widget ที่จะทดสอบว่า "widget-colorpicker"
-![getwidget](images/genwidget/.png)
+![getwidget](images/genwidget2.png)
+
 ## Editor ready
 
 โดยส่วนใหญ่จะเอาไว้เก็บ event หลักของ toolbar (เป็น toolbar หลักที่ไม่อยากให้ไปปะปนกับ template หลายๆ toolbar จะไว้ที่นี้)เช่น ปุ่มเปลี่ยนfont, ปุ่มเปลี่ยนตัวหน้า, ตัวเอียง, ปุ่มinsert, table, youtube ปุ่มหลักๆที่อยู่บน topbar และ panel
