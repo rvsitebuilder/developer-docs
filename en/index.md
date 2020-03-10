@@ -39,6 +39,8 @@
   - [Editable System Page](creating-editable-system-page.md)
   - [Extending WYSIWYG](extending-WYSIWYG.md)
   - [RVsitebuilder Widget](rvsitebuilder-widget.md)
+  - [create Widget](createwidget.md)
+  - [use webpack & run npm](usewebpackAndNPM.md)
   - [Save event fontend](eventSave.md)
   - [Editorready event fontend](eventEditorReady.md)
   - [editable event fontend](eventEditable.md)
