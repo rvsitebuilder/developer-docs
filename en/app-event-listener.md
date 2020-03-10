@@ -6,6 +6,7 @@
 - [Eloquent Model Events](#eloquent-model-events)
 - [RVsitebuilder Application Events](#rvsitebuilder-application-events)
 - [Register Event on App’s Service Provider](#register-event-on-apps-service-provider)
+  - [Dispatching Events](#dispatching-events)
 - [Register Listener on App’s Event Service Provider](#register-listener-on-apps-event-service-provider)
   - [Listener](#listener)
 
@@ -75,6 +76,27 @@ namespace Vender\Project\Events;
         public function broadcastOn()
         {
             return [];
+        }
+    }
+```
+
+### Dispatching Events
+
+To dispatch an event, you may pass an instance of the event to the event helper. you may call it from anywhere in your application
+
+```php
+namespace Vender\Project\Http\Controllers\Admin;
+
+    class AppsController extends Controller
+    {
+        protected function uninstall(UninstallRequest $request)
+        {
+            event(new Uninstalling($request));
+
+            Apps::uninstall($request);
+
+            event(new Uninstalled($request));
+
         }
     }
 ```
