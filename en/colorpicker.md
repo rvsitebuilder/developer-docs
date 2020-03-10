@@ -16,6 +16,14 @@
 <br>
 ตั้งชื่อ widget ที่จะทดสอบว่า "widget-colorpicker"
 ![getwidget](images/genwidget2.png)
+<br>
+หลังจากนั้นให้กลับไปที่หน้า "Content"
+<br>
+![getwidget](images/gotocontent.png)
+เราจะเห็นwidgetที่ถูกสร้างขึ้นมา 2 ที่ ดังรูป
+![getwidget](images/wyswidget1.png)
+<br>
+![getwidget](images/wyswidget2.png)
 
 ## Editor ready
 
