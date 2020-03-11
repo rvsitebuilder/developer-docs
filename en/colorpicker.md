@@ -48,10 +48,13 @@ $(function() {
 <br>
 จะอธิบายเรื่อง tab panel จะมี 2 tab ชื่อ setting และ design
 ![panel](images/panelcolorpicker5.png)
-<b>setting</b> จะสัมพันธ์กับ{{--  start setting tab  --}}ข้อมูลที่อยู่ในนี้จะแสดงใน tab setting {{--  end setting tab  --}}
+<br>
+<b>setting</b> จะสัมพันธ์กับ'{{--  start setting tab  --}}'ข้อมูลที่อยู่ในนี้จะแสดงใน tab setting '{{--  end setting tab  --}}'
 <br>
 ![panel](images/panelcolorpicker6.png)
-<b>design</b> จะสัมพันธ์กับ{{--  start design tab  --}}ข้อมูลที่อยู่ในนี้จะแสดงใน tab setting {{--  end  design tab  --}}
+<br>
+<b>design</b> จะสัมพันธ์กับ'{{--  start design tab  --}}'ข้อมูลที่อยู่ในนี้จะแสดงใน tab setting '{{--  end  design tab  --}}'
+<br>
 ![panel](images/panelcolorpicker7.png)
 
 
