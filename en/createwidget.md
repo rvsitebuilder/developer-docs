@@ -1,4 +1,4 @@
-# Color Picker
+# Create Widget
 
 จะอธิบายตั้งแต่เริ่มสร้าง app
 ไปที่ rightbar on top click Apps แล้วเลือก ![icon developer](images/iconDeveloper.png)
@@ -29,6 +29,7 @@
 จะเห็น panel ขึ้นมาด้านขวาเราจะใส่ colorpickerในนั้น
 <br>
 ![getwidget](images/wyswidget2.png)
+<br>
 ถ้าไม่อยากทดสอบในหน้า content สามารถทดสอบบน address bar ได้ โดยใส่ ดังนี้ " http://192.168.100.82/admin/wysiwyg/common/widgetframe/vendertest1/p1/widget-colorpicker "
 <br>
 ![getwidget](images/wyswidget4.png)
