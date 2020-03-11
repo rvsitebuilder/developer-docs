@@ -1,6 +1,6 @@
 # Webpack
 
-แนะนำให้ดู create widget ก่อน [create Widget](createwidget.md)
+แนะนำให้ดู create widget ก่อน [Create Widget](createwidget.md)
 ขั้นตอนการใส่ javascript ใช้งานร่วมกับ webpack โดยจะอธิบายการเรียกใช้ "colorpicker" จาก node_module ให้ใช้งานร่วมกับ widget ได้อย่างไรดังนี้
 ต้องติดตั้ง node_module ก่อนที่ packages/vendertest1/p1
 
@@ -44,3 +44,14 @@ import 'spectrum-colorpicker';
 ```
 
 ![npm](images/webpack3.png)
+หลังจากนั้นให้ npm run dev เพื่อให้ webpack สร้างไฟล์ขึ้นมา แนะนำให้ดูข้อมูล [laravel mix](https://laravel.com/docs/6.x/mix)
+```php
+จากตัวอย่าง
+cd /localhost/packages/vendertest1/p1
+npm run dev
+```
+![npm](images/webpack4.png)
+*** ถ้าเราเขียน script หรือ เปลี่ยนแปลงในไฟล์ นี้
+packages/vendertest1/p1/resources/js/admin/widget-colorpicker.js
+packages/vendertest1/p1/resources/css/widget-colorpicker.scss
+จำเป็นต้อง npm run dev

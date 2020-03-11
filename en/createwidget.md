@@ -1,4 +1,4 @@
-# Color Picker
+# Create Widget
 
 จะอธิบายตั้งแต่เริ่มสร้าง app
 ไปที่ rightbar on top click Apps แล้วเลือก ![icon developer](images/iconDeveloper.png)
