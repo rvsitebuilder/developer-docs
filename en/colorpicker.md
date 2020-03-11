@@ -5,7 +5,7 @@
 ![wyswidget](images/wyswidget3.png)
 ให้เปิดไฟล์ packages/vendertest1/p1/resources/views/widgets/widget-colorpicker/panel.blade.php
 <br>
-![panel](images/panel1.png)
+![panel](images/panelcolorpicker1.png)
 <br>
 ให้ใส่ script แบบนี้ล่างสุดของไฟล์ panel.blade.php
 ```php
@@ -40,4 +40,18 @@ $(function() {
 @endpush
 ```
 
-![panel](images/panel2.png)
+![panel](images/panelcolorpicker2.png)
+<br>
+ให้ทดสอบผลในหน้า editor จะแสดง icon colorpicker ![panel](images/panelcolorpicker3.png)ขึ้นมา
+<br>
+![panel](images/panelcolorpicker4.png)
+<br>
+จะอธิบายเรื่อง tab panel จะมี 2 tab ชื่อ setting และ design
+![panel](images/panelcolorpicker5.png)
+<b>setting</b> จะสัมพันธ์กับ{{--  start setting tab  --}}ข้อมูลที่อยู่ในนี้จะแสดงใน tab setting {{--  end setting tab  --}}
+<br>
+![panel](images/panelcolorpicker6.png)
+<b>design</b> จะสัมพันธ์กับ{{--  start design tab  --}}ข้อมูลที่อยู่ในนี้จะแสดงใน tab setting {{--  end  design tab  --}}
+![panel](images/panelcolorpicker7.png)
+
+
