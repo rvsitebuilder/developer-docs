@@ -24,34 +24,35 @@
 <br>
 หลังจากนั้นให้กลับไปที่หน้า "Content"
 <br>
-![getwidget](images/gotocontent.png)
+![getwidget](images/gotocontent_colopicker.png)
 เราจะเห็นwidgetที่ถูกสร้างขึ้นมา 2 ที่ ดังรูป
-![getwidget](images/wyswidget1.png)
+![getwidget](images/wyswidget_colorpicker1.png)
 <br>
-![getwidget](images/wyswidget2.png)
+![getwidget](images/wyswidget_colorpicker2.png)
 <br>
 ให้ทดสอบ insert widget ลงใน editor จะ insert แบบไหนก็ได้ แต่ในตัวอย่างจะ insert แบบ section
 จะเห็น panel ขึ้นมาด้านขวาเราจะใส่ colorpickerในนั้น
 <br>
-![getwidget](images/wyswidget2.png)
+ทดสอบวาง widget ที่สร้าง
 <br>
-ถ้าไม่อยากทดสอบในหน้า content สามารถทดสอบบน address bar ได้โดยใส่ดังนี้ " http://localhost/admin/wysiwyg/common/widgetframe/vendertest1/p1/widget-colorpicker "
+![getwidget](images/wyswidget_colorpicker3.png)
+ถ้าต้องการทดสอบ เฉพาะ panel และไม่อยากทดสอบในหน้า content สามารถทดสอบบน address bar ได้โดยใส่ดังนี้ "http://localhost/admin/wysiwyg/common/widgetframe/vendor-name/project-name/widget-colorpicker"
 <br>
-![getwidget](images/wyswidget4.png)
+![getwidget](images/wyswidget_colorpicker4.png)
 
 # Webpack
 
 <a name="Webpack"></a>
 แนะนำให้ดู create widget ก่อน [Create Widget](createwidget.md)
 ขั้นตอนการใส่ javascript ใช้งานร่วมกับ webpack โดยจะอธิบายการเรียกใช้ "colorpicker" จาก node_module ให้ใช้งานร่วมกับ widget ได้อย่างไรดังนี้
-ต้องติดตั้ง node_module ก่อนที่ packages/vendertest1/p1
+ต้องติดตั้ง node_module ก่อนที่ packages/vendor-name/project-name
 
 ```php
-cd /localhost/packages/vendertest1/p1
+cd /localhost/packages/vendor-name/project-name
 npm run install
 ```
 
-ให้เปิดไฟล์ packages/vendertest1/pi/webpack.mix.js
+ให้เปิดไฟล์ packages/vendor-name/project-name/webpack.mix.js
 ใส่ code ดังนี
 
 ```php
