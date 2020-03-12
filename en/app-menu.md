@@ -1,15 +1,19 @@
 # App Menu
-  - [User menu](#User-menu)
-  - [Admin menu](#Admin-menu) 
+
+- [User menu](#user-menu)
+  - [User menu to editable system page](#user-menu-to-editable-system-page)
+- [Admin menu](#admin-menu)
 
 <a name="User-menu"></a>
+
 ## User menu
-  
+
 <!-- ### User menu to non-editable system page -->
- 
+
 ### User menu to editable system page
 
-Add user menu migration example: 
+Add user menu migration example:
+
 ```php
 CoreMenu::updateOrCreate(
     [
@@ -20,7 +24,7 @@ CoreMenu::updateOrCreate(
         'fontawesome' => 'uk-icon-home',
         'badge_title' => '',
         'badge_style' => '',
-        'parent_id' => 0, 
+        'parent_id' => 0,
         'menu_type' => 1, // 1 page , 2 post , 3 system, 4 external.
         'external_url' => '',
         'priority' => 1,
@@ -29,11 +33,17 @@ CoreMenu::updateOrCreate(
     ]
 );
 ```
-To prevent error appears on the website, disabling or uninstalling app on the Manage.  RVsitebuilder will automatically hide your app's menu, disable all app’s routes and shows 404 error page.  
 
+To prevent error appears on the website, disabling or uninstalling app on the Manage. RVsitebuilder will automatically hide your app's menu, disable all app’s routes and shows 404 error page.
 
 <a name="Admin-menu"></a>
+
 ## Admin menu
 
+Open app.json file in your app and setting config "admin-menu". You must create a "your-file.blade.php" file inside 'resources/views/your-file.blade.php' and create a route name to a blade file using the link.
 
- 
+```php
+
+    "admin-menu":[{ "name":"My app menu", "link":"your.route.name"}],
+
+```
