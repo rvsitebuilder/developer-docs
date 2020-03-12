@@ -36,17 +36,18 @@
   - [Notify](notify.md)
 
 - ## RVsitebuilder Visual Editor (WYSIWYG)
+
   - [Editable System Page](creating-editable-system-page.md)
   - [Extending WYSIWYG](extending-WYSIWYG.md)
   - [RVsitebuilder Widget](rvsitebuilder-widget.md)
-  - [create Widget](createwidget.md)
-  - [use webpack & run npm](usewebpackAndNPM.md)
+  - [Create Widget](createwidget.md)
+  - [Use Webpack & run npm](usewebpackAndNPM.md)
   - [Frontend Event Hooks](eventSave.md)
   - [Backend Event Hooks](backendeventhooks.md)
 
   - [Editorready event fontend](eventEditorReady.md)
   - [editable event fontend](eventEditable.md)
-  - [color picker](colorpicker.md)
+  - [Color Picker tutorial](colorpicker.md)
   - [model or dialog](eventEditorReady.md)
   - [panel menu](eventEditorReady.md)
   - [jquery ui](eventEditorReady.md)
@@ -55,6 +56,7 @@
   - Extending Insert Toolbar
   - Extending Form WYSIWYG
   - Extending Email WYSIWYG -->
+
 - ## Internationalization
       - [language files](app-language-files.md)
   <!-- - ## Testing -->
