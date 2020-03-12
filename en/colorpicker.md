@@ -68,46 +68,49 @@ mix.sass(
 ```
 
 แนะนำให้ดู [laravel mix](https://laravel.com/docs/7.x/mix)
-<br>![webpack](images/webpack1.png)
+<br>![webpack](images/webpack_colorpicker1.png)
 
-เปิดไฟล์ 'packages/vendertest1/p1/resources/js/admin/widget-colorpicker.js'
+ให้สร้างไฟล์ 'packages/vendor-name/project-name/resources/js/admin/widget-colorpicker.js'
 ให้ใส่ code
 
 ```php
 import 'spectrum-colorpicker';
 ```
 
-![npm](images/webpack2.png)
+![npm](images/webpack_colorpicker2.png)
 
-เปิดไฟล์ 'packages/vendertest1/p1/resources/css/widget-colorpicker.scss'
+ให้สร้างไฟล์ 'packages/vendor-name/project-name/resources/css/widget-colorpicker.scss'
 ให้ใส่ code
 
 ```css
 @import '~spectrum-colorpicker/spectrum';
 ```
 
-![npm](images/webpack3.png)
+![npm](images/webpack_colorpicker3.png)
 หลังจากนั้นให้ npm run dev เพื่อให้ webpack สร้างไฟล์ขึ้นมา แนะนำให้ดูข้อมูล [laravel mix](https://laravel.com/docs/6.x/mix)
 
 ```php
 จากตัวอย่าง
-cd /localhost/packages/vendertest1/p1
+cd /localhost/packages/vendor-name/project-name/
 npm run dev
 ```
 
-![npm](images/webpack4.png)
+![npm](images/webpack_colorpicker4.png)
 \*\*\* ถ้าเราเขียน script หรือ เปลี่ยนแปลงในไฟล์ นี้
-packages/vendertest1/p1/resources/js/admin/widget-colorpicker.js
-packages/vendertest1/p1/resources/css/widget-colorpicker.scss
+packages/vendor-name/project-name/resources/js/admin/widget-colorpicker.js
+packages/vendor-name/project-name/resources/css/widget-colorpicker.scss
 จำเป็นต้อง npm run dev
+ถ้าสำเร็จแล้วไม่มีปัญหาจะขึ้นดังรูป
+<br>
+![npm](images/webpack_colorpicker5.png)
+<br>
 
 # Color Picker
 
 <a name="ColorPicker"></a>
-หลังจากที่ [Create Widget](createwidget.md) และ เตรียมไฟล์ [Webpack](usewebpackAndNPM.md) แล้ว
-จะอธิบายการใส่ colorpicker ลงบน panel ดังภาพที่2
+การใส่ colorpicker ลงบน panel ดังภาพที่2
 ![wyswidget](images/wyswidget3.png)
-ให้เปิดไฟล์ packages/vendertest1/p1/resources/views/widgets/widget-colorpicker/panel.blade.php
+ให้เปิดไฟล์ packages/vendor-name/project-name/resources/views/widgets/widget-colorpicker/panel.blade.php
 <br>
 ![panel](images/panelcolorpicker1.png)
 <br>
