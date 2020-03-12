@@ -1,9 +1,10 @@
-- [Create Widget](#Create Widget)
+- [Create Widget](#CreateWidget)
 - [Webpack](#Webpack)
-- [Webpack](#Color Picker)
+- [Color Picker](#ColorPicker)
 
 # Create Widget
 
+<a name="CreateWidget"></a>
 จะอธิบายตั้งแต่เริ่มสร้าง app
 ไปที่ rightbar on top click Apps แล้วเลือก ![icon developer](images/iconDeveloper.png)
 ![create app](images/createApp1.png)
@@ -40,6 +41,7 @@
 
 # Webpack
 
+<a name="Webpack"></a>
 แนะนำให้ดู create widget ก่อน [Create Widget](createwidget.md)
 ขั้นตอนการใส่ javascript ใช้งานร่วมกับ webpack โดยจะอธิบายการเรียกใช้ "colorpicker" จาก node_module ให้ใช้งานร่วมกับ widget ได้อย่างไรดังนี้
 ต้องติดตั้ง node_module ก่อนที่ packages/vendertest1/p1
@@ -100,6 +102,7 @@ packages/vendertest1/p1/resources/css/widget-colorpicker.scss
 
 # Color Picker
 
+<a name="ColorPicker"></a>
 หลังจากที่ [Create Widget](createwidget.md) และ เตรียมไฟล์ [Webpack](usewebpackAndNPM.md) แล้ว
 จะอธิบายการใส่ colorpicker ลงบน panel ดังภาพที่2
 ![wyswidget](images/wyswidget3.png)
