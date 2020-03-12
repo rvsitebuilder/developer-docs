@@ -1,40 +1,55 @@
 # Database Structure
 
-  
-## CMS features  
+## CMS features
 
 Several tables contain Page, Blog, Menu, Header, footer, Slug, SEO, and etc. to build dynamic website.
 
-![main](images/main_DB_driagram.jpg)
+![main](images/full_DB.png)
 
-### Old-slug
+## Manage app
+
+This table is manage all app in CMS.
+
+![main](images/manage_app_table.png)
+
+## Slug
 
 Renaming page, post, and category slug will keep the old slug and automatically redirect to the new slug.
 
-## Core-setting
+![main](images/slug_table.png)
+
+## Page and Menu
+
+![main](images/page_menu_table.png)
+
+## Blog
+
+![main](images/blog_table.png)
+
+## Core setting
 
 This table is used to store custom configuration from `Config Admin Interface` before creating config cache. Check [App Configuration](app-configuration.md) for more detail.
 
-![Core_setting](images/core_setting_main_DB_driagram.png)
+![Core_setting](images/core_setting_table.png)
 
 ## User
 
-![user](images/user_DB_driagram.jpg) 
+![user](images/users_table.png)
 
 ## Role and Permissions
 
-![role_permission](images/role_permission_DB_driagram.jpg)
+![role_permission](images/role_permissions_table.png)
 
-## Meta
+## Widget and Meta
+
 Extending default table using meta table. Check [App Model](app-model.md) for more detail.
-<!-- TODO: @pam ยังไม่ครบขาด user, and etc. ต้องรอ เจน แก้ไข app-model.md ก่อน -->
 
-![meta](images/meta_DB_driagram.jpg)
+![meta](images/meta_table.png)
 
 ## Email
 
-![email](images/email_DB_diagram.png)
+![email](images/email_table.png)
 
 ## Scheduled tasks
 
-![task](images/task_DB_driagram.jpg)
+![task](images/task_table.png)
