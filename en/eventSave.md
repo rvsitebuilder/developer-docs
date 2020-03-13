@@ -22,7 +22,7 @@
 ตัวอย่างการใช้งานจะอยู่ภายใต้ event[editorReady](eventEditorReady.md)
 ## Save
 
-```js
+```php
 <script>
   $(function(){' '}
   {$(document).bind('editorReady', function() {
