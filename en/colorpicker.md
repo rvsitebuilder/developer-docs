@@ -24,7 +24,7 @@
 <br>
 หลังจากนั้นให้กลับไปที่หน้า "Content"
 <br>
-![getwidget](images/gotocontent_colopicker.png)
+![getwidget](images/gotocontent_colorpicker.png)
 เราจะเห็นwidgetที่ถูกสร้างขึ้นมา 2 ที่ ดังรูป
 ![getwidget](images/wyswidget_colorpicker1.png)
 <br>
