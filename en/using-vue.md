@@ -12,12 +12,12 @@ You can use frontend framework Vue.js and React.js etc.
 
 ## Directory Structure
 
-Here is the example of file and directory structure for `/packages/vendor-name/package-name/resources`.
+Here is the example of file and directory structure for `/packages/vendor-name/project-name/resources`.
 
 Create Laravel blade file and keep it in your `app’s /resources` folder.
 
 ```php
-/packages/vendor-name/package-name/
+/packages/vendor-name/project-name/
                       ├── resources
                       │    ├── js
                       │    │  ├── admin
@@ -41,7 +41,7 @@ Here is an example of `views/admin/layouts/app.blade.php`
 @extends('admin.layouts.master')
 
 @section('leftmenu')
-	@include('admin.includes.leftmenu', ['package-name' => "vendor-name/package-name"])
+	@include('admin.includes.leftmenu', ['project-name' => "vendor-name/project-name"])
 @endsection
 
 @push('package-styles')
@@ -97,12 +97,12 @@ With that done, let's have a look at `js/admin/Example.js`:
 
 ```javascript
 Vue.component(
-  'example-component',
-  require('../components/ExampleComponent.vue').default
+  "example-component",
+  require("../components/ExampleComponent.vue").default
 );
 
 const app = new Vue({
-  el: '#app'
+  el: "#app"
 });
 ```
 
@@ -120,7 +120,7 @@ Head over `webpack.mix.js` file in your `app’s`.
 Next,config path file to public
 
 ```js
-mix.js(['resources/js/admin/Example.js'], 'js/admin/Example.js');
+mix.js(["resources/js/admin/Example.js"], "js/admin/Example.js");
 ```
 
 > Done! Now, all of the bullet items above are available to you, and it required exactly one method call.
@@ -147,7 +147,7 @@ Next, create a new view named `index.blade.php`, placing it in your `resources/v
 @endsection
 
 @push('package-scripts')
-  {{ script(mix('js/admin/Example.js', 'vendor/vendor-name/package-name')) }}
+  {{ script(mix('js/admin/Example.js', 'vendor/vendor-name/project-name')) }}
 @endpush
 ```
 

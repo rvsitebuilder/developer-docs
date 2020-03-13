@@ -20,7 +20,7 @@
 Create Laravel blade file and keep it in your `app’s /src/Events` folder.
 
 ```php
-/packages/vendor-name/package-name/
+/packages/vendor-name/project-name/
                     ├── src
                     │   ├── Events
                     │   │   ├── Uninstaling.php
@@ -123,19 +123,19 @@ namespace Vender\Project\Http\Controllers\Admin;
 Set Listeners On App’s EventServiceProvider.php
 
 ```php
-namespace Vender\Project;
+namespace VenderName\ProjectName;
 
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
 
     class EventServiceProvider extends ServiceProvider
     {
         protected $listen = [
-        \Vender\Project\Events\Uninstaling::class => [
+        \VenderName\ProjectName\Events\Uninstaling::class => [
         ],
 
-        \Vender\Project\Events\Uninstalled::class => [
-            \Vender\Project\Listeners\Uninstalled\Blog::class,
-            \Vender\Project\Listeners\Uninstalled\Page::class,
+        \VenderName\ProjectName\Events\Uninstalled::class => [
+            \VenderName\ProjectName\Listeners\Uninstalled\Blog::class,
+            \VenderName\ProjectName\Listeners\Uninstalled\Page::class,
         ],
     }
 ```
@@ -145,7 +145,7 @@ use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvi
 Event listeners receive the event instance in their handle method. you may perform any actions necessary to respond to the event:
 
 ```php
-namespace Vender\Project\Listeners\Uninstalled;
+namespace VenderName\ProjectName\Listeners\Uninstalled;
 
 class Blog
 {

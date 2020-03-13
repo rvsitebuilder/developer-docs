@@ -70,13 +70,13 @@ namespace Rvsitebuilder\Manage\Http\Controllers\Admin;
 
             $newRequest = CustomValidate::customRequestKey($request->all());
 
-            $appName = $newRequest['packagename'];
+            $appName = $newRequest['appName'];
 
             foreach ($newRequest as $keyName => $val) {
                 if (empty($val)) {
                     continue;
                 }
-                if ($keyName != 'packagename') {
+                if ($keyName != 'appName') {
                     CoreSetting::updateOrCreate(
                         ['key' => $appName.'.'.$keyName],
                         ['key' => $appName.'.'.$keyName, 'value' => $val]);
@@ -105,7 +105,7 @@ namespace Rvsitebuilder\Manage\Listeners;
     {
         public function handle(SiteSaved $event)
         {
-            if (isset($event->request->packagename) && $event->request->packagename == 'rvsitebuilder/manage') {
+            if (isset($event->request->appName) && $event->request->appName == 'rvsitebuilder/manage') {
 
                 // $event->request->route_cache_enabled come from HTML form and always string.
                 if ($event->request->route_cache_enabled == 'true') {
@@ -147,15 +147,11 @@ use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvi
     {
         protected $listen = [
             \Rvsitebuilder\Manage\Events\SiteConfig\SiteSaving::class => [
-                +-------------------------------------------------------+
-                | \YourVendor\YourProject\Listeners\YourProcess::class, |
-                +-------------------------------------------------------+
++                \YourVendor\YourProject\Listeners\YourProcess::class,
             ],
 
             \Rvsitebuilder\Manage\Events\SiteConfig\SiteSaved::class => [
-                +-------------------------------------------------------+
-                | \YourVendor\YourProject\Listeners\YourProcess::class, |
-                +-------------------------------------------------------+
++                \YourVendor\YourProject\Listeners\YourProcess::class,
             ],
     }
 
@@ -171,9 +167,9 @@ namespace YourVendor\YourProject\Listeners;
     {
         public function handle(SiteSaved $event)
         {
-            if (isset($event->request->packagename) && $event->request->packagename == 'rvsitebuilder/manage') {
+            if (isset($event->request->appName) && $event->request->appName == 'rvsitebuilder/manage') {
                 // coding something
             }
         }
-    }
+
 ```

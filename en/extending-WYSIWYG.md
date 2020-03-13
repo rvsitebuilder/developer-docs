@@ -35,7 +35,7 @@ Define injections to insert code to display on other apps.
 ```php
 public function defineinject()
 {
-    app('rvsitebuilderService')->inject('inject-name','vendor-name/package-name::view blade file');
+    app('rvsitebuilderService')->inject('inject-name','vendor-name/project-name::view blade file');
 }
 ```
 
@@ -55,7 +55,7 @@ You can add your code to our viewmode by using `Inject viewmode`.
 Example code :
 
 ```php
-app('rvsitebuilderService')->inject('viewmode','vendor-name/package-name::view blade file');
+app('rvsitebuilderService')->inject('viewmode','vendor-name/project-name::view blade file');
 ```
 
 Result is below :
@@ -70,7 +70,7 @@ You can add your widget to our `Tools -> Widget` in WYSIWYG by using `Inject Too
 Example code :
 
 ```php
-app('rvsitebuilderService')->inject('toolbar','vendor-name/package-name::view blade file');
+app('rvsitebuilderService')->inject('toolbar','vendor-name/project-name::view blade file');
 ```
 
 Result is below :
@@ -83,7 +83,7 @@ You can add your code to our `Manage Apps` by using `Inject Editmode`.
 Example code :
 
 ```php
-app('rvsitebuilderService')->inject('editmode','vendor-name/package-name::view blade file');
+app('rvsitebuilderService')->inject('editmode','vendor-name/project-name::view blade file');
 ```
 
 Result is below :
@@ -96,7 +96,7 @@ You can add your icon widget to our `Content -> Section` in WYSIWYG by using `In
 Example code :
 
 ```php
-app('rvsitebuilderService')->inject('section_icon','vendor-name/package-name::view blade file');
+app('rvsitebuilderService')->inject('section_icon','vendor-name/project-name::view blade file');
 ```
 
 Result is below :
@@ -109,7 +109,7 @@ You can add your widget to our `Content -> Section` in WYSIWYG by using `Inject 
 Example code :
 
 ```php
-app('rvsitebuilderService')->inject('section','vendor-name/package-name::view blade file');
+app('rvsitebuilderService')->inject('section','vendor-name/project-name::view blade file');
 ```
 
 Result is below :

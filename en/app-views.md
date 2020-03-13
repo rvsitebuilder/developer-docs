@@ -1,22 +1,23 @@
 # App Views
 
-  - [Creating View](#Creating-View)
-  - [Master Layouts](#Master-Layouts) 
-  - [Admin App Layouts](#Admin-App-Layouts)
-  - [User App Layouts](#User-App-Layouts) 
-  - [App Views](#App-Views)
-  - [Creating Non-Editable System Page](#Creating-Non-Editable-System-Page) 
-  - [Creating Editable System Page](#Creating-Editable-System-Page)
+- [Creating View](#creating-view)
+- [Master Layouts](#master-layouts)
+- [Admin App Layouts](#admin-app-layouts)
+- [User App Layouts](#user-app-layouts)
+- [App Views](#app-views)
+- [Creating Non-Editable System Page](#creating-non-editable-system-page)
+- [Creating Editable System Page](#creating-editable-system-page)
 
-> {info} If you are not familiar with its concept. Check out the full [Laravel View documentation](https://laravel.com/docs/master/views) to get started. 
+> {info} If you are not familiar with its concept. Check out the full [Laravel View documentation](https://laravel.com/docs/master/views) to get started.
 
 <a name="Creating-View"></a>
+
 ## Creating View
 
-Create Laravel blade file and keep it in your `app’s /resources/views` folder. 
+Create Laravel blade file and keep it in your `app’s /resources/views` folder.
 
 ```php
-/packages/vendor-name/package-name/
+/packages/vendor-name/project-name/
                     ├── resources
                     │   └── views
                     │       ├── admin
@@ -30,26 +31,31 @@ Create Laravel blade file and keep it in your `app’s /resources/views` folder.
                     │           └── layouts
                     │               └── app.blade.php
 ```
+
 <a name="Master-Layouts"></a>
+
 ## Master Layouts
 
 There are 4 master layouts available on RVsitebuilder. All master layouts load necessary JavaScript and CSS according to the template end-user choosing on the admin area.
-- `admin.layouts.master` - admin pages that include top bar, app launcher, and your app's left menu. 
-- `admin.layouts.master-blank` - admin blank pages. It is useful for creating pop-up or iframe. 
-- `user.layouts.master` - user pages that include header, menu, sidebar, footer, and etc. 
-- `user.layouts.master-blank` - user blank pages. It is useful for creating pop-up or iframe. 
 
-To make your app user interface consistency throughout the site. You should extend master layouts on your `app's layouts` folder. 
+- `admin.layouts.master` - admin pages that include top bar, app launcher, and your app's left menu.
+- `admin.layouts.master-blank` - admin blank pages. It is useful for creating pop-up or iframe.
+- `user.layouts.master` - user pages that include header, menu, sidebar, footer, and etc.
+- `user.layouts.master-blank` - user blank pages. It is useful for creating pop-up or iframe.
+
+To make your app user interface consistency throughout the site. You should extend master layouts on your `app's layouts` folder.
 
 <a name="Admin-App-Layouts"></a>
+
 ## Admin App Layouts
 
 Here is an example of `views/admin/layouts/app.blade.php`:
+
 ```php
 @extends('admin.layouts.master')
 
 @section('leftmenu')
-	@include('admin.includes.leftmenu', ['package-name' => "vendor-name/package-name"])
+	@include('admin.includes.leftmenu', ['project-name' => "vendor-name/project-name"])
 @endsection
 
 @push('package-styles')
@@ -59,31 +65,30 @@ Here is an example of `views/admin/layouts/app.blade.php`:
 
 @push('package-scripts')
 <!-- package-scripts -->
-    
+
 @endpush
 ```
 
 **Admin Left Menu**
 
-`leftmenu` section should includes default `admin.includes.leftmenu` and send your correct vendor-name and package-name `vendor-name/package-name`. It will dynamically generate menu according to your [app's app.json](app-configuration-app-json.md). 
+`leftmenu` section should includes default `admin.includes.leftmenu` and send your correct vendor-name and project-name `vendor-name/project-name`. It will dynamically generate menu according to your [app's app.json](app-configuration-app-json.md).
 
 keeping in mind that, end-users can move your left menu to display on the other app, change your app’s display name, and hide icon on app launcher.
-
 
 **Package-style Blade Stack**
 
 Insert your CSS scripts for admin pages here.
 
-
-**Package-script Blade Stack** 
+**Package-script Blade Stack**
 
 Insert your JavaScript for user pages here.
 
-
 <a name="User-App-Layouts"></a>
+
 ## User App Layouts
 
 Here is an example of `views/user/layouts/app.blade.php`.
+
 ```php
 @extends('user.layouts.master')
 
@@ -97,52 +102,57 @@ Here is an example of `views/user/layouts/app.blade.php`.
 
 @endpush
 ```
+
 <a name="App-Views"></a>
+
 ## App Views
 
 All your views should extend your `app's layouts`. And add your content in `content` blade section.
 
 ```php
-@extends('package-name::admin.layouts.app')
+@extends('project-name::admin.layouts.app')
 
 @section('content')
     Your app content here.
 @endsection
 ```
+
 You can `@push('package-styles')` and `@push('package-scripts')` if you have anything specific only for this view.
 
-
 <a name="Creating-Non-Editable-System-Page"></a>
+
 ## Creating Non-Editable System Page
 
 Standard Laravel routes and views are [non-editable system pages](page-type.md). This give you a freedom to do whatever you want while perfectly display under the same theme as other pages. Its drawback is the end-user cannot modify the page properties such as SEO options, META tags, and etc.
 
 You may explicitly set web page title on your blade view.
+
 ```php
 @section('title','Your page website title'))
 ```
 
-End-user still see all your `app's route` on the system page hyperlink selection list. To hide it from the hyperlink selection list, you need to add `hideFromHyperlinkList` on your `app’s service provider`. 
+End-user still see all your `app's route` on the system page hyperlink selection list. To hide it from the hyperlink selection list, you need to add `hideFromHyperlinkList` on your `app’s service provider`.
 
 ```php
-public function boot() 
-{ 
-    $this->defineHideFromHyperlinkList()  
-} 
+public function boot()
+{
+    $this->defineHideFromHyperlinkList()
+}
 
 public function defineHideFromHyperlinkList()
-{ 
-    $routes =   [  
+{
+    $routes =   [
                     'totem/tasks',
                     'totem/tasks/create'
-                ]; 
-    
-    app('rvsitebuilderService')->hideFromHyperlinkList($routes); 
+                ];
+
+    app('rvsitebuilderService')->hideFromHyperlinkList($routes);
 }
 ```
 
 <a name="Creating-Editable-System-Page"></a>
-## Creating Editable System Page 
+
+## Creating Editable System Page
 
 To make your system page editable, you need to do the following:
 
@@ -151,5 +161,3 @@ To make your system page editable, you need to do the following:
 3. Push wysiwyg-section blade stack
 
 > {info} Checkout [Creating Editable System Page Documentation](creating-editable-system-page.md) for more detail.
-
-

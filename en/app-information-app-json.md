@@ -2,9 +2,9 @@
 
 ## App.json
 
-We use properties information on your `app.json` to display app information and default value of the app.  
+We use properties information on your `app.json` to display app information and default value of the app.
 
-## JSON Schema 
+## JSON Schema
 
 We have a [JSON schema](http://json-schema.org/) that documents all properties and their format to use your app.json. You can find it at: [schema.json](schema.json).
 
@@ -13,45 +13,48 @@ We have a [JSON schema](http://json-schema.org/) that documents all properties a
 ## Properties
 
 name
-:  The name of the package. It consists of vendor name and project name, separated by /. Examples: 
+: The name of the project. It consists of vendor name and project name, separated by /. Examples:
 
-- `netway/instagram` 
+- `netway/instagram`
 - `armnet/telescope`
 
-The name must be lowercase alphanumeric characters without spaces. 
+The name must be lowercase alphanumeric characters without spaces.
 
 **alias**
 
 App display name on the end-user website.
 
-> {info} User can overwrite the value on the app management page. 
+> {info} User can overwrite the value on the app management page.
 
 Example:
+
 ```json
 "name": "rvsitebuilder/manage"
 ```
 
 **description**
 
-A short description of the package. Usually this is one line long. 
+A short description of the project. Usually this is one line long.
 
 Example:
+
 ```json
 "alias": "Manage",
 ```
 
 **Submenu**
 
-***name***
-The name of submenu 
+**_name_**
+The name of submenu
 
-***link***
- Route to page (laravel route)  
+**_link_**
+Route to page (laravel route)
 
-***id***
-The id of submenu  
+**_id_**
+The id of submenu
 
 Example:
+
 ```json
 "admin-menu": [{
     "name": "Marketing Dashboard",
@@ -59,12 +62,12 @@ Example:
     "id": "mktseo"
 }]
 ```
- 
 
 **submenu**
 In case if you want more one level you can add this object , Its be second level of submenu. If you create submenulv2 object the link of submenu have to null.
 
 Example:
+
 ```json
 "admin-menu": [{
     "name": "Marketing Dashboard",
@@ -81,5 +84,5 @@ Example:
         "link": "admin.marketing.mkt.webreferral",
         "id": "mktwebreferral"
     }]
-}] 
+}]
 ```
