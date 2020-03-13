@@ -40,8 +40,6 @@
   - [Editable System Page](creating-editable-system-page.md)
   - [Extending WYSIWYG](extending-WYSIWYG.md)
   - [RVsitebuilder Widget](rvsitebuilder-widget.md)
-  - [Create Widget](createwidget.md)
-  - [Use Webpack & run npm](usewebpackAndNPM.md)
   - [Frontend Event Hooks](eventSave.md)
   - [Backend Event Hooks](backendeventhooks.md)
 

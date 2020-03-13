@@ -103,7 +103,6 @@ packages/vendorname/projectname/resources/css/widget-colorpicker.scss
 จำเป็นต้อง npm run dev
 <br>
 
-
 # Color Picker
 
 <a name="ColorPicker"></a>
@@ -156,10 +155,10 @@ $(function() {
 จะอธิบายเรื่อง tab panel จะมี 2 tab ชื่อ setting และ design
 ![panel](images/panel_colorpicker5.png)
 <br>
-<b>setting</b> จะสัมพันธ์กับ'-- start setting tab &#123;&#123;--'ข้อมูลที่อยู่ในนี้จะแสดงใน tab setting '--&#125;&#125; end setting tab --'
+<b>setting</b> จะสัมพันธ์กับ'&#123;&#123;-- start setting tab &#123;&#123;--'ข้อมูลที่อยู่ในนี้จะแสดงใน tab setting '--&#125;&#125; end setting tab --'
 <br>
 ![panel](images/panel_colorpicker6.png)
 <br>
-<b>design</b> จะสัมพันธ์กับ'-- start design tab &#123;&#123;--'ข้อมูลที่อยู่ในนี้จะแสดงใน tab setting '--&#125;&#125; end design tab --'
+<b>design</b> จะสัมพันธ์กับ'&#123;&#123;-- start design tab --&#125;&#125;'ข้อมูลที่อยู่ในนี้จะแสดงใน tab setting '&#123;&#123;-- end design tab -- &#125;&#125;'
 <br>
 ![panel](images/panel_colorpicker7.png)

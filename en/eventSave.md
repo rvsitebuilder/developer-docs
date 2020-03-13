@@ -20,21 +20,23 @@
 มี option ให้ใช้ error,info,success,notice,warning ที่เป็นพื้นฐาน
 <br>
 ตัวอย่างการใช้งานจะอยู่ภายใต้ event[editorReady](eventEditorReady.md)
-## Save 
+## Save
+
 ```js
 <script>
-$(function() {
-    $(document).bind('editorReady',function(){
-        $('#saveall').click(function(){
-            alert('social ')
-        })
-    })
-})
+  $(function(){' '}
+  {$(document).bind('editorReady', function() {
+    $('#saveall').click(function() {
+      alert('social ');
+    });
+  })}
+  )
 </script>
 ```
+
 2.เป็น event callback ใน function save sync(เป็น Synchronous function จะรอการทำงาน ข้อควรระว่ังต้องแน่ใจว่าfunctionที่สร้างไม่ติด loop หรือ debug ก่อนเสร็จงาน)
 <br>
-มี event ดังนี้ 
+มี event ดังนี้
 ตัวอย่างการใช้งาน beforeSave,saveComplete,afterSaveSuccess,afterSaveError
 
 ```js
