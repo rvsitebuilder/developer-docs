@@ -1,19 +1,21 @@
 # Directory Structure
-  - [Laravel Directory Structure](#Laravel-Directory-Structure)
-  - [RVsitebuilder App Directory Structure](#RVsitebuilder-App-Directory-Structure) 
+
+- [Laravel Directory Structure](#laravel-directory-structure)
+- [RVsitebuilder App Directory Structure](#rvsitebuilder-app-directory-structure)
 
 <a name="Laravel-Directory-Structure"></a>
+
 ## Laravel Directory Structure
 
-Beside [Laravel root directory and app directory](https://laravel.com/docs/master/structure), we introduce **packages** directory under root directory.  
+Beside [Laravel root directory and app directory](https://laravel.com/docs/master/structure), we introduce **packages** directory under root directory.
 
-```php
+```diff
     ├── app
     ├── bootstrap
     ├── config
     ├── database
     ├── lib
-    ├── packages/vendor-name/package-name/
++   ├── packages/vendor-name/package-name/
     ├── public
     ├── resources
     ├── routes
@@ -21,13 +23,14 @@ Beside [Laravel root directory and app directory](https://laravel.com/docs/maste
     └── tests
     └── vendor
 ```
-<a name="RVsitebuilder-App-Directory-Structure"></a>
-## RVsitebuilder App Directory Structure 
 
+<a name="RVsitebuilder-App-Directory-Structure"></a>
+
+## RVsitebuilder App Directory Structure
 
 Here is the example of file and directory structure for **/packages/vendor-name/package-name/**. This is where your RVsitebuilder app will be stored. Simply generate your app from [RVsitebuilder app generator](creating-new-app) or create it manually.
 
-```php
+```text
 /packages/vendor-name/package-name/
                     ├── config
                     ├── database
@@ -64,7 +67,7 @@ Here is the example of file and directory structure for **/packages/vendor-name/
                     │   │   │   └── Admin
                     │   │   │       └── DashboardController.php
                     │   │   └── Requests
-                    │   │   └── Middelware           
+                    │   │   └── Middelware
                     │   └── Models
                     │       └── Dashboard.php
                     ├── vendor
@@ -74,5 +77,5 @@ Here is the example of file and directory structure for **/packages/vendor-name/
                     ├── webpack.base.js
                     └── webpack.mix.js
 ```
- 
-> {warning} Develop your application here. **DO NOT** change anything outside your app directory. It will not be exported to the production server. 
+
+> {warning} Develop your application here. **DO NOT** change anything outside your app directory. It will not be exported to the production server.
