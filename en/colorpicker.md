@@ -13,7 +13,7 @@
 ![create app](images/createApp_colorpicker2.png)
 <br>
 เราจะทดสอบสร้าง appขึ้นมาแบบ ง่ายๆ โดยใช้ชื่อ App name ว่า "vendorname" และชื่อ project name ว่า "projectname"
-![appgen](images/createApp_colorpicker3.png)
+![appgen](images/createapp_colorpicker3.png)
 
 กดสร้างที่ generator widget
 <br>
