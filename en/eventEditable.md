@@ -8,11 +8,11 @@
 ```js
 <script>
     $(function() {
-  	    RVwys.designViewAddEvent('mousedown', function (e) {
+  	    wys.event(':mousedown', function(e) {
             console.log('mousedown tag '+$(e.target).tagName)
           }
 
-        RVwys.designViewAddEvent('click', function (e) {
+        wys.event(':click', function(e)  {
             console.log('click tag '+$(e.target).tagName)
           }
     });
