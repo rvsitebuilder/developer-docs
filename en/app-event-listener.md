@@ -20,7 +20,7 @@
 Create Laravel blade file and keep it in your `app’s /src/Events` folder.
 
 ```php
-/packages/vendor-name/package-name/
+/packages/vendor-name/project-name/
                     ├── src
                     │   ├── Events
                     │   │   ├── Uninstaling.php
