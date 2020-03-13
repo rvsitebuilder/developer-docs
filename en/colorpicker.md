@@ -159,6 +159,6 @@ $(function() {
 <br>
 ![panel](images/panel_colorpicker6.png)
 <br>
-<b>design</b> จะสัมพันธ์กับ'&#123;&#123;-- start design tab --&#125;&#125;'ข้อมูลที่อยู่ในนี้จะแสดงใน tab setting '--&#123;&#123; end design tab -- &#125;&#125;'
+<b>design</b> จะสัมพันธ์กับ'&#123;&#123;-- start design tab --&#125;&#125;'ข้อมูลที่อยู่ในนี้จะแสดงใน tab setting '&#123;&#123;-- end design tab -- &#125;&#125;'
 <br>
 ![panel](images/panel_colorpicker7.png)
