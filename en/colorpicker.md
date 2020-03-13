@@ -12,7 +12,7 @@
 เลือก Generate App ![icon genapp](images/icon_genapp.png)
 ![create app](images/createApp_colorpicker2.png)
 <br>
-เราจะทดสอบสร้าง appขึ้นมาแบบ ง่ายๆ โดยใช้ชื่อ App name ว่า "vendorname" และชื่อ project name ว่า "projectname"
+เราจะทดสอบสร้าง app ขึ้นมาแบบ ง่ายๆ โดยใช้ชื่อ App name ว่า "vendorname" และชื่อ project name ว่า "projectname"
 ![appgen](images/createapp_colorpicker3.png)
 
 กดสร้างที่ generator widget
@@ -45,14 +45,14 @@
 <a name="Webpack"></a>
 แนะนำให้ดู create widget ก่อน [Create Widget](createwidget.md)
 ขั้นตอนการใส่ javascript ใช้งานร่วมกับ webpack โดยจะอธิบายการเรียกใช้ "colorpicker" จาก node_module ให้ใช้งานร่วมกับ widget ได้อย่างไรดังนี้
-ต้องติดตั้ง node_module ก่อนที่ packages/vendorname/projectname
+ต้องติดตั้ง node_module ก่อนที่ packages/vendor-name/project-name
 
 ```php
-cd /localhost/packages/vendorname/projectname
+cd /localhost/packages/vendor-name/project-name
 npm run install
 ```
 
-ให้เปิดไฟล์ packages/vendorname/projectname/webpack.mix.js
+ให้เปิดไฟล์ packages/vendor-name/project-name/webpack.mix.js
 ใส่ code ดังนี
 
 ```php
@@ -70,7 +70,7 @@ mix.sass(
 แนะนำให้ดู [laravel mix](https://laravel.com/docs/7.x/mix)
 <br>![webpack](images/webpack_colorpicker1.png)
 
-ให้สร้างไฟล์ 'packages/vendorname/projectname/resources/js/admin/widget-colorpicker.js'
+ให้สร้างไฟล์ 'packages/vendor-name/project-name/resources/js/admin/widget-colorpicker.js'
 ให้ใส่ code
 
 ```php
@@ -79,11 +79,11 @@ import 'spectrum-colorpicker';
 
 ![npm](images/webpack_colorpicker2.png)
 
-ให้สร้างไฟล์ 'packages/vendorname/projectname/resources/css/widget-colorpicker.scss'
+ให้สร้างไฟล์ 'packages/vendor-name/project-name/resources/css/widget-colorpicker.scss'
 ให้ใส่ code
 
 ```css
-@import '~spectrum-colorpicker/spectrum';
+@import "~spectrum-colorpicker/spectrum";
 ```
 
 ![npm](images/webpack_colorpicker3.png)
@@ -91,15 +91,15 @@ import 'spectrum-colorpicker';
 
 ```php
 จากตัวอย่าง
-cd /localhost/packages/vendorname/projectname/
+cd /localhost/packages/vendor-name/project-name/
 npm install spectrum-colorpicker
 npm run dev
 ```
 
 ![npm](images/webpack_colorpicker4.png)
 \*\*\* ถ้าเราเขียน script หรือ เปลี่ยนแปลงในไฟล์ นี้
-packages/vendorname/projectname/resources/js/admin/widget-colorpicker.js
-packages/vendorname/projectname/resources/css/widget-colorpicker.scss
+packages/vendor-name/project-name/resources/js/admin/widget-colorpicker.js
+packages/vendor-name/project-name/resources/css/widget-colorpicker.scss
 จำเป็นต้อง npm run dev
 <br>
 
@@ -108,7 +108,7 @@ packages/vendorname/projectname/resources/css/widget-colorpicker.scss
 <a name="ColorPicker"></a>
 การใส่ colorpicker ลงบน panel ดังภาพที่2
 ![wyswidget](images/wyswidget_colorpicker5.png)
-ให้เปิดไฟล์ packages/vendorname/projectname/resources/views/widgets/widget-colorpicker/panel.blade.php
+ให้เปิดไฟล์ packages/vendor-name/project-name/resources/views/widgets/widget-colorpicker/panel.blade.php
 <br>
 ![panel](images/panel_colorpicker1.png)
 <br>
@@ -119,10 +119,10 @@ packages/vendorname/projectname/resources/css/widget-colorpicker.scss
     <input type="text" name="radio" class="wbSetcolor" id="widget-colorpicker-input" >
 </label>
 @push('package-styles')
-{{ style(mix('css/widget-colorpicker.css', 'vendor/vender-name/projectname')) }}    // เชื่อมต่อกับไฟล์ js ใน webpack
+{{ style(mix('css/widget-colorpicker.css', 'vendor/vender-name/project-name')) }}    // เชื่อมต่อกับไฟล์ js ใน webpack
 @endpush
 @push('package-scripts')
-{{ script(mix('js/widget-colorpicker.js', 'vendor/vender-name/projectname')) }} // เชื่อมต่อกับไฟล์ js ใน webpack
+{{ script(mix('js/widget-colorpicker.js', 'vendor/vender-name/project-name')) }} // เชื่อมต่อกับไฟล์ js ใน webpack
 <script>
 $(function() {
   // Handler for .ready() called.

@@ -1,8 +1,8 @@
 # App Model
 
-- [Creating Model](#Creating-Model)
-- [Accessing Model](#Accessing-Model)
-- [Extending RVsitebuilder Default Models](#Extending-RVsitebuilder-Default-Models)
+- [Creating Model](#creating-model)
+- [Accessing Model](#accessing-model)
+- [Extending RVsitebuilder Default Models using Meta Table](#extending-rvsitebuilder-default-models-using-meta-table)
 
 > {info} If you are not familiar with its concept. Check out the full [Laravel Eloquent ORM documentation](https://laravel.com/docs/master/eloquent) to get started.
 
@@ -20,16 +20,12 @@ Create Laravel model file and keep it in your `app’s /src/Models` folder.
 ```
 
 ```php
-namespace VendorName\PackageName\Models;
+namespace VendorName\ProjectName\Models;
 
-class MyTable extends BaseModel
+class YourTable extends BaseModel
 {
-    public $timestamps = true;
     protected $table = 'my_table';
-    protected $primaryKey = 'id';
     protected $fillable = ['name'];
-
-
 }
 
 ```
@@ -41,7 +37,7 @@ class MyTable extends BaseModel
 Use your model namespace on your app and execute any Laravel Eloquent ORM syntax as usual.
 
 ```php
-use Vendor-name\Package-name\Models\MyTable;
+use VendorName\ProjectName\Models\YourTable;
 
 ```
 
@@ -49,7 +45,7 @@ use Vendor-name\Package-name\Models\MyTable;
 
 ## Extending RVsitebuilder Default Models using Meta Table
 
-Ever want to add more data to `Users` table. Thanks to wonderful [Laravel-Metable](https://github.com/plank/laravel-metable) package to make it possible. You can extend RVsitebuilder default model without needing to adjust the database schema.
+Ever want to add more data to `Users` table. Thanks to wonderful [Laravel-Metable](https://github.com/plank/laravel-metable) project to make it possible. You can extend RVsitebuilder default model without needing to adjust the database schema.
 
 <!-- TODO: @settavut ขยายความต่อ -->
 

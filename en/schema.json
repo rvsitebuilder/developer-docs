@@ -1,23 +1,30 @@
 {
-    "name": "vendor-name/package-name",
-    "alias": "ชื่อที่ใช้เรียก package",
-    "description": "คำอธิบายเกี่ยวกับแพคเกจ",
-    "keywords": ["An array of keywords that the package is related to. These can be used for searching and filtering."],
-    "app-launcher": "ตั้งค่าเป็น 1 เพื่อแสดงแพคเกจนี้ใน apps-dropdown และตั้งค่าเป็น 0 เพื่อไม่ให้แสดง",
-    "app-launcher-route": "route พาร์ทสำหรับหน้าแรกเมื่อเข้ามาที่หน้าจัดการของแอพพลิเคชั่น",
-    "icon": "พาร์ทรูปสำหรับนำมาแสดงเป็นไอค่อนของแอพพลิเคชั่น",
-    "requires": "แอพพลิเคชั่นที่ต้องการใช้ (ต้องเป็นแอพพลิเคชั่นของ rvsitebuilder เท่านั้น) : เลขเวอร์ชั่น",
-    "admin-menu": [{
-        "name": "ชื่อของเมนูที่จะนำมาแสดงใน left menu",
-        "link": "route ของเมนูเมืื่อกดคลิกจะไปยังหน้าที่ตั้งไว้"
-    },{
-        "name": "ชื่อของเมนูที่จะนำมาแสดงใน left menu",
-        "link": "",
-        "submenu": [{
-            "name": "ชื่อของเมนูที่จะนำมาแสดงในซับย่อยของเมนู",
-            "link": "route ของเมนูเมืื่อกดคลิกจะไปยังหน้าที่ตั้งไว้",
-            "id": "ตั้งค่าเพื่อเพิ่ม Attribute id ของ submenu"
-        }]
-    }],
-    "external-menu": ["vendor-name\/package-name ที่ต้องการนำเมนูไปต่อ"]
+  "name": "vendor-name/project-name",
+  "alias": "ชื่อที่ใช้เรียก project",
+  "description": "คำอธิบายเกี่ยวกับโปรเจค",
+  "keywords": [
+    "An array of keywords that the project is related to. These can be used for searching and filtering."
+  ],
+  "app-launcher": "ตั้งค่าเป็น 1 เพื่อแสดงโปรเจคนี้ใน apps-dropdown และตั้งค่าเป็น 0 เพื่อไม่ให้แสดง",
+  "app-launcher-route": "route พาร์ทสำหรับหน้าแรกเมื่อเข้ามาที่หน้าจัดการของแอพพลิเคชั่น",
+  "icon": "พาร์ทรูปสำหรับนำมาแสดงเป็นไอค่อนของแอพพลิเคชั่น",
+  "requires": "แอพพลิเคชั่นที่ต้องการใช้ (ต้องเป็นแอพพลิเคชั่นของ rvsitebuilder เท่านั้น) : เลขเวอร์ชั่น",
+  "admin-menu": [
+    {
+      "name": "ชื่อของเมนูที่จะนำมาแสดงใน left menu",
+      "link": "route ของเมนูเมืื่อกดคลิกจะไปยังหน้าที่ตั้งไว้"
+    },
+    {
+      "name": "ชื่อของเมนูที่จะนำมาแสดงใน left menu",
+      "link": "",
+      "submenu": [
+        {
+          "name": "ชื่อของเมนูที่จะนำมาแสดงในซับย่อยของเมนู",
+          "link": "route ของเมนูเมืื่อกดคลิกจะไปยังหน้าที่ตั้งไว้",
+          "id": "ตั้งค่าเพื่อเพิ่ม Attribute id ของ submenu"
+        }
+      ]
+    }
+  ],
+  "external-menu": ["vendor-name/project-name ที่ต้องการนำเมนูไปต่อ"]
 }

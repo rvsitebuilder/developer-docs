@@ -25,9 +25,9 @@ Example of config.php
 ```php
 
 use Rvsitebuilder\Core\Facades\RvsitebuilderService;
-return [
-    'key' => 'value'
-];
+    return [
+        'key' => 'value'
+    ];
 ```
 
 <a name="Register-Config-on-App's-Service-Provider"></a>

@@ -14,7 +14,7 @@ Laravel service providers are the connection points between your app and Laravel
 Create Laravel service provider file and keep it in your `app’s /src` folder.
 
 ```php
-/packages/vendor-name/package-name/
+/packages/vendor-name/project-name/
                     ├── src
                     │   ├── AppServiceProvider.php
 ```
@@ -30,7 +30,7 @@ You need to define the provider in the extra section of your `app's composer.jso
 "extra": {
     "laravel": {
         "providers": [
-            "vendor-name\\package-name\\AppnameServiceProvider"
+            "vendor-name\\project-name\\AppnameServiceProvider"
         ]
     }
 },

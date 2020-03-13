@@ -1,12 +1,12 @@
 # App Views
 
-- [Creating View](#Creating-View)
-- [Master Layouts](#Master-Layouts)
-- [Admin App Layouts](#Admin-App-Layouts)
-- [User App Layouts](#User-App-Layouts)
-- [App Views](#App-Views)
-- [Creating Non-Editable System Page](#Creating-Non-Editable-System-Page)
-- [Creating Editable System Page](#Creating-Editable-System-Page)
+- [Creating View](#creating-view)
+- [Master Layouts](#master-layouts)
+- [Admin App Layouts](#admin-app-layouts)
+- [User App Layouts](#user-app-layouts)
+- [App Views](#app-views)
+- [Creating Non-Editable System Page](#creating-non-editable-system-page)
+- [Creating Editable System Page](#creating-editable-system-page)
 
 > {info} If you are not familiar with its concept. Check out the full [Laravel View documentation](https://laravel.com/docs/master/views) to get started.
 
@@ -71,7 +71,7 @@ Here is an example of `views/admin/layouts/app.blade.php`:
 
 **Admin Left Menu**
 
-`leftmenu` section should includes default `admin.includes.leftmenu` and send your correct vendor-name and package-name `vendor-name/package-name`. It will dynamically generate menu according to your [app's app.json](app-configuration-app-json.md).
+`leftmenu` section should includes default `admin.includes.leftmenu` and send your correct vendor-name and project-name `vendor-name/project-name`. It will dynamically generate menu according to your [app's app.json](app-configuration-app-json.md).
 
 keeping in mind that, end-users can move your left menu to display on the other app, change your app’s display name, and hide icon on app launcher.
 
@@ -110,7 +110,7 @@ Here is an example of `views/user/layouts/app.blade.php`.
 All your views should extend your `app's layouts`. And add your content in `content` blade section.
 
 ```php
-@extends('package-name::admin.layouts.app')
+@extends('project-name::admin.layouts.app')
 
 @section('content')
     Your app content here.

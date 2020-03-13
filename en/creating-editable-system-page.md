@@ -1,8 +1,9 @@
 # Creating Editable System Page
 
-- [Migration](#Migration)
-- [Push wysiwyg-section blade stack](#Push-wysiwyg-section-blade-stack)
-- [Creating route for editview](#Creating-route-for-editview)
+- [Migration](#migration)
+  - [Master System Page](#master-system-page)
+- [Push wysiwyg-section blade stack](#push-wysiwyg-section-blade-stack)
+- [Creating route for editview](#creating-route-for-editview)
 
 To make your system page editable, you need to do the following:
 
@@ -109,7 +110,7 @@ CoreTwitter::updateOrCreate([
 You can define which system page ID is your master system page.
 
 ```php
-CoreApps::where('app_name', '=', 'rvsitebuilder/core') // vendor-name/package-name
+CoreApps::where('app_name', '=', 'rvsitebuilder/core') // vendor-name/project-name
         ->update(['master_systempage_id' => 12 ]); // Id core_system_page
 ```
 

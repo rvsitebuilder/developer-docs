@@ -1,8 +1,8 @@
 # App Middelware
 
-- [Creating Middleware](#Creating-Middleware)
-- [Global middleware](#Global-middleware)
-- [Register App’s Middleware](#Register-App’s-Middleware)
+- [Creating Middleware](#creating-middleware)
+- [Global middleware](#global-middleware)
+- [Register App’s Middleware](#register-apps-middleware)
 
 > {info} If you are not familiar with its concept. Check out the full [Laravel Middleware documentation](https://laravel.com/docs/master/middleware) to get started.
 
@@ -47,10 +47,10 @@ public function register() {
 
 public function registerMiddleware(){
     $router = app()->make(Router::class);
-    $router->pushMiddlewareToGroup('web', MyPackage\Middleware\YourMiddleware::class);
+    $router->pushMiddlewareToGroup('web', VendorName\ProjectName\Middleware\YourMiddleware::class);
 
 
     $kernel = app()->make(Kernel::class);
-    $kernel->pushMiddleware(MyPackage\Middleware\YourMiddleware::class);
+    $kernel->pushMiddleware(VendorName\ProjectName\Middleware\YourMiddleware::class);
 }
 ```

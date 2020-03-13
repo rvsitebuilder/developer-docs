@@ -41,7 +41,7 @@ Here is an example of `views/admin/layouts/app.blade.php`
 @extends('admin.layouts.master')
 
 @section('leftmenu')
-	@include('admin.includes.leftmenu', ['project-name' => "vendor-name/package-name"])
+	@include('admin.includes.leftmenu', ['project-name' => "vendor-name/project-name"])
 @endsection
 
 @push('package-styles')
@@ -147,7 +147,7 @@ Next, create a new view named `index.blade.php`, placing it in your `resources/v
 @endsection
 
 @push('package-scripts')
-  {{ script(mix('js/admin/Example.js', 'vendor/vendor-name/package-name')) }}
+  {{ script(mix('js/admin/Example.js', 'vendor/vendor-name/project-name')) }}
 @endpush
 ```
 
