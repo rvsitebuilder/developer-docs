@@ -222,32 +222,32 @@ class Blog
 
 ### Rvsitebuilder Event and Listeners.
 
-| Event                                                   | Listeners |
-| ------------------------------------------------------- | :-------: |
-| Rvsitebuilder\Blog\Events\CreatedCategory               |           |
-| Rvsitebuilder\Blog\Events\CreatedPost                   |           |
-| Rvsitebuilder\Blog\Events\CreatingCategory              |           |
-| Rvsitebuilder\Blog\Events\CreatingPost                  |           |
-| Rvsitebuilder\Developer\Events\AfterSettingCreatedEvent |           |
-| Rvsitebuilder\Manage\Events\Artisaned                   |           |
-| Rvsitebuilder\Manage\Events\Artisaning                  |           |
-| Rvsitebuilder\Manage\Events\Disabled                    |           |
-| Rvsitebuilder\Manage\Events\Disabling                   |           |
-| Rvsitebuilder\Manage\Events\Enabled                     |           |
-| Rvsitebuilder\Manage\Events\Enabling                    |           |
-| Rvsitebuilder\Manage\Events\Installed                   |           |
-| Rvsitebuilder\Manage\Events\Installing                  |           |
-| Rvsitebuilder\Manage\Events\SiteConfig\BlogSaved        |           |
-| Rvsitebuilder\Manage\Events\SiteConfig\BlogSaving       |           |
-| Rvsitebuilder\Manage\Events\SiteConfig\PageSaved        |           |
-| Rvsitebuilder\Manage\Events\SiteConfig\PageSaving       |           |
-| Rvsitebuilder\Manage\Events\SiteConfig\PostSaved        |           |
-| Rvsitebuilder\Manage\Events\SiteConfig\PostSaving       |           |
-| Rvsitebuilder\Manage\Events\SiteConfig\SiteSaved        |           |
-| Rvsitebuilder\Manage\Events\SiteConfig\SiteSaving       |           |
-| Rvsitebuilder\Manage\Events\SiteConfig\SystemSaved      |           |
-| Rvsitebuilder\Manage\Events\SiteConfig\SystemSaving     |           |
-| Rvsitebuilder\Manage\Events\Uninstalled                 |           |
-| Rvsitebuilder\Manage\Events\Uninstalling                |           |
-| Rvsitebuilder\Wysiwyg\Events\ChainProcessSaved          |           |
-| Rvsitebuilder\Wysiwyg\Events\ChainProcessSaving         |           |
+| Event                                                   |                                             |
+| ------------------------------------------------------- | :-----------------------------------------: |
+| Rvsitebuilder\Blog\Events\CreatingCategory              |         Bafore create blog category         |
+| Rvsitebuilder\Blog\Events\CreatedCategory               |         After create blog category          |
+| Rvsitebuilder\Blog\Events\CreatingPost                  |          Bafore created blog post           |
+| Rvsitebuilder\Blog\Events\CreatedPost                   |           After created blog post           |
+| Rvsitebuilder\Developer\Events\AfterSettingCreatedEvent |                                             |
+| Rvsitebuilder\Manage\Events\Artisaning                  | Bafore publish vendor and rebuild appConfig |
+| Rvsitebuilder\Manage\Events\Artisaned                   | After publish vendor and rebuild appConfig  |
+| Rvsitebuilder\Manage\Events\Disabling                   |             Bafore disable app              |
+| Rvsitebuilder\Manage\Events\Disabled                    |              After disable app              |
+| Rvsitebuilder\Manage\Events\Enabling                    |              Bafore enable app              |
+| Rvsitebuilder\Manage\Events\Enabled                     |              After enable app               |
+| Rvsitebuilder\Manage\Events\Installing                  |             Bafore install app              |
+| Rvsitebuilder\Manage\Events\Installed                   |              After install app              |
+| Rvsitebuilder\Manage\Events\SiteConfig\BlogSaving       |     Bafore save in siteconfig menu blog     |
+| Rvsitebuilder\Manage\Events\SiteConfig\BlogSaved        |     After save in siteconfig menu blog      |
+| Rvsitebuilder\Manage\Events\SiteConfig\PageSaving       |     Bafore save in siteconfig menu page     |
+| Rvsitebuilder\Manage\Events\SiteConfig\PageSaved        |     After save in siteconfig menu page      |
+| Rvsitebuilder\Manage\Events\SiteConfig\PostSaving       |     Bafore save in siteconfig menu post     |
+| Rvsitebuilder\Manage\Events\SiteConfig\PostSaved        |     After save in siteconfig menu post      |
+| Rvsitebuilder\Manage\Events\SiteConfig\SiteSaving       |   Bafore save app in siteconfig menu site   |
+| Rvsitebuilder\Manage\Events\SiteConfig\SiteSaved        |   After save app in siteconfig menu site    |
+| Rvsitebuilder\Manage\Events\SiteConfig\SystemSaving     |    Bafore save in siteconfig menu system    |
+| Rvsitebuilder\Manage\Events\SiteConfig\SystemSaved      |    After save in siteconfig menu system     |
+| Rvsitebuilder\Manage\Events\Uninstalling                |            Bafore uninstall app             |
+| Rvsitebuilder\Manage\Events\Uninstalled                 |             After uninstall app             |
+| Rvsitebuilder\Wysiwyg\Events\ChainProcessSaving         |          Bafore save chain process          |
+| Rvsitebuilder\Wysiwyg\Events\ChainProcessSaved          |          After save chain process           |
