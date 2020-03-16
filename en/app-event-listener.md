@@ -63,7 +63,7 @@ php artisan make:event Installing
 
 ```php
 
-namespace Vender\Project\Events;
+namespace VenderName\ProjectName\Events;
 
     class Installing
     {
@@ -86,7 +86,7 @@ namespace Vender\Project\Events;
 To dispatch an event, you may pass an instance of the event to the event helper. you may call it from anywhere in your application:
 
 ```php
-namespace Vender\Project\Http\Controllers\Admin;
+namespace VenderName\ProjectName\Http\Controllers\Admin;
 
     class AppsController extends Controller
     {
