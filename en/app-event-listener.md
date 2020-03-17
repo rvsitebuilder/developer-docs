@@ -10,7 +10,7 @@
 - [Register Listener on App’s Event Service Provider](#register-listener-on-apps-event-service-provider)
   - [Listener](#listener)
   - [Dispatching Listeners](#dispatching-listeners)
-  - [Rvsitebuilder Event and Listeners.](#rvsitebuilder-event-and-listeners)
+  - [Rvsitebuilder Event](#rvsitebuilder-event)
 
 <a name="Creating-Event-and-Listener"></a>
 
@@ -220,7 +220,7 @@ class Blog
 
 ```
 
-### Rvsitebuilder Event and Listeners.
+### Rvsitebuilder Event
 
 | Event                                                   |                                             |
 | ------------------------------------------------------- | :-----------------------------------------: |
