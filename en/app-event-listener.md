@@ -10,6 +10,7 @@
 - [Register Listener on App’s Event Service Provider](#register-listener-on-apps-event-service-provider)
   - [Listener](#listener)
   - [Dispatching Listeners](#dispatching-listeners)
+  - [Rvsitebuilder Event](#rvsitebuilder-event)
 
 <a name="Creating-Event-and-Listener"></a>
 
@@ -49,7 +50,56 @@ php artisan event:list
 
 <!-- TODO: @apiruk ต้องปรับปรุงแก้ไขหัวข้อ manage hook https://app.clickup.com/t/t523b  และ เขียน document ให้ถูกด้วยครับ -->
 
-![meta](images/php_artisan_event_list.png)
+| Event                                                   |                       Listeners                        |
+| ------------------------------------------------------- | :----------------------------------------------------: |
+| Illuminate\Mail\Events\MessageSending                   |    Rvsitebuilder\Email\Listeners\LogSendingMessage     |
+| Illuminate\Mail\Events\MessageSent                      |      Rvsitebuilder\Email\Listeners\LogSentMessage      |
+| Rvsitebuilder\Blog\Events\CreatedCategory               |                                                        |
+| Rvsitebuilder\Blog\Events\CreatedPost                   |                                                        |
+| Rvsitebuilder\Blog\Events\CreatingCategory              |                                                        |
+| Rvsitebuilder\Blog\Events\CreatingPost                  |                                                        |
+| Rvsitebuilder\Developer\Events\AfterSettingCreatedEvent |   Rvsitebuilder\Developer\Listeners\SettingListener    |
+| Rvsitebuilder\Manage\Events\Artisaned                   |                                                        |
+| Rvsitebuilder\Manage\Events\Artisaning                  |                                                        |
+| Rvsitebuilder\Manage\Events\Disabled                    |      Rvsitebuilder\Manage\Listeners\Disabled\Page      |
+|                                                         |      Rvsitebuilder\Manage\Listeners\Disabled\Blog      |
+|                                                         |     Rvsitebuilder\Manage\Listeners\Disabled\System     |
+|                                                         |      Rvsitebuilder\Manage\Listeners\Disabled\Menu      |
+| Rvsitebuilder\Manage\Events\Disabling                   |                                                        |
+| Rvsitebuilder\Manage\Events\Enabled                     |    Rvsitebuilder\Manage\Listeners\Enabled\PageQueue    |
+|                                                         |    Rvsitebuilder\Manage\Listeners\Enabled\BlogQueue    |
+|                                                         |     Rvsitebuilder\Manage\Listeners\Enabled\System      |
+|                                                         |      Rvsitebuilder\Manage\Listeners\Enabled\Menu       |
+| Rvsitebuilder\Manage\Events\Enabling                    |                                                        |
+| Rvsitebuilder\Manage\Events\Installed                   |                                                        |
+| Rvsitebuilder\Manage\Events\Installing                  |                                                        |
+| Rvsitebuilder\Manage\Events\SiteConfig\BlogSaved        |                                                        |
+| Rvsitebuilder\Manage\Events\SiteConfig\BlogSaving       |                                                        |
+| Rvsitebuilder\Manage\Events\SiteConfig\PageSaved        |                                                        |
+| Rvsitebuilder\Manage\Events\SiteConfig\PageSaving       |                                                        |
+| Rvsitebuilder\Manage\Events\SiteConfig\PostSaved        |                                                        |
+| Rvsitebuilder\Manage\Events\SiteConfig\PostSaving       |                                                        |
+| Rvsitebuilder\Manage\Events\SiteConfig\SiteSaved        |     Rvsitebuilder\Manage\Listeners\CachingProcess      |
+| Rvsitebuilder\Manage\Events\SiteConfig\SiteSaving       |                                                        |
+| Rvsitebuilder\Manage\Events\SiteConfig\SystemSaved      |                                                        |
+| Rvsitebuilder\Manage\Events\SiteConfig\SystemSaving     |                                                        |
+| `Rvsitebuilder\Manage\Events\Uninstalled`               |    Rvsitebuilder\Manage\Listeners\Uninstalled\Page     |
+|                                                         |    Rvsitebuilder\Manage\Listeners\Uninstalled\Blog     |
+|                                                         |   Rvsitebuilder\Manage\Listeners\Uninstalled\System    |
+|                                                         |    Rvsitebuilder\Manage\Listeners\Uninstalled\Menu     |
+| `Rvsitebuilder\Manage\Events\Uninstalling`              |                                                        |
+| Rvsitebuilder\Wysiwyg\Events\ChainProcessSaved          | Rvsitebuilder\Wysiwyg\Listeners\SaveThumbAndFeatureImg |
+| Rvsitebuilder\Wysiwyg\Events\ChainProcessSaving         |                                                        |
+| SocialiteProviders\Manager\SocialiteWasCalled           |   SocialiteProviders\Line\LineExtendSocialite@handle   |
+| Studio\Totem\Events\Activated                           |            Studio\Totem\Listeners\BustCache            |
+|                                                         |           Studio\Totem\Listeners\BuildCache            |
+| Studio\Totem\Events\Created                             |            Studio\Totem\Listeners\BustCache            |
+|                                                         |           Studio\Totem\Listeners\BuildCache            |
+| Studio\Totem\Events\Deactivated                         |            Studio\Totem\Listeners\BustCache            |
+|                                                         |           Studio\Totem\Listeners\BuildCache            |
+| Studio\Totem\Events\Deleting                            |      Studio\Totem\Listeners\BustCacheImmediately       |
+| Studio\Totem\Events\Updated                             |            Studio\Totem\Listeners\BustCache            |
+|                                                         |           Studio\Totem\Listeners\BuildCache            |
 
 <a name="Register-Event-on-App-Service-Provider"></a>
 
@@ -63,7 +113,7 @@ php artisan make:event Installing
 
 ```php
 
-namespace Vender\Project\Events;
+namespace VenderName\ProjectName\Events;
 
     class Installing
     {
@@ -86,7 +136,7 @@ namespace Vender\Project\Events;
 To dispatch an event, you may pass an instance of the event to the event helper. you may call it from anywhere in your application:
 
 ```php
-namespace Vender\Project\Http\Controllers\Admin;
+namespace VenderName\ProjectName\Http\Controllers\Admin;
 
     class AppsController extends Controller
     {
@@ -169,3 +219,35 @@ class Blog
     }
 
 ```
+
+### Rvsitebuilder Event
+
+| Event                                                   |                                             |
+| ------------------------------------------------------- | :-----------------------------------------: |
+| Rvsitebuilder\Blog\Events\CreatingCategory              |         Bafore create blog category         |
+| Rvsitebuilder\Blog\Events\CreatedCategory               |         After create blog category          |
+| Rvsitebuilder\Blog\Events\CreatingPost                  |          Bafore created blog post           |
+| Rvsitebuilder\Blog\Events\CreatedPost                   |           After created blog post           |
+| Rvsitebuilder\Developer\Events\AfterSettingCreatedEvent |                                             |
+| Rvsitebuilder\Manage\Events\Artisaning                  | Bafore publish vendor and rebuild appConfig |
+| Rvsitebuilder\Manage\Events\Artisaned                   | After publish vendor and rebuild appConfig  |
+| Rvsitebuilder\Manage\Events\Disabling                   |             Bafore disable app              |
+| Rvsitebuilder\Manage\Events\Disabled                    |              After disable app              |
+| Rvsitebuilder\Manage\Events\Enabling                    |              Bafore enable app              |
+| Rvsitebuilder\Manage\Events\Enabled                     |              After enable app               |
+| Rvsitebuilder\Manage\Events\Installing                  |             Bafore install app              |
+| Rvsitebuilder\Manage\Events\Installed                   |              After install app              |
+| Rvsitebuilder\Manage\Events\SiteConfig\BlogSaving       |     Bafore save in siteconfig menu blog     |
+| Rvsitebuilder\Manage\Events\SiteConfig\BlogSaved        |     After save in siteconfig menu blog      |
+| Rvsitebuilder\Manage\Events\SiteConfig\PageSaving       |     Bafore save in siteconfig menu page     |
+| Rvsitebuilder\Manage\Events\SiteConfig\PageSaved        |     After save in siteconfig menu page      |
+| Rvsitebuilder\Manage\Events\SiteConfig\PostSaving       |     Bafore save in siteconfig menu post     |
+| Rvsitebuilder\Manage\Events\SiteConfig\PostSaved        |     After save in siteconfig menu post      |
+| Rvsitebuilder\Manage\Events\SiteConfig\SiteSaving       |   Bafore save app in siteconfig menu site   |
+| Rvsitebuilder\Manage\Events\SiteConfig\SiteSaved        |   After save app in siteconfig menu site    |
+| Rvsitebuilder\Manage\Events\SiteConfig\SystemSaving     |    Bafore save in siteconfig menu system    |
+| Rvsitebuilder\Manage\Events\SiteConfig\SystemSaved      |    After save in siteconfig menu system     |
+| Rvsitebuilder\Manage\Events\Uninstalling                |            Bafore uninstall app             |
+| Rvsitebuilder\Manage\Events\Uninstalled                 |             After uninstall app             |
+| Rvsitebuilder\Wysiwyg\Events\ChainProcessSaving         |          Bafore save chain process          |
+| Rvsitebuilder\Wysiwyg\Events\ChainProcessSaved          |          After save chain process           |
