@@ -3,11 +3,11 @@
 - [Overview](#overview)
 - [Inject Services](#inject-services)
   - [Inject name](#inject-name)
-  - [Inject name viewmode](#inject-name-viewmode)
-  - [Inject name toolbar](#inject-name-toolbar)
-  - [Inject name editmode](#inject-name-editmode)
-  - [Inject name section_icon](#inject-name-section_icon)
-  - [Inject name section](#inject-name-section)
+    - [Viewmode](#viewmode)
+    - [Editmode](#editmode)
+    - [Toolbar](#toolbar)
+    - [Section_icon](#section_icon)
+    - [Section](#section)
 
 <a name="Overview"></a>
 
@@ -44,11 +44,11 @@ public function defineinject()
 | inject Service User | inject Service Admin |
 | :-----------------: | :------------------: |
 |      viewmode       |       toolbar        |
-|                     |       editmode       |
-|                     |     section_icon     |
+|      editmode       |     section_icon     |
 |                     |       section        |
 
-### Inject name viewmode
+
+#### Viewmode
 
 You can add your code to our viewmode by using `Inject viewmode`.
 
@@ -59,24 +59,9 @@ app('rvsitebuilderService')->inject('viewmode','vendor-name/project-name::view b
 ```
 
 Result is below :
-![Viewmode or Mysite](images/mysite.png)
+![Viewmode or Mysite](images/inject/mysite.png)
 
-<!-- TODO: @tanawat inject admin-->
-
-### Inject name toolbar
-
-You can add your widget to our `Tools -> Widget` in WYSIWYG by using `Inject Toolbar`.
-
-Example code :
-
-```php
-app('rvsitebuilderService')->inject('toolbar','vendor-name/project-name::view blade file');
-```
-
-Result is below :
-![Inject to Toolbar](images/injecttoolbar.png)
-
-### Inject name editmode
+#### Editmode
 
 You can add your code to our `Manage Apps` by using `Inject Editmode`.
 
@@ -87,9 +72,24 @@ app('rvsitebuilderService')->inject('editmode','vendor-name/project-name::view b
 ```
 
 Result is below :
-![Inject to Editmode](images/injecteditmode.png)
+![Inject to Editmode](images/inject/injecteditmode.png)
 
-### Inject name section_icon
+
+#### Toolbar
+
+You can add your widget to our `Tools -> Widget` in WYSIWYG by using `Inject Toolbar`.
+
+Example code :
+
+```php
+app('rvsitebuilderService')->inject('toolbar','vendor-name/project-name::view blade file');
+```
+
+Result is below :
+![Inject to Toolbar](images/inject/injecttoolbar.png)
+
+
+#### Section_icon
 
 You can add your icon widget to our `Content -> Section` in WYSIWYG by using `Inject Section Icon`.
 
@@ -100,9 +100,9 @@ app('rvsitebuilderService')->inject('section_icon','vendor-name/project-name::vi
 ```
 
 Result is below :
-![Inject Section](images/injectsectionicon.png)
+![Inject Section](images/inject/injectsectionicon.png)
 
-### Inject name section
+#### Section
 
 You can add your widget to our `Content -> Section` in WYSIWYG by using `Inject Section`.
 
@@ -113,6 +113,6 @@ app('rvsitebuilderService')->inject('section','vendor-name/project-name::view bl
 ```
 
 Result is below :
-![Inject Section](images/injectsection.png)
+![Inject Section](images/inject/injectsection.png)
 
 > {info} If you are not familiar with its `widget design`. Check out the full [RVsitebuilder Widget](rvsitebuilder-widget.md) to get started.
