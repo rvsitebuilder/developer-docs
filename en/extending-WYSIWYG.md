@@ -3,11 +3,11 @@
 - [Overview](#overview)
 - [Inject Services](#inject-services)
   - [Inject name](#inject-name)
-    - [Viewmode](#viewmode)
-    - [Editmode](#editmode)
-    - [Toolbar](#toolbar)
-    - [Section_icon](#section_icon)
-    - [Section](#section)
+  - [Viewmode](#viewmode)
+  - [Editmode](#editmode)
+  - [Toolbar](#toolbar)
+  - [Section_icon](#section_icon)
+  - [Section](#section)
 
 <a name="Overview"></a>
 
@@ -48,7 +48,7 @@ public function defineinject()
 |                     |       section        |
 
 
-#### Viewmode
+### Viewmode
 
 You can add your code to our viewmode by using `Inject viewmode`.
 
@@ -61,9 +61,8 @@ app('rvsitebuilderService')->inject('viewmode','vendor-name/project-name::view b
 Result is below :
 ![Viewmode or Mysite](images/inject/mysite.png)
 
-#### Editmode
-
-You can add your code to our `Manage Apps` by using `Inject Editmode`.
+### Editmode
+User's website while editing from admin interface displays under `WYSIWYG toolbars` is `editmode`. 
 
 Example code :
 
@@ -75,7 +74,7 @@ Result is below :
 ![Inject to Editmode](images/inject/injecteditmode.png)
 
 
-#### Toolbar
+### Toolbar
 
 You can add your widget to our `Tools -> Widget` in WYSIWYG by using `Inject Toolbar`.
 
@@ -89,7 +88,7 @@ Result is below :
 ![Inject to Toolbar](images/inject/injecttoolbar.png)
 
 
-#### Section_icon
+### Section_icon
 
 You can add your icon widget to our `Content -> Section` in WYSIWYG by using `Inject Section Icon`.
 
@@ -102,7 +101,7 @@ app('rvsitebuilderService')->inject('section_icon','vendor-name/project-name::vi
 Result is below :
 ![Inject Section](images/inject/injectsectionicon.png)
 
-#### Section
+### Section
 
 You can add your widget to our `Content -> Section` in WYSIWYG by using `Inject Section`.
 
