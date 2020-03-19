@@ -6,6 +6,7 @@
   - [Page Type](page-type.md)
   - [Database Structure](database-structure.md)
   - [Login System](login-system.md)
+  - [Glossary](glossary.md)
 - ## RVsitebuilder App
   - [Creating New App](creating-new-app.md)
   - [App Information](app-json-and-dependency.md)
