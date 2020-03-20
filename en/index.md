@@ -45,11 +45,11 @@
   - [Backend Event Hooks](backendeventhooks.md)
 
   - [Editorready event fontend](eventEditorReady.md)
-  - [editable event fontend](eventEditable.md)
+  - [Editable event fontend](eventEditable.md)
   - [Color Picker tutorial](colorpicker.md)
-  - [model or dialog](eventEditorReady.md)
-  - [panel menu](eventEditorReady.md)
-  - [jquery ui](eventEditorReady.md)
+  - [Model or dialog](eventEditorReady.md)
+  - [Panel menu](eventEditorReady.md)
+  - [Jquery ui](eventEditorReady.md)
     <!-- - Extending Menu Components (search box, shop, login/logout)
   - Extending Section Content
   - Extending Insert Toolbar
