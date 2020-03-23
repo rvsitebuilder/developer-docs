@@ -256,15 +256,15 @@ You may want to extend other RVsitebuilder app or use it together with your app.
 Here is an example of `app’s app.json`:
 
 ```json
-"requires": {
-        "rvsitebuilder\/marketing": "^0.1.0"
+    "require": {
+            "rvsitebuilder\/marketing": "^0.1.0"
+        },
+```
+
+```json
+    "require-dev": {
+        "rvsitebuilder\/queuesharedhost": "^0.1.0"
     },
 ```
 
 Its version constraint follow the same system as composer version constraint. You can find RVsitebuilder apps at [RVsitebuilder Marketplace](https://apps.rvsitebuilder.com). Enjoys!
-
-<!-- "user-menu"
-"page"
-"post"
-"category"
-"master-system-page" -->
