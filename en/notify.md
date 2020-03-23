@@ -1,19 +1,24 @@
 # Notify
-  - [How to](#how-to) 
 
+-   [How to](#how-to)
+-   [Notify pop](#notify-pop)
+-   [Notify inline](#notify-inline)
 
 Description Notify
 
-<a name="how-to"></a>
 ## How to
-เราใช้ [PNotify](https://sciactive.com/pnotify/) เป็นพื้นฐาน 
+
+เราใช้ [PNotify](https://sciactive.com/pnotify/) เป็นพื้นฐาน
 <br>
 มี option ให้ใช้ error,info,success,notice,warning ที่เป็นพื้นฐาน
 <br>
 ถ้า option ที่ใช้มีไม่เพียงพอแนะนำให้ เข้าไปดู https://sciactive.com/pnotify/
 ตัวอย่างการใช้งาน
+
 ## Notify pop
+
 success
+
 ```js
 <script>
     console.pop.success({
@@ -22,7 +27,9 @@ success
     });
 </script>
 ```
+
 error
+
 ```js
 <script>
     console.pop.error({
@@ -31,7 +38,9 @@ error
     });
 </script>
 ```
+
 info
+
 ```js
 <script>
     console.pop.info({
@@ -40,7 +49,9 @@ info
     });
 </script>
 ```
+
 notice
+
 ```js
 <script>
     console.pop.notice({
@@ -49,7 +60,9 @@ notice
     });
 </script>
 ```
+
 warning
+
 ```js
 <script>
     console.pop.warning({
@@ -58,7 +71,9 @@ warning
     });
 </script>
 ```
+
 ## Notify inline
+
 ```js
 <script>
     console.inline.error({
@@ -68,5 +83,3 @@ warning
     });
 </script>
 ```
-
-

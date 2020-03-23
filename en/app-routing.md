@@ -1,12 +1,10 @@
 # Routing
 
-- [Creating Route](#Creating-Route)
-- [Admin Route](#Admin-Route)
-- [User Route](#User-Route)
+-   [Creating Route](#creating-route)
+-   [Admin Route](#admin-route)
+-   [User Route](#user-route)
 
 > {info} If you are not familiar with its concept. Check out the full [Laravel Routing documentation](https://laravel.com/docs/master/routing) to get started.
-
-<a name="Creating-Route"></a>
 
 ## Creating Route
 
@@ -22,8 +20,6 @@ You should separate routing file for user and admin for easy grouping and author
                     │   └── User
                     │       └── web.php
 ```
-
-<a name="Admin-Route"></a>
 
 ## Admin Route
 
@@ -48,8 +44,6 @@ Route::group([
     });
 });
 ```
-
-<a name="User-Route"></a>
 
 ## User Route
 

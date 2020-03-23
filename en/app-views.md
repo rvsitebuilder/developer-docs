@@ -1,16 +1,14 @@
 # App Views
 
-- [Creating View](#creating-view)
-- [Master Layouts](#master-layouts)
-- [Admin App Layouts](#admin-app-layouts)
-- [User App Layouts](#user-app-layouts)
-- [App Views](#app-views)
-- [Creating Non-Editable System Page](#creating-non-editable-system-page)
-- [Creating Editable System Page](#creating-editable-system-page)
+-   [Creating View](#creating-view)
+-   [Master Layouts](#master-layouts)
+-   [Admin App Layouts](#admin-app-layouts)
+-   [User App Layouts](#user-app-layouts)
+-   [App Views](#app-views)
+-   [Creating Non-Editable System Page](#creating-non-editable-system-page)
+-   [Creating Editable System Page](#creating-editable-system-page)
 
 > {info} If you are not familiar with its concept. Check out the full [Laravel View documentation](https://laravel.com/docs/master/views) to get started.
-
-<a name="Creating-View"></a>
 
 ## Creating View
 
@@ -32,20 +30,16 @@ Create Laravel blade file and keep it in your `app’s /resources/views` folder.
                     │               └── app.blade.php
 ```
 
-<a name="Master-Layouts"></a>
-
 ## Master Layouts
 
 There are 4 master layouts available on RVsitebuilder. All master layouts load necessary JavaScript and CSS according to the template end-user choosing on the admin area.
 
-- `admin.layouts.master` - admin pages that include top bar, app launcher, and your app's left menu.
-- `admin.layouts.master-blank` - admin blank pages. It is useful for creating pop-up or iframe.
-- `user.layouts.master` - user pages that include header, menu, sidebar, footer, and etc.
-- `user.layouts.master-blank` - user blank pages. It is useful for creating pop-up or iframe.
+-   `admin.layouts.master` - admin pages that include top bar, app launcher, and your app's left menu.
+-   `admin.layouts.master-blank` - admin blank pages. It is useful for creating pop-up or iframe.
+-   `user.layouts.master` - user pages that include header, menu, sidebar, footer, and etc.
+-   `user.layouts.master-blank` - user blank pages. It is useful for creating pop-up or iframe.
 
 To make your app user interface consistency throughout the site. You should extend master layouts on your `app's layouts` folder.
-
-<a name="Admin-App-Layouts"></a>
 
 ## Admin App Layouts
 
@@ -83,8 +77,6 @@ Insert your CSS scripts for admin pages here.
 
 Insert your JavaScript for user pages here.
 
-<a name="User-App-Layouts"></a>
-
 ## User App Layouts
 
 Here is an example of `views/user/layouts/app.blade.php`.
@@ -103,8 +95,6 @@ Here is an example of `views/user/layouts/app.blade.php`.
 @endpush
 ```
 
-<a name="App-Views"></a>
-
 ## App Views
 
 All your views should extend your `app's layouts`. And add your content in `content` blade section.
@@ -118,8 +108,6 @@ All your views should extend your `app's layouts`. And add your content in `cont
 ```
 
 You can `@push('package-styles')` and `@push('package-scripts')` if you have anything specific only for this view.
-
-<a name="Creating-Non-Editable-System-Page"></a>
 
 ## Creating Non-Editable System Page
 
@@ -149,8 +137,6 @@ public function defineHideFromHyperlinkList()
     app('rvsitebuilderService')->hideFromHyperlinkList($routes);
 }
 ```
-
-<a name="Creating-Editable-System-Page"></a>
 
 ## Creating Editable System Page
 

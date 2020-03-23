@@ -1,13 +1,11 @@
 # App Service Provider
 
-- [App Service Provider](#app-service-provider)
-- [App Service Provider Auto Discovery](#app-service-provider-auto-discovery)
+-   [App Service Provider](#app-service-provider)
+-   [App Service Provider Auto Discovery](#app-service-provider-auto-discovery)
 
 Laravel service providers are the connection points between your app and Laravel.
 
 > {info} If you are not familiar with its concept. Check out the full [Laravel Service Provider documentation](https://laravel.com/docs/master/packages) to get started.
-
-<a name="App-Service-Provider"></a>
 
 ## App Service Provider
 
@@ -18,8 +16,6 @@ Create Laravel service provider file and keep it in your `app’s /src` folder.
                     ├── src
                     │   ├── AppServiceProvider.php
 ```
-
-<a name="App-Service-Provider-Auto-Discovery"></a>
 
 ## App Service Provider Auto Discovery
 

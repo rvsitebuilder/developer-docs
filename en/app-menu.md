@@ -1,10 +1,8 @@
 # App Menu
 
-- [User menu](#user-menu)
-  - [User menu to editable system page](#user-menu-to-editable-system-page)
-- [Admin menu](#admin-menu)
-
-<a name="User-menu"></a>
+-   [User menu](#user-menu)
+    -   [User menu to editable system page](#user-menu-to-editable-system-page)
+-   [Admin menu](#admin-menu)
 
 ## User menu
 
@@ -35,8 +33,6 @@ CoreMenu::updateOrCreate(
 ```
 
 To prevent error appears on the website, disabling or uninstalling app on the Manage. RVsitebuilder will automatically hide your app's menu, disable all app’s routes and shows 404 error page.
-
-<a name="Admin-menu"></a>
 
 ## Admin menu
 

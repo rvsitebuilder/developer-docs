@@ -1,15 +1,13 @@
 # App Configuration
 
-- [Config](#config)
-- [Register Config on App's Service Provider](#register-config-on-apps-service-provider)
-- [Access App's Configuration](#access-apps-configuration)
-- [Config Admin Interface](#config-admin-interface)
-- [Get Custom Values on your config file](#get-custom-values-on-your-config-file)
-- [Config Form Request Validation](#config-form-request-validation)
+-   [Config](#config)
+-   [Register Config on App's Service Provider](#register-config-on-apps-service-provider)
+-   [Access App's Configuration](#access-apps-configuration)
+-   [Config Admin Interface](#config-admin-interface)
+-   [Get Custom Values on your config file](#get-custom-values-on-your-config-file)
+-   [Config Form Request Validation](#config-form-request-validation)
 
 > {info} If you are not familiar with its concept. Check out the full [Laravel Configuration documentation](https://laravel.com/docs/master/configuration) to get started.
-
-<a name="Config"></a>
 
 ## Config
 
@@ -30,8 +28,6 @@ use Rvsitebuilder\Core\Facades\RvsitebuilderService;
     ];
 ```
 
-<a name="Register-Config-on-App's-Service-Provider"></a>
-
 ## Register Config on App's Service Provider
 
 On your `app's service provider`, load your config under `register` method.
@@ -45,8 +41,6 @@ public function register()
 
 > {warning} At this state, Laravel still not bind all services. You are still not able to access database, do not call it on config.php.
 
-<a name="Access-App's-Configuration"></a>
-
 ## Access App's Configuration
 
 The configuration values may be accessed using "dot" syntax, which includes the `project-name` declared on `mergeConfigFrom` and the `key` on the your config.php.
@@ -54,8 +48,6 @@ The configuration values may be accessed using "dot" syntax, which includes the 
 ```php
 config('project-name.key');
 ```
-
-<a name="Config-Admin-Interface"></a>
 
 ## Config Admin Interface
 
@@ -85,7 +77,7 @@ Here is an example of config blade file:
 ```html
 <label>Github : </label>
 <div class="">
-  <input type="text" name="key" value="config('project-name.key')" />
+    <input type="text" name="key" value="config('project-name.key')" />
 </div>
 ```
 
@@ -94,8 +86,6 @@ Here is an example of config blade file:
 Saving config on `Config Admin Interface` will store values to database on `core_setting` table. There is an event/listener to rebuilt custom config to `/storage/dbconfig.json`. This will allow you continue to load config on the `register` method and safely run `artisan config:cache` if you wish.
 
 If you modify config on table `core_setting` directly, you need to remove `/storage/dbconfig.json`. It will be re-generated automatcially.
-
-<a name="Get-Custom-Values-on-your-config-file"></a>
 
 ## Get Custom Values on your config file
 
@@ -107,8 +97,6 @@ return
     'key' = RvsitebuilderService::getConfig('project-name.key', 'defaultValue')
 ]
 ```
-
-<a name="Config-Form-Request-Validation"></a>
 
 ## Config Form Request Validation
 
