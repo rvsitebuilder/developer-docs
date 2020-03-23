@@ -1,7 +1,7 @@
 # Extending Admin
 
-- [Overview](#overview)
-- [Admin inject](#admin-inject)
+-   [Overview](#overview)
+-   [Admin inject](#admin-inject)
 
 ## Overview
 
@@ -22,7 +22,8 @@ public function defineinject()
     app('rvsitebuilderService')->inject('admin_master','vendor-name/project-name::your blade file');
 }
 ```
+
 Your blade file allow any apps inject code && display on another apps.
 
->{warning} You can't use concept `@push` in blade but you can use 
-` <script>` and `<style>` 
+> {warning} You can't use concept `@push` in blade but you can use
+> `<script>` and `<style>`

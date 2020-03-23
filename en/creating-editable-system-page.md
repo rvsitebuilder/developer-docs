@@ -1,17 +1,15 @@
 # Creating Editable System Page
 
-- [Migration](#migration)
-  - [Master System Page](#master-system-page)
-- [Push wysiwyg-section blade stack](#push-wysiwyg-section-blade-stack)
-- [Creating route for editview](#creating-route-for-editview)
+-   [Migration](#migration)
+    -   [Master System Page](#master-system-page)
+-   [Push wysiwyg-section blade stack](#push-wysiwyg-section-blade-stack)
+-   [Creating route for editview](#creating-route-for-editview)
 
 To make your system page editable, you need to do the following:
 
 1. Migration
 2. Creating route for WYSIWYG editview
 3. Push wysiwyg-section blade stack
-
-<a name="Migration"></a>
 
 ## Migration
 
@@ -114,8 +112,6 @@ CoreApps::where('app_name', '=', 'rvsitebuilder/core') // vendor-name/project-na
         ->update(['master_systempage_id' => 12 ]); // Id core_system_page
 ```
 
-<a name="Push-wysiwyg-section-blade-stack"></a>
-
 ## Push wysiwyg-section blade stack
 
 Add the following code at the bottom of your editable system page's blade file.
@@ -131,8 +127,6 @@ Add the following code at the bottom of your editable system page's blade file.
 **wysiwyg-section Blade Stack**
 
 Only `editable system page` is required. If your user page is not visually editable on admin WYSIWYG, you don't need it.
-
-<a name="Creating-route-for-editview"></a>
 
 ## Creating route for editview
 
