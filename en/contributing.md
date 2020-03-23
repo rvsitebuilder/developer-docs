@@ -1,18 +1,17 @@
-# Contributing 
-  - [How to Contribute](#How-to-Contribute) 
-  - [Translate Documentation](#Translate-Documentation)
-  - [tyle, structure, and guidelines](#Style-structure-guidelines)
-  - [Documentation License & Attribution](#Documentation-License-Attribution) 
+# Contributing
 
+-   [How to Contribute](#how-to-contribute)
+-   [Translate Documentation](#translate-documentation)
+-   [Style, structure, and guidelines](#style-structure-and-guidelines)
+-   [Documentation License & Attribution](#documentation-license--attribution)
 
 > Call for translators! We're looking for translators to help translate this documentation for everyone!
-// @sirishom help me please
+> // @sirishom help me please
 
 Thanks for your interest in the project!
 Pull Requests welcome for any level of improvement, from a small typo to a new section, help us make the project better.
 
 All contributors are listed [here](contributors.md).
-
 
 <b>Example </b>
 
@@ -24,19 +23,12 @@ All contributors are listed [here](contributors.md).
 
 [https://www.drupal.org/contribute/documentation](https://www.drupal.org/contribute/documentation)
 
-<a name="How-to-Contribute"></a>
 ## How to Contribute
 
-
-<a name="Translate-Documentation"></a>
 ## Translate Documentation
 
 use ... and submit Pull Request.
 
-<a name="Style-structure-guidelines"></a>
 ## Style, structure, and guidelines
 
-<a name="Documentation-License-Attribution"></a>
 ## Documentation License & Attribution
-
-

@@ -1,9 +1,7 @@
 # Directory Structure
 
-- [Laravel Directory Structure](#laravel-directory-structure)
-- [RVsitebuilder App Directory Structure](#rvsitebuilder-app-directory-structure)
-
-<a name="Laravel-Directory-Structure"></a>
+-   [Laravel Directory Structure](#laravel-directory-structure)
+-   [RVsitebuilder App Directory Structure](#rvsitebuilder-app-directory-structure)
 
 ## Laravel Directory Structure
 
@@ -23,8 +21,6 @@ Beside [Laravel root directory and app directory](https://laravel.com/docs/maste
     └── tests
     └── vendor
 ```
-
-<a name="RVsitebuilder-App-Directory-Structure"></a>
 
 ## RVsitebuilder App Directory Structure
 

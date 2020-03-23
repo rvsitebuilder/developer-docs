@@ -1,21 +1,17 @@
 # Extending WYSIWYG
 
-- [Overview](#overview)
-- [Inject Services](#inject-services)
-  - [Inject name](#inject-name)
-  - [Viewmode](#viewmode)
-  - [Editmode](#editmode)
-  - [Toolbar](#toolbar)
-  - [Section_icon](#section_icon)
-  - [Section](#section)
-
-<a name="Overview"></a>
+-   [Overview](#overview)
+-   [Inject Services](#inject-services)
+    -   [Inject name](#inject-name)
+    -   [Viewmode](#viewmode)
+    -   [Editmode](#editmode)
+    -   [Toolbar](#toolbar)
+    -   [Section_icon](#section_icon)
+    -   [Section](#section)
 
 ## Overview
 
 Usually what you do on your app will run under your own route, what if you want to inject your code to other app's route such as RVsitebuilder's WYSIWYG. Thanks to `Laravel blade's @inject` method. This open possibility to inject your code to our app.
-
-<a name="Inject-Services"></a>
 
 ## Inject Services
 
@@ -47,7 +43,6 @@ public function defineinject()
 |      editmode       |     section_icon     |
 |                     |       section        |
 
-
 ### Viewmode
 
 You can add your code to our viewmode by using `Inject viewmode`.
@@ -62,7 +57,8 @@ Result is below :
 ![Viewmode or Mysite](images/inject/mysite.png)
 
 ### Editmode
-User's website while editing from admin interface displays under `WYSIWYG toolbars` is `editmode`. 
+
+User's website while editing from admin interface displays under `WYSIWYG toolbars` is `editmode`.
 
 Example code :
 
@@ -72,7 +68,6 @@ app('rvsitebuilderService')->inject('editmode','vendor-name/project-name::view b
 
 Result is below :
 ![Inject to Editmode](images/inject/injecteditmode.png)
-
 
 ### Toolbar
 
@@ -86,7 +81,6 @@ app('rvsitebuilderService')->inject('toolbar','vendor-name/project-name::view bl
 
 Result is below :
 ![Inject to Toolbar](images/inject/injecttoolbar.png)
-
 
 ### Section_icon
 

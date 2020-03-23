@@ -1,47 +1,38 @@
 # Installation
 
-  - [Geting a developer license](#Geting-a-developer-license)
-  - [Server Requirement](#Server-Requirement )
-  - [RVsitebuilder Docker](#RVsitebuilder-Docker)  
-  - [RVsitebuilder Wizard Install](#RVsitebuilder-Wizard-Install)
-  - [.env configuration](#.env-configuration )
-  
-//TODO: @amarin How to install for developer
+-   [Geting a developer license](#geting-a-developer-license)
+-   [Server Requirement](#server-requirement)
+-   [RVsitebuilder Docker](#rvsitebuilder-docker)
+-   [RVsitebuilder Wizard Install](#rvsitebuilder-wizard-install)
+-   [.env configuration](#env-configuration)
+-   //TODO: @amarin How to install for developer
 
-<a name="Geting-a-developer-license"></a>
 ## Geting a developer license
 
-You can install RVsitebuilder locally on your work station for developing purpose. Please register to (https://dev.rvsitebuilder.com/) to get the developer license. 
+You can install RVsitebuilder locally on your work station for developing purpose. Please register to (https://dev.rvsitebuilder.com/) to get the developer license.
 
 1. Register to https://dev.rvsitebuilder.com/
 2. Log in to https://dev.rvsitebuilder.com/
-2. Go to ‘Developer Dashboard’ https://dev.rvsitebuilder.com/devportal
-![DeveloperDashboard](images/dev.rvsitebuilder.com_developer_dashboard.png)
-3. Copy ’My Developer Token Auth’ It will require to install locally. 
+3. Go to ‘Developer Dashboard’ https://dev.rvsitebuilder.com/devportal
+   ![DeveloperDashboard](images/dev.rvsitebuilder.com_developer_dashboard.png)
+4. Copy ’My Developer Token Auth’ It will require to install locally.
 
+## Server Requirement
 
-<a name="Server-Requirement"></a>
-## Server Requirement 
+Same as Laravel, https://laravel.com/docs/master/installation#server-requirements.
 
-Same as Laravel, https://laravel.com/docs/master/installation#server-requirements. 
-
-<a name="RVsitebuilder-Docker"></a>
-## RVsitebuilder Docker 
+## RVsitebuilder Docker
 
 Skip this step, if you want to install on [Laravel Homestead](https://laravel.com/docs/master/homestead), [Laravel Valet](https://laravel.com/docs/master/valet), or your own web server.
 
-If you don’t have any web server locally, follow these steps. 
+If you don’t have any web server locally, follow these steps.
 
-<a name="Installation"></a>
+-   [Install for Windows 10](installation-for-windows10.md)
+-   [Install for MacOS](installation-for-macos.md)
 
-- [Install for Windows 10](installation-for-windows10.md)
-- [Install for MacOS](installation-for-macos.md)
-
-<a name="RVsitebuilder-Wizard-Install"></a>
 ## RVsitebuilder Wizard Install
-<a name="Goto Admin"></a>
 
-Please follow these steps: 
+Please follow these steps:
 
 1 Open browser http://<local_ip>:8080
 
@@ -49,24 +40,19 @@ Please follow these steps:
 ![DeveloperDashboard](images/sb7_wizard_install.png)
 
 3 System will redirect to admin page, you can login by following credential:
-~~~
-admin user: admin@admin.com
-admin pass: 123456
-~~~
+
+```
+admin user: admin\@admin.com
+admin pass: 1234
+```
 
 ![DeveloperDashboard](images/sb7_admin_login.png)
 
 4. Enter developer token at manage app.
 
- 
- 
- 
-<a name=".env-configuration"></a>
-## .env configuration 
+## .env configuration
 
-Different between local and production 
+Different between local and production
 
-- Local
-- Production  
-
- 
+-   Local
+-   Production

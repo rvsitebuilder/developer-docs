@@ -2,17 +2,15 @@
 
 > {info} If you are not familiar with its concept. Check out the full [Laravel Events documentation](https://laravel.com/docs/master/events) to get started.
 
-- [Creating Event and Listener](#creating-event-and-listener)
-- [Eloquent Model Events](#eloquent-model-events)
-- [RVsitebuilder Application Events](#rvsitebuilder-application-events)
-- [Register Event on App’s Service Provider](#register-event-on-apps-service-provider)
-  - [Dispatching Events](#dispatching-events)
-- [Register Listener on App’s Event Service Provider](#register-listener-on-apps-event-service-provider)
-  - [Listener](#listener)
-  - [Dispatching Listeners](#dispatching-listeners)
-  - [Rvsitebuilder Event](#rvsitebuilder-event)
-
-<a name="Creating-Event-and-Listener"></a>
+-   [Creating Event and Listener](#creating-event-and-listener)
+-   [Eloquent Model Events](#eloquent-model-events)
+-   [RVsitebuilder Application Events](#rvsitebuilder-application-events)
+-   [Register Event on App’s Service Provider](#register-event-on-apps-service-provider)
+    -   [Dispatching Events](#dispatching-events)
+-   [Register Listener on App’s Event Service Provider](#register-listener-on-apps-event-service-provider)
+    -   [Listener](#listener)
+    -   [Dispatching Listeners](#dispatching-listeners)
+    -   [Rvsitebuilder Event](#rvsitebuilder-event)
 
 ## Creating Event and Listener
 
@@ -28,15 +26,11 @@ Create Laravel blade file and keep it in your `app’s /src/Events` folder.
                     │   │   ├── Uninstalled.php
 ```
 
-<a name="Eloquent-Model-Events"></a>
-
 ## Eloquent Model Events
 
 Eloquent models fire several events **automatically**, allowing you to hook into the following points in a model's lifecycle: retrieved, creating, created, updating, updated, saving, saved, deleting, deleted, restoring, restored.
 
 > {info} Check out the [Laravel Eloquent Events documentation](https://laravel.com/docs/master/eloquent#events) to get started.
-
-<a name="RVsitebuilder-Application-Events"></a>
 
 ## RVsitebuilder Application Events
 
@@ -101,8 +95,6 @@ php artisan event:list
 | Studio\Totem\Events\Updated                             |            Studio\Totem\Listeners\BustCache            |
 |                                                         |           Studio\Totem\Listeners\BuildCache            |
 
-<a name="Register-Event-on-App-Service-Provider"></a>
-
 ## Register Event on App’s Service Provider
 
 <!-- TODO: @pairote ขยายความ  -->
@@ -151,8 +143,6 @@ namespace VenderName\ProjectName\Http\Controllers\Admin;
         }
     }
 ```
-
-<a name="Register-Listener-on-App-Service-Provider"></a>
 
 <!-- TODO: @pairote ขยายความ  -->
 

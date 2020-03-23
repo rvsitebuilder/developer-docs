@@ -1,13 +1,10 @@
 # App Controller
 
-- [Creating Controller](#creating-controller)
-- [Admin Controller](#admin-controller)
-- [User Controller](#user-controller)
-- [Request Validation](#request-validation)
-
-> {info} If you are not familiar with its concept. Check out the full [Laravel Controller documentation](https://laravel.com/docs/master/controllers) to get started.
-
-<a name="Creating-Controller"></a>
+-   [Creating Controller](#creating-controller)
+-   [Admin Controller](#admin-controller)
+-   [User Controller](#user-controller)
+-   [Request Validation](#request-validation)
+    > {info} If you are not familiar with its concept. Check out the full [Laravel Controller documentation](https://laravel.com/docs/master/controllers) to get started.
 
 ## Creating Controller
 
@@ -28,8 +25,6 @@ Create Laravel Controller file and keep it in your `app’s /src/Http/Controller
 
 If you set up App route using `Route::group` suggested on [App Routing](app-routing.md), you will need to separate controller accordingly.
 
-<a name="Admin-Controller"></a>
-
 ## Admin Controller
 
 ```php
@@ -46,8 +41,6 @@ If you set up App route using `Route::group` suggested on [App Routing](app-rout
     }
 ```
 
-<a name="User-Controller"></a>
-
 ## User Controller
 
 ```php
@@ -63,8 +56,6 @@ If you set up App route using `Route::group` suggested on [App Routing](app-rout
         }
     }
 ```
-
-<a name="Request-Validation"></a>
 
 ## Request Validation
 

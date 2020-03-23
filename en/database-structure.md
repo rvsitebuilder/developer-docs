@@ -1,5 +1,17 @@
 # Database Structure
 
+-   [CMS features](#cms-features)
+-   [Manage app](#manage-app)
+-   [Slug](#slug)
+-   [Page and Menu](#page-and-menu)
+-   [Blog](#blog)
+-   [Core setting](#core-setting)
+-   [User](#user)
+-   [Role and Permissions](#role-and-permissions)
+-   [Widget and Meta](#widget-and-meta)
+-   [Email](#email)
+-   [Scheduled tasks](#scheduled-tasks)
+
 ## CMS features
 
 Several tables contain Page, Blog, Menu, Header, footer, Slug, SEO, and etc. to build dynamic website.
