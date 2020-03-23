@@ -1,5 +1,5 @@
 
-# Licenses- [Free Open Source License](#free-open-source-license)
+# Licenses
   <!-- - [Free Open Source License](#Free-Open-Source-License) -->
 - [Free Open Source License](#free-open-source-license)
 - [Hosting Provider License](#hosting-provider-license)
@@ -29,7 +29,7 @@ Our [hosting partners](https://rvsitebuilder.com/hosting-partner/) are around th
 
 ### Get Free 30-day Trial Developer Starter License 
 
-If you want to host your own, you can get a free 30-day trial developer starter license. No credit card required. You can use RVsitebuilder to build any web site free for 10 websites. License is a 30-day free trial that you can renew it for 1 year. After the 30-day trial ends without renewing, the created websites and existing Apps will works as normal BUT will not be able to install and update App either private or public Apps. Check comparison for more detail. 
+If you want to host your own, you can get a free 30-day trial developer starter license. No credit card required. You can use RVsitebuilder to build any web site free for 10 websites. License is a 30-day free trial that you can renew it for 1 year. After the 30-day trial ends without renewing, the created websites and existing Apps will works as normal BUT will not be able to install and update App either private or public Apps. Check [comparison](https://dev.rvsitebuilder.com/developer-licenses) for more detail. 
 
 [Get Free 30-day Trial Developer Starter License here.](https://dev.rvsitebuilder.com)
 
