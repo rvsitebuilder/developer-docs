@@ -1,0 +1,3 @@
+[submodule "en/common-md"]
+	path = en/common-md
+	url = https://github.com/rvsitebuilder/common-md-en.git
