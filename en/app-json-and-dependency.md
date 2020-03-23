@@ -1,8 +1,8 @@
 # App Information
 
-- [App.json Schema](#App-json-Schema)
-- [Properties](#Properties)
-- [RVsitebuilder App Dependency](#RVsitebuilder-App-Dependency)
+- [App.json Schema](#appjson-schema)
+- [Properties](#properties)
+- [RVsitebuilder App Dependency](#rvsitebuilder-app-dependency)
 
 <a name="App-json-Schema"></a>
 
@@ -93,3 +93,9 @@ Here is an example of `app’s app.json`:
 ```
 
 Its version constraint follow the same system as composer version constraint. You can find RVsitebuilder apps at [RVsitebuilder Marketplace](https://apps.rvsitebuilder.com). Enjoys!
+
+```html
+<div markdown="1">
+  This is *true* markdown text.
+</div>
+```
