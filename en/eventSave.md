@@ -1,14 +1,15 @@
 # Frontend Hooks
 
-ในสถาณการ์ปกติไม่จำเป็นต้องใช้งาน เพราะสามารถทำบน backend ง่ายกว่า ผ่าน [event listener](app-event-listener.md)
-แต่ถ้ามีเหตุการณ์ที่ต้องทำผั่ง fontend สามารถทำได้ตามนี้
+-   [How to](#how-to)
+-   [Save](#save)
+
+    ในสถาณการ์ปกติไม่จำเป็นต้องใช้งาน เพราะสามารถทำบน backend ง่ายกว่า ผ่าน [event listener](app-event-listener.md)
+    แต่ถ้ามีเหตุการณ์ที่ต้องทำผั่ง fontend สามารถทำได้ตามนี้
 
 # Save
 
-- [How to](#how-to)
-- [Save](#save)
-
-<a name="how-to"></a>
+-   [How to](#how-to)
+-   [Save](#save)
 
 ## How to
 
@@ -24,13 +25,13 @@
 
 ```js
 <script>
-  $(function(){' '}
-  {$(document).bind('editorReady', function() {
-    $('#saveall').click(function() {
-      alert('social ');
-    });
-  })}
-  )
+    $(function(){" "}
+    {$(document).bind("editorReady", function() {
+        $("#saveall").click(function() {
+            alert("social ");
+        });
+    })}
+    )
 </script>
 ```
 

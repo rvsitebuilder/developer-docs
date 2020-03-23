@@ -1,17 +1,17 @@
 # Glossary
 
-- [A](#a)
-- [D](#d)
-- [E](#e)
-- [F](#f)
-- [H](#h)
-- [I](#i)
-- [P](#p)
-- [R](#r)
-- [S](#s)
-- [U](#u)
-- [V](#v)
-- [W](#w)
+-   [A](#a)
+-   [D](#d)
+-   [E](#e)
+-   [F](#f)
+-   [H](#h)
+-   [I](#i)
+-   [P](#p)
+-   [R](#r)
+-   [S](#s)
+-   [U](#u)
+-   [V](#v)
+-   [W](#w)
 
 Definitions of functions, items, terms, and features in RVsitebuilder 7.
 
@@ -77,18 +77,17 @@ App display name on the end-user website.
 
 : The privilege to set for users with 2 high permission levels;
 
-- All: for all inclusive accessibiity to content editor, apps mamangement, and member management.
+-   All: for all inclusive accessibiity to content editor, apps mamangement, and member management.
 
-- View Admin: for high accessibility to view member lists, edit content, manage apps.
+-   View Admin: for high accessibility to view member lists, edit content, manage apps.
 
 **Project Name**
 
 : The name of a feature or service such as;
 
-- *wysiwyg*
+-   _wysiwyg_
 
 ## R
-
 
 **Role**
 
@@ -101,43 +100,40 @@ App display name on the end-user website.
 : The easy advanced configuration setting for your website such as CSS/JS, Meta, SEO, Visibility, Log, and etc. for more functional and effective website. NO WORRIES if you don't feel familiar with these words, we have easy guide on every part of it.
 
 ## U
+
 **User**
 
 : Everyone who knows and opens your website, the first time visitor, the fans of your website, the investigators, the registered members, the website admins.
-
 
 **User Interface**
 
 : All areas on your website that users will see, My Site, Login page, Register page, and User dashboard page. The My Site will be Public Interface, while User dashboard will be Member Interface.
 
 ## V
+
 **Vendor Name**
 
 : The name of company or developer who develops the package such as;
 
-- *rvsitebuilder*
-
+-   _rvsitebuilder_
 
 **View modes**
 
 : The content editor area that you can switch view of devices to see how your website will be while editing it.
 
-
 **Visibility**
 
 : The visibility control of your pages of how you aim particular page to be seen by whether public (all users), website member (regitered users), or website admin.
 
-
 ## W
+
 **Website Navigation**
 
 : The menu bar on your website to let everyone navigates to pages.
 
-
 **Widget**
 
 : The functional content area that's not only showing content but does some action when user communicaites with it, such as Online Form, Blog, Facebook comments, etc. It's not a direct edit area, but with a setting panel to set its function and display. Let's say it's not free place to insert, but a convenient tool.
-
 
 **WYSIWYS**
 

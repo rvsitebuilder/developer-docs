@@ -1,15 +1,13 @@
 # Composer Vendor and App Dependency
 
-- [Composer Vendor Dependency](#Composer-Vendor-Dependency)
-- [Disable Vendor Service Provider Auto Discovery](#Disable-Vendor-Service-Provider-Auto-Discovery)
-- [Publishing Vendor Asset](#Publishing-Vendor-Asset)
-- [Define Migrate for Vendor](#Define-Migrate-for-Vendor)
-- [Overwrite Vendor Configuration](#Overwrite-Vendor-Configuration)
-- [Custom Vendor View Directory](#Custom-Vendor-View-Directory)
+-   [Composer Vendor Dependency](#composer-vendor-dependency)
+-   [Disable Vendor Service Provider Auto Discovery](#disable-vendor-service-provider-auto-discovery)
+-   [Publishing Vendor Asset](#publishing-vendor-asset)
+-   [Define Migrate for Vendor](#define-migrate-for-vendor)
+-   [Overwrite Vendor Configuration](#overwrite-vendor-configuration)
+-   [Custom Vendor View Directory](#custom-vendor-view-directory)
 
 Use Laravel vendor dependency inside your app with composer.
-
-<a name="Composer-Vendor-Dependency"></a>
 
 ## Composer Vendor Dependency
 
@@ -21,24 +19,22 @@ Here is an example of scheduler `app's composer.json`:
 
 ```json
 {
-  "name": "rvsitebuilder/scheduler",
-  "require": {
-    "studio/laravel-totem": "^4.0"
-  },
-  "autoload": {
-    "psr-4": {
-      "Rvsitebuilder\\Scheduler\\": "src/"
+    "name": "rvsitebuilder/scheduler",
+    "require": {
+        "studio/laravel-totem": "^4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Rvsitebuilder\\Scheduler\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": ["Rvsitebuilder\\Scheduler\\SchedulerServiceProvider"]
+        }
     }
-  },
-  "extra": {
-    "laravel": {
-      "providers": ["Rvsitebuilder\\Scheduler\\SchedulerServiceProvider"]
-    }
-  }
 }
 ```
-
-<a name="Disable-Vendor-Service-Provider-Auto-Discovery"></a>
 
 ## Disable Vendor Service Provider Auto Discovery
 
@@ -58,15 +54,11 @@ If you do this, you may need to copy code from vendor’s service provider to ru
 
 > {warning} Wildcard `*` character inside of your app's `dont-discover` directive is not supported.
 
-<a name="Publishing-Vendor-Asset"></a>
-
 ## Publishing Vendor Asset
 
 In case you disable `vendor's service provider`, you will need to copy `vendor's public resources` to app and `publishes` on your `app's service provider`.
 
 <!-- TOD: @wi laravel-filemanager ทำอย่างไร -->
-
-<a name="Define-Migrate-for-Vendor"></a>
 
 ## Define Migrate for Vendor
 
@@ -80,8 +72,6 @@ public function boot()
 ```
 
 Once your `app's service provider` have been registered, they will automatically be run when the php artisan migrate command is executed. You do not need to export them to the application's main `database/migrations` directory.
-
-<a name="Overwrite-Vendor-Configuration"></a>
 
 ## Overwrite Vendor Configuration
 
@@ -103,8 +93,6 @@ public function register()
     config('totem.artisan.command_filter', ['*:cache', 'queue:work', 'medialibrary:*']);
 }
 ```
-
-<a name="Custom-Vendor-View-Directory"></a>
 
 ## Custom Vendor View Directory
 

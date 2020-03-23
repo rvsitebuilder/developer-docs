@@ -1,4 +1,6 @@
-# App Information
+-   [App.json](#appjson)
+-   [JSON Schema](#json-schema)
+-   [Properties](#properties)# App Information
 
 ## App.json
 
@@ -15,8 +17,8 @@ We have a [JSON schema](http://json-schema.org/) that documents all properties a
 name
 : The name of the project. It consists of vendor name and project name, separated by /. Examples:
 
-- `netway/instagram`
-- `armnet/telescope`
+-   `netway/instagram`
+-   `armnet/telescope`
 
 The name must be lowercase alphanumeric characters without spaces.
 

@@ -1,18 +1,17 @@
 # RVsitebuilder Widget
 
-- [Widget](#widget)
-- [Create new widget](#create-new-widget)
-- [How it works](#how-it-works)
-- [Widget config](#widget-config)
-- [Widget Blade and Design](#widget-blade-and-design)
-- [View composer](#view-composer)
-- [Widget Standard Config Panel](#widget-standard-config-panel)
-- [Config Panel Elements](#config-panel-elements)
-- [Widget Section Template](#widget-section-template)
-  <!-- - [Config Panel Elements](#Config-Panel-Elements) -->
-- [Widget Section Template](#Widget-Section-Template)
-
-<a name="Widget"></a>
+-   [Widget](#widget)
+-   [Create new widget](#create-new-widget)
+-   [How it works](#how-it-works)
+-   [Widget config](#widget-config)
+    -   [Global widget](#global-widget)
+-   [Widget Blade and Design](#widget-blade-and-design)
+-   [View composer](#view-composer)
+-   [Widget Standard Config Panel](#widget-standard-config-panel)
+-   [Config Panel Elements](#config-panel-elements)
+    -   [color picker](#color-picker)
+    -   [slider -->](#slider---)
+-   [Widget Section Template](#widget-section-template)
 
 ## Widget
 
@@ -43,11 +42,8 @@ Widget is a RVsitebuilder special element that make your `editable system page` 
                     │       │   └── Widget_ViewComposer.php
 ```
 
-<a name="Create-new-widget"></a>
-
 ## Create new widget
 
-<a name="How-it-works"></a>
 ขั้นตอนนี้สามารถทำได้หลังจากมีการติดตั้ง Developer App เรียบร้อยแล้ว (<a href="creating-new-app"> Creating New App</a>)
 
 1. บน Topbar คลิกเมนู Apps เลือก ไอคอน Developer
@@ -58,36 +54,34 @@ Widget is a RVsitebuilder special element that make your `editable system page` 
 6. คลิกปุ่ม three dots คลิก Generate Widget
 7. ระบุชื่อ Widget Name โดยสามารถสร้างได้ไม่จำกัดจำนวน
 
-   ![DeveloperDashboard](images/apps-dev.jpg)
+    ![DeveloperDashboard](images/apps-dev.jpg)
 
 8. จะได้โครงสร้าง widget ดังนี้
 
-   ```php
-   /packages/vendor-name/project-name/
-                    ├── resources
-                    │    └── views
-                    │       ├── sections
-                    │       └── widgets
-                    │           ├── alltoolbars.blade.php
-                    │           ├── widgetName-first
-                    │           │   ├── designs
-                    │           │   │   └── design1.blade.php
-                    │           │   ├── panel.blade.php
-                    │           │   └── widget.blade.php
-                    |           ├── widgetName-second
-                    │           │   ├── designs
-                    │           │   │   └── design1.blade.php
-                    │           │   ├── panel.blade.php
-                    │           │   └── widget.blade.php
-   ```
+    ```php
+    /packages/vendor-name/project-name/
+                     ├── resources
+                     │    └── views
+                     │       ├── sections
+                     │       └── widgets
+                     │           ├── alltoolbars.blade.php
+                     │           ├── widgetName-first
+                     │           │   ├── designs
+                     │           │   │   └── design1.blade.php
+                     │           │   ├── panel.blade.php
+                     │           │   └── widget.blade.php
+                     |           ├── widgetName-second
+                     │           │   ├── designs
+                     │           │   │   └── design1.blade.php
+                     │           │   ├── panel.blade.php
+                     │           │   └── widget.blade.php
+    ```
 
 ปล. การนำไปใช้งานใน wysiwyg ไปที่เมนู Content >> Section >> Your Widget Name
 
 ## How it works
 
 `renderWidget middleware`
-
-<a name="Widget-config"></a>
 
 ## Widget config
 
@@ -130,8 +124,6 @@ return [
 ### Global widget
 
 Widget that shows the same content on every page.
-
-<a name="Widget-Blade-and-Design"></a>
 
 ## Widget Blade and Design
 
@@ -205,82 +197,76 @@ Widget blade contains your `app's widget design` according to the user config.
 
 4. ไฟล์ panel.blade.php คือโครงสร้าง Panel Toolbar ที่แสดง Setting Tab และ Design Tab โดยมีรูปแบบดังนี้
 
-   4.1 การตั้งค่า Widget Name และ Widget Title Toolbar
+    4.1 การตั้งค่า Widget Name และ Widget Title Toolbar
 
-   ```php
+    ```php
 
-   @extends('rvsitebuilder/wysiwyg::admin.layouts.master_widget',
-   [
-   'appName' => $appName,
-   'widgetName' => $widgetName,
-   'setting' => $setting
-   ])
+    @extends('rvsitebuilder/wysiwyg::admin.layouts.master_widget',
+    [
+    'appName' => $appName,
+    'widgetName' => $widgetName,
+    'setting' => $setting
+    ])
 
-   @section('widget-title')
-   Example Widget  <!-- display widget panel toolbar heading -->
-   @overwrite
-   ```
+    @section('widget-title')
+    Example Widget  <!-- display widget panel toolbar heading -->
+    @overwrite
+    ```
 
-   4.2 โค้ดการตั้งค่าต่างๆ เพื่อแสดงใน Setting Tab
+    4.2 โค้ดการตั้งค่าต่างๆ เพื่อแสดงใน Setting Tab
 
-   ```php
+    ```php
 
-   @section('widget-setting')
+    @section('widget-setting')
 
-   <div class="title">
-        <span>Title</span>
-        <input type="text" class="wbInputbox" cmd="setting_title" />
-    </div>
-    <div class="clear"></div>
+    <div class="title">
+         <span>Title</span>
+         <input type="text" class="wbInputbox" cmd="setting_title" />
+     </div>
+     <div class="clear"></div>
 
-   @overwrite
-   ```
+    @overwrite
+    ```
 
-   4.3 โค้ดการเรียกใช้พาธรูป Thumbnail ของแต่ละ Layout Design เพื่อแสดงใน Design Tab นักพัฒนาสามารถเพิ่มเติมโค้ดเรียกใช้ Thumbnail ใหม่ๆได้
+    4.3 โค้ดการเรียกใช้พาธรูป Thumbnail ของแต่ละ Layout Design เพื่อแสดงใน Design Tab นักพัฒนาสามารถเพิ่มเติมโค้ดเรียกใช้ Thumbnail ใหม่ๆได้
 
-   ```php
-   @section('widget-design')
+    ```php
+    @section('widget-design')
 
-      <div class="uk-margin-small-bottom">Select design</div>
-      <div class="rv-thumb-active toolbar-panel-scrollbar">
-          <div>
-              <label for="widgetName-radio-1">
-                  <input type="radio" name="radio" class="widgetName_setting_design wbRadiobox" cmd="setting_design" value="1" id="widgetName-radio-1" style="display:none;">
-                  <img alt="" src="/vendor/vendor-name/project-name/images/thumbnail-default-widget-design1.jpg" width="200" height="36" border="0" />
-              </label>
-          </div>
-          <div>
-              <label for="widgetName-radio-2">
-                  <input type="radio" name="radio" class="widgetName_setting_design wbRadiobox" cmd="setting_design" value="2" id="widgetName-radio-2" style="display:none;">
-                  <img alt="" src="/vendor/vendor-name/project-name/images/thumbnail-default-widget-design2.jpg" width="200" height="36" border="0" />
-              </label>
-          </div>
-      </div>
+       <div class="uk-margin-small-bottom">Select design</div>
+       <div class="rv-thumb-active toolbar-panel-scrollbar">
+           <div>
+               <label for="widgetName-radio-1">
+                   <input type="radio" name="radio" class="widgetName_setting_design wbRadiobox" cmd="setting_design" value="1" id="widgetName-radio-1" style="display:none;">
+                   <img alt="" src="/vendor/vendor-name/project-name/images/thumbnail-default-widget-design1.jpg" width="200" height="36" border="0" />
+               </label>
+           </div>
+           <div>
+               <label for="widgetName-radio-2">
+                   <input type="radio" name="radio" class="widgetName_setting_design wbRadiobox" cmd="setting_design" value="2" id="widgetName-radio-2" style="display:none;">
+                   <img alt="" src="/vendor/vendor-name/project-name/images/thumbnail-default-widget-design2.jpg" width="200" height="36" border="0" />
+               </label>
+           </div>
+       </div>
 
-   @overwrite
-   ```
+    @overwrite
+    ```
 
 <!-- > {info} End-users may edit raw blade file directly on RVsitebuilder WYSIWYG to suit their needs. -->
-
-<a name="View-composer"></a>
 
 ## View composer
 
 RVsitebuilder use view composer extensively. Especially using together with middleware to build the widget dynamically.
 
-<a name="Widget-Standard-Config-Panel"></a>
-
 ## Widget Standard Config Panel
 
 <!--
-<a name="Config-Panel-Elements"></a>
+
 TODO: @Jatuporn help me please.
 
 ## Config Panel Elements
 ### color picker
 ### slider -->
-
-<a name="Widget-Section-Template"></a>
 
 ## Widget Section Template
 
