@@ -291,7 +291,7 @@ return [
 
 ![DeveloperDashboard](images/code-config-element-panel-01.png)
 
-1. ส่วนที่เกี่ยวข้องกับ Content Preview ซึ่ง Function ต้องมีใน PackagesController แล้ว
+1. ส่วนที่เกี่ยวข้องกับ Content Preview ต้องเพิ่ม Function ที่มาจาก PackagesController
 
 - แก้ไขที่ `/packages/vendor-name/project-name/src/Http/Composers/WidgetViewComposer.php`
 
