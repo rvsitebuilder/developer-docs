@@ -258,7 +258,7 @@ RVsitebuilder use view composer extensively. Especially using together with midd
 
 คือ Config ในการตั้งค่าบน Panel Toolbar ของ Widget สำหรับ Option ต่างๆ จำพวกการจัดเรียง, เปลี่ยนสี รวมไปถึงการ ShowHide `Title, Date and Time, Author, Category, Content, etc`.
 
-ยกตัวอย่าง เช่น ต้องการเพิ่ม Config และปุ่ม ShowHide Content (สมมุติชื่อ showcontent) ของ Blog Packages ใน Widget Recent Post บนไฟล์ `design1.blade.php`
+ยกตัวอย่าง เช่น ต้องการเพิ่ม Config และปุ่ม ShowHide Content (สมมุติชื่อ showcontent) บนไฟล์ `design1.blade.php`
 
 ![DeveloperDashboard](images/config-element-panel.png)
 
@@ -273,7 +273,7 @@ return [
         'frame-style' => 'width:250px;height:500px;',
 
         'setting' => [
-            'title' => 'Recent Post',
+            'title' => 'Example-Title',
             'limit' => 5,
             'update' => 1,
             'author' => 1,
@@ -291,9 +291,9 @@ return [
 
 ![DeveloperDashboard](images/code-config-element-panel-01.png)
 
-2. ส่วนที่เกี่ยวข้องกับ Content Preview ซึ่งใน BlogController มี Function นี้อยู่แล้ว
+2. ส่วนที่เกี่ยวข้องกับ Content Preview ซึ่งใน PackagesController มี Function นี้อยู่แล้ว
 
-- แก้ไขที่ `/packages/vendor-name/project-name/src/Http/Composers/RecentPostWidgetViewComposer.php`
+- แก้ไขที่ `/packages/vendor-name/project-name/src/Http/Composers/WidgetViewComposer.php`
 
 ![DeveloperDashboard](images/code-config-element-panel-02.png)
 
