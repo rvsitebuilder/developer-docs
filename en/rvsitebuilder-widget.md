@@ -7,7 +7,7 @@
 - [Widget Blade and Design](#widget-blade-and-design)
 - [View composer](#view-composer)
 - [Widget Standard Config Panel](#widget-standard-config-panel)
-- [Example Config Panel Element](#example-config-panel-element)
+- [Config Panel Element](#config-panel-element)
 - [Config Panel Elements](#config-panel-elements)
 - [Widget Section Template](#widget-section-template)
 
@@ -254,7 +254,7 @@ RVsitebuilder use view composer extensively. Especially using together with midd
 
 ## Widget Standard Config Panel
 
-## Example Config Panel Element
+## Config Panel Element
 
 คือ Config ในการตั้งค่าบน Panel Toolbar ของ Widget สำหรับ Option ต่างๆ จำพวกการจัดเรียง, เปลี่ยนสี รวมไปถึงการ ShowHide `Title, Date and Time, Author, Category, Content, etc`.
 
