@@ -149,8 +149,8 @@ Widget blade contains your `app's widget design` according to the user config.
     <a href="javascript:void(0)">
         <span class="icon-padd wys-insert-tool wys-hyperlink-icon"></span>
         <span>
-            @if(isset($appJson->getAppConfig()['vendorname/projectname']['alias']))
-            {{ $appJson->getAppConfig()['vendorname/projectname']['alias'] }}
+            @if(isset($appJson->getAppConfig()['vendor-name/project-name']['alias']))
+            {{ $appJson->getAppConfig()['vendor-name/project-name']['alias'] }}
         @else
             project-name
         @endif
@@ -159,8 +159,8 @@ Widget blade contains your `app's widget design` according to the user config.
     </a>
     <ul class="ddListLink rv-bgwidget">
         <li>
-            <a data-panel='.widgetname' data-widget = 'vendorname/projectname' data-widgetname='widgetname'>
-            <i class='icon-padd wys-insert-tool wys-table-icon'></i>widgetname</a>
+            <a data-panel='.widget-name' data-widget = 'vendor-name/project-name' data-widget-name='widget-name'>
+            <i class='icon-padd wys-insert-tool wys-table-icon'></i>widget-name</a>
         </li>
         <!--WIDGET_GENERATOR-->
     </ul>
@@ -186,8 +186,8 @@ Widget blade contains your `app's widget design` according to the user config.
 
 ```php
 <div class="containerWidget">
-    @includeWhen($setting['design'] == 1, 'vendorname/projectname::widgets.widgetname.designs.design1')
-    @includeWhen($setting['design'] == 2, 'vendorname/projectname::widgets.widgetname.designs.design2')
+    @includeWhen($setting['design'] == 1, 'vendor-name/project-name::widgets.widget-name.designs.design1')
+    @includeWhen($setting['design'] == 2, 'vendor-name/project-name::widgets.widget-name.designs.design2')
 </div>
 ```
 
@@ -230,15 +230,15 @@ Widget blade contains your `app's widget design` according to the user config.
       <div class="uk-margin-small-bottom">Select design</div>
       <div class="rv-thumb-active toolbar-panel-scrollbar">
           <div>
-              <label for="widgetname-radio-1">
-                  <input type="radio" name="radio" class="widgetname_setting_design wbRadiobox" cmd="setting_design" value="1" id="widgetName-radio-1" style="display:none;">
-                  <img alt="" src="/vendor/vendorname/projectname/images/thumbnail-default-widget-design1.jpg" width="200" height="36" border="0" />
+              <label for="widget-name-radio-1">
+                  <input type="radio" name="radio" class="widget-name_setting_design wbRadiobox" cmd="setting_design" value="1" id="widget-name-radio-1" style="display:none;">
+                  <img alt="" src="/vendor/vendor-name/project-name/images/thumbnail-default-widget-design1.jpg" width="200" height="36" border="0" />
               </label>
           </div>
           <div>
-              <label for="widgetname-radio-2">
-                  <input type="radio" name="radio" class="widgetname_setting_design wbRadiobox" cmd="setting_design" value="2" id="widgetname-radio-2" style="display:none;">
-                  <img alt="" src="/vendor/vendorname/projectname/images/thumbnail-default-widget-design2.jpg" width="200" height="36" border="0" />
+              <label for="widget-name-radio-2">
+                  <input type="radio" name="radio" class="widget-name_setting_design wbRadiobox" cmd="setting_design" value="2" id="widget-name-radio-2" style="display:none;">
+                  <img alt="" src="/vendor/vendor-name/projec-tname/images/thumbnail-default-widget-design2.jpg" width="200" height="36" border="0" />
               </label>
           </div>
       </div>
@@ -264,12 +264,12 @@ RVsitebuilder use view composer extensively. Especially using together with midd
 
 1. ส่วนที่เกี่ยวข้องกับ Panel Toolbar
 
-   Here is an example of `/packages/rvsitebuilder/blog/config/widget.php`
+- เพิ่ม `showcontent` ตั้งค่าเท่ากับ 1 เพื่อแสดงข้อมูลเมื่อเริ่มต้นใช้งาน ที่ `/packages/vendor-name/project-name/config/widget.php`
 
 ```php
 return [
-    'blog-recent-post' => [
-        'blade' => 'widgets.blog-recent-post.widget',
+    'widget-name' => [
+        'blade' => 'widgets.widget-name.widget',
         'frame-style' => 'width:250px;height:500px;',
 
         'setting' => [
@@ -287,47 +287,19 @@ return [
 ]
 ```
 
-Here is an example of `/packages/rvsitebuilder/blog/resources/views/widgets/blog-recent-post/panel.blade.php`.
-
-```php
- /packages/rvsitebuilder/blog/
-                        ├── resources
-                        │    └── views
-                        │       └── widgets
-                        │           ├── blog-recent-post
-                        │           │   ├── panel.blade.php
-
-```
+- เพิ่ม HTML Code และ config ในไฟล์ที่แสดงบน Panel Toolbar ที่ `/packages/vendor-name/project-name/resources/views/widgets/widget-name/panel.blade.php`.
 
 ![DeveloperDashboard](images/code-config-element-panel-01.png)
 
 2. ส่วนที่เกี่ยวข้องกับ Content Preview ซึ่งใน BlogController มี Function นี้อยู่แล้ว
 
-Here is an example of `/packages/rvsitebuilder/blog/src/Http/Composers/RecentPostWidgetViewComposer.php`
-
-```php
- /packages/rvsitebuilder/blog/
-                        ├── src
-                        │    └── Http
-                        │       └── Composers
-                        │           ├── RecentPostWidgetViewComposer.php
-
-```
+- แก้ไขที่ `/packages/vendor-name/project-name/src/Http/Composers/RecentPostWidgetViewComposer.php`
 
 ![DeveloperDashboard](images/code-config-element-panel-02.png)
 
-Here is an example of `/packages/rvsitebuilder/blog/resources/views/widgets/blog-recent-post/designs/design1.blade.php`
+- เพิ่ม HTML Code และ config ใต้หัวห้อ Post Title หรือในตำแหน่งที่ต้องการ
 
-```php
- /packages/rvsitebuilder/blog/
-                        ├── resources
-                        │    └── views
-                        │       └── widgets
-                        │           ├── blog-recent-post
-                        │           │   ├── designs
-                        │           │   │   └── design1.blade.php
-
-```
+  แก้ไขที่ `/packages/vendor-name/project-name/esources/views/widgets/widget-name/designs/design1.blade.php`
 
 ![DeveloperDashboard](images/code-config-element-panel-03.png)
 
@@ -365,9 +337,9 @@ TODO: @Jatuporn help me please.
 ```php
 <div class="section-category rv-widget-vendername-projectname-widgetname" style="display: none; margin-top: -12px;">
     <div id="widget-vendername-projectname-widgetname" class="widgetSection" style="margin:0 auto;">
-        <div id="widget-vendername-projectname-widgetname" class="widgetform widget-vendername-projectname-widgetname" widget="vendername/projectname" widgetname="widgetname">
-            @include('vendorname/projectname::sections.widgetName-first.1-section')
-            @include('vendorname/projectname::sections.widgetName-second.1-section')
+        <div id="widget-vendername-projectname-widgetname" class="widgetform widget-vendername-projectname-widgetname" widget="vender-name/project-name" widget-name="widget-name">
+            @include('vendor-name/project-name::sections.widgetName-first.1-section')
+            @include('vendor-name/project-name::sections.widgetName-second.1-section')
         </div>
     </div>
 </div>
@@ -384,10 +356,10 @@ TODO: @Jatuporn help me please.
     <span class="uk-icon uk-icon-home rv-icon-size"></span>
 
 
-    @if(isset($appJson->getAppConfig()['vendername/projectname']['alias'] ) )
-        {{ $appJson->getAppConfig()['vendername/projectname']['alias'] }}
+    @if(isset($appJson->getAppConfig()['vender-name/project-name']['alias'] ) )
+        {{ $appJson->getAppConfig()['vender-name/project-name']['alias'] }}
     @else
-        Projectname
+        Projec-tname
     @endif
 </div>
 ```
@@ -396,16 +368,16 @@ TODO: @Jatuporn help me please.
 
 ```php
 <icon-widget>
-    <div class="blockWidget" title="widgetname" data-id="img-vendername-projectname-widgetname" widget="vendername/projectname" widgetname="widgetname">
+    <div class="blockWidget" title="widget-name" data-id="img-vendername-projectname-widgetname" widget="vender-name/project-name" widget-name="widget-name">
         <div>
             <div class="view"></div>
-            <img class="img-vendername-projectname-widgetname" alt="" srcs="/vendor/vendername/projectname/images/thumbnail-default-widget-design1.png" data-appname="vendername/projectname" widgetname="widgetname">
+            <img class="img-vendername-projectname-widgetname" alt="" srcs="/vendor/vender-name/project-name/images/thumbnail-default-widget-design1.png" data-appname="vender-name/project-name" widget-name="widget-name">
         </div>
     </div>
 </icon-widget>
 <design>
     @include('rvsitebuilder/core::layouts.widget_wys_master_header')
-    <img srcs="/vendor/vendorname/projectname/images/thumbnail-default-widget-design1.png" title="category_list"  alt="">
+    <img srcs="/vendor/vendor-name/project-name/images/thumbnail-default-widget-design1.png" title="category_list"  alt="">
     @include('rvsitebuilder/core::layouts.widget_wys_master_footer')
 </design>
 ```
