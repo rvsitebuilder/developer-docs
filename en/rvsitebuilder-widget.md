@@ -256,9 +256,9 @@ RVsitebuilder use view composer extensively. Especially using together with midd
 
 ## Config Panel Element
 
-คือ Config ในการตั้งค่าบน Panel Toolbar ของ Widget สำหรับ Option ต่างๆ จำพวกการจัดเรียง, เปลี่ยนสี รวมไปถึงการ ShowHide `Title, Date and Time, Author, Category, Content, etc`.
+คือ Config ในการตั้งค่าบน Panel Toolbar ของ Widget สำหรับ Option ต่างๆ จำพวกการจัดเรียง, เปลี่ยนสี รวมไปถึงการ Show/Hide `Title, Date and Time, Author, Category, Content, etc`.
 
-ยกตัวอย่าง เช่น ต้องการเพิ่ม Config และปุ่ม ShowHide Content (สมมุติชื่อ showcontent) บนไฟล์ `design1.blade.php`
+ยกตัวอย่าง เช่น ต้องการเพิ่ม Config และปุ่ม Show/Hide Content (สมมุติชื่อ showcontent) บนไฟล์ `design1.blade.php`
 
 ![DeveloperDashboard](images/config-element-panel.png)
 
@@ -291,13 +291,13 @@ return [
 
 ![DeveloperDashboard](images/code-config-element-panel-01.png)
 
-2. ส่วนที่เกี่ยวข้องกับ Content Preview ซึ่งใน PackagesController มี Function นี้อยู่แล้ว
+1. ส่วนที่เกี่ยวข้องกับ Content Preview ซึ่ง Function ต้องมีใน PackagesController แล้ว
 
 - แก้ไขที่ `/packages/vendor-name/project-name/src/Http/Composers/WidgetViewComposer.php`
 
 ![DeveloperDashboard](images/code-config-element-panel-02.png)
 
-- เพิ่ม HTML Code และ config ใต้หัวห้อ Post Title หรือในตำแหน่งที่ต้องการ
+- เพิ่ม HTML Code และ config ในตำแหน่งที่ต้องการ
 
   แก้ไขที่ `/packages/vendor-name/project-name/esources/views/widgets/widget-name/designs/design1.blade.php`
 
