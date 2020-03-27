@@ -25,12 +25,18 @@ Build your own app no more easier. We provide Developer app on RVsitebuilder mar
 You will get basic scarfolding consist of migration, resources, model, controller, and view to start with.
 
 ## Exporting App
-
-//TODO: @pram export app
+ 
+Before export app you must first ensure that developer app is installed on your CMS. Next, you'll want to generator private app.When you generator app success, you can click option and choose 'export app'. 
 
 ## Importing Private App
 
-//TODO: @pram import app
+Go to manage app and click on the `Private Apps` menu. 
+Import your private app to use with your website.We are makes it very easy to store uploaded files you can follow 2 step.
+ 
+1. Choose file .zip or .tar.gz  only.
+2. Click upload.
+
+Make sure that you have the app  from a import in manage app.
 
 ## Submitting App to Marketplace
 
