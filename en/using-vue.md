@@ -2,13 +2,13 @@
 
 You can use frontend framework Vue.js and React.js etc.
 
--   [Directory Structure](#directory-structure)
--   [How to use](#how-to-use)
--   [Creating Component](#creating-component)
--   [Render Component](#render-component)
--   [Webpack](#webpack)
--   [Load Vue](#load-vue)
--   [Vue Devtools](#vue-devtools)
+- [Directory Structure](#directory-structure)
+- [How to use](#how-to-use)
+- [Creating Component](#creating-component)
+- [Render Component](#render-component)
+- [Webpack](#webpack)
+- [Load Vue](#load-vue)
+- [Vue Devtools](#vue-devtools)
 
 ## Directory Structure
 
@@ -64,6 +64,23 @@ We choose **[Bootstrap Vue](https://bootstrap-vue.js.org)** because quickly inte
 
 Let's turn our attention to the aforementioned `js/components/ExampleComponent.vue` file.
 
+<pre>
+  <code class="language-JavaScript">
+  <template>
+    <b-container>
+        <b-row>
+            <b-col md="8" offset-md="2">
+                <b-card>
+                    <b-card-header>Example Component</b-card-header>
+                    <b-card-body>I'm an example component!</b-card-body>
+                </b-card>
+            </b-col>
+        </b-row>
+    </b-container>
+</template>
+  </code>
+</pre>
+
 ```javascript
 <template>
     <b-container>
@@ -97,12 +114,12 @@ With that done, let's have a look at `js/admin/Example.js`:
 
 ```javascript
 Vue.component(
-    "example-component",
-    require("../components/ExampleComponent.vue").default
+  "example-component",
+  require("../components/ExampleComponent.vue").default
 );
 
 const app = new Vue({
-    el: "#app"
+  el: "#app"
 });
 ```
 
