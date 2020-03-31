@@ -32,7 +32,7 @@ Build your own app no more easier. We provide Developer app on RVsitebuilder mar
    Result is Private Apps:
    ![Generate Apps](images/createnewapp/developerapp-generateapp3.png)
 
-   > {info} You can <a href="rvsitebuilder-widget.md" target="_blank">`Generate Widget`</a> and [`Exporting App`](#exporting-app) it here as well.
+   > {info} You can <a href="rvsitebuilder-widget.md" target="_blank">`Generate Widget`</a> and `Exporting App` ( Next topic ) it here as well.
 
 You will get basic scarfolding consist of migration, resources, model, controller, and view to start with.
 
