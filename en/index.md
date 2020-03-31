@@ -61,5 +61,9 @@
   <!-- - ## Testing -->
   <!-- - ## Tutorials -->
 - ## Contributing to Documentation
+
   - [Contributing](contributing.md)
   - [Contributors](contributors.md)
+
+- ## Admin UI and Example UI
+  - [Contributing](admin-ui.md)
