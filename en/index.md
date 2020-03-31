@@ -66,4 +66,4 @@
   - [Contributors](contributors.md)
 
 - ## Admin UI and Example UI
-  - [Contributing](admin-ui.md)
+  - [Admin UI](admin-ui.md)
