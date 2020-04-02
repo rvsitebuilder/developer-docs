@@ -37,6 +37,18 @@ Test Text
 <div class="container">
   <!-- Content here -->
 </div>
+
+TEST CSS 1
+<style>
+nav#topmenu a { color: #a9a9a9 !important; }
+</style>
+
+TEST CSS2
+
+`<style>`
+nav#topmenu a { color: #a9a9a9 !important; }
+`</style>`
+
 ```
 
 Test PHP
