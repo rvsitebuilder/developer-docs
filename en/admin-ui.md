@@ -24,6 +24,12 @@ While containers can be nested, most layouts do not require a nested container.
 Use .container-fluid for a full width container, spanning the entire width of the viewport.
 
 Test HTML
+`<div class="container"><!-- Content here --></div>`
+
+`<div class="container">
+
+<!-- Content here -->
+</div>`
 
 ```html
 <div class="container">
@@ -54,6 +60,15 @@ nav#topmenu a { color: #a9a9a9 !important; }
 Test PHP
 
 ```php
+
+`<div class="container">
+  <!-- Content here -->
+</div>`
+
+`<style>`
+nav#topmenu a { color: #a9a9a9 !important; }
+`</style>`
+
 var NewComponent = React.createClass({
   render: function() {
     return (
