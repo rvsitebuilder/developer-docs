@@ -23,73 +23,10 @@ While containers can be nested, most layouts do not require a nested container.
 
 Use .container-fluid for a full width container, spanning the entire width of the viewport.
 
-Test HTML
-`<div class="container"><!-- Content here --></div>`
-
-`<div class="container">
-
-<!-- Content here -->
-</div>`
-
 ```html
-<div class="container">
+<div class="container-fluid">
   <!-- Content here -->
 </div>
-```
-
-Test Text
-
-```text
-<div class="container">
-  <!-- Content here -->
-</div>
-
-TEST CSS 1
-<style>
-nav#topmenu a { color: #a9a9a9 !important; }
-</style>
-
-TEST CSS2
-
-`<style>`
-nav#topmenu a { color: #a9a9a9 !important; }
-`</style>`
-
-```
-
-Test PHP
-
-```php
-
-`<div class="container">
-  <!-- Content here -->
-</div>`
-
-`<style>`
-nav#topmenu a { color: #a9a9a9 !important; }
-`</style>`
-
-var NewComponent = React.createClass({
-  render: function() {
-    return (
-
-      <div className="container-fluid">
-        {/* Content here */}
-      </div>
-    );
-  }
-});
-
-```
-
-Test JS
-
-```js
-var NewComponent = React.createClass({
-  render: function() {
-    return <div className="container-fluid">{/* Content here */}</div>;
-  }
-});
 ```
 
 ### Container and Grid
@@ -99,34 +36,46 @@ Create a fully responsive, fluid and nestable grid layout.
 
 ```html
 <div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <h2>Title</h2>
-            <p> This is a text box. Write your own content here. This is an excellent place for you to add a paragraph and let your visitors know more about you and your services. This is a text box. Write your own content here. This is an excellent place for you to add a paragraph and let your visitors know more about you and your services.</p>
-        </div>
+  <div class="row">
+    <div class="col-md-12">
+      <h2>Title</h2>
+      <p>
+        This is a text box. Write your own content here. This is an excellent
+        place for you to add a paragraph and let your visitors know more about
+        you and your services. This is a text box. Write your own content here.
+        This is an excellent place for you to add a paragraph and let your
+        visitors know more about you and your services.
+      </p>
     </div>
-    <br>
-    <div class="row">
-        <div class="col-md-4">
-            <h3>Title</h3>
-            <p>This is an excellent place for you to add a paragraph and let your visitors know more about you and your services.</p>
-        </div>
-        <div class="col-md-4">
-            <h3>Title</h3>
-            <p>This is an excellent place for you to add a paragraph and let your visitors know more about you and your services.</p>
-        </div>
-        <div class="col-md-4">
-            <h3>Title</h3>
-            <p>This is an excellent place for you to add a paragraph and let your visitors know more about you and your services.</p>
-        </div>
+  </div>
+  <br />
+  <div class="row">
+    <div class="col-md-4">
+      <h3>Title</h3>
+      <p>
+        This is an excellent place for you to add a paragraph and let your
+        visitors know more about you and your services.
+      </p>
+    </div>
+    <div class="col-md-4">
+      <h3>Title</h3>
+      <p>
+        This is an excellent place for you to add a paragraph and let your
+        visitors know more about you and your services.
+      </p>
+    </div>
+    <div class="col-md-4">
+      <h3>Title</h3>
+      <p>
+        This is an excellent place for you to add a paragraph and let your
+        visitors know more about you and your services.
+      </p>
     </div>
   </div>
 </div>
 ```
 
 ### Container Fluid and Grid
-
-การใช้งานขนาดความกว้างสูงสุดเท่ากับ 100% หรือเต็มจอ เพื่อเหมาะสมกับ Resolution ทุกแบบ (แต่ไม่เหมาะสมกับงานที่มีเนื้อหาข้อมูลน้อย ซึ่งจะทำข้อมูลในบล็อกดูหลวมเกินไปอีกทั้งการใช้รูปจะต้องใช้รูปที่มีขนาดใหญ่ตามจอ เช่น resolution 1920px ซึ่งจะทำให้ใช้เนื้อที่บน Hosting เยอะ)
 
 ```html
 <div class="container-fluid">
