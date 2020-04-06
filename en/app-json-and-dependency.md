@@ -1,8 +1,8 @@
 # App Information
 
--   [App.json Schema](#appjson-schema)
--   [Properties](#properties)
--   [RVsitebuilder App Dependency](#rvsitebuilder-app-dependency)
+- [App.json Schema](#appjson-schema)
+- [Properties](#properties)
+- [RVsitebuilder App Dependency](#rvsitebuilder-app-dependency)
 
 ## App.json Schema
 
@@ -12,11 +12,11 @@ We use properties information on your `app.json` to display app information and 
 
 ## Properties
 
-name
+**name**
 : The name of the project. It consists of vendor name and project name, separated by /. Examples:
 
--   `netway/instagram`
--   `armnet/telescope`
+- `netway/instagram`
+- `armnet/telescope`
 
 The name must be lowercase alphanumeric characters without spaces.
 
