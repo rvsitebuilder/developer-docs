@@ -2,13 +2,13 @@
 
 You can use frontend framework Vue.js and React.js etc.
 
--   [Directory Structure](#directory-structure)
--   [How to use](#how-to-use)
--   [Creating Component](#creating-component)
--   [Render Component](#render-component)
--   [Webpack](#webpack)
--   [Load Vue](#load-vue)
--   [Vue Devtools](#vue-devtools)
+- [Directory Structure](#directory-structure)
+- [How to use](#how-to-use)
+- [Creating Component](#creating-component)
+- [Render Component](#render-component)
+- [Webpack](#webpack)
+- [Load Vue](#load-vue)
+- [Vue Devtools](#vue-devtools)
 
 ## Directory Structure
 
@@ -97,12 +97,12 @@ With that done, let's have a look at `js/admin/Example.js`:
 
 ```javascript
 Vue.component(
-    "example-component",
-    require("../components/ExampleComponent.vue").default
+  "example-component",
+  require("../components/ExampleComponent.vue").default
 );
 
 const app = new Vue({
-    el: "#app"
+  el: "#app"
 });
 ```
 

@@ -19,8 +19,20 @@ Build your own app no more easier. We provide Developer app on RVsitebuilder mar
 ![RVsitebuilder App Marketplace](images/createnewapp/developerapp-Marketplace.png)
 
 2. Click install and choose your local development website to install. If your local domain does not on the domain list, please login as admin on your local development and try again.
+
 3. Once successfully install on your local website, click `App launcher` and go to Developer app.
-4. Click 'Generate app' on the developer page.
+   ![App launcher](images/createnewapp/developerapp.png)
+
+4. Click `Generate app` on the developer page.
+   ![Generate Apps](images/createnewapp/developerapp-generateapp.png)
+
+5. When you enter the Generate App page, you can easily create your app.
+   ![Generate Apps](images/createnewapp/developerapp-generateapp2.png)
+
+   Result is Private Apps:
+   ![Generate Apps](images/createnewapp/developerapp-generateapp3.png)
+
+   > {info} You can <a href="rvsitebuilder-widget.md" target="_blank">`Generate Widget`</a> and `Exporting App` ( Next topic ) it here as well.
 
 You will get basic scarfolding consist of migration, resources, model, controller, and view to start with.
 

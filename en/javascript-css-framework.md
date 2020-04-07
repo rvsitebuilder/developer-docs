@@ -56,13 +56,9 @@ Loaded as an external script on all pages, both admin and user interface. It has
 @endpush
 ```
 
-<!-- TODO: @pairote ขยายความด้วย -->
-
 ## Wex
 
 Wex acronyms from wysiwyg export variable from controller to js to be used data in variable
-
-<!-- TODO: @june ขยายความด้วย -->
 
 ## Passing PHP variables to JS through wex and mex
 
