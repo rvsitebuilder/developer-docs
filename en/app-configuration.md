@@ -1,11 +1,12 @@
 # App Configuration
 
--   [Config](#config)
--   [Register Config on App's Service Provider](#register-config-on-apps-service-provider)
--   [Access App's Configuration](#access-apps-configuration)
--   [Config Admin Interface](#config-admin-interface)
--   [Get Custom Values on your config file](#get-custom-values-on-your-config-file)
--   [Config Form Request Validation](#config-form-request-validation)
+- [Config](#config)
+- [Register Config on App's Service Provider](#register-config-on-apps-service-provider)
+- [Access App's Configuration](#access-apps-configuration)
+- [Config Admin Interface](#config-admin-interface)
+- [Event Open Admin Interface](#event-open-admin-interface)
+- [Get Custom Values on your config file](#get-custom-values-on-your-config-file)
+- [Config Form Request Validation](#config-form-request-validation)
 
 > {info} If you are not familiar with its concept. Check out the full [Laravel Configuration documentation](https://laravel.com/docs/master/configuration) to get started.
 
@@ -77,7 +78,7 @@ Here is an example of config blade file:
 ```html
 <label>Github : </label>
 <div class="">
-    <input type="text" name="key" value="config('project-name.key')" />
+  <input type="text" name="key" value="config('project-name.key')" />
 </div>
 ```
 
@@ -86,6 +87,27 @@ Here is an example of config blade file:
 Saving config on `Config Admin Interface` will store values to database on `core_setting` table. There is an event/listener to rebuilt custom config to `/storage/dbconfig.json`. This will allow you continue to load config on the `register` method and safely run `artisan config:cache` if you wish.
 
 If you modify config on table `core_setting` directly, you need to remove `/storage/dbconfig.json`. It will be re-generated automatcially.
+
+## Event Open Admin Interface
+
+If your open site config on your app's,and call `openConfig` with tab-main app-name and tab-name
+
+Here is an example on your app's:
+
+```html
+//openConfig('tab-main','app-name','tab-name')
+<a onclick="openConfig('site','rvsitebuilder/larecipe','tab-name')">
+  Open Site Config</a
+>
+```
+
+![openconfigInterface](images/appconfiguration-openconfig.png)
+
+**`tab-main`** you can choose `site` just one.
+
+**`app-name`** the name of the project. It consists of vendor name and project name.If you are not familiar with its `app-name` Check out the full [App Information](app-json-and-dependency.md) to get started.
+
+**`tab-name`** your define it on `app’s service provider` call `siteConfigInterface` with tab-name
 
 ## Get Custom Values on your config file
 
