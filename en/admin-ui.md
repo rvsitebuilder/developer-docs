@@ -5,7 +5,7 @@
 
 ## Admin UI
 
-เนื่องจากโปรแกรมสามารถเปิดให้โค้ดได้หลาย Framework โดยการ `@push('package-scripts')` และ `@push('package-style')` จากหัวข้อ <a href="javascript-css-framework">Javascript CSS Framework </a> ส่วน Apps ที่ Generate ขึ้นมาใหม่ โปรแกรมได้ติดตั้ง CSS Bootstrap Framework ไว้ให้แล้ว ส่วน JS นั้นต้อง Incloud เข้ามาเอง
+เนื่องจากโปรแกรมสามารถเปิดให้โค้ดได้หลาย Framework โดยการ `@push('package-scripts')` และ `@push('package-style')` จากหัวข้อ <a href="javascript-css-framework">Javascript CSS Framework </a> ส่วน Apps ที่ Generate ขึ้นมาใหม่ โปรแกรมได้ติดตั้ง CSS Bootstrap Framework ไว้ให้แล้ว ส่วน JS นั้นจะต้อง Incloud เข้ามาเอง
 
 Ref. https://getbootstrap.com/
 
@@ -15,11 +15,15 @@ Containers are the most basic layout element in Bootstrap and are required when 
 
 While containers can be nested, most layouts do not require a nested container.
 
+Container
+
 ```html
 <div class="container">
   <!-- Content here -->
 </div>
 ```
+
+Container Fluid
 
 Use .container-fluid for a full width container, spanning the entire width of the viewport.
 
@@ -32,7 +36,9 @@ Use .container-fluid for a full width container, spanning the entire width of th
 ### Container and Grid
 
 Create a fully responsive, fluid and nestable grid layout.  
-การใช้การโดยกำหนดขนาดความกว้างสูงสุดเท่ากับ 1140px เพื่อเหมาะสมกับ Resolution 1366px
+การใช้ Container โดยกำหนดขนาดความกว้างสูงสุดเท่ากับ 1140px เพื่อเหมาะสมกับ Resolution 1366px ภายในประกอบด้วย Grid ดังนี้
+
+![DeveloperDashboard](images/adminui/adminui-container.png)
 
 ```html
 <div class="container">
@@ -77,6 +83,8 @@ Create a fully responsive, fluid and nestable grid layout.
 
 ### Container Fluid and Grid
 
+![DeveloperDashboard](images/adminui/adminui-container-fluid.png)
+
 ```html
 <div class="container-fluid">
   <div class="row">
@@ -120,197 +128,173 @@ Create a fully responsive, fluid and nestable grid layout.
 </div>
 ```
 
-### Card Panel
+### Box Panel
+
+แบบที่ 1
+
+![DeveloperDashboard](images/adminui/adminui-boxpanel-01.png)
 
 ```html
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-md-12">
-      <div class="card">
-        <div class="card-body">
-          <div class="title">
-            <h3>1</h3>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-md-6">
-      <div class="card">
-        <div class="card-body">
-          <div class="title">
-            <h3>2</h3>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-6">
-      <div class="card">
-        <div class="card-body">
-          <div class="title">
-            <h3>2</h3>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-md-4">
-      <div class="card">
-        <div class="card-body">
-          <div class="title">
-            <h3>3</h3>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card">
-        <div class="card-body">
-          <div class="title">
-            <h3>3</h3>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card">
-        <div class="card-body">
-          <div class="title">
-            <h3>3</h3>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-md-3">
-      <div class="card">
-        <div class="card-body">
-          <div class="title">
-            <h3>4</h3>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="card">
-        <div class="card-body">
-          <div class="title">
-            <h3>4</h3>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="card">
-        <div class="card-body">
-          <div class="title">
-            <h3>4</h3>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="card">
-        <div class="card-body">
-          <div class="title">
-            <h3>4</h3>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-md-8">
-      <div class="card">
-        <div class="card-body">
-          <div class="title">
-            <h3>2</h3>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card">
-        <div class="card-body">
-          <div class="title">
-            <h3>1</h3>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-md-3">
-      <div class="card">
-        <div class="card-body">
-          <div class="title">
-            <h3>1</h3>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-6">
-      <div class="card">
-        <div class="card-body">
-          <div class="title">
-            <h3>2</h3>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="card">
-        <div class="card-body">
-          <div class="title">
-            <h3>1</h3>
-          </div>
-        </div>
+<div class="row">
+  <div class="col-md-12">
+    <div class="card">
+      <div class="card-body">
+        Write your own content here.
       </div>
     </div>
   </div>
 </div>
 ```
 
-### Box Panel
+แบบที่ 2
+
+![DeveloperDashboard](images/adminui/adminui-boxpanel-02.png)
+
+```html
+<div class="row">
+  <div class="col-md-6">
+    <div class="card">
+      <div class="card-body">
+        Write your own content here.
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="card">
+      <div class="card-body">
+        Write your own content here.
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+แบบที่ 3
+
+![DeveloperDashboard](images/adminui/adminui-boxpanel-03.png)
 
 ```html
 <div class="row">
   <div class="col-md-4">
     <div class="card">
-      <div class="card-header">
-        Featured
-      </div>
       <div class="card-body">
-        <h5 class="card-title">Title</h5>
-        <p class="card-text">
-          This is a text box. Write your own content here.
-        </p>
-        <a href="#" class="btn btn-primary">Button</a>
+        Write your own content here.
       </div>
     </div>
   </div>
   <div class="col-md-4">
     <div class="card">
-      <div class="card-header">
-        Featured
-      </div>
       <div class="card-body">
-        <h5 class="card-title">Title</h5>
-        <p class="card-text">
-          This is a text box. Write your own content here.
-        </p>
-        <a href="#" class="btn btn-primary">Button</a>
+        Write your own content here.
       </div>
     </div>
   </div>
+  <div class="col-md-4">
+    <div class="card">
+      <div class="card-body">
+        Write your own content here.
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+แบบที่ 4
+
+![DeveloperDashboard](images/adminui/adminui-boxpanel-04.png)
+
+```html
+<div class="row">
+  <div class="col-md-3">
+    <div class="card">
+      <div class="card-body">
+        Write your own content here.
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="card">
+      <div class="card-body">
+        Write your own content here.
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="card">
+      <div class="card-body">
+        Write your own content here.
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="card">
+      <div class="card-body">
+        Write your own content here.
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+แบบที่ 5
+
+![DeveloperDashboard](images/adminui/adminui-boxpanel-05.png)
+
+```html
+<div class="row">
+  <div class="col-md-8">
+    <div class="card">
+      <div class="card-body">
+        Write your own content here.
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card">
+      <div class="card-body">
+        Write your own content here.
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+แบบที่ 6
+
+![DeveloperDashboard](images/adminui/adminui-boxpanel-06.png)
+
+```html
+<div class="row">
+  <div class="col-md-3">
+    <div class="card">
+      <div class="card-body">
+        Write your own content here.
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="card">
+      <div class="card-body">
+        Write your own content here.
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="card">
+      <div class="card-body">
+        Write your own content here.
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+### Card Panel
+
+![DeveloperDashboard](images/adminui/adminui-card.png)
+
+```html
+<div class="row">
   <div class="col-md-4">
     <div class="card">
       <div class="card-header">
@@ -329,6 +313,10 @@ Create a fully responsive, fluid and nestable grid layout.
 ```
 
 ### table
+
+Table
+
+![DeveloperDashboard](images/adminui/adminui-table.png)
 
 ```html
 <table class="table">
@@ -365,19 +353,29 @@ Create a fully responsive, fluid and nestable grid layout.
 
 ### Button
 
+Button Group
+
+![DeveloperDashboard](images/adminui/adminui-button-group.png)
+
 ```html
 <div class="btn-group btn-group-sm" role="group">
-  <a href="javascript:void(0)" class="btn btn-primary"
-    ><i class="fa fa-download" title="Download"></i
-  ></a>
-  <a href="javascript:void(0)" class="btn btn-primary"
-    ><i class="fa fa-edit" title="Edit"></i
-  ></a>
-  <a href="javascript:void(0)" class="btn btn-danger"
-    ><i class="fa fa-trash" title="Delete"></i
-  ></a>
+  <a href="javascript:void(0)" class="btn btn-primary">
+    <i class="fa fa-download" title="Download"></i>
+  </a>
+  <a href="javascript:void(0)" class="btn btn-primary">
+    <i class="fa fa-edit" title="Edit"></i>
+  </a>
+  <a href="javascript:void(0)" class="btn btn-danger">
+    <i class="fa fa-trash" title="Delete"></i>
+  </a>
 </div>
-<br /><br />
+```
+
+Buttons
+
+![DeveloperDashboard](images/adminui/adminui-button.png)
+
+```html
 <p>
   <a href="javascript:void(0)" class="btn btn-success">Green Button</a>
   <a href="javascript:void(0)" class="btn btn-danger">Red Button</a>
@@ -387,6 +385,10 @@ Create a fully responsive, fluid and nestable grid layout.
 ```
 
 ### Form
+
+Form
+
+![DeveloperDashboard](images/adminui/adminui-form-01.png)
 
 ```html
 <div class="col-md-4">
@@ -461,8 +463,13 @@ Create a fully responsive, fluid and nestable grid layout.
     <button type="submit" class="btn btn-primary">Submit</button>
   </form>
 </div>
+```
 
-<br /><br />
+Form Inline Label
+
+![DeveloperDashboard](images/adminui/adminui-form-02.png)
+
+```html
 <div class="col-md-4">
   <form>
     <div class="form-group row">
@@ -534,8 +541,11 @@ Create a fully responsive, fluid and nestable grid layout.
 
 ### Tab
 
-```html
 <h2>Tab Horizontal</h2>
+
+![DeveloperDashboard](images/adminui/adminui-tab-horizontal.png)
+
+```html
 <div class="row">
   <div class="col-md-4">
     <div class="card">
@@ -610,8 +620,11 @@ Create a fully responsive, fluid and nestable grid layout.
 </div>
 ```
 
-```html
 <h2>Tab Vertical</h2>
+
+![DeveloperDashboard](images/adminui/adminui-tab-vertical.png)
+
+```html
 <div class="row">
   <div class="col-3">
     <div
@@ -678,7 +691,7 @@ Create a fully responsive, fluid and nestable grid layout.
         role="tabpanel"
         aria-labelledby="v-pills-profile-tab"
       >
-        2. Write your own content here.
+        1. Write your own content here.
       </div>
       <div
         class="tab-pane fade"
@@ -686,7 +699,7 @@ Create a fully responsive, fluid and nestable grid layout.
         role="tabpanel"
         aria-labelledby="v-pills-messages-tab"
       >
-        3. Write your own content here.
+        1. Write your own content here.
       </div>
       <div
         class="tab-pane fade"
@@ -694,7 +707,7 @@ Create a fully responsive, fluid and nestable grid layout.
         role="tabpanel"
         aria-labelledby="v-pills-settings-tab"
       >
-        4. Write your own content here.
+        1. Write your own content here.
       </div>
     </div>
   </div>
@@ -706,7 +719,23 @@ Create a fully responsive, fluid and nestable grid layout.
 Bootstrap is a free front-end framework for faster and easier web development. Bootstrap includes HTML and CSS based App Generator.
 Ref. https://getbootstrap.com/
 
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h2 class="pull-left">Title</h2>
+      <span class="pull-right">Click</span>
+      <p>
+        This is a text box.
+      </p>
+    </div>
+  </div>
+ </div>
+
 ```php
 xxxxxxxxxxxxxxxxx
+
+```
+
+```
 
 ```
