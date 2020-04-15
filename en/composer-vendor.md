@@ -55,7 +55,11 @@ Here is an example of filemanager `app's composer.json`:
 
 ## php-function
 
+You can adding the function name in the `php-function` section on your `app’s composer.json` file.
+
 ## php-ini
+
+You can adding extension setting in the `php-ini` section on your `app’s composer.json` file.
 
 ## Disable Vendor Service Provider Auto Discovery
 
