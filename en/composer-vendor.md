@@ -1,11 +1,13 @@
 # Composer Vendor and App Dependency
 
--   [Composer Vendor Dependency](#composer-vendor-dependency)
--   [Disable Vendor Service Provider Auto Discovery](#disable-vendor-service-provider-auto-discovery)
--   [Publishing Vendor Asset](#publishing-vendor-asset)
--   [Define Migrate for Vendor](#define-migrate-for-vendor)
--   [Overwrite Vendor Configuration](#overwrite-vendor-configuration)
--   [Custom Vendor View Directory](#custom-vendor-view-directory)
+- [Composer Vendor Dependency](#composer-vendor-dependency)
+- [php-function](#php-function)
+- [php-ini](#php-ini)
+- [Disable Vendor Service Provider Auto Discovery](#disable-vendor-service-provider-auto-discovery)
+- [Publishing Vendor Asset](#publishing-vendor-asset)
+- [Define Migrate for Vendor](#define-migrate-for-vendor)
+- [Overwrite Vendor Configuration](#overwrite-vendor-configuration)
+- [Custom Vendor View Directory](#custom-vendor-view-directory)
 
 Use Laravel vendor dependency inside your app with composer.
 
@@ -13,28 +15,47 @@ Use Laravel vendor dependency inside your app with composer.
 
 Besides, the Laravel framework which come with `composer.json`, each RVsitebuilder app can contains its own `composer.json`. So you can specify your own vendor dependency and get export to the server separately.
 
+```php
+/packages/vendor-name/project-name/
+                        ├── composer.json
+```
+
 Make sure that you run `composer` command on RVsitebuilder root directory, not inside your app.
 
-Here is an example of scheduler `app's composer.json`:
+Here is an example of filemanager `app's composer.json`:
 
 ```json
 {
-    "name": "rvsitebuilder/scheduler",
-    "require": {
-        "studio/laravel-totem": "^4.0"
-    },
-    "autoload": {
-        "psr-4": {
-            "Rvsitebuilder\\Scheduler\\": "src/"
-        }
-    },
-    "extra": {
-        "laravel": {
-            "providers": ["Rvsitebuilder\\Scheduler\\SchedulerServiceProvider"]
-        }
+  "name": "rvsitebuilder/filemanager",
+  "description": "This filemanager package",
+  "minimum-stability": "stable",
+  "autoload": {
+    "psr-4": {
+      "Rvsitebuilder\\Filemanager\\": "src/"
     }
+  },
+  "extra": {
+    "component": "package",
+    "laravel": {
+      "providers": ["Rvsitebuilder\\Filemanager\\FilemanagerServiceProvider"],
+      "dont-discover": ["alexusmai/laravel-file-manager"]
+    },
+    "rvsitebuilder": {
+      "require": {
+        "php-function": ["json_decode", "file_put_contents"],
+        "php-ini": {
+          "max_execution_time": "30",
+          "memory_limit": "64M"
+        }
+      }
+    }
+  }
 }
 ```
+
+## php-function
+
+## php-ini
 
 ## Disable Vendor Service Provider Auto Discovery
 
@@ -44,7 +65,7 @@ Vendor that comes with view and route, may not display nicely in RVsitebuilder l
 "extra": {
     "laravel": {
         "dont-discover": [
-            "barryvdh/laravel-debugbar"
+            "alexusmai/laravel-file-manager"
         ]
     }
 },
