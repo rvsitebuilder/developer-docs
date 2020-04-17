@@ -1,6 +1,6 @@
 # Installation
 
-- [Geting a developer license](#geting-a-developer-license)
+- [Getting a developer license](#getting-a-developer-license)
 - [Server Requirement](#server-requirement)
 - [RVsitebuilder Docker](#rvsitebuilder-docker)
 - [RVsitebuilder Wizard Install](#rvsitebuilder-wizard-install)
@@ -13,9 +13,11 @@ You can install RVsitebuilder locally on your work station for developing purpos
 1. Register and Login to [`RVsitebuilder`](https://dev.rvsitebuilder.com/)
    ![DeveloperDashboard](images/Installation/Developer-license-index.png)
 
-2. Go to ‘Developer Dashboard’ https://dev.rvsitebuilder.com/devportal
+2. Go to [‘Developer Dashboard’](https://dev.rvsitebuilder.com/devportal)
    ![DeveloperDashboard](images/Installation/Developer-license.png)
-3. Copy ’My Developer Token Auth’ It will require to install locally.
+
+   When you come to `Developer Dashboard` :
+   **Developer Token Auth** You can copy `TMy Developer Token Auth` go to `Verify License your website`,It will require to install locally.
 
 ## Server Requirement
 
@@ -32,7 +34,9 @@ If you don’t have any web server locally, follow these steps.
 
 ## RVsitebuilder Wizard Install
 
-Please follow these steps:
+> {primary} You can install to `cPanel Control Panel Other Control Panel Systems and Non-control panel`.Check out the full [RVsitebuilder Installation](https://user.rvsitebuilder.com/docs/master/en/installation) to get started.
+
+<!-- Please follow these steps:
 
 1 Open browser http://<local_ip>:8080
 
@@ -48,7 +52,7 @@ admin pass: 1234
 
 ![DeveloperDashboard](images/sb7_admin_login.png)
 
-4. Enter developer token at manage app.
+4. Enter developer token at manage app. -->
 
 ## .env configuration
 
