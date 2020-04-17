@@ -8,20 +8,21 @@
 
 ## Getting a developer license
 
-You can install RVsitebuilder locally on your work station for developing purpose. Please register to [`RVsitebuilder Register`](https://dev.rvsitebuilder.com/) to get the developer license.
+You can install RVsitebuilder locally on your work station for developing purpose. Please register to [RVsitebuilder Register](https://dev.rvsitebuilder.com/) to get the developer license.
 
-1. Register and Login to [`RVsitebuilder`](https://dev.rvsitebuilder.com/)
+1. Register and Login to [RVsitebuilder](https://dev.rvsitebuilder.com/)
    ![DeveloperDashboard](images/Installation/Developer-license-index.png)
 
-2. Go to [‘Developer Dashboard’](https://dev.rvsitebuilder.com/devportal)
+2. Go to [Developer Dashboard](https://dev.rvsitebuilder.com/devportal)
    ![DeveloperDashboard](images/Installation/Developer-license.png)
 
    When you come to `Developer Dashboard` :
-   **Developer Token Auth** You can copy `TMy Developer Token Auth` go to `Verify License your website`,It will require to install locally.
+
+   **Developer Token Auth** You can copy `My Developer Token Auth` go to `Verify License your website`,It will require to install locally.
 
 ## Server Requirement
 
-Same as Laravel, https://laravel.com/docs/master/installation#server-requirements.
+Same as [**Laravel Installation**](https://laravel.com/docs/master/installation#server-requirements).
 
 ## RVsitebuilder Docker
 
@@ -34,7 +35,7 @@ If you don’t have any web server locally, follow these steps.
 
 ## RVsitebuilder Wizard Install
 
-> {primary} You can install to `cPanel Control Panel Other Control Panel Systems and Non-control panel`.Check out the full [RVsitebuilder Installation](https://user.rvsitebuilder.com/docs/master/en/installation) to get started.
+> {primary} You can install to `cPanel Control Panel , Other Control Panel Systems and Non-control panel`.Check out the full [RVsitebuilder Installation](https://user.rvsitebuilder.com/docs/master/en/installation) to get started.
 
 <!-- Please follow these steps:
 
