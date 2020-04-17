@@ -1,21 +1,21 @@
 # Installation
 
--   [Geting a developer license](#geting-a-developer-license)
--   [Server Requirement](#server-requirement)
--   [RVsitebuilder Docker](#rvsitebuilder-docker)
--   [RVsitebuilder Wizard Install](#rvsitebuilder-wizard-install)
--   [.env configuration](#env-configuration)
--   //TODO: @amarin How to install for developer
+- [Geting a developer license](#geting-a-developer-license)
+- [Server Requirement](#server-requirement)
+- [RVsitebuilder Docker](#rvsitebuilder-docker)
+- [RVsitebuilder Wizard Install](#rvsitebuilder-wizard-install)
+- [.env configuration](#env-configuration)
 
-## Geting a developer license
+## Getting a developer license
 
-You can install RVsitebuilder locally on your work station for developing purpose. Please register to (https://dev.rvsitebuilder.com/) to get the developer license.
+You can install RVsitebuilder locally on your work station for developing purpose. Please register to [`RVsitebuilder Register`](https://dev.rvsitebuilder.com/) to get the developer license.
 
-1. Register to https://dev.rvsitebuilder.com/
-2. Log in to https://dev.rvsitebuilder.com/
-3. Go to ‘Developer Dashboard’ https://dev.rvsitebuilder.com/devportal
-   ![DeveloperDashboard](images/dev.rvsitebuilder.com_developer_dashboard.png)
-4. Copy ’My Developer Token Auth’ It will require to install locally.
+1. Register and Login to [`RVsitebuilder`](https://dev.rvsitebuilder.com/)
+   ![DeveloperDashboard](images/Installation/Developer-license-index.png)
+
+2. Go to ‘Developer Dashboard’ https://dev.rvsitebuilder.com/devportal
+   ![DeveloperDashboard](images/Installation/Developer-license.png)
+3. Copy ’My Developer Token Auth’ It will require to install locally.
 
 ## Server Requirement
 
@@ -27,8 +27,8 @@ Skip this step, if you want to install on [Laravel Homestead](https://laravel.co
 
 If you don’t have any web server locally, follow these steps.
 
--   [Install for Windows 10](installation-for-windows10.md)
--   [Install for MacOS](installation-for-macos.md)
+- [Install for Windows 10](installation-for-windows10.md)
+- [Install for MacOS](installation-for-macos.md)
 
 ## RVsitebuilder Wizard Install
 
@@ -54,5 +54,5 @@ admin pass: 1234
 
 Different between local and production
 
--   Local
--   Production
+- Local
+- Production
