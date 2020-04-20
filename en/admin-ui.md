@@ -376,12 +376,41 @@ Buttons
 ![DeveloperDashboard](images/adminui/adminui-button.png)
 
 ```html
-<p>
-  <a href="javascript:void(0)" class="btn btn-success">Green Button</a>
-  <a href="javascript:void(0)" class="btn btn-danger">Red Button</a>
-  <a href="javascript:void(0)" class="btn btn-primary">Blue Button</a>
-  <a href="javascript:void(0)" class="btn btn-secondary">Gray Button </a>
-</p>
+ <div class="btn-group btn-group-sm" role="group" >
+    <a href="#" class="btn btn-primary"><i class="fa fa-download" title="Download"></i></a>
+    <a href="#" class="btn btn-primary"><i class="fa fa-edit" title="Edit"></i></a>
+    <a href="#" class="btn btn-danger"><i class="fa fa-trash" title="Delete"></i></a> 
+  </div>
+```
+
+HTML &lt;a&gt; Tag
+```html
+  <p>
+    <a href="#" class="btn btn-success">Green Button</a>
+    <a href="#" class="btn btn-danger">Red Button</a>
+    <a href="#" class="btn btn-primary">Blue Button</a>
+    <a href="#" class="btn btn-secondary">Gray Button </a>
+  </p>
+ ```
+
+HTML &lt;button&gt; Tag
+```html
+  <p>
+    <button class="btn btn-success">Green Button</button>
+    <button class="btn btn-danger">Red Button</button>
+    <button class="btn btn-primary">Blue Button</button>
+    <button class="btn btn-secondary">Gray Button </button>
+  </p>
+```
+
+HTML &lt;input&gt; Tag
+```html
+  <p>
+    <input type="button" class="btn btn-success" value="Green Button" />
+    <input type="button" class="btn btn-danger" value="Red Button" />
+    <input type="button" class="btn btn-primary" value="Blue Button" />
+    <input type="button" class="btn btn-secondary" value="Gray Button" />
+  </p>
 ```
 
 ### Form
