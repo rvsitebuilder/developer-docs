@@ -33,7 +33,7 @@ Use .container-fluid for a full width container, spanning the entire width of th
 </div>
 ```
 
-### Container and Grid
+### Container and Grid Layout
 
 Create a fully responsive, fluid and nestable grid layout.  
 การใช้ Container โดยกำหนดขนาดความกว้างสูงสุดเท่ากับ 1140px เพื่อเหมาะสมกับ Resolution 1366px ภายในประกอบด้วย Grid ดังนี้
@@ -630,7 +630,6 @@ Form Inline Label
     <div
       class="nav flex-column nav-pills"
       id="v-pills-tab"
-      role="tablist"
       aria-orientation="vertical"
     >
       <a
@@ -716,26 +715,225 @@ Form Inline Label
 
 ## Admin UI Example
 
-Bootstrap is a free front-end framework for faster and easier web development. Bootstrap includes HTML and CSS based App Generator.
-Ref. https://getbootstrap.com/
+ยกตัวอย่างการนำ Bootstrap Framework มาใช้ในโปรแกรม
 
-<div class="container">
+![DeveloperDashboard](images/adminui/example-adminui.png)
+
+```html
+<div class="container-fluid">
   <div class="row">
-    <div class="col-md-12">
-      <h2 class="pull-left">Title</h2>
-      <span class="pull-right">Click</span>
-      <p>
-        This is a text box.
-      </p>
+    <div class="col-md-4">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-body bg-light text-secondary">
+              <div class="title">
+                <h3 class="pull-left text-dark">Total Active</h3>
+                <h5 class="pull-right text-primary">
+                  <i class="fa fa-globe"></i>
+                </h5>
+              </div>
+              <br clear="all" />
+              <div class="">
+                1,500 Website
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-body bg-light text-secondary">
+              <div class="title">
+                <h3 class="pull-left text-dark">License</h3>
+                <h5 class="pull-right text-warning">
+                  <i class="fa fa-folder-open"></i>
+                </h5>
+              </div>
+              <br clear="all" />
+              <div class="">
+                100 License
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-8">
+      <div class="card bg-light" style="min-height: 243px;">
+        <div class="card-body">
+          <div class="title">
+            <h3 class="pull-left">Welcome</h3>
+            <h5 class="pull-right text-primary"><i class="fa fa-home"></i></h5>
+          </div>
+          <br clear="all" />
+          <div class="text-secondary">
+            This is an excellent place for you to add a paragraph and let your
+            visitors know more about you and your services. This is a text box.
+            This is an excellent place for you to add a paragraph and let your
+            visitors know more about you and your services. This is a text box.
+            This is an excellent place for you to add a paragraph and let your
+            visitors know more about you and your services. This is a text box.
+          </div>
+        </div>
+      </div>
     </div>
   </div>
- </div>
+  <div class="row">
+    <div class="col-md-3">
+      <div class="card bg-light text-info border border-info">
+        <div class="card-body">
+          <div class="title">
+            <h4 class="pull-left text-dark">Users</h4>
+            <span class="pull-right"><h4 class="fa fa-user-circle "></h4></span>
+          </div>
+          <br clear="all" />
+          <div style="font-size:40px;" class="">
+            500
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card bg-light text-primary border border-primary">
+        <div class="card-body">
+          <div class="title">
+            <h4 class="pull-left text-dark">Pages</h4>
+            <span class="pull-right"><h4 class="fa fa-file"></h4></span>
+          </div>
+          <br clear="all" />
+          <div style="font-size:40px;" class="">
+            20
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card bg-light text-success border border-success">
+        <div class="card-body">
+          <div class="title">
+            <h4 class="pull-left text-dark">Posts</h4>
+            <span class="pull-right"><h4 class="fa fa-comment"></h4></span>
+          </div>
+          <br clear="all" />
+          <div style="font-size:40px;" class="">
+            40
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card bg-light text-danger border border-danger">
+        <div class="card-body">
+          <div class="title">
+            <h4 class="pull-left text-dark">System</h4>
+            <span class="pull-right"><h4 class="fa fa-database"></h4></span>
+          </div>
+          <br clear="all" />
+          <div style="font-size:40px;">
+            5
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-```php
-xxxxxxxxxxxxxxxxx
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card" style="min-height: 290px;">
+        <div class="card-header">
+          <h5 class="pull-left">Featured</h5>
+          <span class="pull-right"><i class="fa fa-share-alt"></i> Click</span>
+        </div>
+        <div class="card-body text-secondary">
+          <h5 class="card-title">Title</h5>
+          <p class="card-text">
+            This is a text box. Write your content here. This is an excellent
+            place for you to add a paragraph and let your visitors know more
+            about you and your services.
+          </p>
+          <a href="#" class="btn btn-primary">Button</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card" style="min-height: 290px;">
+        <div class="card-body">
+          <h5>All Users</h5>
+          <table class="table">
+            <thead>
+              <tr class="text-primary">
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Email</th>
+              </tr>
+            </thead>
+            <tbody data-spy="scroll">
+              <tr>
+                <th scope="row">1</th>
+                <td>Morgan</td>
+                <td>Lavender</td>
+                <td class="text-success">m@company.com</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td class="text-success">j@company.com</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Cristina</td>
+                <td>Smith</td>
+                <td class="text-success">c@company.com</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
 
-```
-
-```
-
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-body">
+          <h4>All Users</h4>
+          <table class="table">
+            <thead>
+              <tr class="text-primary">
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Email</th>
+              </tr>
+            </thead>
+            <tbody data-spy="scroll">
+              <tr>
+                <th scope="row">1</th>
+                <td>Morgan</td>
+                <td>Lavender</td>
+                <td class="text-success">morgan@company.com</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td class="text-success">jacob@company.com</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Cristina</td>
+                <td>Smith</td>
+                <td class="text-success">cristina@company.com</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 ```
