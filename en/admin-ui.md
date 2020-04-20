@@ -375,14 +375,6 @@ Buttons
 
 ![DeveloperDashboard](images/adminui/adminui-button.png)
 
-```html
- <div class="btn-group btn-group-sm" role="group" >
-    <a href="#" class="btn btn-primary"><i class="fa fa-download" title="Download"></i></a>
-    <a href="#" class="btn btn-primary"><i class="fa fa-edit" title="Edit"></i></a>
-    <a href="#" class="btn btn-danger"><i class="fa fa-trash" title="Delete"></i></a> 
-  </div>
-```
-
 HTML &lt;a&gt; Tag
 ```html
   <p>
@@ -414,8 +406,6 @@ HTML &lt;input&gt; Tag
 ```
 
 ### Form
-
-Form
 
 ![DeveloperDashboard](images/adminui/adminui-form-01.png)
 
