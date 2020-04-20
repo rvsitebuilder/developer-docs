@@ -375,9 +375,8 @@ Buttons
 
 ![DeveloperDashboard](images/adminui/adminui-button.png)
 
-
+HTML a Tag
 ```html
-HTML &lt;a&gt; Tag
   <p>
     <a href="#" class="btn btn-success">Green Button</a>
     <a href="#" class="btn btn-danger">Red Button</a>
@@ -386,9 +385,8 @@ HTML &lt;a&gt; Tag
   </p>
  ```
 
-
+HTML button Tag
 ```html
-HTML &lt;button&gt; Tag
   <p>
     <button class="btn btn-success">Green Button</button>
     <button class="btn btn-danger">Red Button</button>
@@ -397,9 +395,8 @@ HTML &lt;button&gt; Tag
   </p>
 ```
 
-
+HTML input Tag
 ```html
-HTML &lt;input&gt; Tag
   <p>
     <input type="button" class="btn btn-success" value="Green Button" />
     <input type="button" class="btn btn-danger" value="Red Button" />
