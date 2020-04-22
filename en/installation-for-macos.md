@@ -1,17 +1,17 @@
 # Installation for MacOS
 
--   [Install on Local Web Server](#install-on-local-web-server)
--   [Server Requirement](#server-requirement)
--   [Install step](#install-step)
--   [Install on Docker](#install-on-docker)
-    -   [Install Docker](#install-docker)
-    -   [Install step](#install-step-1)
+- [Install on Local Web Server](#install-on-local-web-server)
+- [Server Requirement](#server-requirement)
+- [Install step](#install-step)
+- [Install on Docker](#install-on-docker)
+  - [Install Docker](#install-docker)
+  - [Install step](#install-step-1)
 
 ## Install on Local Web Server
 
 ### Server Requirement
 
-Same as Laravel, https://laravel.com/docs/master/installation#server-requirements.
+Same as Laravel, https://laravel.com/docs/5.8/installation#server-requirements.
 
 ### Install step
 

@@ -1,11 +1,11 @@
 # App DB Migration
 
--   [Creating Migration](#creating-migration)
--   [Seeding](#seeding)
--   [Registering App on App table](#registering-app-on-app-table)
--   [Define Migration on App's Service Provider](#define-migration-on-apps-service-provider)
+- [Creating Migration](#creating-migration)
+- [Seeding](#seeding)
+- [Registering App on App table](#registering-app-on-app-table)
+- [Define Migration on App's Service Provider](#define-migration-on-apps-service-provider)
 
-> {info} If you are not familiar with its concept. Check out the full [Laravel Migration documentation](https://laravel.com/docs/master/migrations) to get started.
+> {info} If you are not familiar with its concept. Check out the full [Laravel Migration documentation](https://laravel.com/docs/5.8/migrations) to get started.
 
 ## Creating Migration
 
@@ -20,8 +20,8 @@ Create Laravel migration file and keep it in your `app’s /database/migrations`
 
 To avoid as much as possible troubles, you migration should:
 
--   Database table should have a prefix.
--   Creating schema should wrap with the `Schema::hasTable` or `Schema::hasColumn`.
+- Database table should have a prefix.
+- Creating schema should wrap with the `Schema::hasTable` or `Schema::hasColumn`.
 
 ```php
         if (!Schema::hasTable('app_table')) {

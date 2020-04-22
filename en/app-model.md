@@ -4,7 +4,7 @@
 - [Accessing Model](#accessing-model)
 - [Extending RVsitebuilder Default Models using Meta Table](#extending-rvsitebuilder-default-models-using-meta-table)
 
-> {info} If you are not familiar with its concept. Check out the full [Laravel Eloquent ORM documentation](https://laravel.com/docs/master/eloquent) to get started.
+> {info} If you are not familiar with its concept. Check out the full [Laravel Eloquent ORM documentation](https://laravel.com/docs/5.8/eloquent) to get started.
 
 ## Creating Model
 

@@ -22,11 +22,11 @@ You can install RVsitebuilder locally on your work station for developing purpos
 
 ## Server Requirement
 
-Same as [**Laravel Installation**](https://laravel.com/docs/master/installation#server-requirements).
+Same as [**Laravel Installation**](https://laravel.com/docs/5.8/installation#server-requirements).
 
 ## RVsitebuilder Docker
 
-Skip this step, if you want to install on [Laravel Homestead](https://laravel.com/docs/master/homestead), [Laravel Valet](https://laravel.com/docs/master/valet), or your own web server.
+Skip this step, if you want to install on [Laravel Homestead](https://laravel.com/docs/5.8/homestead), [Laravel Valet](https://laravel.com/docs/5.8/valet), or your own web server.
 
 If you don’t have any web server locally, follow these steps.
 

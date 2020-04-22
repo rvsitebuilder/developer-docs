@@ -1,11 +1,11 @@
 # Directory Structure
 
--   [Laravel Directory Structure](#laravel-directory-structure)
--   [RVsitebuilder App Directory Structure](#rvsitebuilder-app-directory-structure)
+- [Laravel Directory Structure](#laravel-directory-structure)
+- [RVsitebuilder App Directory Structure](#rvsitebuilder-app-directory-structure)
 
 ## Laravel Directory Structure
 
-Beside [Laravel root directory and app directory](https://laravel.com/docs/master/structure), we introduce **packages** directory under root directory.
+Beside [Laravel root directory and app directory](https://laravel.com/docs/5.8/structure), we introduce **packages** directory under root directory.
 
 ```diff
     ├── app

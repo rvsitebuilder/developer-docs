@@ -1,10 +1,10 @@
 # Routing
 
--   [Creating Route](#creating-route)
--   [Admin Route](#admin-route)
--   [User Route](#user-route)
+- [Creating Route](#creating-route)
+- [Admin Route](#admin-route)
+- [User Route](#user-route)
 
-> {info} If you are not familiar with its concept. Check out the full [Laravel Routing documentation](https://laravel.com/docs/master/routing) to get started.
+> {info} If you are not familiar with its concept. Check out the full [Laravel Routing documentation](https://laravel.com/docs/5.8/routing) to get started.
 
 ## Creating Route
 
