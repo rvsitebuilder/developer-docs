@@ -4,6 +4,8 @@
 - [Server Requirement](#server-requirement)
 - [RVsitebuilder Docker](#rvsitebuilder-docker)
 - [RVsitebuilder Web Installation](#rvsitebuilder-web-installation)
+  - [Create Database on cPanel](#create-database-on-cpanel)
+  - [Create Database on Direct Admin](#create-database-on-direct-admin)
 - [.env configuration](#env-configuration)
 
 ## Getting a developer license
@@ -50,21 +52,23 @@ RVsitebuilder 7 can also install on every domain name. **If you have a Host Prov
 
 3. Create a database, perform the following steps to create the MySQL database.
 
-   3.1 Click icon to create MySQL® databases.
+### Create Database on cPanel
 
-   ![image](images/install_nocp/create-db-step1.png)
+1.  Click icon to create MySQL® databases.
 
-   3.2 In the New Database text box, enter a name for the database and click create database.
+    ![image](images/install_nocp/create-db-step1.png)
 
-   ![image](images/install_nocp/create-db-step2.png)
+2.  In the New Database text box, enter a name for the database and click create database.
 
-   3.3 A new interface will appear. Click Go Back.
+    ![image](images/install_nocp/create-db-step2.png)
 
-   ![image](images/install_nocp/create-db-step3.png)
+3.  A new interface will appear. Click Go Back.
 
-   3.4 The new database appears in the Current Databases table.
+    ![image](images/install_nocp/create-db-step3.png)
 
-   ![image](images/install_nocp/create-db-step4.png)
+4.  The new database appears in the Current Databases table.
+
+    ![image](images/install_nocp/create-db-step4.png)
 
 **After you created a database, add users to the database and configure their privileges. To create a new user account, perform the following steps:**
 
@@ -110,6 +114,8 @@ RVsitebuilder 7 can also install on every domain name. **If you have a Host Prov
    6. completed.
 
       ![image](images/install_nocp/upload5.png)
+
+### Create Database on Direct Admin
 
 4. Install RVsitebuilder directly on your domain name.
 
