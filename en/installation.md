@@ -4,6 +4,13 @@
 - [Server Requirement](#server-requirement)
 - [RVsitebuilder Docker](#rvsitebuilder-docker)
 - [RVsitebuilder Web Installation](#rvsitebuilder-web-installation)
+  - [Step 1 Get a domain name](#step-1-get-a-domain-name)
+  - [Step 2 Domain configuration](#step-2-domain-configuration)
+  - [Step 3 Create a database](#step-3-create-a-database)
+    - [cPanel Control panel](#cpanel-control-panel)
+    - [Direct Admin Control panel](#direct-admin-control-panel)
+  - [Step 4 Install RVsitebuilder](#step-4-install-rvsitebuilder)
+  - [Step 5 Once the installation is completed.](#step-5-once-the-installation-is-completed)
 - [.env configuration](#env-configuration)
 
 ## Getting a developer license
@@ -37,20 +44,26 @@ If you don’t have any web server locally, follow these steps.
 
 RVsitebuilder 7 can also install on every domain name. **If you have a Host Provider who provides you a control panel account by Control Panel Installation above. You don't have to install it by yourself and can ignore this.**
 
-1. Get a domain name on a server that already has RVsitebuilder license from your host provider or find one in our [hosting partners](https://rvsitebuilder.com/hosting-partner/) list.
+### Step 1 Get a domain name
 
-2. Make your domain configuration meet with the following requirements.
+Get a domain name on a server that already has RVsitebuilder license from your host provider or find one in our [hosting partners](https://rvsitebuilder.com/hosting-partner/) list.
 
-   - Domain name must run on PHP7.1.3 or above.
-   - php extension: 'mysqlnd','pdo','gd','curl','iconv','mbstring','zip','posix_getpwuid','json'
-   - php ini config 'memory_limit' => 64M
-   - Firewall on your server doesn't block the following domains.  
-     download.rvglobalsoft.com  
-     Files.mirror1.rvsitebuilder.com
+### Step 2 Domain configuration
 
-3. Create a database, perform the following steps to create the MySQL database.
+Make your domain configuration meet with the following requirements.
 
-<h3>cPanel Control panel</h3>
+- Domain name must run on PHP7.1.3 or above.
+- php extension: 'mysqlnd','pdo','gd','curl','iconv','mbstring','zip','posix_getpwuid','json'
+- php ini config 'memory_limit' => 64M
+- Firewall on your server doesn't block the following domains.  
+  download.rvglobalsoft.com  
+  Files.mirror1.rvsitebuilder.com
+
+### Step 3 Create a database
+
+Create a database, perform the following steps to create the MySQL database.
+
+#### cPanel Control panel
 
 1.  Click icon to create MySQL® databases.
 
@@ -113,8 +126,7 @@ RVsitebuilder 7 can also install on every domain name. **If you have a Host Prov
 
       ![image](images/install_nocp/upload5.png)
 
-<!-- ### Direct Admin Control panel -->
-<h3>Direct Admin Control panel</h3>
+#### Direct Admin Control panel
 
 1. Login to Direct Admin Control panel as End User.
 
@@ -190,27 +202,30 @@ RVsitebuilder 7 can also install on every domain name. **If you have a Host Prov
    6.7 completed.
    ![image](images/install_nocp/upload-da-7.png)
 
-4) Install RVsitebuilder directly on your domain name.
+### Step 4 Install RVsitebuilder
 
-   1. Call the setup.php script for your domain name on browser http://mydomainname.com/rvsitebuilder/setup.php
+Install RVsitebuilder directly on your domain name.
 
-      ![image](images/install_nocp/Install-nocp-step1.png)
+1.  Call the setup.php script for your domain name on browser http://mydomainname.com/rvsitebuilder/setup.php
 
-   2. Database and FTP setup
+    ![image](images/install_nocp/Install-nocp-step1.png)
 
-      ![image](images/install_nocp/Install-nocp-step2.png)
+2.  Database and FTP setup
 
-   3. website properties setup
+    ![image](images/install_nocp/Install-nocp-step2.png)
 
-      ![image](images/install_nocp/Install-nocp-step3.png)
+3.  website properties setup
 
-   4. Accept agreement and install.
+    ![image](images/install_nocp/Install-nocp-step3.png)
 
-      ![image](images/install_nocp/Install-nocp-step4-1.png)
-      ![image](images/install_nocp/Install-nocp-step4-2.png)
+4.  Accept agreement and install.
 
-5) Once the installation is completed.
-   RVsitebuilder CMS is ready to [create website]((website-design.md#create-a-new-site) on your domain now!
+    ![image](images/install_nocp/Install-nocp-step4-1.png)
+    ![image](images/install_nocp/Install-nocp-step4-2.png)
+
+### Step 5 Once the installation is completed.
+
+RVsitebuilder CMS is ready to [create website]((website-design.md#create-a-new-site) on your domain now!
 
 ![image](images/install_nocp/Install-nocp-step-login.png)
 
