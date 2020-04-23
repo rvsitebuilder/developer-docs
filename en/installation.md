@@ -4,8 +4,6 @@
 - [Server Requirement](#server-requirement)
 - [RVsitebuilder Docker](#rvsitebuilder-docker)
 - [RVsitebuilder Web Installation](#rvsitebuilder-web-installation)
-    - [cPanel Control panel](#cpanel-control-panel)
-    - [Direct Admin Control panel](#direct-admin-control-panel)
 - [.env configuration](#env-configuration)
 
 ## Getting a developer license
@@ -52,7 +50,7 @@ RVsitebuilder 7 can also install on every domain name. **If you have a Host Prov
 
 3. Create a database, perform the following steps to create the MySQL database.
 
-#### cPanel Control panel
+<h3>cPanel Control panel</h3>
 
 1.  Click icon to create MySQL® databases.
 
@@ -96,7 +94,7 @@ RVsitebuilder 7 can also install on every domain name. **If you have a Host Prov
 
    1. Download RVsitebuilder Setup wizard https://files.mirror1.rvsitebuilder.com/download/rvsitebuilderinstaller/setup to your local computer.
 
-   2. Click botton `Upload`.
+   2. Click button `Upload`.
 
       ![image](images/install_nocp/upload1.png)
 
@@ -115,9 +113,84 @@ RVsitebuilder 7 can also install on every domain name. **If you have a Host Prov
 
       ![image](images/install_nocp/upload5.png)
 
-#### Direct Admin Control panel
+<!-- ### Direct Admin Control panel -->
+<h3>Direct Admin Control panel</h3>
 
-4. Install RVsitebuilder directly on your domain name.
+1. Login to Direct Admin Control panel as End User.
+
+2. Click Navigate to Account Manager > **MySQL Management**
+   ![image](images/install_nocp/create-db-da-step1.png)
+
+3. Click `Create New Database` Button
+   ![image](images/install_nocp/create-db-da-step2.png)
+
+   **After you click Create New Database.**
+
+   - Type a name for Database.
+   - Type a username for the database. The username can be the same as the DB name or a different one.
+   - Type a Password for Database User.
+
+4. Click `Create Database` Button to complete database creation
+
+   ![image](images/install_nocp/create-db-da-step3.png)
+
+5. The new database appears in the Current Databases table.
+
+   **To add a user to a database, perform the following steps:**
+   Select the database which the database user is assigned to
+   ![image](images/install_nocp/create-db-da-step4.png)
+
+   Click `Modify Privileges`
+   ![image](images/install_nocp/create-db-da-step5.png)
+
+   Select the checkboxes that correspond to the privileges that you wish to **Grant** to the user.Click `Change` button.
+   ![image](images/install_nocp/create-db-da-step6.png)
+
+6. Download RVsitebuilder Setup wizard
+
+   6.1 Download [RVsitebuilder Setup wizard](https://files.mirror1.rvsitebuilder.com/download/rvsitebuilderinstaller/setup) to your local computer.
+
+   **After you Download completed**
+
+   - You will get a file named `rvsitebuilderinstaller%2Fsetup.zip`
+   - You must change the file name to `rvsitebuilderinstallersetup.zip`.By simply removing **%2F**
+
+   ![image](images/install_nocp/dowload.png)
+   ![image](images/install_nocp/dowload-rename.png)
+
+   6.2 Click Navigate to System Info & Files > **File Manager**
+
+   ![image](images/install_nocp/upload-da-1.png)
+
+   6.3 Click `public_html` directory.
+
+   ![image](images/install_nocp/upload-da-2.png)
+
+   6.4 Click `Upload File` Button.
+
+   ![image](images/install_nocp/upload-da-3.png)
+
+   6.5 A Popup interface will appear. Click selete and choose file download RVsitebuilder Setup wizard.
+
+   Waiting a file upload show a complete state success.
+   Click `Upload` Button.
+
+   ![image](images/install_nocp/upload-da-4.png)
+
+   6.6 Mouse hover **rvsitebuilderinstallersetup.zip** and choose `Extract` .
+
+   ![image](images/install_nocp/upload-da-5.png)
+
+   A Popup interface will appear. Extract **rvsitebuilderinstallersetup.zip** to `"/domains/yourdomain/public_html"`.
+
+   Click `Extract` Button.
+
+   ![image](images/install_nocp/upload-da-6.png)
+
+   6.7 completed.
+   ![image](images/install_nocp/upload-da-7.png)
+
+4) Install RVsitebuilder directly on your domain name.
 
    1. Call the setup.php script for your domain name on browser http://mydomainname.com/rvsitebuilder/setup.php
 
@@ -136,10 +209,10 @@ RVsitebuilder 7 can also install on every domain name. **If you have a Host Prov
       ![image](images/install_nocp/Install-nocp-step4-1.png)
       ![image](images/install_nocp/Install-nocp-step4-2.png)
 
-5. Once the installation is completed.
+5) Once the installation is completed.
    RVsitebuilder CMS is ready to [create website]((website-design.md#create-a-new-site) on your domain now!
 
-   ![image](images/install_nocp/Install-nocp-step-login.png)
+![image](images/install_nocp/Install-nocp-step-login.png)
 
 ## .env configuration
 
