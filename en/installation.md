@@ -4,13 +4,8 @@
 - [Server Requirement](#server-requirement)
 - [RVsitebuilder Docker](#rvsitebuilder-docker)
 - [RVsitebuilder Web Installation](#rvsitebuilder-web-installation)
-  - [Domain name](#domain-name)
-  - [Domain configuration](#domain-configuration)
-  - [Create a database](#create-a-database)
     - [cPanel Control panel](#cpanel-control-panel)
     - [Direct Admin Control panel](#direct-admin-control-panel)
-    - [Install RVsitebuilder](#install-rvsitebuilder)
-  - [RVsitebuilder CMS](#rvsitebuilder-cms)
 - [.env configuration](#env-configuration)
 
 ## Getting a developer license
@@ -44,24 +39,18 @@ If you don’t have any web server locally, follow these steps.
 
 RVsitebuilder 7 can also install on every domain name. **If you have a Host Provider who provides you a control panel account by Control Panel Installation above. You don't have to install it by yourself and can ignore this.**
 
-### Domain name
+1. Get a domain name on a server that already has RVsitebuilder license from your host provider or find one in our [hosting partners](https://rvsitebuilder.com/hosting-partner/) list.
 
-Get a domain name on a server that already has RVsitebuilder license from your host provider or find one in our [hosting partners](https://rvsitebuilder.com/hosting-partner/) list.
+2. Make your domain configuration meet with the following requirements.
 
-### Domain configuration
+   - Domain name must run on PHP7.1.3 or above.
+   - php extension: 'mysqlnd','pdo','gd','curl','iconv','mbstring','zip','posix_getpwuid','json'
+   - php ini config 'memory_limit' => 64M
+   - Firewall on your server doesn't block the following domains.  
+     download.rvglobalsoft.com  
+     Files.mirror1.rvsitebuilder.com
 
-Make your domain configuration meet with the following requirements.
-
-- Domain name must run on PHP7.1.3 or above.
-- php extension: 'mysqlnd','pdo','gd','curl','iconv','mbstring','zip','posix_getpwuid','json'
-- php ini config 'memory_limit' => 64M
-- Firewall on your server doesn't block the following domains.  
-  download.rvglobalsoft.com  
-  Files.mirror1.rvsitebuilder.com
-
-### Create a database
-
-1. Create a database, perform the following steps to create the MySQL database.
+3. Create a database, perform the following steps to create the MySQL database.
 
 #### cPanel Control panel
 
@@ -128,33 +117,29 @@ Make your domain configuration meet with the following requirements.
 
 #### Direct Admin Control panel
 
-#### Install RVsitebuilder
+4. Install RVsitebuilder directly on your domain name.
 
-Install RVsitebuilder directly on your domain name.
+   1. Call the setup.php script for your domain name on browser http://mydomainname.com/rvsitebuilder/setup.php
 
-1.  Call the setup.php script for your domain name on browser http://mydomainname.com/rvsitebuilder/setup.php
+      ![image](images/install_nocp/Install-nocp-step1.png)
 
-    ![image](images/install_nocp/Install-nocp-step1.png)
+   2. Database and FTP setup
 
-2.  Database and FTP setup
+      ![image](images/install_nocp/Install-nocp-step2.png)
 
-    ![image](images/install_nocp/Install-nocp-step2.png)
+   3. website properties setup
 
-3.  website properties setup
+      ![image](images/install_nocp/Install-nocp-step3.png)
 
-    ![image](images/install_nocp/Install-nocp-step3.png)
+   4. Accept agreement and install.
 
-4.  Accept agreement and install.
+      ![image](images/install_nocp/Install-nocp-step4-1.png)
+      ![image](images/install_nocp/Install-nocp-step4-2.png)
 
-    ![image](images/install_nocp/Install-nocp-step4-1.png)
-    ![image](images/install_nocp/Install-nocp-step4-2.png)
+5. Once the installation is completed.
+   RVsitebuilder CMS is ready to [create website]((website-design.md#create-a-new-site) on your domain now!
 
-### RVsitebuilder CMS
-
-Once the installation is completed.
-RVsitebuilder CMS is ready to [create website]((website-design.md#create-a-new-site) on your domain now!
-
-    ![image](images/install_nocp/Install-nocp-step-login.png)
+   ![image](images/install_nocp/Install-nocp-step-login.png)
 
 ## .env configuration
 
