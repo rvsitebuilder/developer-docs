@@ -1,25 +1,10 @@
 # Color Picker tutorial
 
--   [Create Widget](#create-widget)
--   [Webpack](#webpack)
--   [Color Picker](#color-picker)
+- [Webpack](#webpack)
+- [Color Picker](#color-picker)
 
-## Create Widget
+> {info} This can be done after the `Developer App` has been installed and `Created widget`.Check out the full [RVsitebuilder App](creating-new-app.md) and [RVsitebuilder Widget](rvsitebuilder-widget.md) to get started.
 
-จะอธิบายตั้งแต่เริ่มสร้าง app
-ไปที่ rightbar on top click Apps แล้วเลือก ![icon developer](images/iconDeveloper.png)
-![create app](images/createApp_colorpicker1.png)
-<br>
-เลือก Generate App ![icon genapp](images/icon_genapp.png)
-![create app](images/createApp_colorpicker2.png)
-<br>
-เราจะทดสอบสร้าง app ขึ้นมาแบบ ง่ายๆ โดยใช้ชื่อ App name ว่า "vendorname" และชื่อ project name ว่า "projectname"
-![appgen](images/createapp_colorpicker3.png)
-
-กดสร้างที่ generator widget
-<br>
-![getwidget](images/genwidget_colorpicker1.png)
-<br>
 ตั้งชื่อ widget ที่จะทดสอบว่า "widget-colorpicker"
 ![getwidget](images/genwidget_colorpicker2.png)
 <br>
