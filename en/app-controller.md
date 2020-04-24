@@ -1,10 +1,10 @@
 # App Controller
 
--   [Creating Controller](#creating-controller)
--   [Admin Controller](#admin-controller)
--   [User Controller](#user-controller)
--   [Request Validation](#request-validation)
-    > {info} If you are not familiar with its concept. Check out the full [Laravel Controller documentation](https://laravel.com/docs/master/controllers) to get started.
+- [Creating Controller](#creating-controller)
+- [Admin Controller](#admin-controller)
+- [User Controller](#user-controller)
+- [Request Validation](#request-validation)
+  > {info} If you are not familiar with its concept. Check out the full [Laravel Controller documentation](https://laravel.com/docs/5.8/controllers) to get started.
 
 ## Creating Controller
 

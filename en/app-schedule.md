@@ -1,10 +1,10 @@
 # Schedule and Queue
 
--   [Cron](#cron)
--   [Schedule](#schedule)
--   [Queue](#queue)
+- [Cron](#cron)
+- [Schedule](#schedule)
+- [Queue](#queue)
 
-> {info} If you are not familiar with its concept. Check out the full [Laravel Task Scheduling documentation](https://laravel.com/docs/master/scheduling) and [Laravel Queues documentation](https://laravel.com/docs/master/queues) to get started.
+> {info} If you are not familiar with its concept. Check out the full [Laravel Task Scheduling documentation](https://laravel.com/docs/5.8/scheduling) and [Laravel Queues documentation](https://laravel.com/docs/5.8/queues) to get started.
 
 ## Cron
 

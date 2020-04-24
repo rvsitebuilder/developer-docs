@@ -8,7 +8,7 @@
 - [Get Custom Values on your config file](#get-custom-values-on-your-config-file)
 - [Config Form Request Validation](#config-form-request-validation)
 
-> {info} If you are not familiar with its concept. Check out the full [Laravel Configuration documentation](https://laravel.com/docs/master/configuration) to get started.
+> {info} If you are not familiar with its concept. Check out the full [Laravel Configuration documentation](https://laravel.com/docs/5.8/configuration) to get started.
 
 ## Config
 

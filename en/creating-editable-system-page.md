@@ -1,9 +1,11 @@
 # Creating Editable System Page
 
--   [Migration](#migration)
-    -   [Master System Page](#master-system-page)
--   [Push wysiwyg-section blade stack](#push-wysiwyg-section-blade-stack)
--   [Creating route for editview](#creating-route-for-editview)
+- [Migration](#migration)
+  - [Master System Page](#master-system-page)
+- [System page blade file](#system-page-blade-file)
+  - [wysiwyg-section blade stack](#wysiwyg-section-blade-stack)
+  - [Control layout editor tools](#control-layout-editor-tools)
+- [Creating route for editview](#creating-route-for-editview)
 
 To make your system page editable, you need to do the following:
 
@@ -112,7 +114,9 @@ CoreApps::where('app_name', '=', 'rvsitebuilder/core') // vendor-name/project-na
         ->update(['master_systempage_id' => 12 ]); // Id core_system_page
 ```
 
-## Push wysiwyg-section blade stack
+## System page blade file
+
+### wysiwyg-section blade stack
 
 Add the following code at the bottom of your editable system page's blade file.
 
@@ -128,6 +132,24 @@ Add the following code at the bottom of your editable system page's blade file.
 
 Only `editable system page` is required. If your user page is not visually editable on admin WYSIWYG, you don't need it.
 
+### Control layout editor tools
+
+You can control layout editor tools in section and block with a `<div class="mg">...</div>` element.you need to do the following:
+
+**`Delete`** you can add class `donotdelete` for **hide** Delete Button in section and block.
+
+**`Duplicate`** you can add class `mgwidget` for **hide** Duplicate Button in section and block.
+
 ## Creating route for editview
 
 editmode
+
+<!-- TODO:: RVsitebuilder 7.4 -->
+
+<!-- ## Section Layout Template -->
+
+<!-- ### Generic layout (compatible for all CSS framework) -->
+
+<!-- ### UIKit3 layout -->
+
+<!-- ### Bootstrap4 layout -->
