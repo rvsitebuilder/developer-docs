@@ -167,7 +167,6 @@ Create a database, perform the following steps to create the MySQL database.
    - You will get a file named `rvsitebuilderinstaller%2Fsetup.zip`
    - You must change the file name to `rvsitebuilderinstallersetup.zip`.By simply removing **%2F**
 
-   ![image](images/install_nocp/dowload.png)
    ![image](images/install_nocp/dowload-rename.png)
 
    6.2 Click Navigate to System Info & Files > **File Manager**
