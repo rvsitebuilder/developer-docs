@@ -36,7 +36,7 @@ On your `app's service provider`, load your config under `register` method.
 ```php
 public function register()
 {
-    $this->mergeConfigFrom(__DIR__.'/../config/config.php', 'project-name');
+    $this->mergeConfigFrom(__DIR__.'/../config/config.php', 'vendor-name/project-name');
 }
 ```
 
@@ -44,10 +44,10 @@ public function register()
 
 ## Access App's Configuration
 
-The configuration values may be accessed using "dot" syntax, which includes the `project-name` declared on `mergeConfigFrom` and the `key` on the your config.php.
+The configuration values may be accessed using "dot" syntax, which includes the `vendor-name/project-name` declared on `mergeConfigFrom` and the `key` on the your config.php.
 
 ```php
-config('project-name.key');
+config('vendor-name/project-name.key');
 ```
 
 ## Config Admin Interface
@@ -66,8 +66,8 @@ public function boot()
 
 protected function defineConfigInterface()
 {
-    // app('rvsitebuilderService')->siteConfigInterface('tab-name','project-name::blade-file-path');
-    app('rvsitebuilderService')->siteConfigInterface('config','project-name::admin.config');
+    // app('rvsitebuilderService')->siteConfigInterface('tab-name','app-name::blade-file-path');
+    app('rvsitebuilderService')->siteConfigInterface('config','vendor-name/project-name::admin.config');
 }
 ```
 
@@ -78,7 +78,11 @@ Here is an example of config blade file:
 ```html
 <label>Github : </label>
 <div class="">
-  <input type="text" name="key" value="config('project-name.key')" />
+  <input
+    type="text"
+    name="key"
+    value="config('vendor-name/project-name.key')"
+  />
 </div>
 ```
 
@@ -116,7 +120,7 @@ Use `RvsitebuilderService::getConfig` to get the custom config values from `/sto
 ```php
 return
 [
-    'key' = RvsitebuilderService::getConfig('project-name.key', 'defaultValue')
+    'key' = RvsitebuilderService::getConfig('vendor-name/project-name.key', 'defaultValue')
 ]
 ```
 
