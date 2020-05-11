@@ -41,7 +41,7 @@ Here is an example of `views/admin/layouts/app.blade.php`
 @extends('admin.layouts.master')
 
 @section('leftmenu')
-	@include('admin.includes.leftmenu', ['project-name' => "vendor-name/project-name"])
+	@include('admin.includes.leftmenu', ['package_name' => "vendor-name/project-name"])
 @endsection
 
 @push('package-styles')

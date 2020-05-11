@@ -49,7 +49,7 @@ Here is an example of `views/admin/layouts/app.blade.php`:
 @extends('admin.layouts.master')
 
 @section('leftmenu')
-	@include('admin.includes.leftmenu', ['project-name' => "vendor-name/project-name"])
+	@include('admin.includes.leftmenu', ['project_name' => "vendor-name/project-name"])
 @endsection
 
 @push('package-styles')
@@ -100,7 +100,7 @@ Here is an example of `views/user/layouts/app.blade.php`.
 All your views should extend your `app's layouts`. And add your content in `content` blade section.
 
 ```php
-@extends('project-name::admin.layouts.app')
+@extends('vendor-name/project-name::admin.layouts.app')
 
 @section('content')
     Your app content here.
