@@ -6,6 +6,7 @@
 
  WYSIWYG Editor เป็นส่วนที่ใช้ในการปรับแต่งเว็บไซต์ โดยมีเครื่องมือที่ง่าย วิธีใช้งานเพียงคลิกที่ Element, Block, Section หรือเมนูอื่นใด ก็จะแสดง Panel Toolbar ที่ช่วยให้คุณสร้างเว็บไซต์ที่สวยงามและปรับแต่งเองได้อย่างรวดเร็ว ตลอดจนการเพิ่มหน้าเพจ,โพส,หมวดหมู่ต่างๆ,รูปภาพ,สื่อโซเชียล,แบบฟอร์ม,widget และเพิ่มเติมเนื้อหาใดๆที่คุณต้องการได้อย่างง่ายดาย อีกทั้งโปรแกรมยังสามารถรองรับ Apps, Widget และ widget Design รูปแบบใหม่ๆ ที่พัฒนาจาก Develpoer ได้อีกด้วย
 
+
 ![DeveloperDashboard](images/wys_overview/wys-overview-number.jpg)
 
 1. Topbar
@@ -108,5 +109,6 @@
     - System Pages (Forget Password, Account, Password Expired, Login, Register, Admin Login)
 
 
-
+<br>
+ ดูการใช้งานอย่างละเอียดได้ที่ https://user.rvsitebuilder.com/docs/7.3/en/admin-interface
 
