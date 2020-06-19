@@ -36,7 +36,7 @@
 │                   │      ├── manager
 │                   │      |     ├── video
 │                   │      |     ├── responsive-video ชื่อเดิม Responsive
-│                   │      |     ├── clone-style  ชื่อเดิม PrintFormat
+│                   │      |     ├── format-painter  ชื่อเดิม PrintFormat
 │                   │      |     ├── image-manager ชื่อเดิม imageManager
 │                   │      |     ├── image-editor ชื่อเดิม imageEditor
 │                   │      |     ├── table ชื่อเดิม Instable อนาคตจะเพิ่ม plugin table สวยๆลง
