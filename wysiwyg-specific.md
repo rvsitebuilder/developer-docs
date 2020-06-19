@@ -63,12 +63,16 @@
 ---
 
 #FIXME1: ไม่ใช่แค่ 3 ยังไม่รู้ว่าจะมีเพิ่มอีกไหม เช่น Editor สำหรับ email จะ ออกมาในท่าไหน (v7.6)
+
 #FIXME2: ตาม https://app.clickup.com/t/2freyj มี Site Editor ด้วย พวก rename page, delete page, and etc. (ถ้าไม่เห็นด้วย จะวางไว้ที่อื่น ให้เสนอมา)
+
 #FIXME3: site editor อาจจะต้องมี dom-ready ด้วย ทั้ง ฝั่ง admin and user เหมือน wordpress (https://github.com/WordPress/gutenberg/tree/master/packages/dom-ready)
  - wysiwyg/resources/js/admin/editors/site/dom-ready 
  - wysiwyg/resources/js/user/editors/site/dom-ready    
- #FIXME4: ตาม https://app.clickup.com/t/2freyj มีการจัดแยก การ build ฝั่ง admin และ ฝั่ง user ไว้แล้ว เพื่อตอน build webpack จะได้ไม่ งง
- #FIXME5: form-editor ที่เป็น folder ให้ตัดคำว่า editor ออก
+
+#FIXME4: ตาม https://app.clickup.com/t/2freyj มีการจัดแยก การ build ฝั่ง admin และ ฝั่ง user ไว้แล้ว เพื่อตอน build webpack จะได้ไม่ งง
+
+#FIXME5: form-editor ที่เป็น folder ให้ตัดคำว่า editor ออก
  
 # Tools
       - SCSS (and PreCSS)
