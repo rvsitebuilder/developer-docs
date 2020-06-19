@@ -1,8 +1,9 @@
 ### code
 
+ส่วนนี้เป็นแค่ backup dataส่วนที่ปรับเฉยๆ
 Editor แบ่งเป็น
 
-1. Layout Editor
+Layout Editor
 
 - จะประกอบไปด้วย section layout
   จะใช้
@@ -23,7 +24,7 @@ contenteditable="true"
   - convert ส่วนที่เป็น layout ของ bootstrap, uikit, and etc. layout system กลับมาเป็น Native CSS โดยเฉพาะ system page ทั้ง editable และ non-editable
   - กรณีที่ element ไม่ได้ใช้ 'uuk' CSS Class จะต้องทำ Scoped CSS หรือ CSS module ให้กับ code ด้านใน layout ด้วย
 
-2. Element Editor- uuk CSS Class or template CSS class(ถ้ามี)
+1. Element Editor- uuk CSS Class or template CSS class(ถ้ามี)
 
 - Required 'uuk' CSS Class - ทุกคนต้องลง code ตามนี้ ยกเว้นส่วนงาน widget design ที่ จะลง code ด้วย CSS framework ใด ๆ ก็ได้ โดยเราได้สร้าง widget-core editor รองรับไว้ให้แล้ว ต้องวางไว้ใน folder CSS framework ที่ถูกต้องด้วย ถ้าระบบไม่พบ 'uuk' folder สำหรับ widget design ระบบจะต้องทำ Scoped หรือ CSS module ให้กับ code ด้วย (ใช้วิธีส่วนงาน Layout converter ข้อ 2)
   Template CSS Class (optional)
@@ -43,7 +44,7 @@ contenteditable="true"
 wysiwyg/resources/js/admin/editors/
 wysiwyg/resources/views/admin/editors/
 
-1.           site/    (UI: auk, Generate: no CSS or CSS agnostic)
+1.             site/    (UI: auk, Generate: no CSS or CSS agnostic)
 
     1.x site/folder-name - 1 folder คือ 1 plugin เดิม
     เช่น
@@ -62,7 +63,7 @@ wysiwyg/resources/views/admin/editors/
     set homepage
     rearrange category (ให้ inject มาจาก blog app)
 
-2.           ui/
+2.             ui/
     \*\* ตรงนี้ยัง สับสนอยู่ และ ทำไม่เหมือนกัน อยู่ เช่น
     admin/editors/ui/toolbar ทำหน้ารวม ปุ่มเพื่อสร้าง toolbar UI และ โดยแต่ละปุ่มไปเรียก Element editor ต่าง ๆ อีกที (และเปิดโอกาสให้ app ต่าง ๆ inject toolbar ui เข้ามาได้),  
     user/editors/ui/rightbar ในส่วนของ section เป็นทั้ง UI และ Layout editor (ประเภท Drag-n-drop) รวมกันอยู่ในนี้
@@ -109,7 +110,7 @@ wysiwyg/resources/js/user/editors/
 wysiwyg/resources/views/user/editors/
 \*\*\* layout editor อยู่ที่ user เหรอ?????
 
-1.           layout/       (UI: uuk, Generate: Native CSS flexbox (for section) and Native CSS grid (for block)
+1.             layout/       (UI: uuk, Generate: Native CSS flexbox (for section) and Native CSS grid (for block)
     3.x layout/folder-name - 1 folder คือ 1 plugin เดิม
     เช่น
     3.x layout/section-duplicate ซึ่งจากนี้ไปเรียกจะเรียกส่วนงานนี้ว่า 'Duplicate Section Layout Editor'
@@ -137,7 +138,7 @@ wysiwyg/resources/views/user/editors/
 wysiwyg/resources/js/user/editors/
 wysiwyg/resources/views/user/editors/
 
-1.  element/ - (UI: uuk, Generate: uuk or template CSS class(ถ้ามี)
+2.  element/ - (UI: uuk, Generate: uuk or template CSS class(ถ้ามี)
     4.1 element/placeholder/ placeholder ที่มีทั้งใน layout editor และ element editor โดย placeholder ใน element editor ใช้งานได้บน mini wysiwyg ด้วย โดย HTML ที่เอามาแทน placeholderใน element editor จะต้องไม่มี Native CSS layout (หาทางกรองออก ไม่เช่นนั้นจะเกิด bug ได้ง่าย)
     logo
     email
@@ -197,7 +198,7 @@ wysiwyg/resources/views/user/editors/ หรือ wysiwyg/resources/views/user/
 4.4 element/manager (UI: uuk, Generate: uuk or template CSS class(ถ้ามี))
 มีไหม ? น่าจะมี เช่น element/manager/Instable รึเปล่า
 
-5. Form Editor
+3. Form Editor
 
 ## Template
 
