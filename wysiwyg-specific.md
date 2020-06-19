@@ -59,3 +59,20 @@
 2. [WYSIWYG Element Editor](wysiwyg-type.md)
 3. [WYSIWYG Form Editor](wysiwyg-type.md) (เป็น element editor ตัวนึง หรือ ต้องแยกประเภทออกมา)
    [WYSIWYG widget]
+
+
+#FIXME1: ไม่ใช่แค่ 3 ยังไม่รู้ว่าจะมีเพิ่มอีกไหม เช่น Editor สำหรับ email จะ ออกมาในท่าไหน (v7.6)
+#FIXME2: ตาม https://app.clickup.com/t/2freyj มี Site Editor ด้วย พวก rename page, delete page, and etc. (ถ้าไม่เห็นด้วย จะวางไว้ที่อื่น ให้เสนอมา)
+#FIXME3: site editor อาจจะต้องมี dom-ready ด้วย ทั้ง ฝั่ง admin and user เหมือน wordpress (https://github.com/WordPress/gutenberg/tree/master/packages/dom-ready)
+ - wysiwyg/resources/js/admin/editors/site/dom-ready 
+ - wysiwyg/resources/js/user/editors/site/dom-ready    
+ #FIXME4: ตาม https://app.clickup.com/t/2freyj มีการจัดแยก การ build ฝั่ง admin และ ฝั่ง user ไว้แล้ว เพื่อตอน build webpack จะได้ไม่ งง
+ #FIXME5: form-editor ที่เป็น folder ให้ตัดคำว่า editor ออก
+ 
+# Tools
+      - SCSS (and PreCSS)
+      - HPQ - https://github.com/aduth/hpq wordpress guternberg ใช้ตัวนี้ในการ lookup DOM (ไม่รู้ว่าเชื่อได้ไหม https://reaktivstudios.com/blog/gutenberg-attributes/ บทความปี 2018)
+      - PostCSS, PostHTML,Webpack, PurgeCSS
+      - sass-mq (media query: https://github.com/sass-mq/sass-mq)
+      - postcss/autoprefixer: https://github.com/postcss/autoprefixer
+      - posthtml-style-to-file: https://github.com/posthtml/posthtml-style-to-file
