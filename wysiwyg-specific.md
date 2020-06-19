@@ -28,11 +28,26 @@
 │                   │      │     ├── font ==> ชื่อเดิม FontFormat
 │                   │      │     ├── style ==> ชื่อเดิม SelectStyle
 │                   │      │     └── paragraph ==> ชื่อเดิม Paragraph
-│                   │      └── placeholder
-│                   |            ├── header
-│                   |            ├── header-email
-│                   │            ├── footer
-│                   │            └── footer-email
+│                   │      ├── placeholder
+│                   |      |     ├── header
+│                   |      |     ├── header-email
+│                   │      |     ├── footer
+│                   │      |     └── footer-email
+│                   │      ├── manager
+│                   │      |     ├── video
+│                   │      |     ├── responsive-video ชื่อเดิม Responsive
+│                   │      |     ├── clone-style  ชื่อเดิม PrintFormat
+│                   │      |     ├── image-manager ชื่อเดิม imageManager
+│                   │      |     ├── image-editor ชื่อเดิม imageEditor
+│                   │      |     ├── table ชื่อเดิม Instable อนาคตจะเพิ่ม plugin table สวยๆลง
+│                   │      |     ├── hyperlink
+│                   │      |     ├── html-source ชื่อเดิม htmlsource
+│                   │      |     ├── button แนวทางใช้ scss complier
+│                   │      |     ├── widget-core ชื่อเดิม widget
+│                   │      |     ├── icon-uikit2
+│                   │      |     ├── icon-uikit3
+│                   │      |     ├── responsive-video ชื่อเดิม Responsive
+│                   │      |     ├── sitebrand ชื่อเดิม SiteTheme
 │                   ├── form-editor
 └── wysiwyg/resource/views
 │                   ├── user
