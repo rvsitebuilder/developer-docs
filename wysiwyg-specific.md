@@ -65,12 +65,31 @@
 
 ---------------------------------------------------------
 └── wysiwyg/resource/views/admin/editors (เก็บ design ของ ปุ่ม ui modal panel dialog)
-│                   ├── admin (โครงสร้างเดียวกับ js ถ้าต้องมีีui)
-│                   ├── user (โครงสร้างเดียวกับ js ถ้าต้องมีีui)
 │                   ├── layout (โครงสร้างเดียวกับ js ถ้าต้องมีีui)
 │                   ├── element (โครงสร้างเดียวกับ js ถ้าต้องมีีui)
 │                   ├── site (โครงสร้างเดียวกับ js ถ้าต้องมีีui ตามตัวอย่างด้านล่าง)
 │                   │      ├── main(เดิม คือ core)
+│                   │      ├── dom-ready
+│                   │      ├── saveasync ( ในนี้มีอะไรบ้าง)
+│                   │      ├── font-loader
+│                   │      ├── main(เดิม คือ core)
+│                   │      ├── history
+│                   │      ├── theme-config
+│                   │      ├── rename (อาจจะมีการเปลี่ยนทีหลัง)
+│                   │      ├── hide (อาจจะมีการเปลี่ยนทีหลัง)
+│                   │      ├── unhide (อาจจะมีการเปลี่ยนทีหลัง)
+│                   │      ├── set-homepage (อาจจะมีการเปลี่ยนทีหลัง)
+│                   │      ├── rearrange-category  inject มาจาก  blog app(อาจจะมีการเปลี่ยนทีหลัง)
+│                   ├── form(Form Editor)(v7.6)
+│                   ├── email(Email Editor )(v7.6)
+
+
+└── wysiwyg/resource/views/user/editors (เก็บ design ของ ปุ่ม ui modal panel dialog)
+│                   ├── layout (โครงสร้างเดียวกับ js ถ้าต้องมีีui)
+│                   ├── element (โครงสร้างเดียวกับ js ถ้าต้องมีีui)
+│                   ├── site (โครงสร้างเดียวกับ js ถ้าต้องมีีui ตามตัวอย่างด้านล่าง)
+│                   │      ├── main(เดิม คือ core)
+│                   │      ├── dom-ready
 │                   │      ├── saveasync ( ในนี้มีอะไรบ้าง)
 │                   │      ├── font-loader
 │                   │      ├── main(เดิม คือ core)
