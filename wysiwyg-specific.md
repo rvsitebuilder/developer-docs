@@ -3,9 +3,7 @@
 โครงสร้างไฟล์
 
 ```
-└── wysiwyg/resource/js
-│                   ├── admin
-│                   ├── user
+├── wysiwyg/resource/js/admin/editors
 │                   ├── layout(Layout editor)  //folder-name - 1 folder คือ 1 plugin เดิม
 │                   │      ├── section-duplicate   ซึ่งจากนี้ไปเรียกจะเรียกส่วนงานนี้ว่า 'Duplicate Section Layout Editor'
 │                   │      ├── section-move  ซึ่งจากนี้ไปเรียกจะเรียกส่วนงานนี้ว่า 'Move Section Layout Editor'
@@ -16,11 +14,19 @@
 │                   │      ├── section-properties ตัวนี้ข้างในก็มีอีกหลาย tab อาจจะต้องแยกเป็น plugin ลงไปอีก
 │                   │      ├── block-properties ตัวนี้ข้างในก็มีอีกหลาย tab อาจจะต้องแยกเป็น plugin ลงไปอีก
 │                   │      ├── sidebar
-│                   │      └── placeholder
-│                   |            ├── header
-│                   |            ├── header-email
-│                   │            ├── footer
-│                   │            └── footer-email
+│                   │      ├── placeholder
+│                   |      |     ├── valible case
+│                   |      |     |     ├── logo
+│                   |      |     |     ├── email
+│                   |      |     |     ├── name
+│                   |      |     |     ├── phone
+│                   |      |     |     ├── custom (อนาคต)
+│                   |      |     |     └── menu (inject codeมาจาก app'rvsitebuilder/menu'ยุบ left-menu, right-menu เป็น main-menu)
+│                   |      |     ├── footer-menu
+│                   |      |     ├── header
+│                   |      |     ├── header-email
+│                   │      |     ├── footer
+│                   │      |     └── footer-email
 │                   ├── element(Element editor)
 │                   │      ├── formatting
 │                   │      │     ├── basic-text ==> ชื่อเดิม StandardWordButton
@@ -28,7 +34,16 @@
 │                   │      │     ├── font ==> ชื่อเดิม FontFormat
 │                   │      │     ├── style ==> ชื่อเดิม SelectStyle
 │                   │      │     └── paragraph ==> ชื่อเดิม Paragraph
-│                   │      ├── placeholder
+│                   │      ├── placeholder (remove css | js)
+│                   |      |     ├── valible case(จะสามารถนำมาเป็นตัวเลือก element บน 'Menu Placeholder Layout Manager'ที่กำลังจะสร้างขึ้นมาใหม่ได้)
+│                   |      |     |     ├── logo
+│                   |      |     |     ├── email
+│                   |      |     |     ├── name
+│                   |      |     |     ├── phone
+│                   |      |     |     ├── footer-menu
+│                   |      |     |     ├── custom (อนาคต)
+│                   |      |     |     └── menu (inject codeมาจาก app'rvsitebuilder/menu'ยุบ left-menu, right-menu เป็น main-menu)
+│                   |      |     ├── footer-menu
 │                   |      |     ├── header
 │                   |      |     ├── header-email
 │                   │      |     ├── footer
@@ -64,10 +79,18 @@
 │                   ├── email(Email Editor)
 
 ---------------------------------------------------------
-└── wysiwyg/resource/views/admin/editors (เก็บ design ของ ปุ่ม ui modal panel dialog)
+├── wysiwyg/resource/views/admin/editors ( เก็บ design ของ ปุ่ม ui modal panel dialog)
+│                   ├── miniui (UI: uuk, Generate: uuk)
+│                   |      └── toolbar สำหรับ สร้าง mini wysiwyg ใช้บน user UI ซึ่งจะเชื่อมกับ Element Editor
+│                   ├── design-actions (แยกของเดิมrightbar ปุ่ม แสดง editor สำหรับ theme, header, banner,and etc.)
+│                   ├── content-actions (แยกของเดิมrightbarปุ่ม แสดง editor สำหรับ  sections, form editor, new page, blog, and etc.)
+│                   │       └── inject code 'ปุ่ม Menu' จาก 'rvsitebuilder/menu' app เมื่อ click ปุึ่ม เปิด 'Menu Placeholder Layout Editor'
+│                   ├── email-actions (ของเดิม RightbarEmail)
+│                   │       ├── new-emails
+│                   │       └── email-preview
 │                   ├── layout (โครงสร้างเดียวกับ js ถ้าต้องมีีui)
 │                   ├── element (โครงสร้างเดียวกับ js ถ้าต้องมีีui)
-│                   ├── site (โครงสร้างเดียวกับ js ถ้าต้องมีีui ตามตัวอย่างด้านล่าง)
+│                   ├── site (  - 1 folder คือ 1 plugin เดิม โครงสร้างเดียวกับ js ถ้าต้องมีีui ตามตัวอย่างด้านล่าง)
 │                   │      ├── main(เดิม คือ core)
 │                   │      ├── dom-ready
 │                   │      ├── saveasync ( ในนี้มีอะไรบ้าง)
@@ -83,9 +106,23 @@
 │                   ├── form(Form Editor)(v7.6)
 │                   ├── email(Email Editor )(v7.6)
 
-
-└── wysiwyg/resource/views/user/editors (เก็บ design ของ ปุ่ม ui modal panel dialog)
-│                   ├── layout (โครงสร้างเดียวกับ js ถ้าต้องมีีui)
+---------------------------------------------------------------------
+└── wysiwyg/resource/views/user/editors (uuk เก็บ design ของ ปุ่ม ui modal panel dialog)
+│                   ├── layout(Layout editor ui เก็บ htmlของ ปุ่ม )  //folder-name - 1 folder คือ 1 plugin เดิม
+│                   │      ├── section-duplicate   ซึ่งจากนี้ไปเรียกจะเรียกส่วนงานนี้ว่า 'Duplicate Section Layout Editor'
+│                   │      ├── section-move  ซึ่งจากนี้ไปเรียกจะเรียกส่วนงานนี้ว่า 'Move Section Layout Editor'
+│                   │      ├── section-delete
+│                   │      ├── block-duplicate
+│                   │      ├── block-move
+│                   │      ├── block-delete
+│                   │      ├── section-properties ตัวนี้ข้างในก็มีอีกหลาย tab อาจจะต้องแยกเป็น plugin ลงไปอีก
+│                   │      ├── block-properties ตัวนี้ข้างในก็มีอีกหลาย tab อาจจะต้องแยกเป็น plugin ลงไปอีก
+│                   │      ├── sidebar
+│                   │      └── placeholder
+│                   |            ├── header
+│                   |            ├── header-email
+│                   │            ├── footer
+│                   │            └── footer-email
 │                   ├── element (โครงสร้างเดียวกับ js ถ้าต้องมีีui)
 │                   ├── site (โครงสร้างเดียวกับ js ถ้าต้องมีีui ตามตัวอย่างด้านล่าง)
 │                   │      ├── main(เดิม คือ core)
