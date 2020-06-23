@@ -51,17 +51,20 @@
 │                   │      ├── manager
 │                   │      |     ├── video
 │                   │      |     ├── responsive-video ชื่อเดิม Responsive
+│                   │      |     ├── paste-external ชื่อเดิม PasteFromExternal
 │                   │      |     ├── format-painter  ชื่อเดิม PrintFormat
 │                   │      |     ├── image-manager ชื่อเดิม imageManager
 │                   │      |     ├── image-editor ชื่อเดิม imageEditor
 │                   │      |     ├── table ชื่อเดิม Instable อนาคตจะเพิ่ม plugin table สวยๆลง
 │                   │      |     ├── hyperlink
-│                   │      |     ├── html-source ชื่อเดิม htmlsource
 │                   │      |     ├── button แนวทางใช้ scss complier
+│                   │      |     ├── html-source ชื่อเดิม htmlsource
 │                   │      |     ├── widget-core ชื่อเดิม widget
+│                   │      |     ├── sitebrand สำหรับจัดการ logo, email, name, phone ที่ evaluate มาจาก
 │                   │      |     ├── icon-uikit2
 │                   │      |     ├── icon-uikit3
-│                   │      |     ├── responsive-video ชื่อเดิม Responsive
+
+│                   │      |     ├── image-manager ชื่อเดิม imageManager
 │                   ├── site(Site Editor)
 │                   │      ├── main(เดิม คือ core)
 │                   │      ├── common ( ในนี้มีอะไรบ้าง เด๋วจะมาแตกทีหลังจากทำ main เสร็จ)
@@ -140,7 +143,9 @@
 │                   ├── form(Form Editor)(v7.6)
 │                   ├── email(Email Editor )(v7.6)
 
-
+googleMap             ==> เปลี่ยน ชื่อเป็น google-map
+Facebook              ==> เปลี่ยน ชื่อเป็น facebook-comment  ??? ใช่ไหม น่าจะเป็น facebook-api
+socialWidget,         ==> เปลี่ยน ชื่อเป็น social-links
 
 ```
 
