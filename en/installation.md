@@ -12,6 +12,7 @@
   - [Step 4 Install RVsitebuilder](#step-4-install-rvsitebuilder)
   - [Step 5 Once the installation is completed.](#step-5-once-the-installation-is-completed)
 - [.env configuration](#env-configuration)
+- [test.toc](#testtoc)
 
 ## Getting a developer license
 
@@ -234,3 +235,6 @@ Different between local and production
 
 - Local
 - Production
+
+
+## test.toc
