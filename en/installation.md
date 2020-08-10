@@ -2,10 +2,18 @@
 
 - [Getting a developer license](#getting-a-developer-license)
 - [RVsitebuilder Docker (Recommended)](#rvsitebuilder-docker-recommended)
+  - [feature](#feature)
   - [docker requirement](#docker-requirement)
-  - [docker up](#docker-up)
-  - [call web installer](#call-web-installer)
+  - [install](#install)
+  - [RUN manual ssh to container](#run-manual-ssh-to-container)
+    - [ssh with www-data](#ssh-with-www-data)
+    - [ssh with root](#ssh-with-root)
+  - [Switch PHP multi version on container](#switch-php-multi-version-on-container)
+    - [Switch to PHP 7.3](#switch-to-php-73)
+  - [Switch to PHP 7.4](#switch-to-php-74)
 - [Other environment](#other-environment)
+  - [requirement](#requirement)
+  - [install](#install-1)
 - [.env configuration](#env-configuration)
 
 ## Getting a developer license
@@ -24,44 +32,13 @@ You can install RVsitebuilder locally on your work station for developing purpos
 
 ## RVsitebuilder Docker (Recommended)
 
-Download and extract https://github.com/rvsitebuilder/docker-lamp to your workspace
-
-### docker requirement
-
-docker version 19.03.8+,
-
-docker-compose version 1.25.4+
-
-### docker up
-~~~
-cd workspace/docker-lamp
-docker-compose up -d
-~~~
-
-### call web installer
-
-http://127.0.0.1
-
-1. Download and Extract https://github.com/rvsitebuilder/docker-lamp/archive/master.zip to your workspace
-2. update docker .env file
-
-```
-Optional to change WEBSERVER_PORT,LOCALE,TZ
-```
-
-3. run docker build and up
-
-```
-cd <workspacke_path>/docker-lamp/docker
-
-docker-compose -f docker-compose.yml up -d
-```
-
-4. After that you will got dev environment like below (local ip coule be like 192.168.x.x) :
-
-```php
-   http://<local_ip>:80 for document root
-   http://<local_ip>:80/phpmyadmin for phpMyAdmin
+### feature
+Web Service
+   http://<local_ip>:80
+phpMyAdmin
+   http://<local_ip>:80/phpmyadmin
+MailHog
+http://<local_ip>:8025
 
    document root path:
        <workspacke_path>/docker-lamp/public/
@@ -72,39 +49,87 @@ docker-compose -f docker-compose.yml up -d
       MYSQL_USER_NAME = homestead
       MYSQL_USER_DB = homestead
       MYSQL_USER_PASS = secret
+
+### docker requirement
+
+docker version 19.03.8+,
+
+docker-compose version 1.25.4+
+
+### install
+1. download docker-lamp
+
+Download and Extract https://github.com/rvsitebuilder/docker-lamp/archive/master.zip to your workspace
+
+2. docker up
+Optional to update docker .env file for change WEBSERVER_PORT,LOCALE,TZ
+~~~
+cd workspace/docker-lamp
+docker-compose up -d
+~~~
+
+3. Run docker-compose up
+
+```
+cd <workspacke_path>/docker-lamp/docker
+
+docker-compose -f docker-compose.yml up -d
 ```
 
-5. Open browser http://<local_ip>:8080
+4. Open browser http://<local_ip>:80 and follow wizard installation
+
+5. After install complete you can login with 
 
 ```
 admin user: admin@admin.com
 admin pass: rvsitebuilder
 ```
 
+### RUN manual ssh to container
+#### ssh with www-data
+```
+docker-compose exec --user www-data apache2php bash
+```
+#### ssh with root
+```
+docker-compose exec apache2php bash
+```
+### Switch PHP multi version on container
+#### Switch to PHP 7.3
+```
+update-alt-php 7.3
+```
+### Switch to PHP 7.4
+```
+update-alt-php 7.4
+```
+
 ## Other environment
 
-1 Prepare web server stack
-   You can choose to run docker container like [Laravel Homestead](https://laravel.com/docs/5.8/homestead), [Laravel Valet](https://laravel.com/docs/5.8/valet), or your own web server.
+### requirement
+
+Prepare web server stack
+   You can choose to run docker container like [Laravel Homestead](https://laravel.com/docs/5.8/homestead), [Laravel Valet](https://laravel.com/docs/5.8/valet), or run on own web server.
  
 But make sure that your domain configuration meet with the following requirements.
 
 - Domain name must run on PHP7.1.3 or above.
 - php extension: 'mysqlnd','pdo','gd','curl','iconv','mbstring','zip','posix_getpwuid','json'
 - php ini config 'memory_limit' => 64M
+- mysql service already run with database
+  - MYSQL_USER_NAME = homestead
+  - MYSQL_USER_DB = homestead
+  - MYSQL_USER_PASS = secret
 - Firewall on your server doesn't block the following domains.  
   download.rvglobalsoft.com  
   Files.mirror1.rvsitebuilder.com
 
-mysql already run
-      MYSQL_USER_NAME = homestead
-      MYSQL_USER_DB = homestead
-      MYSQL_USER_PASS = secret
-  
+### install
+1. Download file [https://raw.githubusercontent.com/rvsitebuilder/docker-lamp/master/public/index.php](https://raw.githubusercontent.com/rvsitebuilder/docker-lamp/master/public/index.php) and copy to web document root
 
-2. Download file [https://raw.githubusercontent.com/rvsitebuilder/docker-lamp-php72/master/public/index.php](https://raw.githubusercontent.com/rvsitebuilder/docker-lamp/master/public/index.php)and copy to web document root
-3. Open browser http://<local_ip>:80 and follow wizard installation
+2. Open browser http://<local_ip>:80 and follow wizard installation
 
-4. After install complete you can login with 
+3. After install complete you can login with 
 
 ```
 admin user: admin@admin.com
