@@ -31,15 +31,18 @@ You can install RVsitebuilder locally on your work station for developing purpos
    **Developer Token Auth** You can copy `My Developer Token Auth` go to `Verify License your website`,It will require to install locally.
 
 ## RVsitebuilder Docker (Recommended)
-
+   This docker already build dev tools php composer npm.
 ### feature
 Web Service
    http://<local_ip>:80
+
 phpMyAdmin
    http://<local_ip>:80/phpmyadmin
-MailHog
-http://<local_ip>:8025
 
+MailHog
+   http://<local_ip>:8025
+
+Volume Map
    document root path:
        <workspacke_path>/docker-lamp/public/
    app path:
@@ -52,38 +55,43 @@ http://<local_ip>:8025
 
 ### docker requirement
 
-docker version 19.03.8+,
+docker version 19.03.8+ https://docs.docker.com/engine/install/
 
-docker-compose version 1.25.4+
+docker-compose version 1.25.4+ https://docs.docker.com/compose/install/
 
 ### install
 1. download docker-lamp
 
 Download and Extract https://github.com/rvsitebuilder/docker-lamp/archive/master.zip to your workspace
 
-2. docker up
+2. Run docker-compose up
+
 Optional to update docker .env file for change WEBSERVER_PORT,LOCALE,TZ
-~~~
-cd workspace/docker-lamp
+
+```
+cd <workspacke_path>/docker-lamp
+
 docker-compose up -d
-~~~
-
-3. Run docker-compose up
-
-```
-cd <workspacke_path>/docker-lamp/docker
-
-docker-compose -f docker-compose.yml up -d
 ```
 
-4. Open browser http://<local_ip>:80 and follow wizard installation
+3. Open browser http://<local_ip>:80 and follow wizard installation
 
-5. After install complete you can login with 
+Step 2 Database setup
+```   
+   Database name: homestead
+   Database user: homestead
+   Database password: secret
+```
 
+Step 3 Setup website properties
+```   
+   Developer E-mail: <From Getting a developer license>
+   Developer Key: <From Getting a developer license>   
 ```
-admin user: admin@admin.com
-admin pass: rvsitebuilder
-```
+
+4. After install complete you can login with 
+
+http://<local_ip>:80/admin/login
 
 ### RUN manual ssh to container
 #### ssh with www-data
@@ -129,12 +137,22 @@ But make sure that your domain configuration meet with the following requirement
 
 2. Open browser http://<local_ip>:80 and follow wizard installation
 
+Step 2 Database setup
+```   
+   Database name: homestead
+   Database user: homestead
+   Database password: secret
+```
+
+Step 3 Setup website properties
+```   
+   Developer E-mail: <From Getting a developer license>
+   Developer Key: <From Getting a developer license>   
+```
+
 3. After install complete you can login with 
 
-```
-admin user: admin@admin.com
-admin pass: rvsitebuilder
-```
+http://<local_ip>:80/admin/login
 
 ## .env configuration
 
