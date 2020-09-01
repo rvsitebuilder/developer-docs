@@ -6,15 +6,15 @@
   - [docker requirement](#docker-requirement)
   - [install](#install)
   - [RUN manual ssh to container](#run-manual-ssh-to-container)
-    - [ssh with www-data](#ssh-with-www-data)
-    - [ssh with root](#ssh-with-root)
+  - [ssh with www-data](#ssh-with-www-data)
+  - [ssh with root](#ssh-with-root)
   - [Switch PHP multi version on container](#switch-php-multi-version-on-container)
-    - [Switch to PHP 7.3](#switch-to-php-7.3)
-  - [Switch to PHP 7.4](#switch-to-php-7.4)
+  - [Switch to PHP 7.3](#switch-to-php-73)
+  - [Switch to PHP 7.4](#switch-to-php-74)
 - [Other environment](#other-environment)
   - [requirement](#requirement)
   - [install](#install-1)
-- [.env configuration](#env-configuration)
+- [env file configuration](#env-file-configuration)
 
 ## Getting a developer license
 
@@ -67,7 +67,7 @@ docker-compose version 1.25.4+ https://docs.docker.com/compose/install/
 
 1. download docker-lamp
 
-```php
+```text
 Download and Extract https://github.com/rvsitebuilder/docker-lamp/archive/master.zip to your workspace
 ```
 
@@ -75,7 +75,7 @@ Download and Extract https://github.com/rvsitebuilder/docker-lamp/archive/master
 
 Optional to update docker .env file for change WEBSERVER_PORT,LOCALE,TZ
 
-```php
+```text
 cd %workspacke_path%/docker-lamp
 
 docker-compose up -d
@@ -106,13 +106,13 @@ http://%local_ip%:80/admin/login
 
 ### RUN manual ssh to container
 
-#### ssh with www-data
+### ssh with www-data
 
 ```text
 docker-compose exec --user www-data apache2php bash
 ```
 
-#### ssh with root
+### ssh with root
 
 ```text
 docker-compose exec apache2php bash
@@ -120,7 +120,7 @@ docker-compose exec apache2php bash
 
 ### Switch PHP multi version on container
 
-#### Switch to PHP 7.3
+### Switch to PHP 7.3
 
 ```text
 update-alt-php 7.3
@@ -177,7 +177,7 @@ Step 3 Setup website properties
 
 http://%local_ip%:80/admin/login
 
-## .env configuration
+## env file configuration
 
 Different between local and production
 
