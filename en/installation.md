@@ -1,7 +1,7 @@
 # Installation
 
 - [Getting a developer license](#getting-a-developer-license)
-- [RVsitebuilder Docker (Recommended)](#rvsitebuilder-docker-recommended)
+- [RVsitebuilder Docker(Recommended)](#rvsitebuilder-docker-recommended)
   - [feature](#feature)
   - [docker requirement](#docker-requirement)
   - [install](#install)
@@ -61,14 +61,14 @@ docker-compose version 1.25.4+ https://docs.docker.com/compose/install/
 
 ### install
 1. download docker-lamp
-
+```php
 Download and Extract https://github.com/rvsitebuilder/docker-lamp/archive/master.zip to your workspace
-
+```
 2. Run docker-compose up
 
 Optional to update docker .env file for change WEBSERVER_PORT,LOCALE,TZ
 
-```
+```php
 cd <workspacke_path>/docker-lamp
 
 docker-compose up -d
@@ -77,38 +77,40 @@ docker-compose up -d
 3. Open browser http://<local_ip>:80 and follow wizard installation
 
 Step 2 Database setup
-```   
+
+```text  
    Database name: homestead
    Database user: homestead
    Database password: secret
 ```
 
 Step 3 Setup website properties
-```   
+```text    
    Developer E-mail: <From Getting a developer license>
    Developer Key: <From Getting a developer license>   
 ```
 
 4. After install complete you can login with 
-
+```text 
 http://<local_ip>:80/admin/login
-
+```
 ### RUN manual ssh to container
 #### ssh with www-data
-```
+
+```text
 docker-compose exec --user www-data apache2php bash
 ```
 #### ssh with root
-```
+```text
 docker-compose exec apache2php bash
 ```
 ### Switch PHP multi version on container
 #### Switch to PHP 7.3
-```
+```text
 update-alt-php 7.3
 ```
 ### Switch to PHP 7.4
-```
+```text
 update-alt-php 7.4
 ```
 
@@ -138,14 +140,14 @@ But make sure that your domain configuration meet with the following requirement
 2. Open browser http://<local_ip>:80 and follow wizard installation
 
 Step 2 Database setup
-```   
+```text 
    Database name: homestead
    Database user: homestead
    Database password: secret
 ```
 
 Step 3 Setup website properties
-```   
+```text  
    Developer E-mail: <From Getting a developer license>
    Developer Key: <From Getting a developer license>   
 ```
