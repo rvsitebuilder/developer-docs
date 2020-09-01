@@ -1,7 +1,7 @@
 # Installation
 
 - [Getting a developer license](#getting-a-developer-license)
-- [RVsitebuilder Docker(Recommended)](#rvsitebuilder-docker-recommended)
+- [RVsitebuilder Docker (Recommended)](#rvsitebuilder-docker-recommended)
   - [feature](#feature)
   - [docker requirement](#docker-requirement)
   - [install](#install)
@@ -34,19 +34,20 @@ You can install RVsitebuilder locally on your work station for developing purpos
    This docker already build dev tools php composer npm.
 ### feature
 Web Service
-   http://<local_ip>:80
+
+   http://%local_ip%:80
 
 phpMyAdmin
-   http://<local_ip>:80/phpmyadmin
+   http://%local_ip%:80/phpmyadmin
 
 MailHog
-   http://<local_ip>:8025
+   http://%local_ip%:8025
 
 Volume Map
    document root path:
-       <workspacke_path>/docker-lamp/public/
+       %workspacke_path%/docker-lamp/public/
    app path:
-       <workspacke_path>/docker-lamp/app/
+       %workspacke_path%/docker-lamp/app/
 
    db access info:      
       MYSQL_USER_NAME = homestead
@@ -69,12 +70,12 @@ Download and Extract https://github.com/rvsitebuilder/docker-lamp/archive/master
 Optional to update docker .env file for change WEBSERVER_PORT,LOCALE,TZ
 
 ```php
-cd <workspacke_path>/docker-lamp
+cd %workspacke_path%/docker-lamp
 
 docker-compose up -d
 ```
 
-3. Open browser http://<local_ip>:80 and follow wizard installation
+3. Open browser http://%local_ip%:80 and follow wizard installation
 
 Step 2 Database setup
 
@@ -86,13 +87,13 @@ Step 2 Database setup
 
 Step 3 Setup website properties
 ```text    
-   Developer E-mail: <From Getting a developer license>
-   Developer Key: <From Getting a developer license>   
+   Developer E-mail: %From Getting a developer license%
+   Developer Key: %From Getting a developer license%   
 ```
 
 4. After install complete you can login with 
 ```text 
-http://<local_ip>:80/admin/login
+http://%local_ip%:80/admin/login
 ```
 ### RUN manual ssh to container
 #### ssh with www-data
@@ -125,7 +126,7 @@ But make sure that your domain configuration meet with the following requirement
 
 - Domain name must run on PHP7.1.3 or above.
 - php extension: 'mysqlnd','pdo','gd','curl','iconv','mbstring','zip','posix_getpwuid','json'
-- php ini config 'memory_limit' => 64M
+- php ini config 'memory_limit' =% 64M
 - mysql service already run with database
   - MYSQL_USER_NAME = homestead
   - MYSQL_USER_DB = homestead
@@ -137,7 +138,7 @@ But make sure that your domain configuration meet with the following requirement
 ### install
 1. Download file [https://raw.githubusercontent.com/rvsitebuilder/docker-lamp/master/public/index.php](https://raw.githubusercontent.com/rvsitebuilder/docker-lamp/master/public/index.php) and copy to web document root
 
-2. Open browser http://<local_ip>:80 and follow wizard installation
+2. Open browser http://%local_ip%:80 and follow wizard installation
 
 Step 2 Database setup
 ```text 
@@ -148,13 +149,13 @@ Step 2 Database setup
 
 Step 3 Setup website properties
 ```text  
-   Developer E-mail: <From Getting a developer license>
-   Developer Key: <From Getting a developer license>   
+   Developer E-mail: %From Getting a developer license%
+   Developer Key: %From Getting a developer license%   
 ```
 
 3. After install complete you can login with 
 
-http://<local_ip>:80/admin/login
+http://%local_ip%:80/admin/login
 
 ## .env configuration
 
