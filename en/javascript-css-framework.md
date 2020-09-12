@@ -1,12 +1,11 @@
 # JavaScript and CSS Framework
 
--   [User interface](#user-interface)
--   [Admin interface](#admin-interface)
-    -   [`views/admin/layouts/app.blade.php` with bootstrap4:](#viewsadminlayoutsappbladephp-with-bootstrap4)
--   [jQuery](#jquery)
--   [Package-script Blade Stack](#package-script-blade-stack)
--   [Wex](#wex)
--   [Passing PHP variables to JS through wex and mex](#passing-php-variables-to-js-through-wex-and-mex)
+- [User interface](#user-interface)
+- [Admin interface](#admin-interface)
+- [jQuery](#jquery)
+- [Package-script Blade Stack](#package-script-blade-stack)
+- [Wex](#wex)
+- [Passing PHP variables to JS through wex and mex](#passing-php-variables-to-js-through-wex-and-mex)
 
 RVsitebuilder user and admin interfaces are render independently.
 
@@ -20,7 +19,7 @@ End-user interface is built on [UIKIT2](https://getuikit.com/v2/) framework. It 
 
 Admin interface is `platform agnostic`. If you generate app from developer app, admin layout suggest bootstrap4. But you can replace it with anything you want. If you use webpack to build your asset, simply build your own and remove the default one.
 
-#### `views/admin/layouts/app.blade.php` with bootstrap4:
+`views/admin/layouts/app.blade.php` with bootstrap4:
 
 ```php
 @extends('admin.layouts.master')
