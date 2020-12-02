@@ -18,6 +18,20 @@
 
 ## Frontend
 
+### Blog
+
+### Email
+
+### WYSIWYG
+
+@babel/polyfill : [@babel/polyfill](https://www.npmjs.com/package/@babel/polyfill)
+
+@fortawesome/fontawesome-free : [@fortawesome/fontawesome-free](https://www.npmjs.com/package/@fortawesome/fontawesome-free)
+
+@loadingio/loading-bar : [loading-Bar](https://www.npmjs.com/package/@loadingio/loading-bar)
+
+
+
 ### Laravel Framework
 
 The Laravel framwork is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT)
@@ -79,11 +93,27 @@ Laravel Form Builder is opensource software licensed under the [MIT license](htt
 
 ### Core
 
-bootstrap-vue : [nmp bootstrapvue](https://www.npmjs.com/package/bootstrap-vue)
+bootstrap-vue : [BootstrapVue](https://www.npmjs.com/package/bootstrap-vue)
 
-vue-i18n : [nmp vuei18n](https://www.npmjs.com/package/vue-i18n)
+vue-i18n : [vue-i18n](https://www.npmjs.com/package/vue-i18n)
 
-spatie/laravel-medialibrary : [spatie/laravel-medialibrary](https://github.com/spatie/laravel-medialibrary)
+alpinejs : [Alpine.js](https://www.npmjs.com/package/alpinejs)
+
+
+### Manage
+
+### Scheduler
+
+### queuesharedhost
+
+
+
+
+
+
+
+
+
 
 
 
