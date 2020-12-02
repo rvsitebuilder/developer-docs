@@ -1,7 +1,6 @@
 - ## Getting started
   - [Overview](overview.md)
   - [Licenses](licenses.md)
-  - [Licenses and Credits](licenses-and-credits.md)
   - [Installation](installation.md)
   - [Directory Structure](directory-structure.md)
   - [Page Type](page-type.md)
@@ -69,3 +68,7 @@
 
 - ## Admin UI and Example UI
   - [Admin UI](admin-ui.md)
+
+
+- ## Credits
+  - [Credits](credits.md)

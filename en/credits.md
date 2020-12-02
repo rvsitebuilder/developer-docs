@@ -1,4 +1,4 @@
-# Licenses and Credits
+# Credits
 
 - [License](#license)
   - [Laravel License](#laravel-license)
@@ -16,47 +16,11 @@
   - [Larevel Form Builder Credits](#larevel-form-builder-credits)
 
 
-## License
-
-### Laravel License
-
-The Laravel framwork is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT)
-
-
-
-### Laravel Boilerplate License
-
-Laravel Boilerplate is opensource software licensed under the [MIT license](http://anthony.mit-license.org)
-
-
-
-### Laravel Totem License
-
-Laravel Totem is opensource software licensed under the [MIT license](https://github.com/codestudiohq/laravel-totem/blob/8.0/LICENSE)
-
-
-
-### Laravel HTML License
-
-Laravel HTML is opensource software licensed under the [MIT license](https://github.com/spatie/laravel-html/blob/master/LICENSE.md)
-
-
-
-### Laravel File Manager License
-
-Laravel File Manager is opensource software licensed under the [MIT license](https://github.com/spatie/laravel-html/blob/master/LICENSE.md)
-
-
-
-### Laravel Form Builder License
-
-Laravel Form Builder is opensource software licensed under the [MIT license](https://github.com/kristijanhusak/laravel-form-builder/blob/master/LICENSE)
-
-
-
-## Credits
+## Frontend
 
 ### Laravel Framework
+
+The Laravel framwork is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT)
 
 [Laravel Framework](https://laravel.com/)
 
@@ -64,7 +28,9 @@ Laravel Form Builder is opensource software licensed under the [MIT license](htt
 
 
 
-### Laravel Boilerplate Credits
+### Laravel Boilerplate
+
+Laravel Boilerplate is opensource software licensed under the [MIT license](http://anthony.mit-license.org)
 
 [Anthony Rappa](https://rappasoft.com/)
 
@@ -72,31 +38,36 @@ Laravel Form Builder is opensource software licensed under the [MIT license](htt
 
 
 
-### Larevel Totem Credits
+### Laravel Totem
+
+Laravel Totem is opensource software licensed under the [MIT license](https://github.com/codestudiohq/laravel-totem/blob/8.0/LICENSE)
 
 [Code Studio](http://codestudio.us/)
 
 [Project Contributors](https://github.com/codestudiohq/laravel-totem/graphs/contributors)
 
 
+### Laravel HTML
 
-### Laravel HTML Credits
+Laravel HTML is opensource software licensed under the [MIT license](https://github.com/spatie/laravel-html/blob/master/LICENSE.md)
 
 [Spatie](https://spatie.be/open-source)
 
 [Project Contributors](https://github.com/spatie/laravel-html/graphs/contributors)
 
 
+### Laravel File Manager
 
-### Larevel File Manager Credits
+Laravel File Manager is opensource software licensed under the [MIT license](https://github.com/spatie/laravel-html/blob/master/LICENSE.md)
 
 [Aleksandr Manekin](https://webmai.ru/projects/file-manager)
 
 [Project Contributors](https://github.com/alexusmai/laravel-file-manager/graphs/contributors)
 
 
+### Laravel Form Builder
 
-### Larevel Form Builder Credits
+Laravel Form Builder is opensource software licensed under the [MIT license](https://github.com/kristijanhusak/laravel-form-builder/blob/master/LICENSE)
 
 [Kristijan Husak](https://www.kristijanhusak.com/)
 
@@ -104,7 +75,15 @@ Laravel Form Builder is opensource software licensed under the [MIT license](htt
 
 
 
+## Backend
 
+### Core
+
+bootstrap-vue : [nmp bootstrapvue](https://www.npmjs.com/package/bootstrap-vue)
+
+vue-i18n : [nmp vuei18n](https://www.npmjs.com/package/vue-i18n)
+
+spatie/laravel-medialibrary : [spatie/laravel-medialibrary](https://github.com/spatie/laravel-medialibrary)
 
 
 
