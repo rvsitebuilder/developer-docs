@@ -13,9 +13,21 @@
 
 ### WYSIWYG
 
+@babel/polyfill : [@babel/polyfill](https://www.npmjs.com/package/@babel/polyfill)
+
 @fortawesome/fontawesome-free : [@fortawesome/fontawesome-free](https://www.npmjs.com/package/@fortawesome/fontawesome-free)
 
 @loadingio/loading-bar : [loading-Bar](https://www.npmjs.com/package/@loadingio/loading-bar)
+
+@pnotify/confirm : 
+
+@pnotify/core :
+
+@pnotify/mobile : 
+
+@pnotify/paginate :
+
+@popperjs/core : [@popperjs/core](https://www.npmjs.com/package/@popperjs/core)
 
 @vue/test-utils : [Vue Test Utils](https://www.npmjs.com/package/@vue/test-utils)
 
@@ -73,21 +85,17 @@ lodash : [lodash](https://www.npmjs.com/package/lodash)
 
 perfect-scrollbar : [perfect-scrollbar](https://www.npmjs.com/package/perfect-scrollbar)
 
-prettier : [Prettier](https://www.npmjs.com/package/prettier)
-
-pnotify : [PNotify](https://www.npmjs.com/package/pnotify)
-
-popper.js : [Popper.js](https://www.npmjs.com/package/popper.js)
-
 postcss-css-variables : [PostCSS CSS Variables](https://www.npmjs.com/package/postcss-css-variables)
 
 postcss-discard-comments : [postcss-discard-comments](https://www.npmjs.com/package/postcss-discard-comments)
 
 postcss-plugins : [PostCSS Plugin List](https://www.npmjs.com/package/postcss-plugins)
 
-purify-css : [PurifyCSS](https://www.npmjs.com/package/purify-css)
+prettier : [Prettier](https://www.npmjs.com/package/prettier)
 
-purifycss-webpack : [PurifyCSS Plugin](https://www.npmjs.com/package/purifycss-webpack)
+purgecss-webpack-plugin : [purgecss-webpack-plugin](https://www.npmjs.com/package/purgecss-webpack-plugin)
+
+purify-css : [PurifyCSS](https://www.npmjs.com/package/purify-css)
 
 resolve-url-loader : [Resolve URL Loader](https://www.npmjs.com/package/resolve-url-loader)
 
