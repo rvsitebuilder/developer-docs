@@ -19,11 +19,11 @@ Thanks to [@babel/polyfill](https://www.npmjs.com/package/@babel/polyfill)
 
 **@fortawesome/fontawesome-free**
 
-   [@fortawesome/fontawesome-free](https://www.npmjs.com/package/@fortawesome/fontawesome-free)
+Thanks to [@fortawesome/fontawesome-free](https://www.npmjs.com/package/@fortawesome/fontawesome-free)
 
 **@loadingio/loading-bar**
 
-   [loading-Bar](https://www.npmjs.com/package/@loadingio/loading-bar)
+Thanks to [loading-Bar](https://www.npmjs.com/package/@loadingio/loading-bar)
 
 **@pnotify/confirm**
 
@@ -33,105 +33,203 @@ Thanks to [@babel/polyfill](https://www.npmjs.com/package/@babel/polyfill)
 
 **@pnotify/paginate**
 
-   [PNotify](https://www.npmjs.com/package/pnotify)
+Thanks to [PNotify](https://www.npmjs.com/package/pnotify)
 
-@popperjs/core : [@popperjs/core](https://www.npmjs.com/package/@popperjs/core)
+**@popperjs/core**
 
-@vue/test-utils : [Vue Test Utils](https://www.npmjs.com/package/@vue/test-utils)
+Thanks to [@popperjs/core](https://www.npmjs.com/package/@popperjs/core)
 
-axios : [axios](https://www.npmjs.com/package/axios)
+**@vue/test-utils**
 
-babel-jest : [Babel jest](https://www.npmjs.com/package/babel-jest)
+Thanks to [Vue Test Utils](https://www.npmjs.com/package/@vue/test-utils)
 
-bootstrap : [Bootstrap](https://www.npmjs.com/package/bootstrap)
+**axios**
 
-browser-sync : [browser-sync](https://www.npmjs.com/package/browser-sync)
+Thanks to [axios](https://www.npmjs.com/package/axios)
 
-browser-sync-webpack-plugin : [BrowserSync plugin for Webpack](https://www.npmjs.com/package/browser-sync-webpack-plugin)
+**babel-jest**
 
-chosen-js : [Chosen](https://www.npmjs.com/package/chosen-js)
+Thanks to [Babel jest](https://www.npmjs.com/package/babel-jest)
 
-clean-webpack-plugin : [Clean plugin for webpack](https://www.npmjs.com/package/clean-webpack-plugin)
+**bootstrap**
 
-core-js : [core-js](https://www.npmjs.com/package/core-js)
+Thanks to [Bootstrap](https://www.npmjs.com/package/bootstrap)
 
-cropper : [Cropper](https://www.npmjs.com/package/cropper)
+**browser-sync**
 
-cross-env : [cross-env](https://www.npmjs.com/package/cross-env)
+Thanks to [browser-sync](https://www.npmjs.com/package/browser-sync)
 
-cross-var : [cross-var](https://www.npmjs.com/package/cross-var)
+**browser-sync-webpack-plugin**
 
-cssjson : [CSS-JSON Converter for JavaScript](https://www.npmjs.com/package/cssjson)
+Thanks to [BrowserSync plugin for Webpack](https://www.npmjs.com/package/browser-sync-webpack-plugin)
 
-eslint : [ESLint](https://www.npmjs.com/package/eslint0)
+**chosen-js**
 
-fs-extra : [Node.js: fs-extra](https://www.npmjs.com/package/fs-extra)
+Thanks to [Chosen](https://www.npmjs.com/package/chosen-js)
 
-intl-tel-input : [International Telephone Input](https://www.npmjs.com/package/intl-tel-input)
+**clean-webpack-plugin**
 
-jest : [Jest](https://www.npmjs.com/package/jest)
+Thanks to [Clean plugin for webpack](https://www.npmjs.com/package/clean-webpack-plugin)
 
-jquery-lazy : [jQuery & Zepto Lazy](https://www.npmjs.com/package/jquery-lazy)
+**core-js**
 
-jquery-ui-bundle : [jquery-ui-bundle](https://www.npmjs.com/package/jquery-ui-bundle)
+Thanks to [core-js](https://www.npmjs.com/package/core-js)
 
-jquery-validation : [jQuery Validation Plugin](https://www.npmjs.com/package/jquery-validation)
+**cropper**
 
-jquery.md5 : [jquery.md5](https://www.npmjs.com/package/jquery.md5)
+Thanks to [Cropper](https://www.npmjs.com/package/cropper)
 
-jstree : [jstree](https://www.npmjs.com/package/jstree)
+**cross-env**
 
-laravel-mix : [Laravel Mix](https://www.npmjs.com/package/laravel-mix)
+Thanks to [cross-env](https://www.npmjs.com/package/cross-env)
 
-laravel-mix-merge-manifest : [Laravel Mix - Merge Manifest](https://www.npmjs.com/package/laravel-mix-merge-manifest)
+**cross-var**
 
-lerna : [Lerna](https://www.npmjs.com/package/lerna)
+Thanks to [cross-var](https://www.npmjs.com/package/cross-var)
 
-loading-bar : [loading-bar](https://www.npmjs.com/package/loading-bar)
+**cssjson**
 
-lodash : [lodash](https://www.npmjs.com/package/lodash)
+Thanks to [CSS-JSON Converter for JavaScript](https://www.npmjs.com/package/cssjson)
 
-perfect-scrollbar : [perfect-scrollbar](https://www.npmjs.com/package/perfect-scrollbar)
+**eslint**
 
-postcss-css-variables : [PostCSS CSS Variables](https://www.npmjs.com/package/postcss-css-variables)
+Thanks to [ESLint](https://www.npmjs.com/package/eslint0)
 
-postcss-discard-comments : [postcss-discard-comments](https://www.npmjs.com/package/postcss-discard-comments)
+**fs-extra**
 
-postcss-plugins : [PostCSS Plugin List](https://www.npmjs.com/package/postcss-plugins)
+Thanks to [Node.js: fs-extra](https://www.npmjs.com/package/fs-extra)
 
-prettier : [Prettier](https://www.npmjs.com/package/prettier)
+**intl-tel-input**
 
-purgecss-webpack-plugin : [purgecss-webpack-plugin](https://www.npmjs.com/package/purgecss-webpack-plugin)
+Thanks to [International Telephone Input](https://www.npmjs.com/package/intl-tel-input)
 
-purify-css : [PurifyCSS](https://www.npmjs.com/package/purify-css)
+**jest**
 
-resolve-url-loader : [Resolve URL Loader](https://www.npmjs.com/package/resolve-url-loader)
+Thanks to [Jest](https://www.npmjs.com/package/jest)
 
-sass : [Sass](https://www.npmjs.com/package/sass)
+**jquery-lazy**
 
-sass-loader : [sass-loader](https://www.npmjs.com/package/sass-loader)
+Thanks to [jQuery & Zepto Lazy](https://www.npmjs.com/package/jquery-lazy)
 
-simple-line-icons : [Simple Line Icons](https://www.npmjs.com/package/simple-line-icons)
+**jquery-ui-bundle**
 
-spectrum-colorpicker : [Spectrum](https://www.npmjs.com/package/spectrum-colorpicker)
+Thanks to [jquery-ui-bundle](https://www.npmjs.com/package/jquery-ui-bundle)
 
-speed-measure-webpack-plugin : [speed-measure-webpack-plugin](https://www.npmjs.com/package/speed-measure-webpack-plugin)
+**jquery-validation**
 
-sweetalert2 : [sweetalert2](https://www.npmjs.com/package/sweetalert2)
+Thanks to [jQuery Validation Plugin](https://www.npmjs.com/package/jquery-validation)
 
-tui-image-editor : [Toast UI ImageEditor](https://www.npmjs.com/package/tui-image-editor)
+**jquery.md5**
 
-uikit : [UIkit](https://www.npmjs.com/package/uikit)
+Thanks to [jquery.md5](https://www.npmjs.com/package/jquery.md5)
 
-vue : [vue](https://www.npmjs.com/package/vue)
+**jstree**
 
-vue-loader : [vue-loader](https://www.npmjs.com/package/vue-loader)
+Thanks to [jstree](https://www.npmjs.com/package/jstree)
 
-vue-template-compiler : [vue-template-compiler](https://www.npmjs.com/package/vue-template-compiler)
+**laravel-mix**
 
-webfontloader : [Web Font Loader](https://www.npmjs.com/package/webfontloader)
+Thanks to [Laravel Mix](https://www.npmjs.com/package/laravel-mix)
 
-webpack-bundle-analyzer : [Webpack Bundle Analyzer](https://www.npmjs.com/package/webpack-bundle-analyzer)
+**laravel-mix-merge-manifest**
+
+Thanks to [Laravel Mix - Merge Manifest](https://www.npmjs.com/package/laravel-mix-merge-manifest)
+
+**lerna**
+
+Thanks to [Lerna](https://www.npmjs.com/package/lerna)
+
+**loading-bar**
+
+Thanks to [loading-bar](https://www.npmjs.com/package/loading-bar)
+
+**lodash**
+
+Thanks to [lodash](https://www.npmjs.com/package/lodash)
+
+**perfect-scrollbar**
+
+Thanks to [perfect-scrollbar](https://www.npmjs.com/package/perfect-scrollbar)
+
+**postcss-css-variables**
+
+Thanks to [PostCSS CSS Variables](https://www.npmjs.com/package/postcss-css-variables)
+
+**postcss-discard-comments**
+
+Thanks to [postcss-discard-comments](https://www.npmjs.com/package/postcss-discard-comments)
+
+**postcss-plugins**
+
+Thanks to [PostCSS Plugin List](https://www.npmjs.com/package/postcss-plugins)
+
+**prettier**
+
+Thanks to [Prettier](https://www.npmjs.com/package/prettier)
+
+**purgecss-webpack-plugin**
+
+Thanks to [purgecss-webpack-plugin](https://www.npmjs.com/package/purgecss-webpack-plugin)
+
+**purify-css**
+
+Thanks to [PurifyCSS](https://www.npmjs.com/package/purify-css)
+
+**resolve-url-loader**
+
+Thanks to [Resolve URL Loader](https://www.npmjs.com/package/resolve-url-loader)
+
+**sass**
+
+Thanks to [Sass](https://www.npmjs.com/package/sass)
+
+**sass-loader**
+
+Thanks to [sass-loader](https://www.npmjs.com/package/sass-loader)
+
+**simple-line-icons**
+
+Thanks to [Simple Line Icons](https://www.npmjs.com/package/simple-line-icons)
+
+**spectrum-colorpicker**
+
+Thanks to [Spectrum](https://www.npmjs.com/package/spectrum-colorpicker)
+
+**speed-measure-webpack-plugin**
+
+Thanks to [speed-measure-webpack-plugin](https://www.npmjs.com/package/speed-measure-webpack-plugin)
+
+**sweetalert2**
+
+Thanks to [sweetalert2](https://www.npmjs.com/package/sweetalert2)
+
+**tui-image-editor**
+
+Thanks to [Toast UI ImageEditor](https://www.npmjs.com/package/tui-image-editor)
+
+**uikit**
+
+Thanks to [UIkit](https://www.npmjs.com/package/uikit)
+
+**vue**
+
+Thanks to [vue](https://www.npmjs.com/package/vue)
+
+**vue-loader**
+
+Thanks to [vue-loader](https://www.npmjs.com/package/vue-loader)
+
+**vue-template-compiler**
+
+Thanks to [vue-template-compiler](https://www.npmjs.com/package/vue-template-compiler)
+
+**webfontloader**
+
+Thanks to [Web Font Loader](https://www.npmjs.com/package/webfontloader)
+
+**webpack-bundle-analyzer**
+
+Thanks to [Webpack Bundle Analyzer](https://www.npmjs.com/package/webpack-bundle-analyzer)
 
 
 ### Laravel Framework
