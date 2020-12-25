@@ -13,25 +13,25 @@
 
 ### WYSIWYG
 
-@babel/polyfill
+**@babel/polyfill**
 
   [@babel/polyfill](https://www.npmjs.com/package/@babel/polyfill)
 
-@fortawesome/fontawesome-free
+**@fortawesome/fontawesome-free**
 
   [@fortawesome/fontawesome-free](https://www.npmjs.com/package/@fortawesome/fontawesome-free)
 
-@loadingio/loading-bar
+**@loadingio/loading-bar**
 
   [loading-Bar](https://www.npmjs.com/package/@loadingio/loading-bar)
 
-@pnotify/confirm
+**@pnotify/confirm**
 
-@pnotify/core
+**@pnotify/core**
 
-@pnotify/mobile
+**@pnotify/mobile**
 
-@pnotify/paginate
+**@pnotify/paginate**
 
   [PNotify](https://www.npmjs.com/package/pnotify)
 
