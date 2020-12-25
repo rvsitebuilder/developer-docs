@@ -1,20 +1,9 @@
 # Credits
 
-- [License](#license)
-  - [Laravel License](#laravel-license)
-  - [Laravel Boilerplate License](#laravel-boilerplate-license)
-  - [Laravel Totem License](#laravel-totem-license)
-  - [Laravel HTML License](#laravel-html-license)
-  - [Laravel File Manager License](#laravel-file-manager-license)
-  - [Laravel Form Builder License](#laravel-form-builder-license)
 - [Credits](#credits)
-  - [Laravel Framework](#laravel-framework)
-  - [Laravel Boilerplate Credits](#laravel-boilerplate-credits)
-  - [Larevel Totem Credits](#larevel-totem-credits)
-  - [Laravel HTML Credits](#laravel-html-credits)
-  - [Larevel File Manager Credits](#larevel-file-manager-credits)
-  - [Larevel Form Builder Credits](#larevel-form-builder-credits)
-
+  - [Blog](#blog)
+  - [Email](#email)
+  - [WYSIWYG](#wysiwyg)
 
 ## Frontend
 
@@ -24,21 +13,9 @@
 
 ### WYSIWYG
 
-@babel/polyfill : [@babel/polyfill](https://www.npmjs.com/package/@babel/polyfill)
-
 @fortawesome/fontawesome-free : [@fortawesome/fontawesome-free](https://www.npmjs.com/package/@fortawesome/fontawesome-free)
 
 @loadingio/loading-bar : [loading-Bar](https://www.npmjs.com/package/@loadingio/loading-bar)
-
-@pnotify/confirm : 
-
-@pnotify/core :
-
-@pnotify/mobile : 
-
-@pnotify/paginate :
-
-@popperjs/core : [@popperjs/core](https://www.npmjs.com/package/@popperjs/core)
 
 @vue/test-utils : [Vue Test Utils](https://www.npmjs.com/package/@vue/test-utils)
 
@@ -139,18 +116,6 @@ vue-template-compiler : [vue-template-compiler](https://www.npmjs.com/package/vu
 webfontloader : [Web Font Loader](https://www.npmjs.com/package/webfontloader)
 
 webpack-bundle-analyzer : [Webpack Bundle Analyzer](https://www.npmjs.com/package/webpack-bundle-analyzer)
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 ### Laravel Framework
