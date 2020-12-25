@@ -15,7 +15,7 @@
 
 **@babel/polyfill**
 
-Thanks to [@babel/polyfill](https://www.npmjs.com/package/@babel/polyfill)
+  Thanks to [@babel/polyfill](https://www.npmjs.com/package/@babel/polyfill)
 
 **@fortawesome/fontawesome-free**
 
@@ -33,15 +33,15 @@ Thanks to [loading-Bar](https://www.npmjs.com/package/@loadingio/loading-bar)
 
 **@pnotify/paginate**
 
-Thanks to [PNotify](https://www.npmjs.com/package/pnotify)
+  Thanks to [PNotify](https://www.npmjs.com/package/pnotify)
 
 **@popperjs/core**
 
-Thanks to [@popperjs/core](https://www.npmjs.com/package/@popperjs/core)
+    Thanks to Popperjs : https://www.npmjs.com/package/@popperjs/core
 
 **@vue/test-utils**
 
-Thanks to [Vue Test Utils](https://www.npmjs.com/package/@vue/test-utils)
+    Thanks to [Vuejs](https://www.npmjs.com/package/@vue/test-utils)
 
 **axios**
 
