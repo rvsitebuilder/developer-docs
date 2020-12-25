@@ -14,13 +14,16 @@
 ### WYSIWYG
 
 @babel/polyfill
-    [@babel/polyfill](https://www.npmjs.com/package/@babel/polyfill)
+
+  [@babel/polyfill](https://www.npmjs.com/package/@babel/polyfill)
 
 @fortawesome/fontawesome-free
-    [@fortawesome/fontawesome-free](https://www.npmjs.com/package/@fortawesome/fontawesome-free)
+
+  [@fortawesome/fontawesome-free](https://www.npmjs.com/package/@fortawesome/fontawesome-free)
 
 @loadingio/loading-bar
-    [loading-Bar](https://www.npmjs.com/package/@loadingio/loading-bar)
+
+  [loading-Bar](https://www.npmjs.com/package/@loadingio/loading-bar)
 
 @pnotify/confirm
 
@@ -30,7 +33,7 @@
 
 @pnotify/paginate
 
-    pnotify : [PNotify](https://www.npmjs.com/package/pnotify)
+  [PNotify](https://www.npmjs.com/package/pnotify)
 
 @popperjs/core : [@popperjs/core](https://www.npmjs.com/package/@popperjs/core)
 
