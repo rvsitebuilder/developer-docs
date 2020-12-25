@@ -15,7 +15,7 @@
 
 **@babel/polyfill**
 
-  Thanks to [@babel/polyfill](https://www.npmjs.com/package/@babel/polyfill)
+Thanks to [@babel/polyfill](https://www.npmjs.com/package/@babel/polyfill)
 
 **@fortawesome/fontawesome-free**
 
@@ -33,15 +33,15 @@ Thanks to [loading-Bar](https://www.npmjs.com/package/@loadingio/loading-bar)
 
 **@pnotify/paginate**
 
-  Thanks to [PNotify](https://www.npmjs.com/package/pnotify)
+Thanks to [PNotify](https://www.npmjs.com/package/pnotify)
 
 **@popperjs/core**
 
-    Thanks to Popperjs : https://www.npmjs.com/package/@popperjs/core
+Thanks to [Popperjs](https://www.npmjs.com/package/@popperjs/core)
 
 **@vue/test-utils**
 
-    Thanks to [Vuejs](https://www.npmjs.com/package/@vue/test-utils)
+Thanks to [Vuejs](https://www.npmjs.com/package/@vue/test-utils)
 
 **axios**
 
@@ -57,7 +57,7 @@ Thanks to [Bootstrap](https://www.npmjs.com/package/bootstrap)
 
 **browser-sync**
 
-Thanks to [browser-sync](https://www.npmjs.com/package/browser-sync)
+Thanks to [BrowserSync](https://www.npmjs.com/package/browser-sync)
 
 **browser-sync-webpack-plugin**
 
