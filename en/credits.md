@@ -13,17 +13,11 @@
 
 ### WYSIWYG
 
-**@babel/polyfill**
+  **@babel/polyfill** Thanks to [@babel/polyfill](https://www.npmjs.com/package/@babel/polyfill)
 
-Thanks to [@babel/polyfill](https://www.npmjs.com/package/@babel/polyfill)
+  **@fortawesome/fontawesome-free** Thanks to [@fortawesome/fontawesome-free](https://www.npmjs.com/package/@fortawesome/fontawesome-free)
 
-**@fortawesome/fontawesome-free**
-
-Thanks to [@fortawesome/fontawesome-free](https://www.npmjs.com/package/@fortawesome/fontawesome-free)
-
-**@loadingio/loading-bar**
-
-Thanks to [loading-Bar](https://www.npmjs.com/package/@loadingio/loading-bar)
+**@loadingio/loading-bar** Thanks to [loading-Bar](https://www.npmjs.com/package/@loadingio/loading-bar)
 
 **@pnotify/confirm**
 
