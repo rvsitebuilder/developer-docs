@@ -71,4 +71,5 @@
 
 
 - ## Credits
-  - [Credits](credits.md)
+  - [Front-end](front-end.md)
+  - [Back-end](back-end.md)
