@@ -11,6 +11,16 @@
 
 ### Email
 
+### Larecipe
+
+**binarytorch/larecipe**
+
+- Thanks to [LaRecipe](https://packagist.org/packages/binarytorch/larecipe)
+
+**unpoly**
+
+- Thanks to [Unpoly](https://www.npmjs.com/package/unpoly)
+
 ### WYSIWYG
 
 **@babel/polyfill**
@@ -293,14 +303,25 @@ Laravel Form Builder is opensource software licensed under the [MIT license](htt
 
 ### Core
 
-bootstrap-vue : [BootstrapVue](https://www.npmjs.com/package/bootstrap-vue)
+**alpinejs**
 
-vue-i18n : [vue-i18n](https://www.npmjs.com/package/vue-i18n)
+- Thanks to [Alpine.js](https://www.npmjs.com/package/alpinejs)
 
-alpinejs : [Alpine.js](https://www.npmjs.com/package/alpinejs)
+**bootstrap-vue**
+
+- Thanks to [BootstrapVue](https://www.npmjs.com/package/bootstrap-vue)
+
+**vue-i18n**
+
+- Thanks to  [vue-i18n](https://www.npmjs.com/package/vue-i18n)
+
 
 
 ### Manage
+
+**@rvsitebuilder/wysiwyg**
+
+- Thanks to 
 
 ### Scheduler
 
