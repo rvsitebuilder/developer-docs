@@ -10,69 +10,63 @@
 
 ### Blog
 
+Package :
+
+[rvsitebuilder/wysiwyg](https://www.npmjs.com/package/rvsitebuilder/wysiwyg)
+
+
 ### Email
+
+Package :
+
+[rvsitebuilder/wysiwyg](https://www.npmjs.com/package/rvsitebuilder/wysiwyg)
+
 
 ### Larecipe
 
-**binarytorch/larecipe**
+[LaRecipe](https://packagist.org/packages/binarytorch/larecipe)
 
-- Thanks to [LaRecipe](https://packagist.org/packages/binarytorch/larecipe)
-
-**unpoly**
-
-- Thanks to [Unpoly](https://www.npmjs.com/package/unpoly)
+[Unpoly](https://www.npmjs.com/package/unpoly)
 
 ### WYSIWYG
 
-**@babel/polyfill**
+Package Thanks to : 
 
-- Thanks to [@babel/polyfill](https://www.npmjs.com/package/@babel/polyfill)
+[@babel/cli](https://www.npmjs.com/package/@babel/cli)
 
-**@fortawesome/fontawesome-free**
+[@babel/core](https://www.npmjs.com/package/@babel/core)
 
-- Thanks to [@fortawesome/fontawesome-free](https://www.npmjs.com/package/@fortawesome/fontawesome-free)
+[@babel/preset-env](https://www.npmjs.com/package/@babel/preset-env)
 
-**@loadingio/loading-bar**
+[eslint-plugin-compat](https://www.npmjs.com/package/eslint-plugin-compat)
 
-- Thanks to [loading-Bar](https://www.npmjs.com/package/@loadingio/loading-bar)
+[@babel/polyfill](https://www.npmjs.com/package/@babel/polyfill)
 
-**@pnotify/confirm**
+[@fortawesome/fontawesome-free](https://www.npmjs.com/package/@fortawesome/fontawesome-free)
 
-**@pnotify/core**
+[loading-Bar](https://www.npmjs.com/package/@loadingio/loading-bar)
 
-**@pnotify/mobile**
+[@pnotify/confirm](https://www.npmjs.com/package/@pnotify/confirm)
 
-**@pnotify/paginate**
+[@pnotify/core](https://www.npmjs.com/package/@pnotify/core)
 
-- Thanks to [PNotify](https://www.npmjs.com/package/pnotify)
+[@pnotify/mobile](https://www.npmjs.com/package/@pnotify/mobile)
 
-**@popperjs/core**
+[@pnotify/paginate](https://www.npmjs.com/package/@pnotify/paginate)
 
-- Thanks to [Popperjs](https://www.npmjs.com/package/@popperjs/core)
+[@popperjs/core](https://www.npmjs.com/package/@popperjs/core)
 
-**@vue/test-utils**
+[@vue/test-utils](https://www.npmjs.com/package/@vue/test-utils)
 
-- Thanks to [Vuejs](https://www.npmjs.com/package/@vue/test-utils)
+[axios](https://www.npmjs.com/package/axios)
 
-**axios**
+[babel-jest](https://www.npmjs.com/package/babel-jest)
 
-- Thanks to [axios](https://www.npmjs.com/package/axios)
+[bootstrap](https://www.npmjs.com/package/bootstrap)
 
-**babel-jest**
+[browser-sync](https://www.npmjs.com/package/browser-sync)
 
-- Thanks to [Babel jest](https://www.npmjs.com/package/babel-jest)
-
-**bootstrap**
-
-- Thanks to [Bootstrap](https://www.npmjs.com/package/bootstrap)
-
-**browser-sync**
-
-- Thanks to [BrowserSync](https://www.npmjs.com/package/browser-sync)
-
-**browser-sync-webpack-plugin**
-
-- Thanks to [BrowserSync plugin for Webpack](https://www.npmjs.com/package/browser-sync-webpack-plugin)
+[browser-sync-webpack-plugin](https://www.npmjs.com/package/browser-sync-webpack-plugin)
 
 **chosen-js**
 
