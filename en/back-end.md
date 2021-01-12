@@ -17,7 +17,7 @@
 
 ### Framework
 
-Thanks to :
+Composer Thanks to :
 
 [altek/accountant](https://packagist.org/packages/altek/accountant)
 
@@ -110,6 +110,47 @@ Thanks to :
 [torann/geoip](https://packagist.org/packages/torann/geoip)
 
 [webpatser/laravel-uuid](https://packagist.org/packages/webpatser/laravel-uuid)
+
+[roave/security-advisories](https://packagist.org/packages/roave/security-advisories)
+
+[barryvdh/laravel-debugbar](https://packagist.org/packages/barryvdh/laravel-debugbar)
+
+[barryvdh/laravel-ide-helper](https://packagist.org/packages/barryvdh/laravel-ide-helper)
+
+[beyondcode/laravel-dump-server](https://packagist.org/packages/beyondcode/laravel-dump-server)
+
+[codedungeon/phpunit-result-printer](https://packagist.org/packages/codedungeon/phpunit-result-printer)
+
+[facade/ignition](https://packagist.org/packages/facade/ignition)
+
+[filp/whoops](https://packagist.org/packages/filp/whoops)
+
+[fzaninotto/faker](https://packagist.org/packages/fzaninotto/faker)
+
+[symplify/config-transformer](https://packagist.org/packages/symplify/config-transformer)
+
+[mockery/mockery](https://packagist.org/packages/mockery/mockery)
+
+[nunomaduro/collision](https://packagist.org/packages/nunomaduro/collision)
+
+[nunomaduro/larastan](https://packagist.org/packages/nunomaduro/larastan)
+
+[phpunit/phpunit](https://packagist.org/packages/phpunit/phpunit)
+
+[rector/rector](https://packagist.org/packages/rector/rector)
+
+[symplify/easy-coding-standard](https://packagist.org/packages/symplify/easy-coding-standard)
+
+[imanghafoori/laravel-microscope](https://packagist.org/packages/imanghafoori/laravel-microscope)
+
+[tightenco/tlint](https://packagist.org/packages/tightenco/tlint)
+
+Package Thanks to :
+
+[lerna](https://www.npmjs.com/package/lerna)
+
+[lerna-audit](https://www.npmjs.com/package/lerna-audit)
+
 
 
 
