@@ -2,17 +2,27 @@
 
 ### Core
 
-**alpinejs**
+Package Thanks to :
 
-- Thanks to [Alpine.js](https://www.npmjs.com/package/alpinejs)
+[alpinejs](https://www.npmjs.com/package/alpinejs)
 
-**bootstrap-vue**
+[bootstrap-vue](https://www.npmjs.com/package/bootstrap-vue)
 
-- Thanks to [BootstrapVue](https://www.npmjs.com/package/bootstrap-vue)
+[vue-i18n](https://www.npmjs.com/package/vue-i18n)
 
-**vue-i18n**
 
-- Thanks to  [vue-i18n](https://www.npmjs.com/package/vue-i18n)
+### Developer
+
+Composer Thanks to :
+
+[barryvdh/laravel-debugbar](https://packagist.org/packages/barryvdh/laravel-debugbar)
+
+[beyondcode/laravel-query-detector](https://packagist.org/packages/beyondcode/laravel-query-detector)
+
+
+Package :
+
+[rvsitebuilder/wysiwyg](https://www.npmjs.com/package/rvsitebuilder/wysiwyg)
 
 
 ### Framework
@@ -140,7 +150,7 @@ Composer Thanks to :
 [rector/rector](https://packagist.org/packages/rector/rector)
 
 [symplify/easy-coding-standard](https://packagist.org/packages/symplify/easy-coding-standard)
-
+rvsitebuilder/wysiwyg
 [imanghafoori/laravel-microscope](https://packagist.org/packages/imanghafoori/laravel-microscope)
 
 [tightenco/tlint](https://packagist.org/packages/tightenco/tlint)
@@ -156,11 +166,23 @@ Package Thanks to :
 
 ### Manage
 
-**@rvsitebuilder/wysiwyg**
+Package :
 
-- Thanks to 
+[rvsitebuilder/wysiwyg](https://www.npmjs.com/package/rvsitebuilder/wysiwyg)
 
-### Scheduler
 
 ### queuesharedhost
 
+Package :
+
+[rvsitebuilder/wysiwyg](https://www.npmjs.com/package/rvsitebuilder/wysiwyg)
+
+
+### Scheduler
+
+Package :
+
+[rvsitebuilder/wysiwyg](https://www.npmjs.com/package/rvsitebuilder/wysiwyg)
+
+
+### Totem
