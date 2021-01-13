@@ -14,12 +14,6 @@ Thanks to :
 
 - [vue-i18n](https://www.npmjs.com/package/vue-i18n)
 
-<html>
-  <head>
-  Thanks to :
-  </head>
-</html>
-
 ### Developer
 
 **Composer**
