@@ -1,28 +1,30 @@
 ## Backend
 
-### Core
+### Core Package
 
-Package Thanks to :
+Thanks to :
 
-[alpinejs](https://www.npmjs.com/package/alpinejs)
+ - [alpinejs](https://www.npmjs.com/package/alpinejs)
 
-[bootstrap-vue](https://www.npmjs.com/package/bootstrap-vue)
+ - [bootstrap-vue](https://www.npmjs.com/package/bootstrap-vue)
 
-[vue-i18n](https://www.npmjs.com/package/vue-i18n)
-
-
-### Developer
-
-Composer Thanks to :
-
-[barryvdh/laravel-debugbar](https://packagist.org/packages/barryvdh/laravel-debugbar)
-
-[beyondcode/laravel-query-detector](https://packagist.org/packages/beyondcode/laravel-query-detector)
+ - [vue-i18n](https://www.npmjs.com/package/vue-i18n)
 
 
-Package :
+### Developer Composer
 
-[rvsitebuilder/wysiwyg](https://www.npmjs.com/package/rvsitebuilder/wysiwyg)
+Thanks to :
+
+ - [barryvdh/laravel-debugbar](https://packagist.org/packages/barryvdh/laravel-debugbar)
+
+ - [beyondcode/laravel-query-detector](https://packagist.org/packages/beyondcode/laravel-query-detector)
+
+
+### Developer Package
+
+Thanks to : 
+
+ - [rvsitebuilder/wysiwyg](https://www.npmjs.com/package/rvsitebuilder/wysiwyg)
 
 
 ### Framework
