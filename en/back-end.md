@@ -1,6 +1,8 @@
 ## Backend
 
-### Core Package
+### Core
+
+**Package**
 
 Thanks to :
 
@@ -161,7 +163,7 @@ Thanks to :
 - [rector/rector](https://packagist.org/packages/rector/rector)
 
 - [symplify/easy-coding-standard](https://packagist.org/packages/symplify/easy-coding-standard)
-rvsitebuilder/wysiwyg
+rvsitebuilder/wysiwyg)
 
 - [imanghafoori/laravel-microscope](https://packagist.org/packages/imanghafoori/laravel-microscope)
 
