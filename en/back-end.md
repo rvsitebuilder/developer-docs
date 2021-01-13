@@ -1,3 +1,7 @@
+# Credits
+
+We develop RVsitebuilder laravel CMS with several packages from these kind fellows as credit. Please let us show some gratitude.
+
 ## Backend
 
 ### Core
