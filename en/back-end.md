@@ -27,15 +27,15 @@ Thanks to :
  - [rvsitebuilder/wysiwyg](https://www.npmjs.com/package/rvsitebuilder/wysiwyg)
 
 
-### Framework
+### Framework Composer
 
-Composer Thanks to :
+Thanks to :
 
-[altek/accountant](https://packagist.org/packages/altek/accountant)
+- [altek/accountant](https://packagist.org/packages/altek/accountant)
 
-[appstract/laravel-blade-directives](https://packagist.org/packages/appstract/laravel-blade-directives)
+- [appstract/laravel-blade-directives](https://packagist.org/packages/appstract/laravel-blade-directives)
 
-[arcanedev/no-captcha](https://packagist.org/packages/arcanedev/no-captcha)
+- [arcanedev/no-captcha](https://packagist.org/packages/arcanedev/no-captcha)
 
 [arcanedev/support](https://packagist.org/packages/arcanedev/support)
 
