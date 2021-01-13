@@ -1,6 +1,6 @@
 # Credits
 
-We develop RVsitebuilder laravel CMS with several packages from these kind fellows as credit. Please let us show some gratitude.
+We develop RVsitebuilder laravel CMS with several packages from these kind fellows in credit. Please let us show some gratitude.
 
 ## Backend
 
@@ -27,10 +27,6 @@ Thanks to :
 - [barryvdh/laravel-debugbar](https://packagist.org/packages/barryvdh/laravel-debugbar)
 
 - [beyondcode/laravel-query-detector](https://packagist.org/packages/beyondcode/laravel-query-detector)
-
-----------------------------------------------------------------------------------------
-
-### Developer
 
 **Package**
 
@@ -187,7 +183,7 @@ Thanks to :
 
 **Package**
 
-[rvsitebuilder/wysiwyg](https://www.npmjs.com/package/rvsitebuilder/wysiwyg)
+- [rvsitebuilder/wysiwyg](https://www.npmjs.com/package/rvsitebuilder/wysiwyg)
 
 ----------------------------------------------------------------------------------------
 
@@ -195,7 +191,7 @@ Thanks to :
 
 **Package**
 
-[rvsitebuilder/wysiwyg](https://www.npmjs.com/package/rvsitebuilder/wysiwyg)
+- [rvsitebuilder/wysiwyg](https://www.npmjs.com/package/rvsitebuilder/wysiwyg)
 
 ----------------------------------------------------------------------------------------
 
@@ -203,6 +199,6 @@ Thanks to :
 
 **Package**
 
-[rvsitebuilder/wysiwyg](https://www.npmjs.com/package/rvsitebuilder/wysiwyg)
+- [rvsitebuilder/wysiwyg](https://www.npmjs.com/package/rvsitebuilder/wysiwyg)
 
 ----------------------------------------------------------------------------------------

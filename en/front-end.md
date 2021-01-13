@@ -22,9 +22,19 @@ We develop RVsitebuilder laravel CMS with several packages from these kind fello
 
 ### Larecipe
 
-[LaRecipe](https://packagist.org/packages/binarytorch/larecipe)
+**Composer**
 
-[Unpoly](https://www.npmjs.com/package/unpoly)
+Thanks to : 
+
+- [binarytorch/larecipe](https://packagist.org/packages/binarytorch/larecipe)
+
+**Package**
+
+Thanks to : 
+
+- [unpoly](https://www.npmjs.com/package/unpoly)
+
+- [rvsitebuilder/wysiwyg](https://www.npmjs.com/package/rvsitebuilder/wysiwyg)
 
 ----------------------------------------------------------------------------------------
 
@@ -155,65 +165,6 @@ Thanks to :
 - [webpack-bundle-analyzer](https://www.npmjs.com/package/webpack-bundle-analyzer)
 
 ----------------------------------------------------------------------------------------
-
-### Laravel Framework
-
-The Laravel framwork is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT)
-
-[Laravel Framework](https://laravel.com/)
-
-[Project Contributors](https://github.com/laravel/framework/graphs/contributors)
-
-----------------------------------------------------------------------------------------
-
-### Laravel Boilerplate
-
-Laravel Boilerplate is opensource software licensed under the [MIT license](http://anthony.mit-license.org)
-
-[Anthony Rappa](https://rappasoft.com/)
-
-[Project Contributors](https://github.com/rappasoft/laravel-boilerplate/graphs/contributors)
-
-----------------------------------------------------------------------------------------
-
-### Laravel Totem
-
-Laravel Totem is opensource software licensed under the [MIT license](https://github.com/codestudiohq/laravel-totem/blob/8.0/LICENSE)
-
-[Code Studio](http://codestudio.us/)
-
-[Project Contributors](https://github.com/codestudiohq/laravel-totem/graphs/contributors)
-
-----------------------------------------------------------------------------------------
-
-### Laravel HTML
-
-Laravel HTML is opensource software licensed under the [MIT license](https://github.com/spatie/laravel-html/blob/master/LICENSE.md)
-
-[Spatie](https://spatie.be/open-source)
-
-[Project Contributors](https://github.com/spatie/laravel-html/graphs/contributors)
-
-----------------------------------------------------------------------------------------
-
-### Laravel File Manager
-
-Laravel File Manager is opensource software licensed under the [MIT license](https://github.com/spatie/laravel-html/blob/master/LICENSE.md)
-
-[Aleksandr Manekin](https://webmai.ru/projects/file-manager)
-
-[Project Contributors](https://github.com/alexusmai/laravel-file-manager/graphs/contributors)
-
-----------------------------------------------------------------------------------------
-
-### Laravel Form Builder
-
-Laravel Form Builder is opensource software licensed under the [MIT license](https://github.com/kristijanhusak/laravel-form-builder/blob/master/LICENSE)
-
-[Kristijan Husak](https://www.kristijanhusak.com/)
-
-[Project Contributors](https://github.com/kristijanhusak/laravel-form-builder/graphs/contributors)
-
 
 
 
