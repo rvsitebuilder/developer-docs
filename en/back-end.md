@@ -1,7 +1,5 @@
 ## Backend
 
-_________________________________________________________________
-
 ### Core
 
 **Package**
@@ -13,6 +11,8 @@ Thanks to :
 - [bootstrap-vue](https://www.npmjs.com/package/bootstrap-vue)
 
 - [vue-i18n](https://www.npmjs.com/package/vue-i18n)
+
+----------------------------------------------------------------------------------------
 
 ### Developer
 
