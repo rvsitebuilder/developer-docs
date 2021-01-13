@@ -1,28 +1,24 @@
 # Credits
 
-We develop RVsitebuilder laravel CMS with several packages from these kind fellows as credit. Please let us show some gratitude.
+We develop RVsitebuilder laravel CMS with several packages from these kind fellows in credit. Please let us show some gratitude.
 
 ## Frontend
 
-- [Credits](#credits)
-  - [Blog](#blog)
-  - [Email](#email)
-  - [WYSIWYG](#wysiwyg)
-
-
 ### Blog
 
-Package :
+**Package**
 
-[rvsitebuilder/wysiwyg](https://www.npmjs.com/package/rvsitebuilder/wysiwyg)
+- [rvsitebuilder/wysiwyg](https://www.npmjs.com/package/rvsitebuilder/wysiwyg)
 
+----------------------------------------------------------------------------------------
 
 ### Email
 
-Package :
+**Package**
 
-[rvsitebuilder/wysiwyg](https://www.npmjs.com/package/rvsitebuilder/wysiwyg)
+- [rvsitebuilder/wysiwyg](https://www.npmjs.com/package/rvsitebuilder/wysiwyg)
 
+----------------------------------------------------------------------------------------
 
 ### Larecipe
 
@@ -30,214 +26,135 @@ Package :
 
 [Unpoly](https://www.npmjs.com/package/unpoly)
 
+----------------------------------------------------------------------------------------
+
 ### WYSIWYG
 
-Package Thanks to : 
+**Package**
 
-[@babel/cli](https://www.npmjs.com/package/@babel/cli)
+Thanks to : 
 
-[@babel/core](https://www.npmjs.com/package/@babel/core)
+- [@babel/cli](https://www.npmjs.com/package/@babel/cli)
 
-[@babel/preset-env](https://www.npmjs.com/package/@babel/preset-env)
+- [@babel/core](https://www.npmjs.com/package/@babel/core)
 
-[eslint-plugin-compat](https://www.npmjs.com/package/eslint-plugin-compat)
+- [@babel/preset-env](https://www.npmjs.com/package/@babel/preset-env)
 
-[@babel/polyfill](https://www.npmjs.com/package/@babel/polyfill)
+- [eslint-plugin-compat](https://www.npmjs.com/package/eslint-plugin-compat)
 
-[@fortawesome/fontawesome-free](https://www.npmjs.com/package/@fortawesome/fontawesome-free)
+- [@babel/polyfill](https://www.npmjs.com/package/@babel/polyfill)
 
-[loading-Bar](https://www.npmjs.com/package/@loadingio/loading-bar)
+- [@fortawesome/fontawesome-free](https://www.npmjs.com/package/@fortawesome/fontawesome-free)
 
-[@pnotify/confirm](https://www.npmjs.com/package/@pnotify/confirm)
+- [loading-Bar](https://www.npmjs.com/package/@loadingio/loading-bar)
 
-[@pnotify/core](https://www.npmjs.com/package/@pnotify/core)
+- [@pnotify/confirm](https://www.npmjs.com/package/@pnotify/confirm)
 
-[@pnotify/mobile](https://www.npmjs.com/package/@pnotify/mobile)
+- [@pnotify/core](https://www.npmjs.com/package/@pnotify/core)
 
-[@pnotify/paginate](https://www.npmjs.com/package/@pnotify/paginate)
+- [@pnotify/mobile](https://www.npmjs.com/package/@pnotify/mobile)
 
-[@popperjs/core](https://www.npmjs.com/package/@popperjs/core)
+- [@pnotify/paginate](https://www.npmjs.com/package/@pnotify/paginate)
 
-[@vue/test-utils](https://www.npmjs.com/package/@vue/test-utils)
+- [@popperjs/core](https://www.npmjs.com/package/@popperjs/core)
 
-[axios](https://www.npmjs.com/package/axios)
+- [@vue/test-utils](https://www.npmjs.com/package/@vue/test-utils)
 
-[babel-jest](https://www.npmjs.com/package/babel-jest)
+- [axios](https://www.npmjs.com/package/axios)
 
-[bootstrap](https://www.npmjs.com/package/bootstrap)
+- [babel-jest](https://www.npmjs.com/package/babel-jest)
 
-[browser-sync](https://www.npmjs.com/package/browser-sync)
+- [bootstrap](https://www.npmjs.com/package/bootstrap)
 
-[browser-sync-webpack-plugin](https://www.npmjs.com/package/browser-sync-webpack-plugin)
+- [browser-sync](https://www.npmjs.com/package/browser-sync)
 
-**chosen-js**
+- [browser-sync-webpack-plugin](https://www.npmjs.com/package/browser-sync-webpack-plugin)
 
-- Thanks to [Chosen](https://www.npmjs.com/package/chosen-js)
+- [chosen-js](https://www.npmjs.com/package/chosen-js)
 
-**clean-webpack-plugin**
+- [clean-webpack-plugin](https://www.npmjs.com/package/clean-webpack-plugin)
 
-- Thanks to [Clean plugin for webpack](https://www.npmjs.com/package/clean-webpack-plugin)
+- [core-js](https://www.npmjs.com/package/core-js)
 
-**core-js**
+- [cropper](https://www.npmjs.com/package/cropper)
 
-- Thanks to [core-js](https://www.npmjs.com/package/core-js)
+- [cross-env](https://www.npmjs.com/package/cross-env)
 
-**cropper**
+- [cross-var](https://www.npmjs.com/package/cross-var)
 
-- Thanks to [Cropper](https://www.npmjs.com/package/cropper)
+- [cssjson](https://www.npmjs.com/package/cssjson)
 
-**cross-env**
+- [eslint](https://www.npmjs.com/package/eslint0)
 
-- Thanks to [cross-env](https://www.npmjs.com/package/cross-env)
+- [fs-extra](https://www.npmjs.com/package/fs-extra)
 
-**cross-var**
+- [intl-tel-input](https://www.npmjs.com/package/intl-tel-input)
 
-- Thanks to [cross-var](https://www.npmjs.com/package/cross-var)
+- [jest](https://www.npmjs.com/package/jest)
 
-**cssjson**
+- [jquery-lazy](https://www.npmjs.com/package/jquery-lazy)
 
-- Thanks to [CSS-JSON Converter for JavaScript](https://www.npmjs.com/package/cssjson)
+- [jquery-ui-bundle](https://www.npmjs.com/package/jquery-ui-bundle)
 
-**eslint**
+- [jquery-validation](https://www.npmjs.com/package/jquery-validation)
 
-- Thanks to [ESLint](https://www.npmjs.com/package/eslint0)
+- [jquery.md5](https://www.npmjs.com/package/jquery.md5)
 
-**fs-extra**
+- [jstree](https://www.npmjs.com/package/jstree)
 
-- Thanks to [Node.js: fs-extra](https://www.npmjs.com/package/fs-extra)
+- [laravel-mix](https://www.npmjs.com/package/laravel-mix)
 
-**intl-tel-input**
+- [laravel-mix-merge-manifest](https://www.npmjs.com/package/laravel-mix-merge-manifest)
 
-- Thanks to [International Telephone Input](https://www.npmjs.com/package/intl-tel-input)
+- [lerna](https://www.npmjs.com/package/lerna)
 
-**jest**
+- [loading-bar](https://www.npmjs.com/package/loading-bar)
 
-- Thanks to [Jest](https://www.npmjs.com/package/jest)
+- [lodash](https://www.npmjs.com/package/lodash)
 
-**jquery-lazy**
+- [perfect-scrollbar](https://www.npmjs.com/package/perfect-scrollbar)
 
-- Thanks to [jQuery & Zepto Lazy](https://www.npmjs.com/package/jquery-lazy)
+- [postcss-css-variables](https://www.npmjs.com/package/postcss-css-variables)
 
-**jquery-ui-bundle**
+- [postcss-discard-comments](https://www.npmjs.com/package/postcss-discard-comments)
 
-- Thanks to [jquery-ui-bundle](https://www.npmjs.com/package/jquery-ui-bundle)
+- [postcss-plugins](https://www.npmjs.com/package/postcss-plugins)
 
-**jquery-validation**
+- [prettier](https://www.npmjs.com/package/prettier)
 
-- Thanks to [jQuery Validation Plugin](https://www.npmjs.com/package/jquery-validation)
+- [purgecss-webpack-plugin](https://www.npmjs.com/package/purgecss-webpack-plugin)
 
-**jquery.md5**
+- [purify-css](https://www.npmjs.com/package/purify-css)
 
-- Thanks to [jquery.md5](https://www.npmjs.com/package/jquery.md5)
+- [resolve-url-loader](https://www.npmjs.com/package/resolve-url-loader)
 
-**jstree**
+- [sass](https://www.npmjs.com/package/sass)
 
-- Thanks to [jstree](https://www.npmjs.com/package/jstree)
+- [sass-loader](https://www.npmjs.com/package/sass-loader)
 
-**laravel-mix**
+- [simple-line-icons](https://www.npmjs.com/package/simple-line-icons)
 
-- Thanks to [Laravel Mix](https://www.npmjs.com/package/laravel-mix)
+- [spectrum-colorpicker](https://www.npmjs.com/package/spectrum-colorpicker)
 
-**laravel-mix-merge-manifest**
+- [speed-measure-webpack-plugin](https://www.npmjs.com/package/speed-measure-webpack-plugin)
 
-- Thanks to [Laravel Mix - Merge Manifest](https://www.npmjs.com/package/laravel-mix-merge-manifest)
+- [sweetalert2](https://www.npmjs.com/package/sweetalert2)
 
-**lerna**
+- [tui-image-editor](https://www.npmjs.com/package/tui-image-editor)
 
-- Thanks to [Lerna](https://www.npmjs.com/package/lerna)
+- [uikit](https://www.npmjs.com/package/uikit)
 
-**loading-bar**
+- [vue](https://www.npmjs.com/package/vue)
 
-- Thanks to [loading-bar](https://www.npmjs.com/package/loading-bar)
+- [vue-loader](https://www.npmjs.com/package/vue-loader)
 
-**lodash**
+- [vue-template-compiler](https://www.npmjs.com/package/vue-template-compiler)
 
-- Thanks to [lodash](https://www.npmjs.com/package/lodash)
+- [webfontloader](https://www.npmjs.com/package/webfontloader)
 
-**perfect-scrollbar**
+- [webpack-bundle-analyzer](https://www.npmjs.com/package/webpack-bundle-analyzer)
 
-- Thanks to [perfect-scrollbar](https://www.npmjs.com/package/perfect-scrollbar)
-
-**postcss-css-variables**
-
-- Thanks to [PostCSS CSS Variables](https://www.npmjs.com/package/postcss-css-variables)
-
-**postcss-discard-comments**
-
-- Thanks to [postcss-discard-comments](https://www.npmjs.com/package/postcss-discard-comments)
-
-**postcss-plugins**
-
-- Thanks to [PostCSS Plugin List](https://www.npmjs.com/package/postcss-plugins)
-
-**prettier**
-
-- Thanks to [Prettier](https://www.npmjs.com/package/prettier)
-
-**purgecss-webpack-plugin**
-
-- Thanks to [purgecss-webpack-plugin](https://www.npmjs.com/package/purgecss-webpack-plugin)
-
-**purify-css**
-
-- Thanks to [PurifyCSS](https://www.npmjs.com/package/purify-css)
-
-**resolve-url-loader**
-
-- Thanks to [Resolve URL Loader](https://www.npmjs.com/package/resolve-url-loader)
-
-**sass**
-
-- Thanks to [Sass](https://www.npmjs.com/package/sass)
-
-**sass-loader**
-
-- Thanks to [sass-loader](https://www.npmjs.com/package/sass-loader)
-
-**simple-line-icons**
-
-- Thanks to [Simple Line Icons](https://www.npmjs.com/package/simple-line-icons)
-
-**spectrum-colorpicker**
-
-- Thanks to [Spectrum](https://www.npmjs.com/package/spectrum-colorpicker)
-
-**speed-measure-webpack-plugin**
-
-- Thanks to [speed-measure-webpack-plugin](https://www.npmjs.com/package/speed-measure-webpack-plugin)
-
-**sweetalert2**
-
-- Thanks to [sweetalert2](https://www.npmjs.com/package/sweetalert2)
-
-**tui-image-editor**
-
-- Thanks to [Toast UI ImageEditor](https://www.npmjs.com/package/tui-image-editor)
-
-**uikit**
-
-- Thanks to [UIkit](https://www.npmjs.com/package/uikit)
-
-**vue**
-
-- Thanks to [vue](https://www.npmjs.com/package/vue)
-
-**vue-loader**
-
-- Thanks to [vue-loader](https://www.npmjs.com/package/vue-loader)
-
-**vue-template-compiler**
-
-- Thanks to [vue-template-compiler](https://www.npmjs.com/package/vue-template-compiler)
-
-**webfontloader**
-
-- Thanks to [Web Font Loader](https://www.npmjs.com/package/webfontloader)
-
-**webpack-bundle-analyzer**
-
-- Thanks to [Webpack Bundle Analyzer](https://www.npmjs.com/package/webpack-bundle-analyzer)
-
+----------------------------------------------------------------------------------------
 
 ### Laravel Framework
 
@@ -247,7 +164,7 @@ The Laravel framwork is open-sourced software licensed under the [MIT license](h
 
 [Project Contributors](https://github.com/laravel/framework/graphs/contributors)
 
-
+----------------------------------------------------------------------------------------
 
 ### Laravel Boilerplate
 
@@ -257,7 +174,7 @@ Laravel Boilerplate is opensource software licensed under the [MIT license](http
 
 [Project Contributors](https://github.com/rappasoft/laravel-boilerplate/graphs/contributors)
 
-
+----------------------------------------------------------------------------------------
 
 ### Laravel Totem
 
@@ -267,6 +184,7 @@ Laravel Totem is opensource software licensed under the [MIT license](https://gi
 
 [Project Contributors](https://github.com/codestudiohq/laravel-totem/graphs/contributors)
 
+----------------------------------------------------------------------------------------
 
 ### Laravel HTML
 
@@ -276,6 +194,7 @@ Laravel HTML is opensource software licensed under the [MIT license](https://git
 
 [Project Contributors](https://github.com/spatie/laravel-html/graphs/contributors)
 
+----------------------------------------------------------------------------------------
 
 ### Laravel File Manager
 
@@ -285,6 +204,7 @@ Laravel File Manager is opensource software licensed under the [MIT license](htt
 
 [Project Contributors](https://github.com/alexusmai/laravel-file-manager/graphs/contributors)
 
+----------------------------------------------------------------------------------------
 
 ### Laravel Form Builder
 
