@@ -10,11 +10,11 @@ We develop RVsitebuilder laravel CMS with several packages from these kind fello
 
 Thanks to :
 
-> [alpinejs](https://www.npmjs.com/package/alpinejs)
+* [alpinejs](https://www.npmjs.com/package/alpinejs)
 
-> [bootstrap-vue](https://www.npmjs.com/package/bootstrap-vue)
+* [bootstrap-vue](https://www.npmjs.com/package/bootstrap-vue)
 
-> [vue-i18n](https://www.npmjs.com/package/vue-i18n)
+* [vue-i18n](https://www.npmjs.com/package/vue-i18n)
 
 <hr>
 
