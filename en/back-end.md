@@ -6,21 +6,21 @@ We develop RVsitebuilder laravel CMS with several packages from these kind fello
 
 <h3>Core</h3>
 
-**Package**
+<strong>Package</strong>
 
 Thanks to :
 
-- [alpinejs](https://www.npmjs.com/package/alpinejs)
+> [alpinejs](https://www.npmjs.com/package/alpinejs)
 
-- [bootstrap-vue](https://www.npmjs.com/package/bootstrap-vue)
+> [bootstrap-vue](https://www.npmjs.com/package/bootstrap-vue)
 
-- [vue-i18n](https://www.npmjs.com/package/vue-i18n)
+> [vue-i18n](https://www.npmjs.com/package/vue-i18n)
 
 <hr>
 
 <h3>Developer</h3>
 
-**Composer**
+<strong>Composer</strong>
 
 Thanks to :
 
@@ -28,7 +28,7 @@ Thanks to :
 
 - [beyondcode/laravel-query-detector](https://packagist.org/packages/beyondcode/laravel-query-detector)
 
-**Package**
+<strong>Package</strong>
 
 Thanks to : 
 
@@ -38,7 +38,7 @@ Thanks to :
 
 <h3>Framework</h3>
 
-**Composer**
+<strong>Composer</strong>
 
 Thanks to :
 
@@ -169,7 +169,7 @@ rvsitebuilder/wysiwyg)
 
 - [tightenco/tlint](https://packagist.org/packages/tightenco/tlint)
 
-**Package**
+<strong>Package</strong>
 
 Thanks to :
 
@@ -181,7 +181,7 @@ Thanks to :
 
 <h3>Manage</h3>
 
-**Package**
+<strong>Package</strong>
 
 - [rvsitebuilder/wysiwyg](https://www.npmjs.com/package/rvsitebuilder/wysiwyg)
 
@@ -189,7 +189,7 @@ Thanks to :
 
 <h3>queuesharedhost
 
-**Package**
+<strong>Package</strong>
 
 - [rvsitebuilder/wysiwyg](https://www.npmjs.com/package/rvsitebuilder/wysiwyg)
 
@@ -197,7 +197,7 @@ Thanks to :
 
 <h3>Scheduler</h3>
 
-**Package**
+<strong>Package</strong>
 
 - [rvsitebuilder/wysiwyg](https://www.npmjs.com/package/rvsitebuilder/wysiwyg)
 
