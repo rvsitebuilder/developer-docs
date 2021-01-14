@@ -16,189 +16,200 @@ We develop RVsitebuilder laravel CMS with several packages from these kind fello
 
 > * [vue-i18n](https://www.npmjs.com/package/vue-i18n)
 
-******
 
-<h3>Developer</h3>
+<hr>
 
-<strong>Composer</strong>
 
-Thanks to :
+> <h3>Developer</h3>
 
-- [barryvdh/laravel-debugbar](https://packagist.org/packages/barryvdh/laravel-debugbar)
+> <strong>Composer</strong>
 
-- [beyondcode/laravel-query-detector](https://packagist.org/packages/beyondcode/laravel-query-detector)
+> Thanks to :
 
-<strong>Package</strong>
+> * [barryvdh/laravel-debugbar](https://packagist.org/packages/barryvdh/laravel-debugbar)
 
-Thanks to : 
+> * [beyondcode/laravel-query-detector](https://packagist.org/packages/beyondcode/laravel-query-detector)
 
-- [rvsitebuilder/wysiwyg](https://www.npmjs.com/package/rvsitebuilder/wysiwyg)
+> <strong>Package</strong>
 
-________________________
+> Thanks to : 
 
-<h3>Framework</h3>
+> * [rvsitebuilder/wysiwyg](https://www.npmjs.com/package/rvsitebuilder/wysiwyg)
 
-<strong>Composer</strong>
 
-Thanks to :
+<hr>
 
-- [altek/accountant](https://packagist.org/packages/altek/accountant)
 
-- [appstract/laravel-blade-directives](https://packagist.org/packages/appstract/laravel-blade-directives)
+> <h3>Framework</h3>
 
-- [arcanedev/no-captcha](https://packagist.org/packages/arcanedev/no-captcha)
+> <strong>Composer</strong>
 
-- [arcanedev/support](https://packagist.org/packages/arcanedev/support)
+> Thanks to :
 
-- [creativeorange/gravatar](https://packagist.org/packages/creativeorange/gravatar)
+> * [altek/accountant](https://packagist.org/packages/altek/accountant)
 
-- [composer/semver](https://packagist.org/packages/composer/semver)
+> * [appstract/laravel-blade-directives](https://packagist.org/packages/appstract/laravel-blade-directives)
 
-- [darkghosthunter/laraguard](https://packagist.org/packages/darkghosthunter/laraguard)
+> * [arcanedev/no-captcha](https://packagist.org/packages/arcanedev/no-captcha)
 
-- [divineomega/laravel-password-exposed-validation-rule](https://packagist.org/packages/divineomega/laravel-password-exposed-validation-rule)
+> * [arcanedev/support](https://packagist.org/packages/arcanedev/support)
 
-- [doctrine/dbal](https://packagist.org/packages/doctrine/dbal)
+> * [creativeorange/gravatar](https://packagist.org/packages/creativeorange/gravatar)
 
-- [fideloper/proxy](https://packagist.org/packages/fideloper/proxy)
+> * [composer/semver](https://packagist.org/packages/composer/semver)
 
-- [firebase/php-jwt](https://packagist.org/packages/firebase/php-jwt)
+> * [darkghosthunter/laraguard](https://packagist.org/packages/darkghosthunter/laraguard)
 
-- [fruitcake/laravel-cors](https://packagist.org/packages/fruitcake/laravel-cors)
+> * [divineomega/laravel-password-exposed-validation-rule](https://packagist.org/packages/divineomega/laravel-password-exposed-validation-rule)
 
-- [genealabs/laravel-model-caching](https://packagist.org/packages/genealabs/laravel-model-caching)
+> * [doctrine/dbal](https://packagist.org/packages/doctrine/dbal)
 
-- [guzzlehttp/guzzle](https://packagist.org/packages/guzzlehttp/guzzle)
+> * [fideloper/proxy](https://packagist.org/packages/fideloper/proxy)
 
-- [intervention/image](https://packagist.org/packages/intervention/image)
+> * [firebase/php-jwt](https://packagist.org/packages/firebase/php-jwt)
 
-- [intervention/imagecache](https://packagist.org/packages/intervention/imagecache)
+> * [fruitcake/laravel-cors](https://packagist.org/packages/fruitcake/laravel-cors)
 
-- [jamesmills/laravel-timezone](https://packagist.org/packages/jamesmills/laravel-timezone)
+> * [genealabs/laravel-model-caching](https://packagist.org/packages/genealabs/laravel-model-caching)
 
-- [kris/laravel-form-builder](https://packagist.org/packages/kris/laravel-form-builder)
+> * [guzzlehttp/guzzle](https://packagist.org/packages/guzzlehttp/guzzle)
 
-- [lab404/laravel-impersonate](https://packagist.org/packages/lab404/laravel-impersonate)
+> * [intervention/image](https://packagist.org/packages/intervention/image)
 
-- [langleyfoxall/laravel-nist-password-rules](https://packagist.org/packages/langleyfoxall/laravel-nist-password-rules)
+> * [intervention/imagecache](https://packagist.org/packages/intervention/imagecache)
 
-- [laravel/framework](https://packagist.org/packages/laravel/framework)
+> * [jamesmills/laravel-timezone](https://packagist.org/packages/jamesmills/laravel-timezone)
 
-- [laravel/socialite](https://packagist.org/packages/laravel/socialite)
+> * [kris/laravel-form-builder](https://packagist.org/packages/kris/laravel-form-builder)
 
-- [laravel/tinker](https://packagist.org/packages/laravel/tinker)
+> * [lab404/laravel-impersonate](https://packagist.org/packages/lab404/laravel-impersonate)
 
-- [laravel/ui](https://packagist.org/packages/laravel/ui)
+> * [langleyfoxall/laravel-nist-password-rules](https://packagist.org/packages/langleyfoxall/laravel-nist-password-rules)
 
-- [livewire/livewire](https://packagist.org/packages/livewire/livewire)
+> * [laravel/framework](https://packagist.org/packages/laravel/framework)
 
-- [lsolesen/pel](https://packagist.org/packages/lsolesen/pel)
+> * [laravel/socialite](https://packagist.org/packages/laravel/socialite)
 
-- [monolog/monolog](https://packagist.org/packages/monolog/monolog)
+> * [laravel/tinker](https://packagist.org/packages/laravel/tinker)
 
-- [plank/laravel-metable](https://packagist.org/packages/plank/laravel-metable)
+> * [laravel/ui](https://packagist.org/packages/laravel/ui)
 
-- [proengsoft/laravel-jsvalidation](https://packagist.org/packages/proengsoft/laravel-jsvalidation)
+> * [livewire/livewire](https://packagist.org/packages/livewire/livewire)
 
-- [queueworker/sansdaemon](https://packagist.org/packages/queueworker/sansdaemon)
+> * [lsolesen/pel](https://packagist.org/packages/lsolesen/pel)
 
-- [rappasoft/laravel-livewire-tables](https://packagist.org/packages/rappasoft/laravel-livewire-tables)
+> * [monolog/monolog](https://packagist.org/packages/monolog/monolog)
 
-- [rappasoft/lockout](https://packagist.org/packages/rappasoft/lockout)
+> * [plank/laravel-metable](https://packagist.org/packages/plank/laravel-metable)
 
-- [socialiteproviders/line](https://packagist.org/packages/socialiteproviders/line)
+> * [proengsoft/laravel-jsvalidation](https://packagist.org/packages/proengsoft/laravel-jsvalidation)
 
-- [spatie/laravel-activitylog](https://packagist.org/packages/spatie/laravel-activitylog)
+> * [queueworker/sansdaemon](https://packagist.org/packages/queueworker/sansdaemon)
 
-- [spatie/laravel-html](https://packagist.org/packages/spatie/laravel-html)
+> * [rappasoft/laravel-livewire-tables](https://packagist.org/packages/rappasoft/laravel-livewire-tables)
 
-- [spatie/laravel-medialibrary](https://packagist.org/packages/spatie/laravel-medialibrary)
+> * [rappasoft/lockout](https://packagist.org/packages/rappasoft/lockout)
 
-- [spatie/laravel-missing-page-redirector](https://packagist.org/packages/spatie/laravel-missing-page-redirector)
+> * [socialiteproviders/line](https://packagist.org/packages/socialiteproviders/line)
 
-- [spatie/laravel-permission](https://packagist.org/packages/spatie/laravel-permission)
+> * [spatie/laravel-activitylog](https://packagist.org/packages/spatie/laravel-activitylog)
 
-- [spatie/laravel-robots-middleware](https://packagist.org/packages/spatie/laravel-robots-middleware)
+> * [spatie/laravel-html](https://packagist.org/packages/spatie/laravel-html)
 
-- [splitbrain/php-archive](https://packagist.org/packages/splitbrain/php-archive)
+> * [spatie/laravel-medialibrary](https://packagist.org/packages/spatie/laravel-medialibrary)
 
-- [sroze/chain-of-responsibility](https://packagist.org/packages/sroze/chain-of-responsibility)
+> * [spatie/laravel-missing-page-redirector](https://packagist.org/packages/spatie/laravel-missing-page-redirector)
 
-- [studio/laravel-totem](https://packagist.org/packages/studio/laravel-totem)
+> * [spatie/laravel-permission](https://packagist.org/packages/spatie/laravel-permission)
 
-- [tabuna/breadcrumbs](https://packagist.org/packages/tabuna/breadcrumbs)
+> * [spatie/laravel-robots-middleware](https://packagist.org/packages/spatie/laravel-robots-middleware)
 
-- [tijsverkoyen/css-to-inline-styles](https://packagist.org/packages/tijsverkoyen/css-to-inline-styles)
+> * [splitbrain/php-archive](https://packagist.org/packages/splitbrain/php-archive)
 
-- [torann/geoip](https://packagist.org/packages/torann/geoip)
+> * [sroze/chain-of-responsibility](https://packagist.org/packages/sroze/chain-of-responsibility)
 
-- [webpatser/laravel-uuid](https://packagist.org/packages/webpatser/laravel-uuid)
+> * [studio/laravel-totem](https://packagist.org/packages/studio/laravel-totem)
 
-- [roave/security-advisories](https://packagist.org/packages/roave/security-advisories)
+> * [tabuna/breadcrumbs](https://packagist.org/packages/tabuna/breadcrumbs)
 
-- [barryvdh/laravel-debugbar](https://packagist.org/packages/barryvdh/laravel-debugbar)
+> * [tijsverkoyen/css-to-inline-styles](https://packagist.org/packages/tijsverkoyen/css-to-inline-styles)
 
-- [barryvdh/laravel-ide-helper](https://packagist.org/packages/barryvdh/laravel-ide-helper)
+> * [torann/geoip](https://packagist.org/packages/torann/geoip)
 
-- [beyondcode/laravel-dump-server](https://packagist.org/packages/beyondcode/laravel-dump-server)
+> * [webpatser/laravel-uuid](https://packagist.org/packages/webpatser/laravel-uuid)
 
-- [codedungeon/phpunit-result-printer](https://packagist.org/packages/codedungeon/phpunit-result-printer)
+> * [roave/security-advisories](https://packagist.org/packages/roave/security-advisories)
 
-- [facade/ignition](https://packagist.org/packages/facade/ignition)
+> * [barryvdh/laravel-debugbar](https://packagist.org/packages/barryvdh/laravel-debugbar)
 
-- [filp/whoops](https://packagist.org/packages/filp/whoops)
+> * [barryvdh/laravel-ide-helper](https://packagist.org/packages/barryvdh/laravel-ide-helper)
 
-- [fzaninotto/faker](https://packagist.org/packages/fzaninotto/faker)
+> * [beyondcode/laravel-dump-server](https://packagist.org/packages/beyondcode/laravel-dump-server)
 
-- [symplify/config-transformer](https://packagist.org/packages/symplify/config-transformer)
+> * [codedungeon/phpunit-result-printer](https://packagist.org/packages/codedungeon/phpunit-result-printer)
 
-- [mockery/mockery](https://packagist.org/packages/mockery/mockery)
+> * [facade/ignition](https://packagist.org/packages/facade/ignition)
 
-- [nunomaduro/collision](https://packagist.org/packages/nunomaduro/collision)
+> * [filp/whoops](https://packagist.org/packages/filp/whoops)
 
-- [nunomaduro/larastan](https://packagist.org/packages/nunomaduro/larastan)
+> * [fzaninotto/faker](https://packagist.org/packages/fzaninotto/faker)
 
-- [phpunit/phpunit](https://packagist.org/packages/phpunit/phpunit)
+> * [symplify/config-transformer](https://packagist.org/packages/symplify/config-transformer)
 
-- [rector/rector](https://packagist.org/packages/rector/rector)
+> * [mockery/mockery](https://packagist.org/packages/mockery/mockery)
 
-- [symplify/easy-coding-standard](https://packagist.org/packages/symplify/easy-coding-standard)
+> * [nunomaduro/collision](https://packagist.org/packages/nunomaduro/collision)
+
+> * [nunomaduro/larastan](https://packagist.org/packages/nunomaduro/larastan)
+
+> * [phpunit/phpunit](https://packagist.org/packages/phpunit/phpunit)
+
+> * [rector/rector](https://packagist.org/packages/rector/rector)
+
+> * [symplify/easy-coding-standard](https://packagist.org/packages/symplify/easy-coding-standard)
 rvsitebuilder/wysiwyg)
 
-- [imanghafoori/laravel-microscope](https://packagist.org/packages/imanghafoori/laravel-microscope)
+> * [imanghafoori/laravel-microscope](https://packagist.org/packages/imanghafoori/laravel-microscope)
 
-- [tightenco/tlint](https://packagist.org/packages/tightenco/tlint)
+> * [tightenco/tlint](https://packagist.org/packages/tightenco/tlint)
 
-<strong>Package</strong>
+> <strong>Package</strong>
 
-Thanks to :
+> Thanks to :
 
-- [lerna](https://www.npmjs.com/package/lerna)
+> * [lerna](https://www.npmjs.com/package/lerna)
 
-- [lerna-audit](https://www.npmjs.com/package/lerna-audit)
+> * [lerna-audit](https://www.npmjs.com/package/lerna-audit)
 
-<hr>
-
-<h3>Manage</h3>
-
-<strong>Package</strong>
-
-- [rvsitebuilder/wysiwyg](https://www.npmjs.com/package/rvsitebuilder/wysiwyg)
 
 <hr>
 
-<h3>queuesharedhost
 
-<strong>Package</strong>
+> <h3>Manage</h3>
 
-- [rvsitebuilder/wysiwyg](https://www.npmjs.com/package/rvsitebuilder/wysiwyg)
+> <strong>Package</strong>
+
+> * [rvsitebuilder/wysiwyg](https://www.npmjs.com/package/rvsitebuilder/wysiwyg)
+
 
 <hr>
 
-<h3>Scheduler</h3>
 
-<strong>Package</strong>
+> <h3>queuesharedhost
 
-- [rvsitebuilder/wysiwyg](https://www.npmjs.com/package/rvsitebuilder/wysiwyg)
+> <strong>Package</strong>
+
+> * [rvsitebuilder/wysiwyg](https://www.npmjs.com/package/rvsitebuilder/wysiwyg)
+
+
+<hr>
+
+
+> <h3>Scheduler</h3>
+
+> <strong>Package</strong>
+
+> *  [rvsitebuilder/wysiwyg](https://www.npmjs.com/package/rvsitebuilder/wysiwyg)
+
 
 <hr>
