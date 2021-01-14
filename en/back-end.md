@@ -2,7 +2,7 @@
 
 We develop RVsitebuilder laravel CMS with several packages from these kind fellows in credit. Please let us show some gratitude.
 
-<h2>Backend</h2>
+<h2>BACKEND</h2>
 
 > <h2>Core</h2>
 
