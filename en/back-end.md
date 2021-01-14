@@ -4,17 +4,17 @@ We develop RVsitebuilder laravel CMS with several packages from these kind fello
 
 <h2>Backend</h2>
 
-<h3>Core</h3>
+> <h3>Core</h3>
 
-<strong>Package</strong>
+> <strong>Package</strong>
 
-Thanks to :
+> Thanks to :
 
-*  [alpinejs](https://www.npmjs.com/package/alpinejs)
+> * [alpinejs](https://www.npmjs.com/package/alpinejs)
 
-*  [bootstrap-vue](https://www.npmjs.com/package/bootstrap-vue)
+> * [bootstrap-vue](https://www.npmjs.com/package/bootstrap-vue)
 
-* [vue-i18n](https://www.npmjs.com/package/vue-i18n)
+> * [vue-i18n](https://www.npmjs.com/package/vue-i18n)
 
 ******
 
