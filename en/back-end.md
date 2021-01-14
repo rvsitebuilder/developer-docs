@@ -1,10 +1,10 @@
-# Credits
+<h1>Credits</h1>
 
 We develop RVsitebuilder laravel CMS with several packages from these kind fellows in credit. Please let us show some gratitude.
 
-## Backend
+<h2>Backend</h2>
 
-### Core
+<h3>Core</h3>
 
 **Package**
 
@@ -16,9 +16,9 @@ Thanks to :
 
 - [vue-i18n](https://www.npmjs.com/package/vue-i18n)
 
-----------------------------------------------------------------------------------------
+<hr>
 
-### Developer
+<h3>Developer</h3>
 
 **Composer**
 
@@ -34,9 +34,9 @@ Thanks to :
 
 - [rvsitebuilder/wysiwyg](https://www.npmjs.com/package/rvsitebuilder/wysiwyg)
 
-----------------------------------------------------------------------------------------
+<hr>
 
-### Framework
+<h3>Framework</h3>
 
 **Composer**
 
@@ -177,28 +177,28 @@ Thanks to :
 
 - [lerna-audit](https://www.npmjs.com/package/lerna-audit)
 
-----------------------------------------------------------------------------------------
+<hr>
 
-### Manage
-
-**Package**
-
-- [rvsitebuilder/wysiwyg](https://www.npmjs.com/package/rvsitebuilder/wysiwyg)
-
-----------------------------------------------------------------------------------------
-
-### queuesharedhost
+<h3>Manage</h3>
 
 **Package**
 
 - [rvsitebuilder/wysiwyg](https://www.npmjs.com/package/rvsitebuilder/wysiwyg)
 
-----------------------------------------------------------------------------------------
+<hr>
 
-### Scheduler
+<h3>queuesharedhost
 
 **Package**
 
 - [rvsitebuilder/wysiwyg](https://www.npmjs.com/package/rvsitebuilder/wysiwyg)
 
-----------------------------------------------------------------------------------------
+<hr>
+
+<h3>Scheduler</h3>
+
+**Package**
+
+- [rvsitebuilder/wysiwyg](https://www.npmjs.com/package/rvsitebuilder/wysiwyg)
+
+<hr>
