@@ -101,7 +101,7 @@ Model Product.
     Class Shop\Book\Models\Product;
 ```
 
-When you created a product and you must created data into core_slug table too.You can call this method `CoreSlug::setSlug(Model $model , string attributeName)`.The argument's value by you set is passed to the function parameter.
+When you created a product and you must created data into core_slug table too.You can call this method `setSlug`.The argument's value by you set is passed to the function parameter.
 
 ```php
     use Rvsitebuilder\Core\Models\CoreSlug;
@@ -118,7 +118,7 @@ When you created a product and you must created data into core_slug table too.Yo
         $slug = CoreSlug::setSlug($newItem, 'product_name');
 ```
 
-If you want to create the prefix you can call this method `CorePrefix::setPrefix(Model $model , string $prefix)`.
+If you want to create the prefix you can call this method `setPrefix`.
 
 ```php
     use Rvsitebuilder\Core\Models\CorePrefix;
@@ -146,7 +146,7 @@ If you want to create the prefix you can call this method `CorePrefix::setPrefix
 
 </br>
 
-- Step 2 After you call the method `CoreSlug::setSlug` , You can crated the new page type is done.
+- Step 2 After you call the method `CoreSlug::setSlug` , You can create the new page type is done.
 
     |  id   | slugble_id |            slugble_type            | slug_name |
     | :---: | :--------: | :--------------------------------: | :-------: |
@@ -155,7 +155,7 @@ If you want to create the prefix you can call this method `CorePrefix::setPrefix
 
 </br>
 
-- Step 3 After you call the method `CorePrefix::setPrefix` , You can crated the new prefix is done.
+- Step 3 After you call the method `CorePrefix::setPrefix` , You can create the new prefix is done.
 
     |  id   | slug_id |  prefix_name   |
     | :---: | :-----: | :------------: |
