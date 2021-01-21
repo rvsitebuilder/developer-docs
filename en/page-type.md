@@ -112,10 +112,8 @@ When you created a product and you must created data into core_slug table too.Yo
                         'product_name' => 'PHP',
                         'price'  => '30' ,
                         'detail' => 'PHP is the ultimate learning guide.',
-                    ]);
-
-        // Using the method setSlug(), this 'product_name' is a attribute 'name' in your model.
-        $slug = CoreSlug::setSlug($newItem, 'product_name');
+                    ]); 
+        $slug = CoreSlug::setSlug($newItem, $newItem->product_name);
 ```
 
 If you want to create the prefix you can call this method `setPrefix`.
@@ -132,7 +130,7 @@ If you want to create the prefix you can call this method `setPrefix`.
                         'detail' => 'PHP is the ultimate learning guide.',
                     ]);
  
-        $slug = CoreSlug::setSlug($newItem, 'product_name');
+        $slug = CoreSlug::setSlug($newItem, $newItem->product_name);
         $prefix = CorePrefix::setPrefix($slug, $prefix);
 ```
 
