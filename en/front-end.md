@@ -1,37 +1,40 @@
-<h1>Credits</h1>
+# Credits
+
 - [FRONTEND](#frontend)
-- [Email](#email)
-- [WYSIWYG](#wysiwyg)
+  - [Blog](#blog)
+  - [Email](#email)
+  - [Larecipe](#larecipe)
+  - [WYSIWYG](#wysiwyg)
 
 We develop RVsitebuilder laravel CMS with several packages from these kind fellows in credit. Please let us show some gratitude.
 
 ## FRONTEND
 
-> <h2>Blog</h2>
+### Blog
 
-> <strong>Package</strong>
-
-> * [rvsitebuilder/wysiwyg](https://www.npmjs.com/package/rvsitebuilder/wysiwyg)
-
-<hr>
-
-## Email
-
-> <strong>Package</strong>
+**Package**
 
 > * [rvsitebuilder/wysiwyg](https://www.npmjs.com/package/rvsitebuilder/wysiwyg)
 
 <hr>
 
-> <h2>Larecipe</h2>
+### Email
 
-> <strong>Composer</strong>
+**Package**
+
+> * [rvsitebuilder/wysiwyg](https://www.npmjs.com/package/rvsitebuilder/wysiwyg)
+
+<hr>
+
+### Larecipe
+
+**Package**
 
 > Thanks to :
 
 > * [binarytorch/larecipe](https://packagist.org/packages/binarytorch/larecipe)
 
-> <strong>Package</strong>
+**Package**
 
 > Thanks to :
 
@@ -41,9 +44,9 @@ We develop RVsitebuilder laravel CMS with several packages from these kind fello
 
 <hr>
 
-## WYSIWYG
+### WYSIWYG
 
-> <strong>Package</strong>
+**Package**
 
 > Thanks to :
 

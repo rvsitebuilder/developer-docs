@@ -1,12 +1,20 @@
-<h1>Credits</h1>
+# Credits
 
+- [BACKEND](#backend)
+  - [Core](#core)
+  - [Developer](#developer)
+  - [Framework](#framework)
+  - [Manage](#manage)
+  - [queuesharedhost](#queuesharedhost)
+  - [Scheduler](#scheduler)
+  
 We develop RVsitebuilder laravel CMS with several packages from these kind fellows in credit. Please let us show some gratitude.
 
-<h2>BACKEND</h2>
+## BACKEND
 
-> <h2>Core</h2>
+### Core
 
-> <strong>Package</strong>
+**Package**
 
 > Thanks to :
 
@@ -16,13 +24,11 @@ We develop RVsitebuilder laravel CMS with several packages from these kind fello
 
 > * [vue-i18n](https://www.npmjs.com/package/vue-i18n)
 
-
 <hr>
 
+### Developer
 
-> <h2>Developer</h2>
-
-> <strong>Composer</strong>
+**Composer**
 
 > Thanks to :
 
@@ -30,19 +36,17 @@ We develop RVsitebuilder laravel CMS with several packages from these kind fello
 
 > * [beyondcode/laravel-query-detector](https://packagist.org/packages/beyondcode/laravel-query-detector)
 
-> <strong>Package</strong>
+**Package**
 
-> Thanks to : 
+> Thanks to :
 
 > * [rvsitebuilder/wysiwyg](https://www.npmjs.com/package/rvsitebuilder/wysiwyg)
 
-
 <hr>
 
+### Framework
 
-> <h2>Framework</h2>
-
-> <strong>Composer</strong>
+**Composer**
 
 > Thanks to :
 
@@ -181,35 +185,28 @@ rvsitebuilder/wysiwyg)
 
 > * [lerna-audit](https://www.npmjs.com/package/lerna-audit)
 
-
 <hr>
 
+### Manage
 
-> <h2>Manage</h2>
-
-> <strong>Package</strong>
+**Package**
 
 > * [rvsitebuilder/wysiwyg](https://www.npmjs.com/package/rvsitebuilder/wysiwyg)
 
-
 <hr>
 
+### queuesharedhost
 
-> <h2>queuesharedhost</h2>
-
-> <strong>Package</strong>
+**Package**
 
 > * [rvsitebuilder/wysiwyg](https://www.npmjs.com/package/rvsitebuilder/wysiwyg)
 
-
 <hr>
 
+### Scheduler
 
-> <h2>Scheduler</h2>
+**Package**
 
-> <strong>Package</strong>
-
-> *  [rvsitebuilder/wysiwyg](https://www.npmjs.com/package/rvsitebuilder/wysiwyg)
-
+> * [rvsitebuilder/wysiwyg](https://www.npmjs.com/package/rvsitebuilder/wysiwyg)
 
 <hr>
