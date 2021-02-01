@@ -1,4 +1,4 @@
-# Credits:FRONTEND
+# Front End Credits
 
 - [Blog](#blog)
 - [Email](#email)

@@ -1,4 +1,4 @@
-# Credits: BACKEND
+# Back End Credits
 
 - [Core](#core)
 - [Developer](#developer)
