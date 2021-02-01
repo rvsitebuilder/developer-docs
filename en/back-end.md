@@ -1,18 +1,15 @@
-# Credits
+# Credits: BACKEND
 
-- [BACKEND](#backend)
-  - [Core](#core)
-  - [Developer](#developer)
-  - [Framework](#framework)
-  - [Manage](#manage)
-  - [queuesharedhost](#queuesharedhost)
-  - [Scheduler](#scheduler)
+- [Core](#core)
+- [Developer](#developer)
+- [Framework](#framework)
+- [Manage](#manage)
+- [queuesharedhost](#queuesharedhost)
+- [Scheduler](#scheduler)
   
 We develop RVsitebuilder laravel CMS with several packages from these kind fellows in credit. Please let us show some gratitude.
 
-## BACKEND
-
-### Core
+## Core
 
 **Package**
 
@@ -26,7 +23,7 @@ We develop RVsitebuilder laravel CMS with several packages from these kind fello
 
 <hr>
 
-### Developer
+## Developer
 
 **Composer**
 
@@ -44,7 +41,7 @@ We develop RVsitebuilder laravel CMS with several packages from these kind fello
 
 <hr>
 
-### Framework
+## Framework
 
 **Composer**
 
@@ -187,7 +184,7 @@ rvsitebuilder/wysiwyg)
 
 <hr>
 
-### Manage
+## Manage
 
 **Package**
 
@@ -195,7 +192,7 @@ rvsitebuilder/wysiwyg)
 
 <hr>
 
-### queuesharedhost
+## queuesharedhost
 
 **Package**
 
@@ -203,7 +200,7 @@ rvsitebuilder/wysiwyg)
 
 <hr>
 
-### Scheduler
+## Scheduler
 
 **Package**
 

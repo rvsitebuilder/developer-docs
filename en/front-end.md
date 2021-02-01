@@ -1,16 +1,13 @@
-# Credits
+# Credits:FRONTEND
 
-- [FRONTEND](#frontend)
-  - [Blog](#blog)
-  - [Email](#email)
-  - [Larecipe](#larecipe)
-  - [WYSIWYG](#wysiwyg)
+- [Blog](#blog)
+- [Email](#email)
+- [Larecipe](#larecipe)
+- [WYSIWYG](#wysiwyg)
 
 We develop RVsitebuilder laravel CMS with several packages from these kind fellows in credit. Please let us show some gratitude.
 
-## FRONTEND
-
-### Blog
+## Blog
 
 **Package**
 
@@ -18,7 +15,7 @@ We develop RVsitebuilder laravel CMS with several packages from these kind fello
 
 <hr>
 
-### Email
+## Email
 
 **Package**
 
@@ -26,7 +23,7 @@ We develop RVsitebuilder laravel CMS with several packages from these kind fello
 
 <hr>
 
-### Larecipe
+## Larecipe
 
 **Package**
 
@@ -44,7 +41,7 @@ We develop RVsitebuilder laravel CMS with several packages from these kind fello
 
 <hr>
 
-### WYSIWYG
+## WYSIWYG
 
 **Package**
 
