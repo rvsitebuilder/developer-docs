@@ -4,7 +4,7 @@
 - [Developer](#developer)
 - [Framework](#framework)
 - [Manage](#manage)
-- [queuesharedhost](#queuesharedhost)
+- [Queuesharedhost](#queuesharedhost)
 - [Scheduler](#scheduler)
   
 We develop RVsitebuilder laravel CMS with several packages from these kind fellows in credit. Please let us show some gratitude.
@@ -192,7 +192,7 @@ rvsitebuilder/wysiwyg)
 
 <hr>
 
-## queuesharedhost
+## Queuesharedhost
 
 **Package**
 
