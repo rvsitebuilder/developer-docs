@@ -1,8 +1,11 @@
 <h1>Credits</h1>
+- [FRONTEND](#frontend)
+- [Email](#email)
+- [WYSIWYG](#wysiwyg)
 
 We develop RVsitebuilder laravel CMS with several packages from these kind fellows in credit. Please let us show some gratitude.
 
-<h2>FRONTEND</h2>
+## FRONTEND
 
 > <h2>Blog</h2>
 
@@ -10,45 +13,39 @@ We develop RVsitebuilder laravel CMS with several packages from these kind fello
 
 > * [rvsitebuilder/wysiwyg](https://www.npmjs.com/package/rvsitebuilder/wysiwyg)
 
-
 <hr>
 
-
-> <h2>Email</h2>
+## Email
 
 > <strong>Package</strong>
 
 > * [rvsitebuilder/wysiwyg](https://www.npmjs.com/package/rvsitebuilder/wysiwyg)
 
-
 <hr>
-
 
 > <h2>Larecipe</h2>
 
 > <strong>Composer</strong>
 
-> Thanks to : 
+> Thanks to :
 
 > * [binarytorch/larecipe](https://packagist.org/packages/binarytorch/larecipe)
 
 > <strong>Package</strong>
 
-> Thanks to : 
+> Thanks to :
 
 > * [unpoly](https://www.npmjs.com/package/unpoly)
 
 > * [rvsitebuilder/wysiwyg](https://www.npmjs.com/package/rvsitebuilder/wysiwyg)
 
-
 <hr>
 
-
-> <h2>WYSIWYG</h2>
+## WYSIWYG
 
 > <strong>Package</strong>
 
-> Thanks to : 
+> Thanks to :
 
 > * [@babel/cli](https://www.npmjs.com/package/@babel/cli)
 
@@ -170,21 +167,4 @@ We develop RVsitebuilder laravel CMS with several packages from these kind fello
 
 > * [webpack-bundle-analyzer](https://www.npmjs.com/package/webpack-bundle-analyzer)
 
-
 <hr>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
