@@ -3,6 +3,7 @@
 We develop RVsitebuilder laravel CMS with several packages from these kind fellows in credit. Please let us show some gratitude.
 
 <h2 class="credit-title">BACKEND</h2>
+
 <h2 class="credit-package">Core</h2>
 
 **Package**
@@ -168,7 +169,7 @@ rvsitebuilder/wysiwyg)
 
 > * [tightenco/tlint](https://packagist.org/packages/tightenco/tlint)
 
-> <strong>Package</strong>
+**Package**
 
 > Thanks to :
 
@@ -178,7 +179,7 @@ rvsitebuilder/wysiwyg)
 
 <hr>
 
-## Manage
+<h2 class="credit-package"> Manage</h2>
 
 **Package**
 
@@ -186,7 +187,7 @@ rvsitebuilder/wysiwyg)
 
 <hr>
 
-## Queuesharedhost
+<h2 class="credit-package"> Queuesharedhost</h2>
 
 **Package**
 
@@ -194,7 +195,7 @@ rvsitebuilder/wysiwyg)
 
 <hr>
 
-## Scheduler
+<h2 class="credit-package">Scheduler</h2>
 
 **Package**
 
