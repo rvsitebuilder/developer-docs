@@ -13,6 +13,7 @@
 - [Create new page type](#create-new-page-type)
 - [Using relationship to CoreSlug model](#using-relationship-to-coreslug-model)
 - [Retrieving The Relationship](#retrieving-the-relationship)
+- [Create Prefix](#create-prefix)
 
 ## Page
 
@@ -63,7 +64,7 @@ Coming soon
 - If you have a model table and want to create a page type by yourself. You can following this step instructions will help you.
 
     Table structure example.
-    The model CoreSlug from Core app and model Product from Shop app.
+    The model `CoreSlug` from Core app and model `Product` from Shop app.
 
 ```diff
     ── core_slug 
@@ -73,15 +74,6 @@ Coming soon
 +   ── product
 ```
 
-```diff
-     ├── Rvsitebuilder  
-     │   └── Core
-     │        └── Models
-+    │           └── CoreSlug
-     │           └── CorePrefix
-    
-```
-
 Model CoreSlug
 
 ```php
@@ -89,10 +81,11 @@ Model CoreSlug
 ```  
 
 ```diff
-    ├── Shop  
-    │   └── Book
-    │        └── Models
-+   │           └── Product
+     ├── Rvsitebuilder  
+     │   └── Core
+     │        └── Models
++    │           └── CoreSlug 
+    
 ```
 
 Model Product.
@@ -101,65 +94,40 @@ Model Product.
     Class Shop\Book\Models\Product;
 ```
 
-When you created a product and you must created data into core_slug table too.You can call this method `setSlug`.The argument's value by you set is passed to the function parameter.
-
-```php
-    use Rvsitebuilder\Core\Models\CoreSlug;
-    use Shop\Book\Models\Product;
-
-
-        $newItem = Product::create([
-                        'product_name' => 'PHP',
-                        'price'  => '30' ,
-                        'detail' => 'PHP is the ultimate learning guide.',
-                    ]); 
-        $slug = CoreSlug::setSlug($newItem, $newItem->product_name);
+```diff
+    ├── Shop  
+    │   └── Book
+    │        └── Models
++   │           └── Product
 ```
-
-If you want to create the prefix you can call this method `setPrefix`.
-
-```php
-    use Rvsitebuilder\Core\Models\CorePrefix;
-    use Rvsitebuilder\Core\Models\CoreSlug;
-    use Shop\Book\Models\Product;
- 
-        $prefix = 'category/books';
-        $newItem = Product::create([
-                        'product_name' => 'PHP',
-                        'price'  => '30' ,
-                        'detail' => 'PHP is the ultimate learning guide.',
-                    ]);
- 
-        $slug = CoreSlug::setSlug($newItem, $newItem->product_name);
-        $prefix = CorePrefix::setPrefix($slug, $prefix);
-```
-
-</br>
-
-- Step 1 Create new product data and make sure you create the product is done.
-
-    |  id   | name  | description                         | price |
-    | :---: | :---: | :---------------------------------- | ----: |
-    |   1   |  PHP  | PHP is the ultimate learning guide. |   $30 |
-
-</br>
-
-- Step 2 After you call the method `CoreSlug::setSlug` , You can create the new page type is done.
-
-    |  id   | slugble_id |            slugble_type            | slug_name |
-    | :---: | :--------: | :--------------------------------: | :-------: |
-    |   1   |     1      | Rvsitebuilder\Core\Models\CorePage |   home    |
-    |   2   |     1      |      Shop\Book\Models\Product      |    php    |
-
-</br>
-
-- Step 3 After you call the method `CorePrefix::setPrefix` , You can create the new prefix is done.
-
-    |  id   | slug_id |  prefix_name   |
-    | :---: | :-----: | :------------: |
-    |   1   |    2    | category/books |
 
 ## Using relationship to CoreSlug model
+
+To register a relation to `CoreSlug` model , you need to call the observe method on the model you wish to observe. You may register observers in the boot method of your application's `EventServiceProvider` service provider and send `CoreSlugObserver::class` into function.
+
+```php
+    use Rvsitebuilder\Core\Observers\CoreSlugObserver;
+
+    public function boot(): void
+    {
+        Product::observe(CoreSlugObserver::class);
+    } 
+```
+
+Next, You will need to define a `$slugRelation` property on your model.
+`$slugRelation` : You must use the column name. To use value to create slug_name in Coreslug model and make sure this column name already exists.
+
+```php
+    use Illuminate\Database\Eloquent\Model;
+
+    class Product extends Model
+    {
+        public static $slugRelation = 'product_name';
+        protected $fillable = [
+            'product_name', 
+            ];
+    }
+```
 
 Next, let's examine the model definitions needed to build this relationship. Typically,you should configure dynamic relationships within the boot method of a `ServiceProvider` :
 
@@ -175,6 +143,21 @@ Next, let's examine the model definitions needed to build this relationship. Typ
     }
 ```
 
+When you created product. We will be adding slug as well.
+
+|  id   | product_name | description                         | price |
+| :---: | :----------: | :---------------------------------- | ----: |
+|   1   |     PHP      | PHP is the ultimate learning guide. |   $30 |
+
+</br>
+
+|  id   | slugble_id |            slugble_type            | slug_name |
+| :---: | :--------: | :--------------------------------: | :-------: |
+|   1   |     1      | Rvsitebuilder\Core\Models\CorePage |   home    |
+|   2   |     1      |      Shop\Book\Models\Product      |    php    |
+
+</br>
+
 ## Retrieving The Relationship
 
 For example, to retrieve the slug for a product, we can access the slug dynamic relationship property:
@@ -186,11 +169,38 @@ For example, to retrieve the slug for a product, we can access the slug dynamic 
         $slug = $product->getSlug;
 ```
 
-For example, to retrieve the prefix for a product, we can access the slug dynamic relationship property:
+## Create Prefix
+
+If you need to create the prefix you can use the method `setPrefix`. You may register prefix in the app.json.
+For example: You can set dynamic prefix. When defining dynamic you need to use %% only.
+
+*** Rule
+    1. The prefix is unique.
+    2. 1 prefix per model.
 
 ```php
-    use Shop\Book\Models\Product;
+    "prefix": [
+        {   
+            "Shop\\Book\\Models\\Product": "category/%CATEGORY_NAME%/%PRODUCT_NAME%",
+            "Shop\\Book\\Models\\Order": "product/order"
+        }
+    ],
+```
 
-        $product = Product::find(1); 
-        $slug = $product->getSlug->getPrefix;
+For example,If you want your get prefix you can use the `getPrefixFromModel`
+and send your model.
+
+```php
+    use Rvsitebuilder\Manage\Lib\Apps;
+
+    Apps::getPrefixFromModel(Product::class);
+```
+
+For example,If you want your update prefix you can use the `setPrefixByModel`
+, send parameter model and new value prefix into method.
+
+```php
+    use Rvsitebuilder\Manage\Lib\Apps;
+
+    Apps::setPrefixByModel(Product::class , 'newPrefix');
 ```
