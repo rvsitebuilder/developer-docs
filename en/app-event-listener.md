@@ -5,8 +5,8 @@
 - [Creating Event and Listener](#creating-event-and-listener)
 - [Eloquent Model Events](#eloquent-model-events)
 - [RVsitebuilder Application Events](#rvsitebuilder-application-events)
-- [Register Event on App’s Service Provider](#register-event-on-apps-service-provider)
-- [Register Listener on App’s Service Provider](#register-listener-on-apps-service-provider)
+- [Register Event on App is Service Provider](#register-event-on-app-is-service-provider)
+- [Register Listener on App is Service Provider](#register-listener-on-app-is-service-provider)
 - [Listener](#listener)
 
 <a name="Creating-Event-and-Listener"></a>
@@ -90,7 +90,7 @@ user logout
 
 <a name="Register-Event-on-App-Service-Provider"></a>
 
-## Register Event on App’s Service Provider
+## Register Event on App is Service Provider
 <!-- TODO: @pairote ขยายความ  -->
 
 ```php
@@ -122,7 +122,8 @@ class AfterSave
 
 <a name="Register-Listener-on-App-Service-Provider"></a>
 <!-- TODO: @pairote ขยายความ  -->
-## Register Listener on App’s Service Provider
+
+## Register Listener on App is Service Provider
 
 Your app can capture the events and hook your logic to the platform using:
 
