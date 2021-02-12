@@ -40,6 +40,7 @@ You can find the full list of events using Artisan command.
 
 ```php
 php artisan event:list
+
 ```
 
 <!-- TODO: @apiruk ต้องปรับปรุงแก้ไขหัวข้อ manage hook https://app.clickup.com/t/t523b  และ เขียน document ให้ถูกด้วยครับ -->
