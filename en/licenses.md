@@ -2,7 +2,6 @@
 
   <!-- - [Free Open Source License](#Free-Open-Source-License) -->
 
-- [Free Open Source License](#free-open-source-license)
 - [Hosting Provider License](#hosting-provider-license)
 - [Developer License](#developer-license)
   - [Get Free 30-day Trial Developer Starter License](#get-free-30-day-trial-developer-starter-license)
@@ -36,7 +35,7 @@ If you want to host your own, you can get a free 30-day trial developer starter 
 
 ### Developer Pro License
 
-Only $299 / year,$119.88 / year. Unlimited web sites. 
+Only $299 / year. Promotion now is $119.88 / year. Unlimited web sites. 
 
 
 ### License Comparison
