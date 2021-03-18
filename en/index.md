@@ -1,4 +1,5 @@
 - ## Getting started
+
   - [Overview](overview.md)
   - [Licenses](licenses.md)
   - [Installation](installation.md)
@@ -7,12 +8,15 @@
   - [Database Structure](database-structure.md)
   - [Login System](login-system.md)
   - [Glossary](glossary.md)
+
 - ## RVsitebuilder App
+
   - [Creating New App](creating-new-app.md)
   - [App Information](app-json-and-dependency.md)
   - [Composer Vendor](composer-vendor.md)
     <!-- - Additional Helpers and Commands -->
 - ## RVsitebuilder App Development
+
   - [App Service Provider](app-service-provider.md)
   - [App Configuration](app-configuration.md)
   - [App DB Migration](app-database-migration.md)
@@ -33,6 +37,7 @@
   - [Extending Admin](extending-admin.md)
   - [JavaScript and CSS](javascript-css-framework.md)
   - [Using Vue.js](using-vue.md)
+  - [Using NPM](using-npm.md)
   - [Webpack](webpack.md)
   - [Notify](notify.md)
 
@@ -58,6 +63,7 @@
   - Extending Email WYSIWYG -->
 
 - ## Internationalization
+
       - [language files](app-language-files.md)
   <!-- - ## Testing -->
   <!-- - ## Tutorials -->
@@ -67,6 +73,7 @@
   - [Contributors](contributors.md)
 
 - ## Admin UI and Example UI
+
   - [Admin UI](admin-ui.md)
 
 - ## Social Login
