@@ -68,3 +68,9 @@
 
 - ## Admin UI and Example UI
   - [Admin UI](admin-ui.md)
+
+- ## Social Login
+  - [Google](social-login-google.md)
+  - [Facebook](social-login-facebook.md)
+  - [Twitter](social-login-twitter.md)
+  - [Line](social-login-line.md)

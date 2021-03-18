@@ -1,5 +1,4 @@
 # Installation
-
 - [Getting a developer license](#getting-a-developer-license)
 - [RVsitebuilder Docker (Recommended)](#rvsitebuilder-docker-recommended)
   - [feature](#feature)
@@ -15,6 +14,7 @@
   - [requirement](#requirement)
   - [install](#install-1)
 - [env file configuration](#env-file-configuration)
+
 
 ## Getting a developer license
 
