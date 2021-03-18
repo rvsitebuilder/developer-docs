@@ -1,15 +1,16 @@
 # Page Types
 
--   [Page](#page)
--   [Post](#post)
--   [Post Category](#post-category)
--   [System Page](#system-page)
-    -   [Non-editable system page](#non-editable-system-page)
-    -   [Editable system page](#editable-system-page)
--   [Product](#product)
--   [Product Category](#product-category)
--   [Pop-up](#pop-up)
--   [Splash Page](#splash-page)
+- [Page](#page)
+- [Post](#post)
+- [Post Category](#post-category)
+- [System Page](#system-page)
+  - [Non-editable system page](#non-editable-system-page)
+  - [Editable system page](#editable-system-page)
+- [Product](#product)
+- [Product Category](#product-category)
+- [Pop-up](#pop-up)
+- [Splash Page](#splash-page)
+- [Create Prefix](#create-prefix)
 
 ## Page
 
@@ -54,3 +55,39 @@ Coming soon
 ## Splash Page
 
 Coming soon
+
+## Create Prefix
+
+If you need to create the prefix you can use the method `setPrefix`. You may register prefix in the app.json.
+For example: You can set dynamic prefix. When defining dynamic you need to use %% only.
+
+*** Rule
+    1. The prefix is unique.
+    2. 1 prefix per model.
+
+```php
+    "prefix": [
+        {   
+            "Shop\\Book\\Models\\Product": "category/%CATEGORY_NAME%/",
+            "Shop\\Book\\Models\\Order": "product/order"
+        }
+    ],
+```
+
+For example,If you want your get prefix you can use the `getPrefixFromModel`
+and send your model.
+
+```php
+    use Rvsitebuilder\Manage\Lib\Apps;
+
+    Apps::getPrefixFromModel(Product::class);
+```
+
+For example,If you want your update prefix you can use the `setPrefixByModel`
+, send parameter model and new value prefix into method.
+
+```php
+    use Rvsitebuilder\Manage\Lib\Apps;
+
+    Apps::setPrefixByModel(Product::class , 'newPrefix');
+```
